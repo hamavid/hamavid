@@ -16,8 +16,6 @@ Most of the lotion-recipes I read posited some version of the idea that commerci
 
 And if none of that gets you going, you can make lotion because it's fun, cheap, and customizable. Also, it's cool to know how to do things! It makes the world less mysterious, and makes it easier to figure out even more things.
 
-[//]: # (### Lest you thought lotion was apolitical: Environmental justice Craftsmanship Organic-movement. Autoimmune disease/disability. Beauty products/culture/expectations/racialized. Parabens vs bacteria. What's the role of craftsmanship in a post-industrial, hyper-material society, besides an ironic pseudo-artisanal gimmick?)
-
 
 <div class="center bottombar padding-16"></div>
 
@@ -80,18 +78,6 @@ Substitute shea butter for the cocoa butter, and a couple drops of tea-tree oil 
 
 ### Notes on storage
 This lotion contains water (in the aloe), and no preservatives, which means fungi and bacteria that are not necessarily good for you can grow in it. *Use it up before that happens!* You can also make lotion with only oil-based ingredients, which will stand up to parasitic invasion for a bit longer. I made some once, but it is so good at moisturizing that after applying it you become the apocryphal frictionless plane and cannot touch anything for *several minutes*. A real time suck.
-
-
-[//]: # (Tea tree oil is also considered a natural preservative, although whether that idea [works](https://www.ncbi.nlm.nih.gov/pubmed/19508298) on a practical level is [unclear](https://www.treasuredlocks.com/))
-
-[//]: # (the-truth-about-parabens-and-preservatives-including-natural-preservatives/)
-
-[//]: # (### Why make lotion?)
-[//]: # (Or for that matter why make anything that you could buy? Aren't you still just buying stuff and then doing extra work? What's the role of craftsmanship in a post-industrial, hyper-material society, besides an ironic pseudo-artisanal gimmick? But, specifically, for lotion:)
-[//]: # (- It might be fun! You're not busy, right?- It might be cheaper! Maybe you could even sell it, if you are good at things like branding and up for infiltrating a saturated Etsy or Farmer's Market.- It's a (cheap, fun) way to cut down on noxious fragrances and [not make people around you sick](http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15).- You can customize the lotion to be the way you want it.- For instance, you can use healthier and/or more ethically-sourced ingredients.- It's cool to know how to do things! It makes the world less mysterious, and makes it easier to figure out even more things.)
-
-[//]: # (### Sources and resources)
-[//]: # (The recipe below is mostly adapted from a [vanilla body lotion](https://healthylivinghowto.com/healthy-homemade-lotion-recipe/) recipe on Healthy Living How-To. Other helpful sources include The Little Pine which has a nice list of [5 basic recipes](http://www.thelittlepine.com/easy-homemade-lotion-recipes/), and Great Cakes Soap Works's post about [troubleshooting your lotion](http://www.greatcakessoapworks.com/handmade-soap-blog/index.php/making-lotion-troubleshooting-your-recipe/), which talks about how each ingredient affects the outcome. I also really enjoyed this [Gardener's Salve](https://crunchybetty.com/the-roofarm-and-recipes-for-not-just-for-gardeners-salve/) recipe from Crunchy Betty, although I didn't use it per se. A lot of people have different answers to that why-do-this question.)
 
 
 
