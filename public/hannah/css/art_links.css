@@ -1,0 +1,43 @@
+li span {
+	position:relative;
+	left:-0.5em; /* makes text closer to bullets */
+}
+a,a:visited{color:black;}
+#links {
+	padding:3%;
+}
+#recommendations {
+	width:64%;
+	float:left;
+	display:inline-block;
+	/*border: 2px solid #ccc;*/
+	padding:2%;
+	padding-top:0px;
+}
+#recommendations li {
+	list-style-type:none;
+}
+#recommendations li div {
+	width:99%;margin-top:0.5em;margin-left:-0.5em;
+}
+#buyart {
+	width:33%;
+	float:right;
+	display:inline-block;
+	border: 2px solid #ccc;
+	padding:2%;
+}
+#buyart ul,#recommendations ul {
+	margin-left:-1.2em; /* left-aligns bullets with headings */
+}
+
+/* >=visible-sidenav width, section widths are fixed 
+@media screen and (min-width:993px){ 
+	#recommendations {max-width:528px;}
+	#buyart {max-width:284px;}
+} */
+/* for narrow screens, place sections in column instead of side by side */
+@media screen and (max-width:600px){
+	#recommendations {min-width:100%;float:none;margin-top:2%;}
+	#buyart {min-width:100%;float:none;margin-bottom:2%;}
+}

@@ -1,0 +1,92 @@
+/* AVIVA BDAY LANDING PAGE STYLES!! */
+body {
+	margin:0;
+	padding:0;
+	font-family:Lucida,Helvetica,sans-serif;
+	line-height: 1.5em;
+	background: #ebdde2;
+}
+
+header {
+	background: #c38ec7;
+	height: 90px;
+	padding-top: 10px;
+	font-variant: small-caps;
+	font-weight: 800;
+}
+header h1 {
+	margin: 0;
+	padding-top: 15px;
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+p {
+	font-size: 1em;
+}
+
+main {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 100%;
+}
+
+nav {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 300px;
+	margin-left: -300px;
+	background: #D2B9D3;
+}
+
+footer {
+	clear: left;
+	width: 100%;
+	background: #c38ec7;
+	text-align: center;
+	padding: 4px 0;
+}
+
+#wrapper {
+	overflow: hidden;
+}
+			
+#content {
+	margin-right: 300px; /* Same as 'nav' width */
+}
+
+.innertube {
+	margin: 15px; /* Padding for content */
+	margin-top: 0;
+}
+
+p {
+	color: #000000;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul a {
+	color: #000000;
+	text-decoration: underline;
+}
+a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+

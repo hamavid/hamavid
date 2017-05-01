@@ -1,0 +1,18 @@
+{{> HHblog_aboutheader }}
+  <div id="aboutblog" class="hide-large"><nav><a href="../about">About</a></nav></div>
+  <div class="center bottombar padding-16" id="bottombar"></div>
+  </header>
+
+  <!-- Index -->
+  <article id="index">
+    <span style="margin-left:-3%"><img src="../images/Posts-normal.png" width="130px"></span>
+    <ul class="recent">
+    {{#each hannahblog }}
+      <li>
+        <div class="title"><a href="{{ link }}">{{ title }}</a></div>
+        <div class="date">{{ moment date lang="en" format="DD MMM[,] YYYY" }}</div>
+      </li>
+    {{/each}}
+    </ul>
+  </article>
+{{> HHfooter }}

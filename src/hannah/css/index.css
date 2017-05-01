@@ -1,0 +1,143 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html{
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+footer {color:#fff!important;background-color:#616161!important}
+footer:hover{color:#fff!important;background-color:#000!important}
+
+/* Create a Parallax Effect */
+.bgimg {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/fuzzy.jpg");
+    min-height: 300px;
+}
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 993px) {.bgimg{background-attachment: scroll;}}
+a,a:hover,a:visited,a:active{color:#666;}
+
+/* control look and behavior of top navbar and its contents for diff window sizes */
+#topnav{z-index:2;}
+.topnavbar {height:80px;}
+.topnavbar-contents {max-width:800px;margin-left:auto;margin-right:auto;}
+.navlinks {
+    float:right!important;
+    margin-right:0.5em;
+    font-size:20px;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+.navlinks a{
+    color:black;
+    display:inline-block;
+    text-decoration:none;
+    padding:1em;
+    line-height:20px;
+    margin-top:10px;
+    border-radius: 10px;
+}
+.navbar-bars {float:right!important;}
+/*.navbar-bars:hover {color:#B0B0B0;-webkit-transition: color 0.5s;transition: color 0.5s;}*/
+.navbar-bars i {margin-right:0.5em;margin-top:8px;}
+.smallnavlinks ul {list-style:none;margin:0px;padding:0px;}
+.smallnavlinks li {border-top:1px solid white;}
+.smallnavlinks a {
+    color:black;
+    text-decoration:none;
+    line-height:40px;
+}
+.smallnavlinks-pocket {
+    margin-top:50px;
+    position:fixed;
+    text-align:center;
+    width:100%;
+    z-index:1;
+}
+.smallnavlinks {display:none;}
+.navlinks a:hover,.smallnavlinks li:hover,.minisections h4 a:hover{
+    background-color:#B0B0B0;
+    color:white!important;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+.smallnavlinks li:hover>a {color:white!important;}
+.name {float:left!important;}
+.name img {
+    height:60px;
+    margin-left:1em;
+    margin-top:10px;
+}
+
+/* make smooth transition in size for navbar and its contents on window resize */
+.topnavbar,.topnavbar a,.name img,.navlinks {
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+.navlinks a {-webkit-transition: font-size 0.5s;transition: font-size 0.5s;}
+
+/* control look of top banner img 
+.banner {
+    position:relative;
+    overflow:hidden;
+    padding:0px;
+    margin-top:80px;
+    -webkit-transition: margin-top 0.5s;
+    transition: margin-top 0.5s;
+}
+.banner img {
+    opacity:0.8;
+    float:left;
+    position:absolute;
+    margin-left:0px;
+}
+
+*/
+/* control look of main section */
+.wordsection {
+    position:relative;
+    padding: 1em 4% 2.5em;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*.wordsection h3 {text-align:center;}*/
+.wordsection a {cursor:pointer;}
+/*#contact {display:table;}
+.lefthalf {width:50%;float:left;}
+.righthalf {width:50%;float:right;}*/
+#summary,#pictureofme,.minisections>div{display:inline-block;}
+#summary{width:60%;right:0;} #pictureofme{width:39%;left:0;}
+.minisections>div{width:300px;padding:3%;vertical-align:top;}
+.minisections{margin:auto;text-align:center;padding:1em;padding-bottom:3em;}
+.minisections h4 a {padding:5px;border-radius:5px;}
+.minisections a {font-weight:bold;cursor:pointer;text-decoration:none;}
+.more {font-style:italic;text-decoration:none;padding:5px;}
+.more a{font-weight:lighter;color:#778899;text-decoration:none;}
+
+
+/* adjustments for small and medium size screens */
+@media (max-width:500px){
+    .navlinks {display:none;}
+    .navbar-bars{display:block!important;}
+    .minisections{padding:0;padding-bottom:3em;}
+}
+@media (max-width:750px){
+    .topnavbar{height:50px;}
+    .name img {height:40px;margin-top:5px;}
+    .navlinks {font-size:15px;}
+    .navlinks a {line-height:10px;margin-top:5px;border-radius:5px;}
+    /*.banner{margin-top:50px;}
+    .lefthalf {width:100%;}
+    .righthalf {width:100%;}*/
+    #summary{width:100%;}
+    #pictureofme{width:100%;}
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--Meta-->
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport" content ="width=device-width" />
+    <title>{{#if title }}{{title }} - {{/if}}{{ site.name }}</title>
+    <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
+    <meta name="referrer" content="never" />
+  <!--Scripts-->
+    <script type="text/javascript" src="{{outadir}}../../js/jquery-3.1.1.min.js"></script>
+	  <script type="text/javascript" src="{{outadir}}../js/general_fxns.js"></script>
+  <!--Styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans"/>
+    <link rel="stylesheet" href="{{outadir}}../../css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="{{outadir}}../css/general_style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{outadir}}../css/blog_and_about.css" type="text/css" media="all">
+  <!--Icons-->
+    <link rel="apple-touch-icon" href="{{outadir}}../images/apple-touch-icon.png">
+  	<link rel="shortcut icon" href="{{outadir}}../images/favicon.ico">
+  	<link rel="icon" href="{{outadir}}../images/favicon-32x32.png">
+  </head>
+  <body>
+
+<!-- Sidenav/menu -->
+<nav class="sidenav collapse white animate-left" style="z-index:3;width:180px;" id="sidenav"><br>
+  <div class="container">
+    <a href="#" onclick="close_sidenav()" class="hide-large right xxlarge" title="close menu">
+      <i class="fa fa-times"></i>
+    </a>
+    <div class="padding-16"><img src="{{outadir}}../images/{{pagetype}}-bold-bgwhite.png" height="41px" alt-text="{{pagetype}}"></div>
+  </div>
+  <a href="{{outadir}}../" class="padding text-teal">HOME</a>
+  <a href="{{outadir}}../art/portfolio" class="padding">&#x1f648 ART</a>
+  <a href="{{outadir}}../music" class="padding">&#x1f649 MUSIC</a>
+  <a href="/hannah/blog" class="padding">&#x1f64a BLOG</a>
+  <a href="{{outadir}}../about" class="padding">ABOUT</a>
+   
+   
+  <div class="section padding-top large">
+    <a href="https://soundcloud.com/hamavid" class="hover-white hover-text-red-orange show-inline-block"><i class="fa fa-soundcloud"></i></a>
+    <!--<a href="#" class="hover-white hover-text-indigo show-inline-block"><i class="fa fa-linkedin"></i></a>-->
+    <a href="https://www.etsy.com/shop/vayavaya" style="font-size:0.8em" class="hover-white hover-text-orange show-inline-block"><i class="fa fa-etsy"></i></a>
+  </div> 
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="overlay hide-large animate-opacity" onclick="close_sidenav()" style="cursor:pointer" title="close side menu" id="overlaySidenav"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:180px">
+
+  <!-- Header -->
+  <header class="container">
+    <span class="opennav opacity-hide-large xxlarge hover-text-grey" onclick="open_sidenav()"><i class="fa fa-bars" style="margin-top:9px"></i></span>
+    <img src="{{outadir}}../images/HannahHamavid-normal.png" alt-text="Hannah Hamavid">

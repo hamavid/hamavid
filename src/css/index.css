@@ -1,0 +1,177 @@
+/* STYLES!! */
+body{
+	background-color:#000;
+	font-size:0px; /* added to get rid of mysterious upper and left margins */
+	height:100%;
+	padding: 0;
+	margin: 0;
+	overflow:hidden;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+figure {
+	padding:0;
+	height:100%;
+	position:absolute;
+	margin:0;
+	display:block;
+   	left:50%;
+   	-webkit-transform: translate(-50%);
+   	transform: translate(-50%);
+}
+img {
+	position:relative;
+	height:100%;
+}
+
+/* the location of sisters*/
+#aviva_area,#hannah_area,#showabout  {
+	cursor:pointer;
+	position:absolute;
+	z-index:1;
+}
+#aviva_area{
+	width:47%;
+	height:85%;
+	top:15%;
+}
+#hannah_area{
+	width:52%;
+	height:77%;
+	top:11%;
+	right:0;
+}
+
+
+/* show/hide various images based on mouseover 
+and show/hide instructions and labels depending on screen size */
+#default {opacity:1;}
+#hl_aviva,#hl_hannah,#instructions,.about,.label{
+	opacity:0;
+	position:absolute;
+	left:0;
+	-webkit-transition:opacity 0.7s;
+	transition:opacity 0.7s;
+	-moz-transition: opacity 0.7s;
+  	-ms-transition: opacity 0.7s;
+  	-o-transition: opacity 0.7s;
+}
+/* hack: no opacity transition when about is bigger than pic, otherwise
+the picture pops in front of about while it's transitioning out */
+.smallabout {
+	-webkit-transition:opacity 0s;
+	transition:opacity 0s;
+	-moz-transition: opacity 0s;
+  	-ms-transition: opacity 0s;
+  	-o-transition: opacity 0s;
+}
+#aviva_area:hover + #hl_aviva{opacity:0.7;}
+#hannah_area:hover + #hl_hannah{opacity:0.7;}
+.label{
+	top:35%;
+	background:transparent;
+	font-size:30px;
+	font-weight:900;
+	letter-spacing:-1.5px;
+	-webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+    opacity:0;
+}
+.label:hover{font-size:32px;}
+#instructions {
+	z-index:1;
+	display:block;
+	margin:auto;
+	top:0;
+	background-color:black;
+	padding:2px 5px 2px 5px;
+	font-size:20px;
+	font-weight:lighter;
+	opacity:0.7;
+}
+#instructions,.label{
+	text-align:center;
+	position:absolute;
+	width:100%;
+	color:#fff;
+	font-family:sans-serif;
+	font-variant: small-caps;
+}
+
+@media only screen and (max-width:450px), screen and (max-height:550px) {.label{opacity:1;}}
+@media only screen and (max-height:400px) {
+	#instructions{font-size:14px}
+	.label{font-size:20px;}
+	.label:hover{font-size:22px;}
+}
+#aviva_area:hover span.label{opacity:1!important;}
+#hannah_area:hover span.label{opacity:1!important;}
+
+/* button to show about section */
+#showabout{
+	display:block;
+	z-index:2;
+	line-height:40px;
+	font-size:36px;
+	width:40px;
+	background-color:transparent;
+	color:#fff;
+	text-align:center;
+	font-family:sans-serif;
+	bottom:0;
+	right:4px;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+#showabout:hover{font-size:40px;}
+#showabout::after{margin-top:-40px;}
+
+/*about section */
+.about {
+	opacity:0;
+	max-width:85%;
+	margin: auto;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left:0;
+	top:0;
+	z-index:0;
+	height:80%;
+	text-align:center;
+	background-color:#000;
+	color:#fff;
+	font-size:16px;
+	font-family:sans-serif;
+	overflow-y:auto;
+	padding:1em;
+}
+.about p {padding:0.2em;}
+.about a:link,.about a:hover,.about a:visited,.about a:active{color:#fff;cursor:pointer;z-index:15;}
+.smallabout {height:100%;padding-top:3em;padding-bottom:2em;}
+
+
+/*button to hide about section*/
+.hideabout {
+	color:#d3d3d3;
+	display:block;
+	cursor:pointer;
+	float:right;
+	font-size:20px;
+}
+.hideabout:hover{color:#fff;}
+
+
+
+
+
+
+
+
+
+

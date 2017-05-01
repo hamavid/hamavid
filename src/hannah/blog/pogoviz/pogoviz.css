@@ -1,0 +1,62 @@
+/* styles for viz! */
+html,body{height:100%;overflow:hidden;box-sizing:content-box;}
+.maindiv{font: 16px sans-serif;max-width:780px;min-width:465px;text-align:center;margin:auto;}
+#charts{width:450px;}
+#keyslider{width:300px;}
+#charts,#keyslider{
+  position:relative;display:inline-block;padding:5px 5px 5px 5px;height:608px;
+}
+#dryfood,#wetfood{cursor:pointer;}
+h4 {text-align:center;padding:5px;}
+#dryreport,#wetreport {
+  line-height:0;opacity:0;
+}
+table{
+  width:100%;
+  float:right;
+  margin-right:0;
+  text-align:left;
+}
+tr{width:100%;line-height:24px;font-weight:bold;}
+td{position:relative;width:100%;}
+.hovered,.selected{font-weight:normal;}
+#scrollability{cursor:pointer;z-index:4;}
+#datescrollbar{
+  position:absolute;
+  border:2px solid #333;
+  opacity:0.9;
+  height:8px;top:3px;
+  width:256.5px;
+  left:18px;
+}
+#leftscroller,#rightscroller,#datescrollbar{line-height:17px;z-index:5;}
+#leftscroller{float:left;} #rightscroller{float:right;}
+#handle{
+  opacity:0.7;
+  position:absolute;
+  height:15px;
+  width:4px;
+  top:1px;
+  border-radius:2px;
+  background-color:#333;
+  border:1px solid #333;
+  margin-left:0px;
+}
+img {
+  position:absolute;
+  max-width:300px;
+  max-height:510px; /* 608-78-20, charts height - keyheight - padding for key and img*/
+  padding: 5px 0px 5px 0px!important;
+  opacity:0;
+  -webkit-transition:opacity 0.6s;
+  transition:opacity 0.6s;
+  -moz-transition:opacity 0.6s;
+  margin-bottom:10px;
+}
+@media screen and (max-width:780px), (max-height:608px) {body{overflow-y:auto;}}
+@media screen and (max-width:780px) {
+  img{max-width:450px;}
+  #keyslider{height:88px;}
+}
+@media screen and (max-width:460px) {body{overflow-x:auto;}}
+@media screen and (max-width:480px), (max-height:480px) {#hoverspace{display:none;}}

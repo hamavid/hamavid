@@ -1,0 +1,168 @@
+a:link,a:visited,a:hover,a:active{color:black;}
+/* ------------ GRID ------------  */
+#gridpocket {
+    width:100%;
+    position:relative;
+    padding:8px;
+}
+#grid {
+    max-width:993px;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+/* images */
+#grid span{padding:3px;line-height:208px;cursor:pointer;}
+#grid div {position:relative;vertical-align:middle;display:inline-block;width:200px;height:200px;}
+.vt {background-size: 200px!important;} /* for vertically oriented images, width is limiting factor */
+.hz {background-size: auto 200px!important;} /* vice versa for horizontal images */
+#grid div {-webkit-transition:opacity 0.3s;transition:opacity 0.3s;} /*for hover opacity*/
+#grid div:hover{opacity:0.6;}
+
+/* back-to-top button */
+.backtotop {
+    display:none;
+    cursor:pointer;
+    position:fixed;
+    bottom:0;
+    z-index:2;
+}
+/*@media screen and (min-width: 993px){.backtotop{margin-left:180px;}}*/
+.backtotop a,.backtotop a:visited,.backtotop a:hover {
+    text-decoration:none!important;
+    color:white;
+    cursor:pointer;
+}
+
+
+/* ------------ SLIDESHOW ------------  */
+/* main overlay */
+.overlay {
+    position:fixed;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:
+    rgba(0,0,0,0.5);
+}
+.overlay-content {
+    position: relative;
+    height:80%;
+    width:100%;
+    top:10%;
+    bottom:10%;
+    background-color:rgba(0,0,0,0.8);
+    padding-right:15px; /* for scrollbar */
+}
+@media only screen and (max-width:450px) {.overlay-content{padding-right:5px;}}
+/* areas and links on overlay */
+#leftside,#rightside {
+    position:absolute;
+    top:0;
+    height:100%;
+    padding:0;
+}
+#leftside{width:20%;margin-right:80%;}#rightside{width:80%;margin-left:20%;}
+.topband,.bottomband{
+    position:absolute;
+    width:100%;
+    height:10%;
+}
+.topband {top:0;} .bottomband{bottom:0;}
+.leftscroller,.rightscroller {
+    position:fixed;
+    cursor:pointer;
+    top: 45%;
+    font-size:2em;
+    opacity:0.3;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.leftscroller{left:2%;}.rightscroller {right:2%;}
+@media only screen and (max-width:450px), (max-height:450px) {
+    .leftscroller,.rightscroller{opacity:1!important;color:white!important;}
+}
+.rightscroller:hover,.leftscroller:hover{opacity:1!important;}
+@media only screen and (min-width: 993px) {
+    .leftscroller{margin-left:180px;}
+}
+.closebtn {
+    color:#B0B0B0;
+    text-decoration:none!important;
+    position: fixed;
+    top: 8%;
+    right: 1.5%;
+    font-size: 2.5em;
+    z-index:3;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.closebtn:hover {color:#ffffff;}
+@media screen and (max-width: 450px), screen and (max-height: 450px) {
+    .overlay-content{height:100%;top:0;}
+    .closebtn {font-size:4em;top:-3%;}
+    .topband{height:0%;}.bottomband{height:0%;}
+}
+.overlay-content a, .closebtn {
+    text-decoration: none!important;
+    color: #B0B0B0;
+    display: block;
+    transition: 0.3s;
+    z-index:3;
+}
+.overlay-content a:hover, .overlay-content a:focus {color: #ffffff;}
+.hover-opacity:hover{
+    opacity:0.60;
+    filter:alpha(opacity=60);
+    -webkit-backface-visibility:hidden;
+}
+
+/* figure and caption appearance */
+figure {
+    position:relative;
+    width:100%;
+    height:100%;
+    margin:0;
+    text-align:center;
+    vertical-align:center;
+}
+figure>img {
+    padding:16px;
+    max-width:100%;
+    max-height:100%;
+    position:relative;
+    text-align:center;
+    top:50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+}
+figcaption {
+    margin:auto;
+    text-align:left;
+    color:white;
+    position: absolute;
+    bottom:0;
+    background-color:
+    rgba(0,0,0,0.6);
+    padding:8px;
+    padding-bottom:8px;
+    opacity:1;
+    z-index:4;
+}
+figcaption>span {margin-left:1.1em;}
+figcaption {cursor:pointer;}
+@media only screen and (max-width: 450px) {figcaption{max-height:100%;}}
+@media only screen and (max-height: 450px) {figcaption{max-width:100%;}}
+
+
+
+
+
+
