@@ -16,4 +16,4 @@ The best way to contact me is by email: <span class="text-teal">**hamavid (at) g
 ### Blog
 
 ### Siteations
-This site is built with Metalsmith, with inspiration from [a great tutorial](https://neustadt.fr/essays/crafting-a-simple-blog-with-metalsmith/) by Parimal Satyal. The design is adapted from the [portfolio](http://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm) CSS template from W3-schools, and the handwriting-style font is created with [myscriptfont.com](http://myscriptfont.com).
+This site itself is another project that I periodically work on. It is currently built with Metalsmith, with inspiration from [a great tutorial](https://neustadt.fr/essays/crafting-a-simple-blog-with-metalsmith/) by Parimal Satyal. The design is adapted from the [portfolio](http://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm) CSS template from W3-schools, and the handwriting-style font is created with [myscriptfont.com](http://myscriptfont.com).

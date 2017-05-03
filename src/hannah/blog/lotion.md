@@ -12,7 +12,7 @@ pagetype: BLOG
 The recipe below is adapted from a [vanilla body lotion](https://healthylivinghowto.com/healthy-homemade-lotion-recipe/) recipe on Healthy Living How-To. Other helpful resources include a nice list of [5 basic recipes](http://www.thelittlepine.com/easy-homemade-lotion-recipes/) from The Little Pine, as well as a post from Great Cakes Soap Works about [troubleshooting your lotion](http://www.greatcakessoapworks.com/handmade-soap-blog/index.php/making-lotion-troubleshooting-your-recipe/), which talks about how each ingredient affects the end result.
 
 ### Why make lotion?
-Most of the lotion-recipes I read posited some version of the idea that commercial lotions (or generally body products, or possibly all products), are full of weird ingredients that are bad for your health, and so making your own helps avoid these effects. Some people also suggested that not adding a scent to your homemade lotion is a good way to support the [fragrance-free movement](http://thinkbeforeyoustink.com/whygofragrancefree.html). This second reason seems important if, like me, you are skeptical or under-protective of your own health, but still feel pretty motivated to [not make people around you sick](http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15).
+Most of the recipes I read posited some version of the idea that commercial lotions (or generally body products, or possibly all products), are full of weird ingredients that are bad for your health, and so making your own helps avoid these effects. Some people also suggested that not adding a scent to your homemade lotion is a good way to support the [fragrance-free movement](http://thinkbeforeyoustink.com/whygofragrancefree.html). This second reason seems important if, like me, you are skeptical or under-protective of your own health, but still feel pretty motivated to [not make people around you sick](http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15). (As a caveat, everyone's sensitivities vary and this lotion may or may not be okay for a given person.)
 
 And if none of that gets you going, you can make lotion because it's fun, cheap, and customizable. Also, it's cool to know how to do things! It makes the world less mysterious, and makes it easier to figure out even more things.
 
@@ -53,7 +53,7 @@ Makes about 6 ounces of lotion
 
 <figure><img src="./images/ingredients.jpg"><figcaption></figcaption></figure>
 
-I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's and QFC, but you could go wherever fits your preferences for ethics, price, or convenience. And really you could just use either of the oils as a moisturizer and skip the rest of this.
+I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's and QFC, but you could go wherever fits your preferences for ethics, price, or convenience.
 
 <br/>
 
@@ -74,7 +74,7 @@ I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's an
 <p style="text-align:center;">Photos by the lovely [Molly Smith](http://www.mollymichellesmith.com)</p><br/>
 <br/>
 ### Variation
-Substitute shea butter for the cocoa butter, and a couple drops of tea-tree oil (cheap-ish at Trader Joe's) for the vanilla extract. Shea butter doesn't like to be super hot, so pay more attention during step two and definitely skip the blowtorch option. This variation ends up feeling a little lighter.
+Substitute shea butter for the cocoa butter, and a couple drops of tea-tree oil (cheap-ish at Trader Joe's) for the vanilla extract. Shea butter doesn't like to be super hot, so pay more attention during step two and definitely skip the blowtorch option. This variation ends up feeling a little lighter. For even less of a scent, skip the tea-tree oil and coconut oil.
 
 ### Notes on storage
 This lotion contains water (in the aloe), and no preservatives, which means fungi and bacteria that are not necessarily good for you can grow in it. *Use it up before that happens!* You can also make lotion with only oil-based ingredients, which will stand up to parasitic invasion for a bit longer. I made some once, but it is so good at moisturizing that after applying it you become the apocryphal frictionless plane and cannot touch anything for *several minutes*. A real time suck.

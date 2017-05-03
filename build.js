@@ -7,7 +7,8 @@ var metalsmith = require('metalsmith'),
     rewrite = require('metalsmith-rewrite'),
     serve = require('metalsmith-serve'),
     watch = require('metalsmith-watch'),
-    debug = require('metalsmith-debug');
+    debug = require('metalsmith-debug'),
+    drafts = require('metalsmith-drafts');
 
 handlebars.registerHelper('moment', require('helper-moment'));
 
@@ -33,6 +34,7 @@ metalsmith(__dirname)
   })
   .source('./src')
   .destination('./public')
+  .use(drafts())
   .use(collections({
       hannahblog: {
         pattern: ['hannah/blog/**/*.md', '!hannah/blog/**/index.md'],

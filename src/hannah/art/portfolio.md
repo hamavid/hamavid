@@ -17,6 +17,7 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="vt" style="background: url('../../images/portfolio/thumbs/linobike.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt" style="background: url('../../images/portfolio/thumbs/linopogo.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="hz" style="background: url('../../images/portfolio/thumbs/linobass.jpeg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz" style="background: url('../../images/portfolio/thumbs/linopiano.jpeg') 50% 50% no-repeat;"></div></span>
@@ -76,6 +77,7 @@ cssjsfile: "art_portfolio"
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
     
+<figure><img src="../../images/portfolio/linobike.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bicycle:</b></i> Linoleum block print - May, 2017</span></figcaption></figure>
 <figure><img src="../../images/portfolio/linopogo.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Linocat:</b></i> Linoleum block print - Apr, 2017</span></figcaption></figure>
 <figure><img src="../../images/portfolio/linobass.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bass:</b></i> Linoleum block print - Mar, 2017</span></figcaption></figure>
 <figure><img src="../../images/portfolio/linopiano.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Piano:</b></i> Linoleum block print - Mar, 2017</span></figcaption></figure>
