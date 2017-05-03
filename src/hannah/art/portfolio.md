@@ -36,7 +36,7 @@ cssjsfile: "art_portfolio"
       <span><div class="hz" style="background: url('../../images/portfolio/thumbs/swirlies.jpg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz" style="background: url('../../images/portfolio/thumbs/canyondechelly.jpg') 50% 50% no-repeat;"></div></span>
      	<span><div class="hz" style="background: url('../../images/portfolio/thumbs/seattleskyline.jpg') 90% 50% no-repeat;"></div></span>
-      <span><div class="hz" style="background: url('../../images/portfolio/thumbs/duck.JPG') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz" style="background: url('../../images/portfolio/thumbs/duck.jpg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz" style="background: url('../../images/portfolio/thumbs/davis_longline.jpg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz" style="background: url('../../images/portfolio/thumbs/izzy_baremtn.jpg') 100% 50% no-repeat;"></div></span>
       <span><div class="hz" style="background: url('../../images/portfolio/thumbs/coffee_angels.jpg') 50% 50% no-repeat;"></div></span>
@@ -96,7 +96,7 @@ cssjsfile: "art_portfolio"
 <figure><img src="../../images/portfolio/swirlies.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Tornado dreams:</b></i> Watercolor on paper - 2013</span></figcaption></figure>
 <figure><img src="../../images/portfolio/canyondechelly.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Canyon de Chelly:</b></i> Watercolor on paper - Aug, 2012</span></figcaption></figure>
 <figure><img src="../../images/portfolio/seattleskyline.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Seattle skyline:</b></i> Acrylic on scrap wood - Jul, 2012</span></figcaption></figure>
-<figure><img src="../../images/portfolio/duck.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Duck on Greenlake at sunset:</b></i> Acrylic on scrap wood - Jul, 2012</span></figcaption></figure>
+<figure><img src="../../images/portfolio/duck.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Duck on Greenlake at sunset:</b></i> Acrylic on scrap wood - Jul, 2012</span></figcaption></figure>
 <figure><img src="../../images/portfolio/davis_longline.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Ben longlining:</b></i> Acrylic on scrap wood. Davis, CA - Jun, 2012</span></figcaption></figure>
 <figure><img src="../../images/portfolio/izzy_baremtn.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Izzy on Bare mountain:</b></i> Acrylic on scrap wood. Amherst, MA - Mar, 2012</span></figcaption></figure>
 <figure><img src="../../images/portfolio/coffee_angels.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Portrait of Seattle:</b></i> Acrylic on scrap wood - 2012</span></figcaption></figure>
