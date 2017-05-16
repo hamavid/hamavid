@@ -8,6 +8,7 @@ blurb: Hannah Hamavid's art portfolio - simple version
 <title>Portfolio - ART | Hannah Hamavid</title>
 <meta name="keywords" content="Hamavid, Hamavid.com, Hannah Hamavid, art, watercolor"/>
 <link rel="icon" href="../../images/favicon-32x32.png">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
 a {text-decoration:none;color:black;}
 ul a, span a{text-decoration:underline;font-weight:bold;}
@@ -43,7 +44,7 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
-<li><a href="../../images/portfolio/linopogo.jpeg">Bicycle</a> Linoleum block print - May, 2017.</li>
+<li><a href="../../images/portfolio/linobike.jpeg">Bicycle</a> Linoleum block print - May, 2017.</li>
 <li><a href="../../images/portfolio/linopogo.jpeg">Linocat</a> Linoleum block print - Apr, 2017.</li>
 <li><a href="../../images/portfolio/linobass.jpeg">Bass</a> Linoleum block print - Mar, 2017.</li>
 <li><a href="../../images/portfolio/linopiano.jpeg">Piano</a> Linoleum block print - Mar, 2017.</li>
@@ -67,6 +68,7 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 <li><a href="../../images/portfolio/izzy_baremtn.jpg">Izzy on Bare mountain</a> Acrylic on scrap wood. Amherst, MA - Mar, 2012.</li>
 <li><a href="../../images/portfolio/coffee_angels.jpg">Portrait of Seattle</a> Acrylic on scrap wood - 2012.</li>
 <li><a href="../../images/portfolio/mermaid.jpg">Yes Ma I did the dishes</a> Acrylic on scrap wood - 2012.</li>
+<li><a href="../../images/portfolio/ben sketch.jpeg">Ben sketch</a> Pencil on paper - 2011.</li>
 <li><a href="../../images/portfolio/orchidrose.jpg">Orchid, rose</a> Watercolor on paper - 2011.</li>
 <li><a href="../../images/portfolio/eyeonthepry.jpg">Eyes on the prize</a> Watercolor on paper - Apr, 2011.</li>
 <li><a href="../../images/portfolio/huanggua.jpg">Feeding huanggua</a> Watercolor on paper. Shanghai, China - 2011. Div 3 portrait series 1 of 5.</li>
@@ -77,14 +79,23 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 <!--<li><a href="../../images/portfolio/lineface.jpg">Doodle portrait</a> Watercolor on paper - 2010.</li>-->
 <li><a href="../../images/portfolio/tigerlily.jpg">Tiger lily</a> Watercolor on paper - 2010.</li>
 <li><a href="../../images/portfolio/moroccanman.jpg">Moroccan man</a> Watercolor on paper. From photo in econ textbook - project for portraiture class - 2009.</li>
+<li><a href="../../images/portfolio/rainbow.jpeg">Rainbow</a> Watercolor on paper. Chugchilan, Ecuador - 2007.</li>
 <li><a href="../../images/portfolio/hula.jpg">Hula teacher on the beach</a> Watercolor on paper. Kauai, Hawaii - 2006.</li>
+<li><a href="../../images/portfolio/LH and R.jpeg">Lambert, Hendricks, and Ross</a> Unfinished. Acrylic on canvas board - 2006.</li>
 <li><a href="../../images/portfolio/hamletp5.jpg">Hamlet, page 5</a> Pencil on paper. Part of graphic novel interpretation of Hamlet for English Literature final project - 2006.</li>
-<li><a href="../../images/portfolio/hamletp10.png">Hamlet, page 10</a> Pencil on paper. Part of graphic novel interpretation of Hamlet for English Literature final project - 2006.</li><li><a href="../../images/portfolio/beached.jpg">Beached</a> Marker and water on paper. Part of a series of paintings for unnamed surrealist story, 2005.</li>
+<li><a href="../../images/portfolio/hamletp10.png">Hamlet, page 10</a> Pencil on paper. Part of graphic novel interpretation of Hamlet for English Literature final project - 2006.</li>
+<li><a href="../../images/portfolio/sunflowers.jpeg">Sunflowers</a> Acrylic on cardboard - 2006.</li>
+<li><a href="../../images/portfolio/beached.jpg">Beached</a> Marker and water on paper. Part of a series of paintings for unnamed surrealist story, 2005.</li>
 <li><a href="../../images/portfolio/falling.jpg">Falling</a> Marker and water on paper. Part of a series of paintings for unnamed surrealist story, 2005.</li>
 <li><a href="../../images/portfolio/nude.jpg">Nude</a> Chalk pastel on paper - 2006.</li>
 <li><a href="../../images/portfolio/reach.jpg">Reach</a> Chalk pastel on paper - 2005.</li>
+<li><a href="../../images/portfolio/donghu.jpeg">Dong hu</a> East lake, Wuhan, China. Watercolor and pencil on paper - 2004.</li>
 <li><a href="../../images/portfolio/citycold.jpg">Cold city</a> Watercolor on paper - 2004.</li>
 <li><a href="../../images/portfolio/winter sunset.jpg">Winter sunset</a> Watercolor on paper - 2004.</li>
+<li><a href="../../images/portfolio/arboretum.jpeg">Boston arboretum</a> Watercolor and pencil on paper - 2003.</li>
+<li><a href="../../images/portfolio/stormy beach.jpeg">Stormy beach</a> Watercolor and pencil on paper - 2003.</li>
+<li><a href="../../images/portfolio/thorndike pond.jpeg">Thorndike pond</a>  New Hampshire. Watercolor and pencil on paper - 2002.</li>
+
 </ul>
 <br>
 

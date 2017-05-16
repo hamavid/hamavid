@@ -107,8 +107,8 @@ cssjsfile: "art_portfolio"
 <figure class="print"><img src="../../images/portfolio/linopiano.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Piano:</b></i> Linoleum block print - Mar, 2017</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/fox and birches.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fox and Birches:</b></i> Commission, watercolor on paper - Mar, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/linoukulele.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Ukulele:</b></i> Linoleum block print - Feb, 2017</span></figcaption></figure>
-<figure><img src="../../images/portfolio/linogotyourback.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Got your back:</b></i> Linoleum block print - Feb, 2017</span></figcaption></figure>
-<figure><img src="../../images/portfolio/linoface.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Shadowy face:</b></i> Linoleum block print - Feb, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/linogotyourback.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Got your back:</b></i> Linoleum block print - Feb, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/linoface.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Shadowy face:</b></i> Linoleum block print - Feb, 2017</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/floodthestreets.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Second wind third wave:</b></i> Watercolor and gel pen on paper - Jan, 2017</span></figcaption></figure>
 <figure class="watercolor cat"><img src="../../images/portfolio/benandpogo.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Ben and Pogo:</b></i> Watercolor and pencil on paper - Dec, 2016</span></figcaption></figure>
 <figure class="watercolor cat"><img src="../../images/portfolio/pokemongo.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Po-kemon-go:</b></i> Watercolor and pencil on paper - Nov, 2016</span></figcaption></figure>
@@ -120,7 +120,7 @@ cssjsfile: "art_portfolio"
 <figure class="watercolor"><img src="../../images/portfolio/swirlies.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Tornado dreams:</b></i> Watercolor on paper - 2013</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/canyondechelly.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Canyon de Chelly:</b></i> Watercolor on paper - Aug, 2012</span></figcaption></figure>
 <figure class="acrylic"><img src="../../images/portfolio/seattleskyline.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Seattle skyline:</b></i> Acrylic on scrap wood - Jul, 2012</span></figcaption></figure>
-<figure><img src="../../images/portfolio/duck.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Duck on Greenlake at sunset:</b></i> Acrylic on scrap wood - Jul, 2012</span></figcaption></figure>
+<figure class="acrylic"><img src="../../images/portfolio/duck.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Duck on Greenlake at sunset:</b></i> Acrylic on scrap wood - Jul, 2012</span></figcaption></figure>
 <figure class="acrylic"><img src="../../images/portfolio/davis_longline.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Ben longlining:</b></i> Acrylic on scrap wood. Davis, CA - Jun, 2012</span></figcaption></figure>
 <figure class="acrylic"><img src="../../images/portfolio/izzy_baremtn.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Izzy on Bare mountain:</b></i> Acrylic on scrap wood. Amherst, MA - Mar, 2012</span></figcaption></figure>
 <figure class="acrylic mercreature"><img src="../../images/portfolio/coffee_angels.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Portrait of Seattle:</b></i> Acrylic on scrap wood - 2012</span></figcaption></figure>
@@ -151,7 +151,7 @@ cssjsfile: "art_portfolio"
 <figure class="watercolor"><img src="../../images/portfolio/winter sunset.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Winter sunset:</b></i> Watercolor and pencil on paper - 2003</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/arboretum.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Boston arboretum:</b></i> Watercolor and pencil on paper - 2003</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/stormy beach.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Stormy beach:</b></i> Watercolor and pencil on paper - 2003</span></figcaption></figure>
-<figure class="watercolor"><img src="../../images/portfolio/thorndike pond.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Thorndike pond:</b></i> Watercolor and pencil on paper - 2002</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/thorndike pond.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Thorndike pond:</b></i> New Hampshire. Watercolor and pencil on paper - 2002</span></figcaption></figure>
 
 
 
