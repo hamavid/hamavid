@@ -10,9 +10,46 @@ $(document).ready(function(){
     }
   }
 
+// Enable filtering - dropdown select and show only selected imgs in grid
+  $('.dropbtn').click(function() {$('#filter').slideToggle()});
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn, #filter, i') && $('#filter').css('display') == 'block') {
+      $('#filter').slideToggle();
+    }
+  }
+  $('#filter>li').click(function() {
+    selected_descrip = $(this).html();
+    selected_ID = $(this).attr('id');
+    $('#selected-filter').html(selected_descrip);
+    if (selected_ID != "all") {
+      $('#grid>span>div').hide();
+      $('.'+selected_ID).fadeIn(200);
+    } else {
+      $('#grid>span>div').hide();
+      $('#grid>span>div').fadeIn(200);
+    }
+  });
+
+// determine which filter has been selected and return the subset of grid and slide images that fit the selection
+// for use in showing/scrolling through divs for slideshow
+  function checkfilter() {
+      var filteredon = $('#selected-filter').html();
+      var filter_ID = $('#filter').find('li:contains('+filteredon+')').attr('id');
+      if (filter_ID == "all") {
+        thumbs = $('#grid').find('div');
+        slides = $('#slideshow').find('figure');
+      } else {
+        thumbs = $('#grid').find('.'+filter_ID);
+        slides = $('#slideshow').find('figure.'+filter_ID);
+      }
+      return [thumbs,slides,filteredon];
+  }
+
 // Open and close slideshow at the correct image when various elements are clicked
   $('#grid div').click(function() {
-    var index = $( "#grid div" ).index( this );
+    var allselected = checkfilter()[0];
+    //var index = $( "#grid div" ).index(this);
+    var index = allselected.index(this);
     showDivs(index+1);
     document.getElementById("slideshow").style.display = "block";
   });
@@ -58,7 +95,6 @@ $(document).ready(function(){
       $(this).find('span:first').slideToggle();
     });
   });
-});
 
 
 // Increment up or down slides
@@ -72,13 +108,21 @@ $(document).ready(function(){
   function showDivs(n) {
     var i;
     slideIndex = n;
-    x = document.getElementsByTagName("figure");
+    //x = document.getElementsByTagName("figure");
+    var x = checkfilter()[1];
     if (n > x.length) {slideIndex = n % x.length}
     if (n < 1) {slideIndex = x.length};
-    for (i = 0; i < x.length; i++) {
+    /*for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
-    }
+    }*/
+    $('figure').css('display','none');
     x[slideIndex-1].style.display = "block";
+    if (checkfilter()[2] != "All") {$('#slidefilter').html('Filtered by: '+checkfilter()[2]);} else {$('#slidefilter').html("");}
   }
+
+});
+
+
+
 
 

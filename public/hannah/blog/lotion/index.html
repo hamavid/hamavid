@@ -26,8 +26,8 @@
 <!-- Sidenav/menu -->
 <nav class="sidenav collapse white animate-left" style="z-index:3;width:180px;" id="sidenav"><br>
   <div class="container">
-    <a href="#" onclick="close_sidenav()" class="hide-large right xxlarge" title="close menu">
-      <i class="fa fa-times"></i>
+    <a href="#" onclick="close_sidenav()" class="hide-large right xxlarge" aria-label="Close menu">
+      <i class="fa fa-times" aria-hidden="true"></i>
     </a>
     <div class="padding-16"><img src="../../images/BLOG-bold-bgwhite.png" height="41px" alt-text="BLOG"></div>
   </div>
@@ -35,13 +35,13 @@
   <a href="../../art/portfolio" class="padding">&#x1f648 ART</a>
   <a href="../../music" class="padding">&#x1f649 MUSIC</a>
   <a href="../../blog" class="padding">&#x1f64a BLOG</a>
-  <a href="../../about" class="padding">ABOUT</a>
+  <!--<a href="../../about" class="padding">ABOUT</a>-->
    
    
   <div class="section padding-top large">
-    <a href="https://soundcloud.com/hamavid" class="hover-white hover-text-red-orange show-inline-block"><i class="fa fa-soundcloud"></i></a>
+    <a href="https://soundcloud.com/hamavid" class="hover-white hover-text-red-orange show-inline-block" aria-label="Soundcloud"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
     <!--<a href="#" class="hover-white hover-text-indigo show-inline-block"><i class="fa fa-linkedin"></i></a>-->
-    <a href="https://www.etsy.com/shop/vayavaya" style="font-size:0.8em" class="hover-white hover-text-orange show-inline-block"><i class="fa fa-etsy"></i></a>
+    <a href="https://www.etsy.com/shop/vayavaya" style="font-size:0.8em" class="hover-white hover-text-orange show-inline-block" aria-label="Etsy"><i class="fa fa-etsy" aria-hidden="true"></i></a>
   </div> 
 </nav>
 
@@ -54,9 +54,9 @@
   <!-- Header -->
   <header class="container">
     <span class="opennav opacity-hide-large xxlarge hover-text-grey" onclick="open_sidenav()"><i class="fa fa-bars" style="margin-top:9px"></i></span>
-    <img src="../../images/HannahHamavid-normal.png" alt-text="Hannah Hamavid">
+    <a href="/hannah"><img src="../../images/HannahHamavid-normal.png" alt-text="Hannah Hamavid"></a>
 <div class="back-to-index"><nav><a href="../">&larr;See all posts</a></nav></div>
-<div id="aboutblog" class="hide-large"><nav><a href="../../about">About</a></nav></div>
+<!--<div id="aboutblog" class="hide-large"><nav><a href="../../about">About</a></nav></div>-->
 <div class="center bottombar padding-16" id="bottombar"></div>
 </header>
 <article>
@@ -70,12 +70,12 @@
 <h3 id="sources">Sources</h3>
 <p>The recipe below is adapted from a <a href="https://healthylivinghowto.com/healthy-homemade-lotion-recipe/">vanilla body lotion</a> recipe on Healthy Living How-To. Other helpful resources include a nice list of <a href="http://www.thelittlepine.com/easy-homemade-lotion-recipes/">5 basic recipes</a> from The Little Pine, as well as a post from Great Cakes Soap Works about <a href="http://www.greatcakessoapworks.com/handmade-soap-blog/index.php/making-lotion-troubleshooting-your-recipe/">troubleshooting your lotion</a>, which talks about how each ingredient affects the end result.</p>
 <h3 id="why-make-lotion-">Why make lotion?</h3>
-<p>Most of the recipes I read posited some version of the idea that commercial lotions (or generally body products, or possibly all products), are full of weird ingredients that are bad for your health, and so making your own helps avoid these effects. Some people also suggested that not adding a scent to your homemade lotion is a good way to support the <a href="http://thinkbeforeyoustink.com/whygofragrancefree.html">fragrance-free movement</a>. This second reason seems important if, like me, you are skeptical or under-protective of your own health, but still feel pretty motivated to <a href="http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15">not make people around you sick</a>. (As a caveat, everyone&#39;s sensitivities vary and this lotion may or may not be okay for a given person.)</p>
+<p>Most of the recipes I read included some version of the idea that commercial lotions (or generally body products, or possibly all products), are full of weird ingredients that are bad for your health, and so making your own helps avoid these effects. Some people also suggested that not adding a scent to your homemade lotion is a good way to support the <a href="http://thinkbeforeyoustink.com/whygofragrancefree.html">fragrance-free movement</a>. This second reason seems important if, like me, you are skeptical or differently-prioritized your own health, but still feel pretty motivated to <a href="http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15">not make people around you sick</a>. (As a caveat, everyone&#39;s sensitivities vary and this lotion may or may not be okay for a given person.) </p>
 <p>And if none of that gets you going, you can make lotion because it&#39;s fun, cheap, and customizable. Also, it&#39;s cool to know how to do things! It makes the world less mysterious, and makes it easier to figure out even more things.</p>
 <div class="center bottombar padding-16"></div>
 
 <p><p id="recipestart" style="width:100%;font-size:2em;font-style:bold;text-align:center;margin-top:1.5em;">RECIPE</p></p>
-<p><p style="text-align:center;"><span style="cursor:pointer;font-size:0.8em;padding:0.3em;background-color:#e8e8e8;border:1px solid black;border-radius:5px;" onclick="$('figure').fadeToggle();">Show/hide photos</span></p>
+<p><p style="text-align:center;"><span class="picture-toggle-button" onclick="$('figure').fadeToggle();">Show/hide photos</span></p>
 <br/>
 Makes about 6 ounces of lotion</p>
 <h3 id="ingredients">Ingredients</h3>
@@ -137,7 +137,10 @@ Makes about 6 ounces of lotion</p>
 
 <!-- Footer -->
   <footer class="container padding-16 white">
-  <h5 class="center" style="font-size:14px">Hannah Hamavid 2017</h5>
+  <p>
+  <div class="center" style="font-size:14px;font-weight:bold;">Hannah Hamavid 2017</div>
+  <div class="center" style="font-size:14px;font-weight:bold;">Contact: hamavid (at) gmail (dot) com</div>
+  <p>
   </footer>
 </body>  
 </html>

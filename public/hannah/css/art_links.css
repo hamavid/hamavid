@@ -1,7 +1,8 @@
-li span {
+li>span {
 	position:relative;
 	left:-0.5em; /* makes text closer to bullets */
 }
+#email{padding-left:0.3em;}
 a,a:visited{color:black;}
 #links {
 	padding:3%;
@@ -27,9 +28,8 @@ a,a:visited{color:black;}
 	border: 2px solid #ccc;
 	padding:2%;
 }
-#buyart ul,#recommendations ul {
-	margin-left:-1.2em; /* left-aligns bullets with headings */
-}
+#buyart ul{margin:auto;}
+#recommendations ul {margin-left:-1.2em;} /* left-aligns bullets with headings */
 
 /* >=visible-sidenav width, section widths are fixed 
 @media screen and (min-width:993px){ 

@@ -155,7 +155,6 @@ the picture pops in front of about while it's transitioning out */
 .about a:link,.about a:hover,.about a:visited,.about a:active{color:#fff;cursor:pointer;z-index:15;}
 .smallabout {height:100%;padding-top:3em;padding-bottom:2em;}
 
-
 /*button to hide about section*/
 .hideabout {
 	color:#d3d3d3;

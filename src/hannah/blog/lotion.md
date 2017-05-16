@@ -12,7 +12,7 @@ pagetype: BLOG
 The recipe below is adapted from a [vanilla body lotion](https://healthylivinghowto.com/healthy-homemade-lotion-recipe/) recipe on Healthy Living How-To. Other helpful resources include a nice list of [5 basic recipes](http://www.thelittlepine.com/easy-homemade-lotion-recipes/) from The Little Pine, as well as a post from Great Cakes Soap Works about [troubleshooting your lotion](http://www.greatcakessoapworks.com/handmade-soap-blog/index.php/making-lotion-troubleshooting-your-recipe/), which talks about how each ingredient affects the end result.
 
 ### Why make lotion?
-Most of the recipes I read posited some version of the idea that commercial lotions (or generally body products, or possibly all products), are full of weird ingredients that are bad for your health, and so making your own helps avoid these effects. Some people also suggested that not adding a scent to your homemade lotion is a good way to support the [fragrance-free movement](http://thinkbeforeyoustink.com/whygofragrancefree.html). This second reason seems important if, like me, you are skeptical or under-protective of your own health, but still feel pretty motivated to [not make people around you sick](http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15). (As a caveat, everyone's sensitivities vary and this lotion may or may not be okay for a given person.)
+Most of the recipes I read included some version of the idea that commercial lotions (or generally body products, or possibly all products), are full of weird ingredients that are bad for your health, and so making your own helps avoid these effects. Some people also suggested that not adding a scent to your homemade lotion is a good way to support the [fragrance-free movement](http://thinkbeforeyoustink.com/whygofragrancefree.html). This second reason seems important if, like me, you are skeptical or differently-prioritized your own health, but still feel pretty motivated to [not make people around you sick](http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15). (As a caveat, everyone's sensitivities vary and this lotion may or may not be okay for a given person.) 
 
 And if none of that gets you going, you can make lotion because it's fun, cheap, and customizable. Also, it's cool to know how to do things! It makes the world less mysterious, and makes it easier to figure out even more things.
 
@@ -20,7 +20,7 @@ And if none of that gets you going, you can make lotion because it's fun, cheap,
 <div class="center bottombar padding-16"></div>
 
 <p id="recipestart" style="width:100%;font-size:2em;font-style:bold;text-align:center;margin-top:1.5em;">RECIPE</p>
-<p style="text-align:center;"><span style="cursor:pointer;font-size:0.8em;padding:0.3em;background-color:#e8e8e8;border:1px solid black;border-radius:5px;" onclick="$('figure').fadeToggle();">Show/hide photos</span></p>
+<p style="text-align:center;"><span class="picture-toggle-button" onclick="$('figure').fadeToggle();">Show/hide photos</span></p>
 <br/>
 Makes about 6 ounces of lotion
 

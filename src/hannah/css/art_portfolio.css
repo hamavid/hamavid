@@ -1,4 +1,38 @@
 a:link,a:visited,a:hover,a:active{color:black;}
+/* --------- FILTER MENU ----------- */
+.dropbtn{font-size:1.1em;text-align:center;width:96px;float:left;}
+/*.dropbtn:focus{outline:none;} to remove blue square if i decide to */
+.dropdown {
+    width:231px;height:34px;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width:100%;
+    z-index: 1;
+    margin-top:5px;
+    padding:0.7em 0em 0.5em 0em;
+    border-radius:5px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.dropdown-content li {
+    list-style-type:none;
+    color: black;
+    text-align:left;
+    display: block;
+    padding:0.2em 0 0.2em 1em;
+    cursor:pointer;
+    border-top:1px solid white;
+}
+.dropdown-content li:first-child{border-top:none;}
+.dropdown-content li:hover {background-color: #ccc}
+.show {display:block;}
+#selected-filter{padding:0.3em;font-size:1.1em;font-weight:bold;font-variant:small-caps;float:right;}
+
+
 /* ------------ GRID ------------  */
 #gridpocket {
     width:100%;
@@ -14,7 +48,8 @@ a:link,a:visited,a:hover,a:active{color:black;}
 }
 
 /* images */
-#grid span{padding:3px;line-height:208px;cursor:pointer;}
+#grid span{line-height:208px;cursor:pointer;}
+#grid span div{margin:3px;}
 #grid div {position:relative;vertical-align:middle;display:inline-block;width:200px;height:200px;}
 .vt {background-size: 200px!important;} /* for vertically oriented images, width is limiting factor */
 .hz {background-size: auto 200px!important;} /* vice versa for horizontal images */
@@ -104,6 +139,8 @@ a:link,a:visited,a:hover,a:active{color:black;}
     -webkit-text-stroke-color: black;
 }
 .closebtn:hover {color:#ffffff;}
+#slidefilter{color:#ffffff;font-weight:bold;padding:0.5em 1em 0.5em 1em;position:absolute;background-color:rgba(0,0,0,0.6);z-index:1;}
+#slidefilter:hover{opacity:0;}
 @media screen and (max-width: 450px), screen and (max-height: 450px) {
     .overlay-content{height:100%;top:0;}
     .closebtn {font-size:4em;top:-3%;}
