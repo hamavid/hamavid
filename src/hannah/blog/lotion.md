@@ -27,30 +27,13 @@ And if none of that gets you going, you can make lotion because it's fun, cheap,
 Makes about 6 ounces of lotion
 
 ### Ingredients
-<table>
-<ul>
-	<tr>
-	<td><li><span><a href="https://www.amazon.com/gp/product/B0019LVFSU/">Almond oil</a></span></li></td>
-	<td>1/4 cup</td>
-	</tr>
-	<tr>
-	<td><li><span><a href="https://www.amazon.com/gp/product/B008KPO2MY/">Cocoa butter</a></span></li></td>
-	<td>1 Tbsp, chopped into flakes</td>
-	</tr>
-	<tr>
-	<td><li><span>Coconut oil</span></li></td>
-	<td>1 tsp</td>
-	</tr>
-	<tr>
-	<td><li><span>Vanilla extract</span></li></td>
-	<td>1/4 tsp</td>
-	</tr>
-	<tr>
-	<td><li><span>Aloe vera gel</span></li></td>
-	<td>1/2 cup</td>
-	</tr>
-	</ul>
-</table>
+- 1/4 cup [Almond oil](https://www.amazon.com/gp/product/B0019LVFSU/)
+- 1 Tbsp [Cocoa butter](https://www.amazon.com/gp/product/B008KPO2MY/), chopped into flakes
+- 1 tsp Coconut oil
+- 1/4 tsp Vanilla extract
+- 1/2 cup Aloe vera gel
+
+
 <br/>
 
 <figure><img src="./images/ingredients.jpg"><figcaption></figcaption></figure>
