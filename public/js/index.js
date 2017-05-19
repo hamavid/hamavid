@@ -1,29 +1,64 @@
 $(document).ready(function(){
 
-// set figure properties and opacity of instructions and labels, based on screen height/width 
+// test dimensions of page and return img specs accordingly
+    function whichpic() {
+        var windowwidth=window.innerWidth || 
+        document.documentElement.clientWidth || 
+        document.body.clientWidth;
+        var windowheight = $(window).height();
+      // show tall narrow pic  
+        if (windowheight > windowwidth) {
+            picwidth = (274/442) * windowheight;
+            if (picwidth > windowwidth) {picwidth = windowwidth;} // don't get wider than the window
+            if (picwidth > 320) {picwidth = 320;} // don't get wider than 320
+            picheight = (442/274) * picwidth;
+            picname = "chair";
+            picsuffix = "jpg";
+      // show short wide pic      
+        } else {
+            picheight = (582/700) * windowwidth;
+            if (picheight > windowheight) {picheight = windowheight;} // don't get taller than the window
+            if (picheight > 600) {picheight = 600;} // don't get taller than 600
+            picwidth = (700/582) * picheight;
+            picname = "hug";
+            picsuffix = "jpeg";
+        }
+        return [picwidth, picheight, picname, windowwidth, windowheight, picsuffix]
+    }
+
+// set figure/img properties based on screen height/width 
 	function reset_dims_opac() {
-		var windowwidth=window.innerWidth || 
-    	document.documentElement.clientWidth || 
-    	document.body.clientWidth;
-		imgwidth = (274/442) * $(window).height();
-		$('figure').css('width',imgwidth);
-		//$('figure').css('margin-left',(windowwidth/2)-(imgwidth/2));
+    // determine window dimensions
+        picwidth = whichpic()[0];
+        picheight = whichpic()[1];
+        picname = whichpic()[2];
+        windowwidth = whichpic()[3];
+        windowheight = whichpic()[4];
+        picsuffix = whichpic()[5];
+    // set which images to show, and their dimensions, based on window dims
+        $('figure, img').css('width',picwidth).css('height',picheight);
+        $('figure').css('margin-top',(windowheight-picheight)/2);
+        $('#default').attr('src','images/'+picname+'.'+picsuffix);
+        $('#hl_hannah').attr('src','images/'+picname+'_hannah_hl.'+picsuffix);
+        $('#hl_aviva').attr('src','images/'+picname+'_aviva_hl.'+picsuffix);
+	// determine which size of about to show
 		if (windowwidth<=450 || $(window).height()<=450) {
-        	$('.label').css('opacity','0.7');
         	$('.smallabout').css('display','block');
         	$('.largeabout').css('display','none');
     	} else {
-    		$('.label').css('opacity','0');
     		$('.smallabout').css('display','none');
         	$('.largeabout').css('display','block');
     	}
-        wait=0;// milliseconds to delay after clicking area (more on mobile)
+    // set number of milliseconds to delay after clicking area (more on mobile)    
+        wait=0;
         if (windowwidth < 600) {wait=500;}
 	}
+
+ // run the above function when page is loaded or window is resized   
 	$(window).on('resize load', reset_dims_opac);
 	reset_dims_opac();
 
-// Go to relevant subpages when divs are clicked (can add delay in milliseconds)
+// Go to relevant subpages when divs are clicked (with delay in milliseconds)
 	$("#aviva_area").on('click', function(){
         setTimeout(function() {window.location = "./aviva";}, wait);
     });
@@ -33,17 +68,13 @@ $(document).ready(function(){
 
 // Change characteristics of various elements when showabout div is clicked
 	$("#showabout").on('click', function(){
-        $('.about').css('opacity','0.7');
-        $('.about').css('z-index','2');
+        $('.about').css('opacity','0.7').css('z-index','2');
         $('#showabout').css('display','none');
-        $('#instructions, .label').css('opacity','0');
 	});
 // Change back characteristics of various elements when hideabout x is clicked
 	$(".hideabout").on('click', function(){
-        $('.about').css('opacity','0');
-        $('.about').css('z-index','0');
+        $('.about').css('opacity','0').css('z-index','0');
         $('#showabout').css('display','block');
-        $('#instructions').css('opacity','0.7');
         reset_dims_opac();
 	});
 

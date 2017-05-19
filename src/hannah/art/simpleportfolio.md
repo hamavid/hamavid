@@ -11,6 +11,7 @@ blurb: Hannah Hamavid's art portfolio - simple version
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
 a {text-decoration:none;color:black;}
+ul{padding-left:5%;margin-top:2em;}
 ul a, span a{text-decoration:underline;font-weight:bold;}
 </style>
 </head>

@@ -7,7 +7,7 @@ cssjsfile: "art_portfolio"
 <a href="../portfolio"><button class="btn">Portfolio</button></a>
 <a href="../shows"><button class="btn white"></i>Shows</button></a>
 <a href="../links"><button class="btn white"></i>Links</button></a>
-<p class="center text-grey"><span class="text-teal" style="font-weight:bold;">Click any thumbnail to open slideshow.</span><br>Watercolor and block prints available for purchase on <a href="https://www.etsy.com/shop/vayavaya">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
+<p class="center text-grey"><span class="text-teal" style="font-weight:bold;">Click any thumbnail to open full images and descriptions.</span><br>Watercolor and block prints available for purchase on <a href="https://www.etsy.com/shop/vayavaya">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
 <!-- Filter-->
 <div class="dropdown">
   <div class="clear"><button class="picture-toggle-button dropbtn">Filter by <i class="fa fa-angle-down"></i></button>
@@ -33,6 +33,7 @@ cssjsfile: "art_portfolio"
     <div id="grid">
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/linobike.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print cat" style="background: url('../../images/portfolio/thumbs/linopogo.jpeg') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt acrylic mercreature" style="background: url('../../images/portfolio/thumbs/paintnsip mermaid.jpg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/linobass.jpeg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/linopiano.jpeg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/fox and birches.jpeg') 50% 50% no-repeat;"></div></span>
@@ -103,6 +104,7 @@ cssjsfile: "art_portfolio"
     
 <figure class="print"><img src="../../images/portfolio/linobike.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bicycle:</b></i> Linoleum block print - May, 2017</span></figcaption></figure>
 <figure class="print cat"><img src="../../images/portfolio/linopogo.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Linocat:</b></i> Linoleum block print - Apr, 2017</span></figcaption></figure>
+<figure class="acrylic mercreature"><img src="../../images/portfolio/paintnsip mermaid.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Pink-haired mermaid:</b></i> Acrylic on canvas. Painted at CANVAS! Paint and sip studio, Fremont - Mar, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/linobass.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bass:</b></i> Linoleum block print - Mar, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/linopiano.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Piano:</b></i> Linoleum block print - Mar, 2017</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/fox and birches.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fox and Birches:</b></i> Commission, watercolor on paper - Mar, 2017</span></figcaption></figure>
