@@ -1,5 +1,5 @@
 /* styles for viz! */
-html,body{height:100%;overflow:hidden;box-sizing:content-box;}
+html,body{height:100%;overflow:hidden;box-sizing:content-box;margin:0;}
 .maindiv{font: 16px sans-serif;max-width:780px;min-width:465px;text-align:center;margin:auto;}
 #charts{width:450px;}
 #keyslider{width:300px;}
@@ -26,7 +26,7 @@ td{position:relative;width:100%;}
   border:2px solid #333;
   opacity:0.9;
   height:8px;top:3px;
-  width:256.5px;
+  width:256px;
   left:18px;
 }
 #leftscroller,#rightscroller,#datescrollbar{line-height:17px;z-index:5;}

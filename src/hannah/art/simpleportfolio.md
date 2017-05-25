@@ -30,7 +30,6 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 <a href="../portfolio">[Art]</a>
 <a href="../../music">[Music]</a>
 <a href="../../blog">[Blog]</a>
-<a href="../../#contact">[Contact]</a>
 </nav>
 </p>
 <h1>Art - Portfolio</h1>

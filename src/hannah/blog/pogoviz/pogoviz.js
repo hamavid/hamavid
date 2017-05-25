@@ -136,23 +136,11 @@
     });
   //if the left scroller is clicked and there is room to go down, move handle from its current position down one day
     $("#leftscroller").click(function() {
-      if (gethandle() >=dailypixels) {
-        //var random = Math.floor(Math.random() * maxright);
-        //console.log(random);
-        console.log(getleft(gethandle()));
-        console.log(getleft(gethandle() - dailypixels));
-        $('#handle').css('margin-left',getleft(gethandle() - dailypixels));
-        console.log(getleft(gethandle()));
-      }
+      if (gethandle() >=dailypixels) {$('#handle').css('margin-left',getleft(gethandle() - dailypixels));}
     });    
   //if the right scroller is clicked and there is room to go up, move handle from its current position up one day
     $("#rightscroller").click(function() {
-      if (gethandle() <= maxright) {
-        console.log(getleft(gethandle()));
-        console.log(getleft(gethandle() + dailypixels));
-        $('#handle').css('margin-left',getleft(gethandle() + dailypixels));
-        console.log(getleft(gethandle()));
-      } 
+      if (gethandle() <= maxright) {$('#handle').css('margin-left',getleft(gethandle() + dailypixels));} 
     });
   // report date and show divs etc based on where handle now is    
     $('#scrollability').click(function(){datecascade(getdate(gethandle()));});
