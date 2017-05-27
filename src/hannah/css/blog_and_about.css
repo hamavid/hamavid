@@ -61,8 +61,8 @@ article p{line-height:1.4em;}
 article figure{text-align:center;}*/
 article ul li{padding:0.3em;}
 .vizbutton{background-color:#009688;border:2px solid black;padding:0.5em;font-size:1.1em;}
-.vizbutton a,.vizbutton a:hover,.vizbutton a:visited,.vizbutton a:link{color:white;text-decoration:none;}
-.vizbutton a:active{color:black;}
+a.vizbutton,a:hover.vizbutton,a:visited.vizbutton,a:link.vizbutton {color:white;text-decoration:none;}
+a:active.vizbutton{color:black;}
 article a{text-decoration:underline;}
 article td{padding:0 1em 0 1em;}
 article td li span{margin-left:-15px;}
