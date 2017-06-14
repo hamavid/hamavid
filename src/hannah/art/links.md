@@ -5,7 +5,7 @@ blurb: Hannah Hamavid art links and recommendations
 cssjsfile: "art_links"
 ---
 <a href="../portfolio"><button class="btn white">Portfolio</button></a>
-      <a href="../shows"><button class="btn white"></i>Shows</button></a>
+      <!--<a href="../shows"><button class="btn white"></i>Shows</button></a>-->
       <a href="../links"><button class="btn"></i>Links</button></a>
     </nav>
   </header>

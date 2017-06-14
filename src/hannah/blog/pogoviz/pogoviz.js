@@ -2,6 +2,26 @@
 // Control look and function of photos, slider, table, and charts
 //////////////////////////////////////////////////////////////////
 'use strict';
+/*
+// Get size of charts
+  function getwindowdims() {
+  // get window dims
+    var windowwidth=window.innerWidth || 
+    document.documentElement.clientWidth || 
+    document.body.clientWidth;
+    var windowheight=$(window).height();
+    var chartwidth;
+  // determine chart width and height in various scenarios
+    if (windowwidth<330 || windowwidth > 445) {chartwidth = 435}
+    else {chartwidth = windowwidth - 10;}
+
+
+  // return things
+    return [chartwidth];
+  }
+*/
+
+
 ///////// PHOTO SLIDER //////////
 // f(date): show the slide we're on, hide all others, and do function to get margins for this one so it's centered
   function showDivs(date, error) {

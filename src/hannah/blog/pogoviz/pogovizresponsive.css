@@ -1,0 +1,128 @@
+/* styles for viz! */
+html,body{height:100%;overflow:hidden;box-sizing:content-box;margin:0;font-family:sans-serif;}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/* carousel for toggling between charts/photos when screen is small*/
+.carousel{position:absolute;display:none;height:0;width:0;}
+ul{padding:0;width:100%;height:43px;margin:0;overflow:hidden;position:absolute;background-color:#f1f1f1;}
+li{
+  display:none;width:330px;left:0;right:0;
+  padding:0.3em 0 0.3em 0;list-style-type: none;
+  text-align:center;font-size:1.5em;margin:0 auto;
+  position:absolute;
+}
+li.dryfood{display:inline-block;} /* on load, list elements will not display and then dryfood one will*/
+li>div{display:inline-block;width:60px;font-size:0.5em;color:#333;opacity:0.5;padding:0 1% 0 1%;cursor:pointer;}
+li>div.thisone{display:inline-block;width:97px;font-size:1em;opacity:1;cursor:auto;}
+li i{padding:0 1% 0 1%;cursor:pointer;}
+
+
+
+/* the viz! main container*/
+.maindiv{
+  font: 16px sans-serif;height:100%;width:100%;max-width:900px!important;
+  text-align:center;margin:0 auto;
+}
+
+/* each thing that can be seen at once when screen is small gets this class*/
+.object{position:relative;text-align:center;}
+
+
+/* charts go in charts div and key/photos go together in key and photoslider divs*/
+.charts{width:49%;float:left;height:100%;}
+#dryfood,#wetfood{cursor:pointer;margin:auto;float:none!important;}
+#key,#photoslider{width:49%;float:right;}
+.charts,#key,#keytable{margin:auto;position:relative;}
+#keytable{width:300px;}
+h4 {text-align:center;padding:5px;margin:0;}
+
+/*look of keyslider and selected/hovered divs*/
+table{display:table;}
+tr{width:100%;line-height:24px;font-weight:bold;text-align:left;}
+td{position:relative;width:100%;}
+.hovered,.selected{font-weight:normal;}
+#scrollability{cursor:pointer;z-index:4;}
+#datescrollbar{
+  position:absolute;
+  border:2px solid #333;
+  opacity:0.9;
+  height:8px;top:3px;
+  width:256px;
+  left:18px;
+  line-height:17px
+}
+#leftscroller,#rightscroller{line-height:17px;}
+#leftscroller,#rightscroller,#datescrollbar{;z-index:5;}
+#leftscroller{float:left;} #rightscroller{float:right;}
+#handle{
+  opacity:0.7;
+  position:absolute;
+  height:15px;
+  width:4px;
+  top:1px;
+  border-radius:2px;
+  background-color:#333;
+  border:1px solid #333;
+  margin-left:0px;
+}
+
+/* look of images in photos*/
+#photoslider{position:relative;margin-top:0;}
+img {
+  position:absolute;
+  max-width:290px; /* the width of the slider - padding */
+  /*max-height:510px; /* 608-78-20, charts height - keyheight - padding for key and img*/
+  padding: 5px 0px 5px 0px!important;
+  opacity:0;
+  -webkit-transition:opacity 0.6s;
+  transition:opacity 0.6s;
+  -moz-transition:opacity 0.6s;
+  margin-bottom:10px;
+}
+#dryfood,#wetfood,#key,#photoslider{display:inline-block;left:0;}
+
+
+/* when things are small!*/
+@media screen and (max-width:599px) {
+  .object{margin-top:100px;display:none;}
+  .object.dryfood{display:inline-block;}
+  .charts{width:100%;}
+  #key{width:100%;position:absolute;top:43px;}
+  tr:first-child{display:none;} /* turn of hover key when screen is small */
+  #keytable{width:298px;margin:auto;}
+  .carousel{display:block;width:100%;height:100px;}
+  img{max-width:95%;}
+  #photoslider{height:100%;width:100%;margin:0;}
+
+  .dryfood{left:0;}
+  .wetfood{left:-200%;}
+  .photos{left:200%;}
+
+}
+@media screen and (min-width:600px) {
+  #photoslider{min-height:500px;}
+}
+@media screen and (max-height:500px) {
+  #photoslider{max-height:510px;}
+  img{margin-bottom:10px;}
+}
+
+
+/*
+@media screen and (min-width:600px) and (max-height:500px) {body{overflow-y:auto;}}
+
+@media screen and (max-width:780px), (max-height:608px) {body{overflow-y:auto;}}
+@media screen and (max-width:780px) {
+  img{max-width:450px;}
+  #keyslider{height:88px;}
+}
+@media screen and (max-width:460px) {body{overflow-x:auto;}}
+@media screen and (max-width:480px), (max-height:480px) {#hoverspace{display:none;}}*/

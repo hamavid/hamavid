@@ -1,6 +1,6 @@
 /* styles for viz! */
 html,body{height:100%;overflow:hidden;box-sizing:content-box;margin:0;}
-.maindiv{font: 16px sans-serif;max-width:780px;min-width:465px;text-align:center;margin:auto;}
+.maindiv{font: 16px sans-serif;max-width:780px;text-align:center;margin:auto;}
 #charts{width:450px;}
 #keyslider{width:300px;}
 #charts,#keyslider{
@@ -28,8 +28,10 @@ td{position:relative;width:100%;}
   height:8px;top:3px;
   width:256px;
   left:18px;
+  line-height:17px
 }
-#leftscroller,#rightscroller,#datescrollbar{line-height:17px;z-index:5;}
+#leftscroller,#rightscroller{line-height:17px;}
+#leftscroller,#rightscroller,#datescrollbar{;z-index:5;}
 #leftscroller{float:left;} #rightscroller{float:right;}
 #handle{
   opacity:0.7;

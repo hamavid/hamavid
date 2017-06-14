@@ -36,7 +36,7 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 <p>
 <nav>
 <a href=".">[Portfolio]</a>
-<a href="../shows">[Shows]</a>
+<!--<a href="../shows">[Shows]</a>-->
 <a href="../links">[Links]</a>
 </p>
 </nav>
