@@ -4,7 +4,7 @@
 'use strict';
 // Contain all your functionality in a self calling anonymous function, so that you don't clutter the global namespase.
 //(function() {
-//$(document).ready(function() {
+$(document).ready(function() {
 
 ///////// CAROUSEL (for small screens) //////////
 function showthings(which, direction){
@@ -33,8 +33,9 @@ function showthings(which, direction){
 function smallscreen(windowwidth, windowheight){
 // make room above the main div for the carousel
   $('.maindiv').css('height',windowheight-100).css('margin-top','100px').css('width','100%');
+  $('#photoslider').css('height',windowheight-100);
 // set max image height
-  $('img').css('max-height',0.95*(windowheight-100));
+  $('img').css('max-height',0.90*(windowheight-100));
 // show correct object based on which list item is currently visible
   if ($('li.dryfood').css('display')!='none' & $('li.dryfood').css('left')=='0px') {
     $('.wetfood, .photos').css('display','none');
@@ -87,36 +88,8 @@ function smallscreen(windowwidth, windowheight){
   $(window).on('resize', maindiv);
   maindiv(); 
 
-///////// PHOTO SLIDER //////////
-// Images in path named 1.jpg, 2.jpg etc.
-  var imagePath = '../images/slides';
-  var lastImage = 96;         // How many images do you have?
-  var fadeTime = 1000;       // Time between image fadeouts.
-  function showpix(index) { 
-    var url = imagePath + '/'+ index + '.jpg';
-    // Add new image behind current image
-    $('#photoslider').prepend($('<img/>').attr('src',url).css('max-height',maindiv()[3]-10).css('opacity',0));
-    // Remove current image and set new one to opacity 1. If on auto, call the next image
-    $('#photoslider img:last').remove()
-    $('#photoslider img').css('opacity',1);
-    $('img:first-child ~ img').remove(); //remove extra photos (if handle was dragged)
-    var status=document.getElementsByClassName('playslides')[0].innerHTML;
-    if (status=='Stop') {setTimeout(function() { showpix((index % lastImage) + 1);}, fadeTime);}
-  }
 
-// If play slideshow button is clicked, run through slides starting at 1
-  $('.playslides').click(function(){
-    var whichpic = ~~$('img').attr('src').substring(17).replace('.jpg','');
-    var status=document.getElementsByClassName('playslides')[0];
-    if (status.innerHTML=='Play'){
-      status.innerHTML='Stop';
-      status.style.backgroundColor='#ff5c33';
-      setTimeout(function() { showpix(whichpic) }, fadeTime);
-    }
-    else {status.innerHTML='Play';status.style.backgroundColor='#00cc44'}
-  });
-
-///////// CHART-SLIDER INTERACTIONS AND SET UP FOR CHARTS ///////////
+///////// SET UP FOR CHARTS ///////////
 // format date
   var dtgFormat = d3.time.format("%m/%d/%y");
 
@@ -139,10 +112,12 @@ function smallscreen(windowwidth, windowheight){
     return [width,height];
   }
 
+
+//////////////// DATA AND CHARTS ////////////////
 // load data from csv file
   d3.csv("../d3pogodata.csv", function(data) {
 
-// determine number of pixels on date scrollbar that correspond to a day based on number of dates in data (only changes when data are updated)  
+  // determine number of pixels on date scrollbar that correspond to a day based on number of dates in data (only changes when data are updated)  
     var counts = 0;
     var startdate;
     var enddate;
@@ -162,6 +137,50 @@ function smallscreen(windowwidth, windowheight){
   // Set start conditions
     datecascade(getdate(0));
 
+
+//------- PHOTO SLIDER -----------//
+  // Images in path named 1.jpg, 2.jpg etc.
+    function showpix(index,auto) {
+      // Check what the play button says
+      var status=document.getElementsByClassName('playslides')[0].innerHTML;
+      // If it says play, but we are on auto (auto==1); don't do anything. This means 'stop' was clicked
+      if (status=='Play' & auto==1){return;}
+      // Otherwise, continue
+      else {
+      // set vars
+        var imagePath = '../images/slides';
+        var lastImage = 96;         // How many images do you have?
+        var url = imagePath + '/'+ index + '.jpg';
+      // Add new image behind current image, set opacity appropriately, then remove all but new image
+        $('#photoslider').prepend($('<img/>').attr('src',url));
+        $('#photoslider img:first-child').css('opacity',1);
+        $('#photoslider img:last').css('opacity',0);
+        $('img:first-child ~ img').remove(); //remove extra photos (if handle was dragged)
+      // If we are on auto: move handle, change selected info, and highlight dots to match photo
+      // Then initiate showing next picture
+        if (status=='Stop' & auto==1) {
+          getvals(getdate((index-1 % lastImage)*dailypixels()));
+          highlightdots(dtgFormat.parse(getdate((index-1 % lastImage)*dailypixels())));
+          $('#handle').css('margin-left',(index-1 % lastImage)*dailypixels());
+          setTimeout(function() {showpix((index % lastImage) + 1,1);}, 1000);
+        };  
+      }
+    };  
+
+  // If play slideshow button is clicked, run through slides starting wherever we are
+    $('.playslides').click(function(){
+      var whichpic = ~~$('img').attr('src').substring(17).replace('.jpg','');
+      var status=document.getElementsByClassName('playslides')[0];
+      if (status.innerHTML=='Play'){
+        status.innerHTML='Stop';
+        status.style.backgroundColor='#ff5c33';
+        showpix(whichpic,1);
+      }
+      else {status.innerHTML='Play';status.style.backgroundColor='#00cc44'}
+    });    
+
+
+//------------ SLIDER/CHART HIGHLIGHTING -------------//
   // f(date): get both wet and dry values for a given date and announce it in the "selected" area
     function getvals(selected) { // takes a value of date formatted like "11/30/16"
       var date = selected;
@@ -174,7 +193,7 @@ function smallscreen(windowwidth, windowheight){
         }
       });
     };
- 
+
   // f(mouse position): move handle to a daily-unit along scrollbar approximating mouse position when scrollbar is clicked  
     function getleft(n) {return Math.round(n / dailypixels()) * dailypixels();}
     
@@ -263,7 +282,8 @@ function smallscreen(windowwidth, windowheight){
       highlightdots(dtgFormat.parse(selected)); 
     }
 
-///////// MAKE CHARTS ///////////
+
+//------------ MAKE CHARTS -------------//
 // Run the data through crossfilter and load 'facts'
   var facts = crossfilter(data);
 
@@ -351,6 +371,6 @@ function smallscreen(windowwidth, windowheight){
   
 });
 
-//})();  
+});  
 
   
