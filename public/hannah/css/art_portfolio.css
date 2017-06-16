@@ -3,7 +3,7 @@ a:link,a:visited,a:hover,a:active{color:black;}
 .dropbtn{font-size:1.1em;text-align:center;width:96px;float:left;}
 /*.dropbtn:focus{outline:none;} to remove blue square if i decide to */
 .dropdown {
-    width:231px;height:34px;
+    width:240px;height:34px;
     position: relative;
     display: inline-block;
 }

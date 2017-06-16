@@ -44,8 +44,10 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/guardingthelight.jpeg">Guarding the light</a> Reproduction of print by Si Lewen. Linoleum block print - June, 2017.</li>
+<li><a href="../../images/portfolio/linosunset.jpeg">Sunset</a> Linoleum block print with watercolor- May, 2017.</li>
 <li><a href="../../images/portfolio/linobike.jpeg">Bicycle</a> Linoleum block print - May, 2017.</li>
-<li><a href="../../images/portfolio/linopogo.jpeg">Linocat</a> Linoleum block print - Apr, 2017.</li>
+<li><a href="../../images/portfolio/linopogo.jpeg">Linocat</a> Linoleum block print with watercolor - Apr, 2017.</li>
 <li><a href="../../images/portfolio/linobass.jpeg">Bass</a> Linoleum block print - Mar, 2017.</li>
 <li><a href="../../images/portfolio/linopiano.jpeg">Piano</a> Linoleum block print - Mar, 2017.</li>
 <li><a href="../../images/portfolio/fox and birches.jpeg">Fox and birches</a> Commission, watercolor on paper - Mar, 2017.</li>

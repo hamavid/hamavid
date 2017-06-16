@@ -2,7 +2,11 @@
 // Control look and function of photos, slider, table, and charts
 //////////////////////////////////////////////////////////////////
 'use strict';
-///////// CAROUSEL //////////
+// Contain all your functionality in a self calling anonymous function, so that you don't clutter the global namespase.
+//(function() {
+//$(document).ready(function() {
+
+///////// CAROUSEL (for small screens) //////////
 function showthings(which, direction){
   if (which=='dryfood'){var next='wetfood';var last='photos';}
   if (which=='wetfood'){var next='photos';var last='dryfood';}
@@ -20,9 +24,9 @@ function showthings(which, direction){
 // move the current ones in the specified direction off the screen
   $('li.'+which+', .object.'+which).animate({left: amt}), 500;
 // move the upcoming ones in from the correct direction onto the screen
-  setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({left:0}), 600;},200);
+  setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({left:0}), 600},200);
 // squish things when other things should be visible
-  if (replacer=='photos'){$('.charts').css('height',0)}else{$('.charts').css('height','100%')};
+  if (replacer=='photos'){$('.charts').css('height',0);}else{$('.charts').css('height','100%')};
   if (replacer=='wetfood'){$('#dryfood').css('display','none')}else{$('#dryfood').css('display','inline-block')};
 }
 
@@ -41,7 +45,9 @@ function smallscreen(windowwidth, windowheight){
   if ($('li.photos').css('display')!='none' & $('li.photos').css('left')=='0px') {
     $('.charts').css('height',0);$('.dryfood, .wetfood').css('display','none');
   }
-// if right/left arrows/words are clicked, do function to scroll appropriately through list items and objects
+}
+
+// if right/left carousel arrows/words are clicked, do function to scroll appropriately through list items and objects
   $('li>i.fa-arrow-right, .next').click(function(){
     var which = $(this).parent().attr('class');
     showthings(which,'right');
@@ -50,7 +56,7 @@ function smallscreen(windowwidth, windowheight){
     var which = $(this).parent().attr('class');
     showthings(which,'left');
   });
-}
+
 
 ///////// DIMENSIONS //////////
 // change height of main div to accomodate carousel slider when screen is small and trigger carousel fxn
@@ -60,6 +66,8 @@ function smallscreen(windowwidth, windowheight){
     document.body.clientWidth;
     var windowheight=$(window).height();
     var keyheight = document.getElementById('key').offsetHeight;
+    var photosliderwidth = document.getElementById('photoslider').offsetWidth;
+    var photosliderheight = document.getElementById('photoslider').offsetHeight;
     if (windowwidth<600) {
       smallscreen(windowwidth, windowheight);
     } else {
@@ -70,70 +78,43 @@ function smallscreen(windowwidth, windowheight){
         $('.maindiv').css('height','100%').css('margin-top',0).css('width','100%');
         $('.charts').css('height','100%')
         $('#dryfood, #wetfood, #photoslider').css('display','inline-block').css('left',0);
-        $('#photoslider').css('height',windowheight-keyheight).css('left',0);
+        $('#photoslider').css('height',windowheight-keyheight);
         $('body').css('overflow-y','hidden');
       }
-    }  
+    }
+    return [windowwidth, windowheight, photosliderwidth, photosliderheight]; 
   }
-  $(window).on('resize load', maindiv);
+  $(window).on('resize', maindiv);
   maindiv(); 
 
 ///////// PHOTO SLIDER //////////
-// f(date): show the slide we're on, hide all others, and do function to get margins for this one so it's centered
-  function showDivs(date, error) {
-    $('img').css('opacity',0);
-    /*var x = document.getElementsByTagName("img");
-    var i;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.opacity = 0;
-    }*/
-    var date=date;
-    try{
-      var today = document.getElementById(date);
-      today.style.opacity = 1;
-      get_margins(date);
-      $(window).resize(function() {
-        get_margins(date);
-      });
-    } 
-    catch(error) {
-      console.log(error);
-    }
+// Images in path named 1.jpg, 2.jpg etc.
+  var imagePath = '../images/slides';
+  var lastImage = 96;         // How many images do you have?
+  var fadeTime = 1000;       // Time between image fadeouts.
+  function showpix(index) { 
+    var url = imagePath + '/'+ index + '.jpg';
+    // Add new image behind current image
+    $('#photoslider').prepend($('<img/>').attr('src',url).css('max-height',maindiv()[3]-10).css('opacity',0));
+    // Remove current image and set new one to opacity 1. If on auto, call the next image
+    $('#photoslider img:last').remove()
+    $('#photoslider img').css('opacity',1);
+    $('img:first-child ~ img').remove(); //remove extra photos (if handle was dragged)
+    var status=document.getElementsByClassName('playslides')[0].innerHTML;
+    if (status=='Stop') {setTimeout(function() { showpix((index % lastImage) + 1);}, fadeTime);}
   }
 
-// f(date): get margins for photos
-  function get_margins(when) {
-  // get dims of various elements
-    var today=document.getElementById(when);
-    //var keyheight = document.getElementById('keytable').offsetHeight;
-    var photosliderwidth = document.getElementById('photoslider').offsetWidth;
-    var photosliderheight = document.getElementById('photoslider').offsetHeight;
-    var windowwidth=window.innerWidth || 
-    document.documentElement.clientWidth || 
-    document.body.clientWidth;
-    var windowheight=$('window').height();
-    
-  // find out how big image is and how big leftover screen is
-    var imgwidth = today.offsetWidth;
-    if (imgwidth == 0) { // wait for image to load before setting margins
-      setTimeout(function(){
-          //console.log('waiting for image to load');
-          showDivs(when);
-      }, 200);
+// If play slideshow button is clicked, run through slides starting at 1
+  $('.playslides').click(function(){
+    var whichpic = ~~$('img').attr('src').substring(17).replace('.jpg','');
+    var status=document.getElementsByClassName('playslides')[0];
+    if (status.innerHTML=='Play'){
+      status.innerHTML='Stop';
+      status.style.backgroundColor='#ff5c33';
+      setTimeout(function() { showpix(whichpic) }, fadeTime);
     }
-    var side = (photosliderwidth - imgwidth)/2;
-    if (windowheight<500 & windowwidth>599) {var top=10}
-    else {
-      var imgheight = today.offsetHeight;
-      var top=(photosliderheight - imgheight)/2
-    }
-  // set margins to center the image according to how much screen is leftover
-    //today.style.setProperty('margin-left', margin_side + 'px', 'important');
-    //today.style.setProperty('margin-top', margin_top + 'px', 'important');
-    today.style.left = side+'px';
-    today.style.top = top+'px';
-  }
-
+    else {status.innerHTML='Play';status.style.backgroundColor='#00cc44'}
+  });
 
 ///////// CHART-SLIDER INTERACTIONS AND SET UP FOR CHARTS ///////////
 // format date
@@ -145,19 +126,13 @@ function smallscreen(windowwidth, windowheight){
   var key = d3.select("#key");
   var charts = $('#charts');
 
-// Define margins
+// Define dimensions and margins for charts
   function getdims() {
     var windowwidth=window.innerWidth || 
     document.documentElement.clientWidth || 
     document.body.clientWidth;
-    if (windowwidth<600){
-      var divisor=1;
-      var overallwidth = $('.maindiv').width();
-    }else{
-      var divisor=2;
-      //var overallwidth =charts.width();
-      var overallwidth = $('.maindiv').width()/2;
-    }
+    if (windowwidth<600){var divisor=1;var overallwidth = $('.maindiv').width();}
+    else{var divisor=2;var overallwidth = $('.maindiv').width()*0.5;}
     var margin = {top: 10, right: -30, bottom: 20, left: 0},
     width =  overallwidth - margin.left - margin.right,
     height = ($('.maindiv').height() - divisor*margin.top - divisor*margin.bottom)/divisor;
@@ -213,13 +188,6 @@ function smallscreen(windowwidth, windowheight){
         return dat;
       }
       return dtgFormat(startdate.addDays(numdays));
-    }
-
-  // f(date): show divs, getvals and highlight dots when a given date is selected on date scrollbar
-    function datecascade(selected) {
-      showDivs(selected);
-      getvals(selected);
-      highlightdots(dtgFormat.parse(selected)); 
     }
 
   // move handle based on click position on date scrollbar/arrows
@@ -287,98 +255,102 @@ function smallscreen(windowwidth, windowheight){
       dryfood.selectAll('circle.dot').filter(function(d) { return d.data.key.getTime() === thisdate.getTime(); }).attr('r',5).style('fill-opacity', 1).style('stroke-opacity', 1).attr('clicked','yes'); 
     }
 
+  // f(date): show divs, getvals and highlight dots when a given date is selected on date scrollbar
+    function datecascade(selected) {
+      var whichpic=daysBetween("11/24/16",selected)+1;
+      showpix(whichpic);
+      getvals(selected);
+      highlightdots(dtgFormat.parse(selected)); 
+    }
 
 ///////// MAKE CHARTS ///////////
-  // Determine dimensions of charts and margins (made it a function at one point when trying to make page responsive but changed mind for now)
-    /*function getdims() {return{width:435,height:220};};
-    var top=10, right=10, bottom=20, left=30;*/
+// Run the data through crossfilter and load 'facts'
+  var facts = crossfilter(data);
 
-  // Run the data through crossfilter and load our 'facts'
-    var facts = crossfilter(data);
+// Line charts by day
+  var byday = facts.dimension(function(d) {return d.date;});
+  var drygroup = byday.group().reduceSum(function(d) { return d.dry; });
+  var wetgroup = byday.group().reduceSum(function(d) { return d.wet; });
 
-  // Line charts by day
-    var byday = facts.dimension(function(d) {
-      return d.date;
-    });
-    var drygroup = byday.group()
-      .reduceSum(function(d) { return d.dry; });
-    var wetgroup = byday.group()
-      .reduceSum(function(d) { return d.wet; });
-
-  // dry graph
-    dryfood
-      .dimension(byday)
-      .group(drygroup)
-      .transitionDuration(500)
-      .elasticY(true)
-      .brushOn(false)
-      .title(function(){return;})
-      .on('renderlet', function(chart) {
-        chart.svg().select('.chart-body').attr('clip-path',null);
-        chart.svg().selectAll('circle.dot')
-        .attr('r',3.5).style('fill-opacity',0.4).style('stroke-opacity',0.4).attr('fill','black')
-        .on('mousemove',function(d){
-            d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',5);
-            key.select('.hovered').text(" " + dtgFormat(d.data.key) + ' - ' + d.data.value + 'T');
-          })
-        .on('click', function(d) {
-            var thisdate=d.data.key;
-            highlightdots(thisdate);
-            sethandle(dtgFormat(thisdate));
-            getvals(dtgFormat(thisdate));
-            showDivs(dtgFormat(thisdate));
+// dry graph
+  dryfood
+    .dimension(byday)
+    .group(drygroup)
+    .transitionDuration(500)
+    .elasticY(true)
+    .brushOn(false)
+    .title(function(){return;})
+    .on('renderlet', function(chart) {
+      chart.svg().select('.chart-body').attr('clip-path',null);
+      chart.svg().selectAll('circle.dot')
+      .attr('r',3.5).style('fill-opacity',0.4).style('stroke-opacity',0.4).attr('fill','black')
+      .on('mousemove',function(d){
+          d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',5);
+          key.select('.hovered').text(" " + dtgFormat(d.data.key) + ' - ' + d.data.value + 'T');
         })
-        .on('mouseout', function(){
-            var dot=d3.select(this);
-            if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',3.5);}
-            key.select('.hovered').text("");
-        })    
+      .on('click', function(d) {
+          var thisdate=d.data.key;
+          highlightdots(thisdate);
+          sethandle(dtgFormat(thisdate));
+          getvals(dtgFormat(thisdate));
+          //showDivs(dtgFormat(thisdate));
+          showpix(daysBetween("11/24/16",thisdate)+1);
       })
-      .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
-      .xAxis().ticks(4);
+      .on('mouseout', function(){
+          var dot=d3.select(this);
+          if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',3.5);}
+          key.select('.hovered').text("");
+      })    
+    })
+    .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
+    .xAxis().ticks(4);
 
-  // wet graph
-    wetfood
-      .dimension(byday)
-      .group(wetgroup)
-      .transitionDuration(500)
-      .elasticY(true)
-      .brushOn(false)
-      .title(function(){return;})
-      .on('renderlet', function(chart) {
-        chart.svg().select('.chart-body').attr('clip-path',null);
-        chart.svg().selectAll('circle.dot')
-        .attr('r',3.5).style('fill-opacity',0.4).style('stroke-opacity',0.4).attr('fill','black')
-        .on('mousemove',function(d){
-            d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',5);
-            key.select('.hovered').text(" " + dtgFormat(d.data.key) + ' - ' + d.data.value + 'Oz')
-          })
-        .on('click', function(d) {
-            var thisdate=d.data.key;
-            highlightdots(thisdate);
-            sethandle(dtgFormat(thisdate));
-            getvals(dtgFormat(thisdate));
-            showDivs(dtgFormat(thisdate));
+// wet graph
+  wetfood
+    .dimension(byday)
+    .group(wetgroup)
+    .transitionDuration(500)
+    .elasticY(true)
+    .brushOn(false)
+    .title(function(){return;})
+    .on('renderlet', function(chart) {
+      chart.svg().select('.chart-body').attr('clip-path',null);
+      chart.svg().selectAll('circle.dot')
+      .attr('r',3.5).style('fill-opacity',0.4).style('stroke-opacity',0.4).attr('fill','black')
+      .on('mousemove',function(d){
+          d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',5);
+          key.select('.hovered').text(" " + dtgFormat(d.data.key) + ' - ' + d.data.value + 'Oz')
         })
-        .on('mouseout', function(d){
-            var dot=d3.select(this);
-            if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',3.5);}
-            key.select('.hovered').text("");
-        })    
+      .on('click', function(d) {
+          var thisdate=d.data.key;
+          highlightdots(thisdate);
+          sethandle(dtgFormat(thisdate));
+          getvals(dtgFormat(thisdate));
+          //showDivs(dtgFormat(thisdate));
+          showpix(daysBetween("11/24/16",thisdate)+1);
       })
-      .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
-      .xAxis().ticks(4); 
+      .on('mouseout', function(d){
+          var dot=d3.select(this);
+          if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',3.5);}
+          key.select('.hovered').text("");
+      })    
+    })
+    .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
+    .xAxis().ticks(4); 
 
 // Render charts on load or resize, w adjusted dimensions on resize
-    function resize() {
-      var width=getdims()[0];
-      var height=getdims()[1];
-      dryfood.width(width).height(height);
-      wetfood.width(width).height(height);
-      dc.renderAll();
-    };
-    $(window).on('resize load', resize);
-    resize(); 
+  function resize() {
+    var width=getdims()[0];
+    var height=getdims()[1];
+    dryfood.width(width).height(height);
+    wetfood.width(width).height(height);
+    dc.renderAll();
+  };
+  $(window).on('resize load', resize);
+  resize(); 
   
 });
+
+//})();  
+
   

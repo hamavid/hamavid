@@ -31,6 +31,8 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/guardingthelight.jpeg') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/linosunset.jpeg') 50% 25% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/linobike.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print cat" style="background: url('../../images/portfolio/thumbs/linopogo.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt acrylic mercreature" style="background: url('../../images/portfolio/thumbs/paintnsip mermaid.jpg') 50% 50% no-repeat;"></div></span>
@@ -102,8 +104,11 @@ cssjsfile: "art_portfolio"
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
     
+
+<figure class="print"><img src="../../images/portfolio/guardingthelight.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Guarding the light:</b></i> Reproduction of print by Si Lewen. Linoleum block print - June, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/linosunset.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Sunset:</b></i> Linoleum block print with watercolor - May, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/linobike.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bicycle:</b></i> Linoleum block print - May, 2017</span></figcaption></figure>
-<figure class="print cat"><img src="../../images/portfolio/linopogo.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Linocat:</b></i> Linoleum block print - Apr, 2017</span></figcaption></figure>
+<figure class="print cat"><img src="../../images/portfolio/linopogo.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Linocat:</b></i> Linoleum block print with watercolor - Apr, 2017</span></figcaption></figure>
 <figure class="acrylic mercreature"><img src="../../images/portfolio/paintnsip mermaid.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Pink-haired mermaid:</b></i> Acrylic on canvas. Painted at CANVAS! Paint and sip studio, Fremont - Mar, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/linobass.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bass:</b></i> Linoleum block print - Mar, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/linopiano.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Piano:</b></i> Linoleum block print - Mar, 2017</span></figcaption></figure>
