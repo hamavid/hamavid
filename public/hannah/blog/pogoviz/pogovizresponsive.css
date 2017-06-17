@@ -8,7 +8,10 @@ html,body{height:100%;overflow:hidden;box-sizing:content-box;margin:0;font-famil
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+                                  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 }
+body:active{background:none;}
 
 /* ------- the viz! main container/objects ------- */
 .maindiv{
@@ -18,7 +21,8 @@ html,body{height:100%;overflow:hidden;box-sizing:content-box;margin:0;font-famil
 .object{position:relative;text-align:center;}/* each thing that can be seen at once when screen is small gets this class*/
 /* charts go in charts div and key/photos go together in key and photoslider divs*/
 .charts{width:49%;float:left;height:100%;}
-#dryfood,#wetfood{cursor:pointer;margin:auto;float:none!important;}
+#dryfood,#wetfood{margin:auto;float:none!important;}
+svg{cursor:pointer;}
 #key,#photoslider{width:49%;float:right;}
 .charts,#key,#keytable{margin:auto;position:relative;}
 #keytable{width:300px;}
@@ -121,6 +125,7 @@ li i{padding:0 1% 0 1%;cursor:pointer;}
   .photos{left:200%;}
 
 }
+
 @media screen and (max-height:500px) {
   #photoslider{max-height:510px;}
   img{margin-bottom:10px;}
