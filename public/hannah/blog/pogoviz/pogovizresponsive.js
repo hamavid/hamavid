@@ -35,7 +35,7 @@ function smallscreen(windowwidth, windowheight){
   $('.maindiv').css('height',windowheight-100).css('margin-top','100px').css('width','100%');
   $('#photoslider').css('height',windowheight-100);
 // set max image height
-  $('img').css('max-height',0.90*(windowheight-100));
+  $('img').css('max-height',0.95*(windowheight-100));
 // show correct object based on which list item is currently visible
   if ($('li.dryfood').css('display')!='none' & $('li.dryfood').css('left')=='0px') {
     $('.wetfood, .photos').css('display','none');
@@ -48,7 +48,7 @@ function smallscreen(windowwidth, windowheight){
   }
 }
 
-// if right/left carousel arrows/words are clicked, do function to scroll appropriately through list items and objects
+// if right/left carousel arrows/words are clicked or swiped, do function to scroll appropriately through list items and objects
   $('li>i.fa-arrow-right, .next').click(function(){
     var which = $(this).parent().attr('class');
     showthings(which,'right');
@@ -57,7 +57,20 @@ function smallscreen(windowwidth, windowheight){
     var which = $(this).parent().attr('class');
     showthings(which,'left');
   });
-
+  $('li>i.fa-arrow-right, .next').touchwipe({
+    wipeLeft: function() { 
+      var which = $('li').filter(function() {return $(this).css('left') == '0px';}).attr('class');
+      showthings(which,'right');
+    },
+    min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+  });
+  $('li>i.fa-arrow-left, .last').touchwipe({
+    wipeRight: function() { 
+      var which = $('li').filter(function() {return $(this).css('left') == '0px';}).attr('class');
+      showthings(which,'left');
+    },
+    min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+  });
 
 ///////// DIMENSIONS //////////
 // change height of main div to accomodate carousel slider when screen is small and trigger carousel fxn
@@ -139,6 +152,9 @@ function smallscreen(windowwidth, windowheight){
 
 
 //------- PHOTO SLIDER -----------//
+  // set vars
+    var lastImage = 96;         // How many images do you have?
+
   // Images in path named 1.jpg, 2.jpg etc.
     function showpix(index,auto) {
       // Check what the play button says
@@ -147,10 +163,7 @@ function smallscreen(windowwidth, windowheight){
       if (status=='Play' & auto==1){return;}
       // Otherwise, continue
       else {
-      // set vars
-        var imagePath = '../images/slides';
-        var lastImage = 96;         // How many images do you have?
-        var url = imagePath + '/'+ index + '.jpg';
+        var url = '../images/slides/'+ index + '.jpg';
       // Add new image behind current image, set opacity appropriately, then remove all but new image
         $('#photoslider').prepend($('<img/>').attr('src',url));
         $('#photoslider img:first-child').css('opacity',1);
@@ -162,7 +175,7 @@ function smallscreen(windowwidth, windowheight){
           getvals(getdate((index-1 % lastImage)*dailypixels()));
           highlightdots(dtgFormat.parse(getdate((index-1 % lastImage)*dailypixels())));
           $('#handle').css('margin-left',(index-1 % lastImage)*dailypixels());
-          setTimeout(function() {showpix((index % lastImage) + 1,1);}, 1000);
+          setTimeout(function() {showpix((index % lastImage) + 1,1);}, 1500);
         };  
       }
     };  
@@ -177,10 +190,33 @@ function smallscreen(windowwidth, windowheight){
         showpix(whichpic,1);
       }
       else {status.innerHTML='Play';status.style.backgroundColor='#00cc44'}
-    });    
+    });  
+
+  // Swiping through photos
+  $('.photosright').touchwipe({
+    wipeLeft: function() { 
+      var index = ~~$('img').attr('src').substring(17).replace('.jpg','');
+      showpix(index+1);
+      getvals(getdate((index % lastImage)*dailypixels()));
+      highlightdots(dtgFormat.parse(getdate((index % lastImage)*dailypixels())));
+      $('#handle').css('margin-left',(index % lastImage)*dailypixels());
+    },
+    min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+  });
+  $('.photosleft').touchwipe({
+    wipeRight: function() { 
+      var index = ~~$('img').attr('src').substring(17).replace('.jpg','');
+      showpix(index-1);
+      getvals(getdate((index-2 % lastImage)*dailypixels()));
+      highlightdots(dtgFormat.parse(getdate((index-2 % lastImage)*dailypixels())));
+      $('#handle').css('margin-left',(index-2 % lastImage)*dailypixels());
+    },
+    min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+  });
+      
 
 
-//------------ SLIDER/CHART HIGHLIGHTING -------------//
+//------------ SLIDER/HANDLE/CHART HIGHLIGHTING -------------//
   // f(date): get both wet and dry values for a given date and announce it in the "selected" area
     function getvals(selected) { // takes a value of date formatted like "11/30/16"
       var date = selected;
@@ -212,7 +248,7 @@ function smallscreen(windowwidth, windowheight){
   // move handle based on click position on date scrollbar/arrows
     var maxright = $("#datescrollbar").width()-5; // -5 to go to middle of handle - border
     function whereami() {
-      var location = event.pageX - $("#datescrollbar").offset().left-3; // -3 so it goes to middle of handle
+      var location = event.pageX - $("#datescrollbar").offset().left-3; // so it goes to middle of handle
       if (location<0) {var location=0};
       if (location>maxright) {var location=maxright};
       return location;
@@ -225,11 +261,13 @@ function smallscreen(windowwidth, windowheight){
     });
   //if the left scroller is clicked and there is room to go down, move handle from its current position down one day
     $("#leftscroller").click(function() {
-      if (gethandle() >=dailypixels()) {$('#handle').css('margin-left',getleft(gethandle() - dailypixels()));}
+      if (gethandle() >=dailypixels()) {$('#handle').css('margin-left',getleft(gethandle() - 2*dailypixels()));}
+      //if (gethandle() >=dailypixels()) {$('#handle').css('margin-left',getleft(gethandle() - dailypixels()));}
     });    
   //if the right scroller is clicked and there is room to go up, move handle from its current position up one day
     $("#rightscroller").click(function() {
-      if (gethandle() <= maxright) {$('#handle').css('margin-left',getleft(gethandle() + dailypixels()));} 
+      //if (gethandle() <= maxright) {$('#handle').css('margin-left',getleft(gethandle() + dailypixels()));}
+      if (gethandle() <= maxright) {$('#handle').css('margin-left',getleft(gethandle()));} 
     });
   // report date and show divs etc based on where handle now is    
     $('#scrollability').click(function(){datecascade(getdate(gethandle()));});
@@ -255,26 +293,26 @@ function smallscreen(windowwidth, windowheight){
 
   // f(dates): set where handle should be positioned based on date selection in charts
     function treatAsUTC(date) {
-        var result = new Date(date);
-        result.setMinutes(result.getMinutes() - result.getTimezoneOffset());
-        return result;
+      var result = new Date(date);
+      result.setMinutes(result.getMinutes() - result.getTimezoneOffset());
+      return result;
     }
     function daysBetween(startDate, endDate) {
-        var millisecondsPerDay = 24 * 60 * 60 * 1000;
-        return (treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay;
+      var millisecondsPerDay = 24 * 60 * 60 * 1000;
+      return (treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay;
     }
     function sethandle(date) {$('#handle').css('margin-left',daysBetween("11/24/16",date) * dailypixels());}
 
-  // f(date): highlight appropriate dots when handle moves
+  // f(date): highlight appropriate dots when handle moves or dots are clicked
     function highlightdots(date) {
       var thisdate=date;
-      wetfood.selectAll('circle.dot').attr('r',3.5).style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('clicked','no');
-      dryfood.selectAll('circle.dot').attr('r',3.5).style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('clicked','no');
-      wetfood.selectAll('circle.dot').filter(function(d) { return d.data.key.getTime() === thisdate.getTime(); }).attr('r',5).style('fill-opacity', 1).style('stroke-opacity', 1).attr('clicked','yes');
-      dryfood.selectAll('circle.dot').filter(function(d) { return d.data.key.getTime() === thisdate.getTime(); }).attr('r',5).style('fill-opacity', 1).style('stroke-opacity', 1).attr('clicked','yes'); 
+      wetfood.selectAll('circle.dot').attr('r',smar).style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('fill',nohl).attr('clicked','no');
+      dryfood.selectAll('circle.dot').attr('r',smar).style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('fill',nohl).attr('clicked','no');
+      wetfood.selectAll('circle.dot').filter(function(d) { return d.data.key.getTime() === thisdate.getTime(); }).attr('r',bigr).attr('fill',hl).style('fill-opacity', 1).style('stroke-opacity', 1).attr('clicked','yes');
+      dryfood.selectAll('circle.dot').filter(function(d) { return d.data.key.getTime() === thisdate.getTime(); }).attr('r',bigr).attr('fill',hl).style('fill-opacity', 1).style('stroke-opacity', 1).attr('clicked','yes'); 
     }
 
-  // f(date): show divs, getvals and highlight dots when a given date is selected on date scrollbar
+  // f(date): show picture, getvals and highlight dots when a given date is selected on date scrollbar
     function datecascade(selected) {
       var whichpic=daysBetween("11/24/16",selected)+1;
       showpix(whichpic);
@@ -282,6 +320,25 @@ function smallscreen(windowwidth, windowheight){
       highlightdots(dtgFormat.parse(selected)); 
     }
 
+  // functions for highlighting charts on touch
+    //var touchScale = d3.scale.linear().domain([0,getdims()[2]]).range([0,data.length-1]).clamp(true);
+    function getxpositions(type){
+      var start = type.selectAll('circle.dot').filter(function(d) { return d.data.key.getTime() === dtgFormat.parse('11/24/16').getTime();}).attr('cx');
+      var end = type.selectAll('circle.dot').filter(function(d) { return d.data.key.getTime() === dtgFormat.parse('02/27/17').getTime();}).attr('cx');
+      return [start,end];
+    }
+    function datecascade2(date){
+      highlightdots(date);
+      sethandle(dtgFormat(date));
+      getvals(dtgFormat(date));
+      showpix(daysBetween("11/24/16",date)+1);
+    }
+    var off=30; //offset to account for margins? 
+  // vars to specify circle.dot radius and color when hovered/selected vs not 
+    var smar=3.5;
+    var bigr=7;
+    var nohl='steelblue';
+    var hl='red'; // this is not working - superceded by dc.css
 
 //------------ MAKE CHARTS -------------//
 // Run the data through crossfilter and load 'facts'
@@ -301,26 +358,23 @@ function smallscreen(windowwidth, windowheight){
     .brushOn(false)
     .title(function(){return;})
     .on('renderlet', function(chart) {
+      var touchScale = d3.scale.linear().domain([getxpositions(dryfood)[0],getxpositions(dryfood)[1]]).range([0,data.length-1]).clamp(true);
       chart.svg().select('.chart-body').attr('clip-path',null);
       chart.svg().selectAll('circle.dot')
-      .attr('r',3.5).style('fill-opacity',0.4).style('stroke-opacity',0.4).attr('fill','black')
-      .on('mousemove',function(d){
-          d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',5);
+        .attr('r',smar).style('fill-opacity',0.4).style('stroke-opacity',0.4)
+        .on('mousemove',function(d){
+          d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',bigr).attr('fill',hl);
           key.select('.hovered').text(" " + dtgFormat(d.data.key) + ' - ' + d.data.value + 'T');
         })
-      .on('click', function(d) {
-          var thisdate=d.data.key;
-          highlightdots(thisdate);
-          sethandle(dtgFormat(thisdate));
-          getvals(dtgFormat(thisdate));
-          //showDivs(dtgFormat(thisdate));
-          showpix(daysBetween("11/24/16",thisdate)+1);
-      })
-      .on('mouseout', function(){
+        .on('click', function(d) {datecascade2(d.data.key);})
+        .on('mouseout', function(){
           var dot=d3.select(this);
-          if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',3.5);}
+          if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',smar).attr('fill',nohl);}
           key.select('.hovered').text("");
-      })    
+        })
+      chart.svg()
+        .on('touchstart', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
+        .on('touchmove', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
     })
     .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
     .xAxis().ticks(4);
@@ -334,26 +388,23 @@ function smallscreen(windowwidth, windowheight){
     .brushOn(false)
     .title(function(){return;})
     .on('renderlet', function(chart) {
+      var touchScale = d3.scale.linear().domain([getxpositions(wetfood)[0],getxpositions(wetfood)[1]]).range([0,data.length-1]).clamp(true);
       chart.svg().select('.chart-body').attr('clip-path',null);
       chart.svg().selectAll('circle.dot')
-      .attr('r',3.5).style('fill-opacity',0.4).style('stroke-opacity',0.4).attr('fill','black')
-      .on('mousemove',function(d){
-          d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',5);
+        .attr('r',smar).style('fill-opacity',0.4).style('stroke-opacity',0.4)
+        .on('mousemove',function(d){
+          d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',bigr).attr('fill',hl);
           key.select('.hovered').text(" " + dtgFormat(d.data.key) + ' - ' + d.data.value + 'Oz')
         })
-      .on('click', function(d) {
-          var thisdate=d.data.key;
-          highlightdots(thisdate);
-          sethandle(dtgFormat(thisdate));
-          getvals(dtgFormat(thisdate));
-          //showDivs(dtgFormat(thisdate));
-          showpix(daysBetween("11/24/16",thisdate)+1);
-      })
-      .on('mouseout', function(d){
+        .on('click', function(d) {datecascade2(d.data.key);})
+        .on('mouseout', function(d){
           var dot=d3.select(this);
-          if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',3.5);}
+          if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',smar).attr('fill',nohl);}
           key.select('.hovered').text("");
-      })    
+        })  
+      chart.svg()
+        .on('touchstart', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
+        .on('touchmove', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
     })
     .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
     .xAxis().ticks(4); 

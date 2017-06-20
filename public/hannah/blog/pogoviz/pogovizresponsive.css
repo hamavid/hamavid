@@ -8,7 +8,7 @@ html,body{height:100%;overflow:hidden;box-sizing:content-box;margin:0;font-famil
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-                                  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
 }
 body:active{background:none;}
@@ -22,13 +22,18 @@ body:active{background:none;}
 /* charts go in charts div and key/photos go together in key and photoslider divs*/
 .charts{width:49%;float:left;height:100%;}
 #dryfood,#wetfood{margin:auto;float:none!important;}
-svg{cursor:pointer;}
 #key,#photoslider{width:49%;float:right;}
 .charts,#key,#keytable{margin:auto;position:relative;}
 #keytable{width:300px;}
 h4 {text-align:center;padding:5px;margin:0;}
+svg{cursor:pointer;}
+/* make it purple!?
+.dc-chart circle.dot{fill:#9756c0;}
+.dc-chart path.line{stroke:#9756c0;}
+*/
 
-/* ----------- look of keyslider, scrollbar,  and selected/hovered divs ----------*/
+
+/* ----------- look of keyslider, scrollbar, and selected/hovered divs ----------*/
 table{display:table;}
 tr{width:100%;line-height:24px;font-weight:bold;text-align:left;}
 td{position:relative;width:100%;}
@@ -36,11 +41,12 @@ td{position:relative;width:100%;}
 #scrollability{cursor:pointer;z-index:4;}
 #datescrollbar{
   position:absolute;
-  border:2px solid #333;
+  border:2px solid black;
+  border-radius:2px;
   opacity:0.9;
   height:8px;top:3px;
-  width:256px;
-  left:18px;
+  width:257px;
+  left:17px;
   line-height:17px
 }
 #leftscroller,#rightscroller{line-height:17px;}
@@ -63,8 +69,8 @@ td{position:relative;width:100%;}
   font-variant:small-caps;
   border:2px solid black;
   border-radius: 5px;
-  padding:0px 1px 6px 1px;
-  height:16px;
+  line-height:13px;
+  padding:1px;
   width:33px;
   text-align: center;
   float:right;
@@ -74,6 +80,7 @@ td{position:relative;width:100%;}
 /* -----------look of images/photoslider -------------- */
 #photoslider{position:relative;margin-top:0;}
 img {
+  z-index:1;
   opacity:0;
   position:absolute;
   max-width:290px; /* the width of the slider - padding */
@@ -92,10 +99,13 @@ img {
   -moz-transform: translate(-50%, -50%);
 }
 #dryfood,#wetfood,#key,#photoslider,.dryfood,.wetfood,.photos{display:inline-block;left:0;}
+.photosleft,.photosright{position:absolute;height:100%;width:50%;z-index:2;}
+.photosright{right:0;}
+.loading{position:absolute;height:100%;width:100%;padding-top:50%;color:#f1f1f1;font-variant: small-caps;}
 
 
 /* ---------- when things are small! ----------------*/
-/*carousel for toggling between charts/photos when screen is small*/
+/*carousel for toggling between charts/photos*/
 .carousel{position:absolute;display:none;height:0;width:0;}
 ul{padding:0;width:100%;height:43px;margin:0;overflow:hidden;position:absolute;background-color:#f1f1f1;}
 li{
@@ -120,10 +130,10 @@ li i{padding:0 1% 0 1%;cursor:pointer;}
   .carousel{display:block;width:100%;height:100px;}
   #photoslider{height:100%;width:100%;margin:0;}
   img{max-width:95%;margin:5px auto 10px auto;}
+  #datescrollbar{width:256px;}
   .dryfood{left:0;}
   .wetfood{left:-200%;}
   .photos{left:200%;}
-
 }
 
 @media screen and (max-height:500px) {
