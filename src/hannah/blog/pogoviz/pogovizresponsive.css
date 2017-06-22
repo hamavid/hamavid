@@ -101,7 +101,7 @@ img {
 #dryfood,#wetfood,#key,#photoslider,.dryfood,.wetfood,.photos{display:inline-block;left:0;}
 .photosleft,.photosright{position:absolute;height:100%;width:50%;z-index:2;}
 .photosright{right:0;}
-.loading{position:absolute;height:100%;width:100%;padding-top:50%;color:#f1f1f1;font-variant: small-caps;}
+.loading{position:absolute;height:100%;width:100%;padding-top:50%;color:#dcdcdc;font-variant: small-caps;}
 
 
 /* ---------- when things are small! ----------------*/

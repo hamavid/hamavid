@@ -109,8 +109,8 @@ function smallscreen(windowwidth, windowheight){
 // Create the dc.js chart objects & link to div
   var dryfood = dc.lineChart("#dryfood");
   var wetfood = dc.lineChart("#wetfood");
-  var key = d3.select("#key");
-  var charts = $('#charts');
+  //var key = d3.select("#key");
+  //var charts = $('#charts');
 
 // Define dimensions and margins for charts
   function getdims() {
@@ -147,9 +147,8 @@ function smallscreen(windowwidth, windowheight){
       return ($('#datescrollbar').width()-3)/counts; // -3 so it will refer to middle of handle
     }
 
-  // Set start conditions
+  // SET START CONDITIONS
     datecascade(getdate(0));
-
 
 //------- PHOTO SLIDER -----------//
   // set vars
@@ -169,20 +168,20 @@ function smallscreen(windowwidth, windowheight){
         $('#photoslider img:first-child').css('opacity',1);
         $('#photoslider img:last').css('opacity',0);
         $('img:first-child ~ img').remove(); //remove extra photos (if handle was dragged)
-      // If we are on auto: move handle, change selected info, and highlight dots to match photo
+      // If we are on auto: move handle, change selected info, highlight dots to match photo, wait for photo to load
       // Then initiate showing next picture
         if (status=='Stop' & auto==1) {
           getvals(getdate((index-1 % lastImage)*dailypixels()));
           highlightdots(dtgFormat.parse(getdate((index-1 % lastImage)*dailypixels())));
           $('#handle').css('margin-left',(index-1 % lastImage)*dailypixels());
           setTimeout(function() {showpix((index % lastImage) + 1,1);}, 1500);
-        };  
+        } 
       }
     };  
 
   // If play slideshow button is clicked, run through slides starting wherever we are
     $('.playslides').click(function(){
-      var whichpic = ~~$('img').attr('src').substring(17).replace('.jpg','');
+      var whichpic = ~~$('img').attr('src').substring(17).replace('.jpg','')+1;
       var status=document.getElementsByClassName('playslides')[0];
       if (status.innerHTML=='Play'){
         status.innerHTML='Stop';
@@ -192,27 +191,26 @@ function smallscreen(windowwidth, windowheight){
       else {status.innerHTML='Play';status.style.backgroundColor='#00cc44'}
     });  
 
-  // Swiping through photos
-  $('.photosright').touchwipe({
-    wipeLeft: function() { 
+  // Swiping/clicking through photos
+    function photo_scroll(step){
       var index = ~~$('img').attr('src').substring(17).replace('.jpg','');
-      showpix(index+1);
-      getvals(getdate((index % lastImage)*dailypixels()));
-      highlightdots(dtgFormat.parse(getdate((index % lastImage)*dailypixels())));
-      $('#handle').css('margin-left',(index % lastImage)*dailypixels());
-    },
-    min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
-  });
-  $('.photosleft').touchwipe({
-    wipeRight: function() { 
-      var index = ~~$('img').attr('src').substring(17).replace('.jpg','');
-      showpix(index-1);
-      getvals(getdate((index-2 % lastImage)*dailypixels()));
-      highlightdots(dtgFormat.parse(getdate((index-2 % lastImage)*dailypixels())));
-      $('#handle').css('margin-left',(index-2 % lastImage)*dailypixels());
-    },
-    min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
-  });
+      if ((index>1 & step==-2) | (index<lastImage & step==0)) { // no modular image scrolling 
+        showpix(index+step+1);
+        getvals(getdate((index+step)*dailypixels()));
+        highlightdots(dtgFormat.parse(getdate((index+step)*dailypixels())));
+        $('#handle').css('margin-left',(index+step)*dailypixels());
+      }
+    }
+    $('.photosright').touchwipe({
+      wipeLeft: function() { photo_scroll(0);},
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    });
+    $('.photosleft').touchwipe({
+      wipeRight: function() { photo_scroll(-2);},
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    });
+    $('.photosright').click(function(){photo_scroll(0);})
+    $('.photosleft').click(function(){photo_scroll(-2);})
       
 
 
@@ -254,6 +252,14 @@ function smallscreen(windowwidth, windowheight){
       return location;
     } 
     function gethandle() {return $('#handle').offset().left - $("#datescrollbar").offset().left;}
+  // special whereami touch function for mobile version of handle click-and-drag 
+    var whereami2 = function(e){
+      var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+      var location = touch.pageX - $("#datescrollbar").offset().left-3; // so it goes to middle of handle
+      if (location<0) {var location=0};
+      if (location>maxright) {var location=maxright};
+      return location;
+    };
 
   //if the scroll bar is clicked, move handle to closest daily-pixels unit by mouse position
     $("#datescrollbar").click(function() {
@@ -290,6 +296,12 @@ function smallscreen(windowwidth, windowheight){
         datecascade(getdate(getleft(whereami())));
       }
     });
+
+   // mobile version of handle click-and-drag functionality
+    $('#datescrollbar').on('touchmove', function(e){
+      $('#handle').css('margin-left',getleft(whereami2(e))); 
+      datecascade(getdate(getleft(whereami2(e))));
+    }); 
 
   // f(dates): set where handle should be positioned based on date selection in charts
     function treatAsUTC(date) {
@@ -333,6 +345,10 @@ function smallscreen(windowwidth, windowheight){
       getvals(dtgFormat(date));
       showpix(daysBetween("11/24/16",date)+1);
     }
+
+
+//------------ MAKE CHARTS -------------//
+  // set vars about dots and margins  
     var off=30; //offset to account for margins? 
   // vars to specify circle.dot radius and color when hovered/selected vs not 
     var smar=3.5;
@@ -340,7 +356,6 @@ function smallscreen(windowwidth, windowheight){
     var nohl='steelblue';
     var hl='red'; // this is not working - superceded by dc.css
 
-//------------ MAKE CHARTS -------------//
 // Run the data through crossfilter and load 'facts'
   var facts = crossfilter(data);
 
@@ -348,6 +363,49 @@ function smallscreen(windowwidth, windowheight){
   var byday = facts.dimension(function(d) {return d.date;});
   var drygroup = byday.group().reduceSum(function(d) { return d.dry; });
   var wetgroup = byday.group().reduceSum(function(d) { return d.wet; });
+
+// function to specify charts' interactivity
+  function interactivity(chart) {
+    chart.svg().select('.chart-body').attr('clip-path',null);
+    chart.svg().selectAll('circle.dot')
+      .attr('r',smar).style('fill-opacity',0.4).style('stroke-opacity',0.4)
+      .on('mousemove',function(d){
+        d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',bigr).attr('fill',hl);
+        d3.select("#key").select('.hovered').text(" " + dtgFormat(d.data.key) + ' - ' + d.data.value + 'T');
+      })
+      .on('click', function(d) {datecascade2(d.data.key);})
+      .on('mouseout', function(){
+        var dot=d3.select(this);
+        if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',smar).attr('fill',nohl);}
+        d3.select("#key").select('.hovered').text("");
+      })
+    chart.svg()
+      .on('touchstart', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
+      .on('touchmove', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
+    highlightdots(dtgFormat.parse(getdate(gethandle())));
+  }
+
+/*
+var foodtypes = ['dry','wet'];
+for (var ft in foodtypes) {
+  var thischart = dc.lineChart('#'+foodtypes[ft]+'food');
+  var thisgroup = byday.group().reduceSum(function(d) { return d.foodtypes[ft]; });
+  thischart
+    .dimension(byday)
+    .group(thisgroup)
+    .transitionDuration(500)
+    .elasticY(true)
+    .brushOn(false)
+    .title(function(){return;})
+    .on('renderlet', function(chart) {
+      var touchScale = d3.scale.linear().domain([getxpositions(thischart)[0],getxpositions(thischart)[1]]).range([0,data.length-1]).clamp(true);
+      interactivity(chart); 
+    })
+    .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
+    .xAxis().ticks(4);
+}
+*/
+
 
 // dry graph
   dryfood
@@ -359,22 +417,7 @@ function smallscreen(windowwidth, windowheight){
     .title(function(){return;})
     .on('renderlet', function(chart) {
       var touchScale = d3.scale.linear().domain([getxpositions(dryfood)[0],getxpositions(dryfood)[1]]).range([0,data.length-1]).clamp(true);
-      chart.svg().select('.chart-body').attr('clip-path',null);
-      chart.svg().selectAll('circle.dot')
-        .attr('r',smar).style('fill-opacity',0.4).style('stroke-opacity',0.4)
-        .on('mousemove',function(d){
-          d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',bigr).attr('fill',hl);
-          key.select('.hovered').text(" " + dtgFormat(d.data.key) + ' - ' + d.data.value + 'T');
-        })
-        .on('click', function(d) {datecascade2(d.data.key);})
-        .on('mouseout', function(){
-          var dot=d3.select(this);
-          if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',smar).attr('fill',nohl);}
-          key.select('.hovered').text("");
-        })
-      chart.svg()
-        .on('touchstart', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
-        .on('touchmove', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
+      interactivity(chart); 
     })
     .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
     .xAxis().ticks(4);
@@ -389,28 +432,14 @@ function smallscreen(windowwidth, windowheight){
     .title(function(){return;})
     .on('renderlet', function(chart) {
       var touchScale = d3.scale.linear().domain([getxpositions(wetfood)[0],getxpositions(wetfood)[1]]).range([0,data.length-1]).clamp(true);
-      chart.svg().select('.chart-body').attr('clip-path',null);
-      chart.svg().selectAll('circle.dot')
-        .attr('r',smar).style('fill-opacity',0.4).style('stroke-opacity',0.4)
-        .on('mousemove',function(d){
-          d3.select(this).style('fill-opacity', 1).style('stroke-opacity', 1).attr('r',bigr).attr('fill',hl);
-          key.select('.hovered').text(" " + dtgFormat(d.data.key) + ' - ' + d.data.value + 'Oz')
-        })
-        .on('click', function(d) {datecascade2(d.data.key);})
-        .on('mouseout', function(d){
-          var dot=d3.select(this);
-          if (dot.attr('clicked') != 'yes') {dot.style('fill-opacity', 0.4).style('stroke-opacity', 0.4).attr('r',smar).attr('fill',nohl);}
-          key.select('.hovered').text("");
-        })  
-      chart.svg()
-        .on('touchstart', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
-        .on('touchmove', function(){var xPos = d3.touches(this)[0][0];datecascade2(data[~~touchScale(xPos-off)].date);})
+      interactivity(chart); 
     })
     .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
     .xAxis().ticks(4); 
 
+
 // Render charts on load or resize, w adjusted dimensions on resize
-  function resize() {
+  function resize(e) {
     var width=getdims()[0];
     var height=getdims()[1];
     dryfood.width(width).height(height);
