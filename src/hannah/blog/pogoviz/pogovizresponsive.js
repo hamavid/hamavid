@@ -11,11 +11,13 @@ function showthings(which, direction){
   if (which=='dryfood'){var next='wetfood';var last='photos';}
   if (which=='wetfood'){var next='photos';var last='dryfood';}
   if (which=='photos'){var next='dryfood';var last='wetfood';}
-  var offset='200%';
+  var offset='200%';var windowheight=$(window).height();
+// Determine direction of swing based on height of screen  
+  if (windowheight >=350) {var carouseldirection='left';}else{var carouseldirection='top';}
 // make sure objects and lists are in appropriate left positions
-  $('li.'+next+', .object.'+next).css('left',offset);
-  $('li.'+last+', .object.'+last).css('left','-'+offset);
-  $('li.'+which+', .object.'+which).css('left',0);
+  $('li.'+next+', .object.'+next).css(carouseldirection,offset);
+  $('li.'+last+', .object.'+last).css(carouseldirection,'-'+offset);
+  $('li.'+which+', .object.'+which).css(carouseldirection,0);
 // set vars for which class of element to show next and which direction to move it
   if (direction=='right'){var amt='-'+offset;var replacer=next;var uninvolved=last;}
   if (direction=='left'){var amt=offset;var replacer=last;var uninvolved=next;}
@@ -24,26 +26,43 @@ function showthings(which, direction){
 // move the current ones in the specified direction off the screen
   $('li.'+which+', .object.'+which).animate({left: amt}), 500;
 // move the upcoming ones in from the correct direction onto the screen
+// CHANGE THIS TO CLASS TOGGLE AND CSS ANIMATION
   setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({left:0}), 600},200);
 // squish things when other things should be visible
   if (replacer=='photos'){$('.charts').css('height',0);}else{$('.charts').css('height','100%')};
   if (replacer=='wetfood'){$('#dryfood').css('display','none')}else{$('#dryfood').css('display','inline-block')};
 }
 
-function smallscreen(windowwidth, windowheight){
-// make room above the main div for the carousel
-  $('.maindiv').css('height',windowheight-100).css('margin-top','100px').css('width','100%');
-  $('#photoslider').css('height',windowheight-100);
-// set max image height
-  $('img').css('max-height',0.95*(windowheight-100));
+function smallscreen(windowwidth, windowheight, keyheight){
+// If screen is at least 350px tall put the carousel on top
+  if (windowheight >=350) {
+    var carouselheight = 43;var carouseldirection='left';
+    var availheight = windowheight - keyheight - carouselheight;var availwidth = '100%';
+    var left=0; var keytop=carouselheight;var maintop=keyheight + carouselheight;
+    var oldrew='up';var newrew='left';var oldfwd='down';var newfwd='right';  
+  } else { // Otherwise put the carousel on the left
+    var carouselheight = '100%';var carouseldirection='top';
+    var availheight = windowheight - keyheight;var availwidth = windowwidth-120;
+    var left=120; var keytop=0;var maintop=keyheight;
+    var oldrew='left';var newrew='up';var oldfwd='right';var newfwd='down';
+  }
+// make room above/to left of the main div for the carousel etc
+  $('.maindiv').css('height',availheight).css('margin-top',maintop).css('width',availwidth).css('margin-left',left);
+  $('#photoslider').css('height',availheight).css('width',availwidth);
+  $('#key').css('top',keytop).css('width',availwidth).css('left',left);
+// set max image dims
+  $('img').css('max-height',0.95*availheight).css('max-width',0.95*availwidth);
+// toggle class of arrows (pointing left/right vs up/down)
+  $('i.fa-arrow-'+oldrew).removeClass('fa-arrow-'+oldrew).addClass('fa-arrow-'+newrew);
+  $('i.fa-arrow-'+oldfwd).removeClass('fa-arrow-'+oldfwd).addClass('fa-arrow-'+newfwd);
 // show correct object based on which list item is currently visible
-  if ($('li.dryfood').css('display')!='none' & $('li.dryfood').css('left')=='0px') {
+  if ($('li.dryfood').css('display')!='none' & $('li.dryfood').css(carouseldirection)=='0px') {
     $('.wetfood, .photos').css('display','none');
   }
-  if ($('li.wetfood').css('display')!='none' & $('li.wetfood').css('left')=='0px') {
+  if ($('li.wetfood').css('display')!='none' & $('li.wetfood').css(carouseldirection)=='0px') {
     $('.dryfood, .photos').css('display','none');
   }
-  if ($('li.photos').css('display')!='none' & $('li.photos').css('left')=='0px') {
+  if ($('li.photos').css('display')!='none' & $('li.photos').css(carouseldirection)=='0px') {
     $('.charts').css('height',0);$('.dryfood, .wetfood').css('display','none');
   }
 }
@@ -82,19 +101,16 @@ function smallscreen(windowwidth, windowheight){
     var keyheight = document.getElementById('key').offsetHeight;
     var photosliderwidth = document.getElementById('photoslider').offsetWidth;
     var photosliderheight = document.getElementById('photoslider').offsetHeight;
-    if (windowwidth<600) {
-      smallscreen(windowwidth, windowheight);
+    if (windowwidth<600 | windowheight <350) {
+      smallscreen(windowwidth, windowheight, keyheight);
     } else {
-      if (windowheight<500){
-        $('img').css('max-height',500);
-        $('body').css('overflow-y','auto');
-      } else {
-        $('.maindiv').css('height','100%').css('margin-top',0).css('width','100%');
-        $('.charts').css('height','100%')
+        $('.maindiv').css('height','100%').css('margin-top',0).css('width','100%').css('margin-left',0);
+        $('.charts').css('height','100%').css('display','inline-block');
         $('#dryfood, #wetfood, #photoslider').css('display','inline-block').css('left',0);
-        $('#photoslider').css('height',windowheight-keyheight);
+        $('#photoslider').css('height',windowheight-keyheight).css('width','49%');
+        $('#key').css('width','49%').css('top',0).css('left',0);
+        $('img').css('max-width','290px').css('max-height','90%');
         $('body').css('overflow-y','hidden');
-      }
     }
     return [windowwidth, windowheight, photosliderwidth, photosliderheight]; 
   }
@@ -109,15 +125,14 @@ function smallscreen(windowwidth, windowheight){
 // Create the dc.js chart objects & link to div
   var dryfood = dc.lineChart("#dryfood");
   var wetfood = dc.lineChart("#wetfood");
-  //var key = d3.select("#key");
-  //var charts = $('#charts');
 
 // Define dimensions and margins for charts
   function getdims() {
     var windowwidth=window.innerWidth || 
     document.documentElement.clientWidth || 
     document.body.clientWidth;
-    if (windowwidth<600){var divisor=1;var overallwidth = $('.maindiv').width();}
+    var windowheight=$(window).height();
+    if (windowwidth<600 | windowheight <=350){var divisor=1;var overallwidth = $('.maindiv').width();}
     else{var divisor=2;var overallwidth = $('.maindiv').width()*0.5;}
     var margin = {top: 10, right: -30, bottom: 20, left: 0},
     width =  overallwidth - margin.left - margin.right,
@@ -365,7 +380,7 @@ function smallscreen(windowwidth, windowheight){
   var wetgroup = byday.group().reduceSum(function(d) { return d.wet; });
 
 // function to specify charts' interactivity
-  function interactivity(chart) {
+  function interactivity(chart, touchScale) {
     chart.svg().select('.chart-body').attr('clip-path',null);
     chart.svg().selectAll('circle.dot')
       .attr('r',smar).style('fill-opacity',0.4).style('stroke-opacity',0.4)
@@ -406,7 +421,6 @@ for (var ft in foodtypes) {
 }
 */
 
-
 // dry graph
   dryfood
     .dimension(byday)
@@ -417,7 +431,7 @@ for (var ft in foodtypes) {
     .title(function(){return;})
     .on('renderlet', function(chart) {
       var touchScale = d3.scale.linear().domain([getxpositions(dryfood)[0],getxpositions(dryfood)[1]]).range([0,data.length-1]).clamp(true);
-      interactivity(chart); 
+      interactivity(chart, touchScale); 
     })
     .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
     .xAxis().ticks(4);
@@ -432,7 +446,7 @@ for (var ft in foodtypes) {
     .title(function(){return;})
     .on('renderlet', function(chart) {
       var touchScale = d3.scale.linear().domain([getxpositions(wetfood)[0],getxpositions(wetfood)[1]]).range([0,data.length-1]).clamp(true);
-      interactivity(chart); 
+      interactivity(chart, touchScale); 
     })
     .x(d3.time.scale().domain(d3.extent(data, function(d) { return d.date; })))
     .xAxis().ticks(4); 
