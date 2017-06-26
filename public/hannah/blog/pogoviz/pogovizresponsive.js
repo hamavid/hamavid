@@ -7,92 +7,137 @@
 $(document).ready(function() {
 
 ///////// CAROUSEL (for small screens) //////////
+// Show/hide the correct list items and objects as user interacts w carousel
 function showthings(which, direction){
+// Set roles of each list item/object based on fxn args
   if (which=='dryfood'){var next='wetfood';var last='photos';}
   if (which=='wetfood'){var next='photos';var last='dryfood';}
   if (which=='photos'){var next='dryfood';var last='wetfood';}
-  var offset='200%';var windowheight=$(window).height();
-// Determine direction of swing based on height of screen  
-  if (windowheight >=350) {var carouseldirection='left';}else{var carouseldirection='top';}
-// make sure objects and lists are in appropriate left positions
+// Determine direction of swing and size of offset based on height of screen
+  if ($(window).height() >=350) {var carouseldirection='left';var offset='200%';var unrelated='top';}
+  else{var carouseldirection='top';var offset=2*$(window).height()+'px';var unrelated='left';}
+// make sure objects and lists are in appropriate positions
   $('li.'+next+', .object.'+next).css(carouseldirection,offset);
   $('li.'+last+', .object.'+last).css(carouseldirection,'-'+offset);
   $('li.'+which+', .object.'+which).css(carouseldirection,0);
+  $('li, .object').css(unrelated,0);
 // set vars for which class of element to show next and which direction to move it
-  if (direction=='right'){var amt='-'+offset;var replacer=next;var uninvolved=last;}
-  if (direction=='left'){var amt=offset;var replacer=last;var uninvolved=next;}
-// set uninvolved display properties to none so they don't take up vertical space
+  if (direction=='next'){var amt='-'+offset;var replacer=next;var uninvolved=last;}
+  else{var amt=offset;var replacer=last;var uninvolved=next;}
+// set uninvolved display properties to none so they don't take up space
   $('li.'+uninvolved+', .object.'+uninvolved).css('display','none');
-// move the current ones in the specified direction off the screen
-  $('li.'+which+', .object.'+which).animate({left: amt}), 500;
-// move the upcoming ones in from the correct direction onto the screen
-// CHANGE THIS TO CLASS TOGGLE AND CSS ANIMATION
-  setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({left:0}), 600},200);
+// move the current ones in the specified direction off the screen 
+// and move the upcoming ones in from the correct direction onto the screen
+  if (carouseldirection == 'top') {
+    $('li.'+which+', .object'+which).animate({top: amt}), 500;
+    setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({top:0}), 600},200);
+  } else {
+    $('li.'+which+', .object.'+which).animate({left: amt}), 500;
+    setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({left:0}), 600},200);
+  }
 // squish things when other things should be visible
-  if (replacer=='photos'){$('.charts').css('height',0);}else{$('.charts').css('height','100%')};
-  if (replacer=='wetfood'){$('#dryfood').css('display','none')}else{$('#dryfood').css('display','inline-block')};
+  if (replacer=='photos'){$('.charts').css('display','none');}else{$('.charts').css('display','inline-block')}
+  if (replacer!=='dryfood'){$('#dryfood').css('display','none')}else{$('#dryfood').css('display','inline-block')};
 }
 
+// Make sure carousel/objects are arranged well depending on screen size/orientation
 function smallscreen(windowwidth, windowheight, keyheight){
 // If screen is at least 350px tall put the carousel on top
   if (windowheight >=350) {
     var carouselheight = 43;var carouseldirection='left';
     var availheight = windowheight - keyheight - carouselheight;var availwidth = '100%';
     var left=0; var keytop=carouselheight;var maintop=keyheight + carouselheight;
-    var oldrew='up';var newrew='left';var oldfwd='down';var newfwd='right';  
+    var oldrew='up';var newrew='left';var oldfwd='down';var newfwd='right';
+    var limargin=0;
   } else { // Otherwise put the carousel on the left
     var carouselheight = '100%';var carouseldirection='top';
     var availheight = windowheight - keyheight;var availwidth = windowwidth-120;
     var left=120; var keytop=0;var maintop=keyheight;
     var oldrew='left';var newrew='up';var oldfwd='right';var newfwd='down';
+    var liheight=~~[$('li').css('height').slice(0,-2)]+15;
+    var limargin=(windowheight-liheight)/2;
   }
 // make room above/to left of the main div for the carousel etc
   $('.maindiv').css('height',availheight).css('margin-top',maintop).css('width',availwidth).css('margin-left',left);
   $('#photoslider').css('height',availheight).css('width',availwidth);
   $('#key').css('top',keytop).css('width',availwidth).css('left',left);
+  //$('.dryfood, .wetfood, .photos').css('left',0).css('top',top);
+  $('li').css('margin-top',limargin);
 // set max image dims
   $('img').css('max-height',0.95*availheight).css('max-width',0.95*availwidth);
 // toggle class of arrows (pointing left/right vs up/down)
   $('i.fa-arrow-'+oldrew).removeClass('fa-arrow-'+oldrew).addClass('fa-arrow-'+newrew);
   $('i.fa-arrow-'+oldfwd).removeClass('fa-arrow-'+oldfwd).addClass('fa-arrow-'+newfwd);
-// show correct object based on which list item is currently visible
-  if ($('li.dryfood').css('display')!='none' & $('li.dryfood').css(carouseldirection)=='0px') {
+// show correct chart/photo object based on which list item is currently visible
+  if ($('li.dryfood').css('display')!='none' & $('li.dryfood').css('top')=='0px' & $('li.dryfood').css('left')=='0px') {
     $('.wetfood, .photos').css('display','none');
+    $('.charts, .dryfood').css('display','inline-block');
   }
-  if ($('li.wetfood').css('display')!='none' & $('li.wetfood').css(carouseldirection)=='0px') {
+  if ($('li.wetfood').css('display')!='none' & $('li.wetfood').css('top')=='0px' & $('li.wetfood').css('left')=='0px') {
     $('.dryfood, .photos').css('display','none');
+    $('.charts').css('display','inline-block');
   }
-  if ($('li.photos').css('display')!='none' & $('li.photos').css(carouseldirection)=='0px') {
-    $('.charts').css('height',0);$('.dryfood, .wetfood').css('display','none');
+  if ($('li.photos').css('display')!='none' & $('li.photos').css('top')=='0px' & $('li.photos').css('left')=='0px') {
+    $('.charts').css('display','none');$('.dryfood, .wetfood').css('display','none');
   }
 }
 
-// if right/left carousel arrows/words are clicked or swiped, do function to scroll appropriately through list items and objects
-  $('li>i.fa-arrow-right, .next').click(function(){
-    var which = $(this).parent().attr('class');
-    showthings(which,'right');
-  });
-  $('li>i.fa-arrow-left, .last').click(function(){
-    var which = $(this).parent().attr('class');
-    showthings(which,'left');
-  });
-  $('li>i.fa-arrow-right, .next').touchwipe({
-    wipeLeft: function() { 
-      var which = $('li').filter(function() {return $(this).css('left') == '0px';}).attr('class');
-      showthings(which,'right');
-    },
-    min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
-  });
-  $('li>i.fa-arrow-left, .last').touchwipe({
-    wipeRight: function() { 
-      var which = $('li').filter(function() {return $(this).css('left') == '0px';}).attr('class');
-      showthings(which,'left');
-    },
-    min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
-  });
+// if right/left or up/down carousel arrows or words are clicked or swiped, 
+// scroll appropriately through list items and objects
+  // CLICK
+    function clickscroll(){
+      var thisclass =$(this).attr('class');
+      if (thisclass=='fa fa-arrow-right' | thisclass=='fa fa-arrow-down' | thisclass=='next') {var dir='next';}
+      else {var dir='last';}
+      var which = $(this).parent().attr('class');
+      showthings(which,dir);
+    }
+    $('.fa.fa-arrow-right, .fa.fa-arrow-down, .fa.fa-arrow-left, .fa.fa-arrow-up, .next, .last')
+      .on('click', clickscroll);
+    
+    $('li>i.fa-arrow-right, .next').touchwipe({
+      wipeLeft: function() { 
+        var which = $('li').filter(function() {return $(this).css('left') == '0px';}).attr('class');
+        showthings(which,'next');
+      },
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    });
+    $('li>i.fa-arrow-left, .last').touchwipe({
+      wipeRight: function() {
+        var which = $('li').filter(function() {return $(this).css('left') == '0px';}).attr('class');
+        showthings(which,'last');
+      },
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    });
+
+  // SWIPE
+    $('ul').touchwipe({
+      wipeUp: function() {
+        if ($(window).height() <350) {
+          if ($('li.dryfood').css('display')!='none' & $('li.dryfood').css('top')=='0px'){var which='dryfood';}
+          if ($('li.wetfood').css('display')!='none' & $('li.wetfood').css('top')=='0px'){var which='wetfood';}
+          if ($('li.photos').css('display')!='none' & $('li.photos').css('top')=='0px'){var which='photos';}
+          showthings(which,'last');
+        }
+      },
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    })
+    $('ul').touchwipe({
+      wipeDown: function() {
+        if ($(window).height() <350) {
+          if ($('li.dryfood').css('display')!='none' & $('li.dryfood').css('top')=='0px'){var which='dryfood';}
+          if ($('li.wetfood').css('display')!='none' & $('li.wetfood').css('top')=='0px'){var which='wetfood';}
+          if ($('li.photos').css('display')!='none' & $('li.photos').css('top')=='0px'){var which='photos';}
+          showthings(which,'next');
+        }
+      },
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    })
+
 
 ///////// DIMENSIONS //////////
-// change height of main div to accomodate carousel slider when screen is small and trigger carousel fxn
+// test window dims. If screen is small, trigger fxn to arrange elements accordingly
+// otherwise, revert to default style when large
   function maindiv(){
     var windowwidth=window.innerWidth || 
     document.documentElement.clientWidth || 
@@ -104,15 +149,14 @@ function smallscreen(windowwidth, windowheight, keyheight){
     if (windowwidth<600 | windowheight <350) {
       smallscreen(windowwidth, windowheight, keyheight);
     } else {
-        $('.maindiv').css('height','100%').css('margin-top',0).css('width','100%').css('margin-left',0);
+        $('.maindiv').css('height','100%').css('margin-top',0).css('width','100%').css('margin-left','auto');
         $('.charts').css('height','100%').css('display','inline-block');
-        $('#dryfood, #wetfood, #photoslider').css('display','inline-block').css('left',0);
+        $('#dryfood, #wetfood, #photoslider').css('display','inline-block').css('left',0).css('top',0);
         $('#photoslider').css('height',windowheight-keyheight).css('width','49%');
         $('#key').css('width','49%').css('top',0).css('left',0);
         $('img').css('max-width','290px').css('max-height','90%');
         $('body').css('overflow-y','hidden');
     }
-    return [windowwidth, windowheight, photosliderwidth, photosliderheight]; 
   }
   $(window).on('resize', maindiv);
   maindiv(); 
@@ -132,11 +176,12 @@ function smallscreen(windowwidth, windowheight, keyheight){
     document.documentElement.clientWidth || 
     document.body.clientWidth;
     var windowheight=$(window).height();
-    if (windowwidth<600 | windowheight <=350){var divisor=1;var overallwidth = $('.maindiv').width();}
+    if (windowwidth<600 | windowheight <350){var divisor=1;var overallwidth = $('.maindiv').width();}
     else{var divisor=2;var overallwidth = $('.maindiv').width()*0.5;}
     var margin = {top: 10, right: -30, bottom: 20, left: 0},
     width =  overallwidth - margin.left - margin.right,
     height = ($('.maindiv').height() - divisor*margin.top - divisor*margin.bottom)/divisor;
+    if (width>700){width=700;}
     return [width,height];
   }
 
@@ -216,16 +261,16 @@ function smallscreen(windowwidth, windowheight, keyheight){
         $('#handle').css('margin-left',(index+step)*dailypixels());
       }
     }
-    $('.photosright').touchwipe({
+    $('.photosright, .rightscroller').touchwipe({
       wipeLeft: function() { photo_scroll(0);},
       min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
     });
-    $('.photosleft').touchwipe({
+    $('.photosleft, .leftscroller').touchwipe({
       wipeRight: function() { photo_scroll(-2);},
       min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
     });
-    $('.photosright').click(function(){photo_scroll(0);})
-    $('.photosleft').click(function(){photo_scroll(-2);})
+    $('.photosright, .rightscroller').click(function(){photo_scroll(0);})
+    $('.photosleft, .leftscroller').click(function(){photo_scroll(-2);})
       
 
 
