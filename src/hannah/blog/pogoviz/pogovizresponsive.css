@@ -37,6 +37,7 @@ svg{cursor:pointer;}
 /* ----------- look of keyslider, scrollbar, and selected/hovered divs ----------*/
 table{display:table;}
 tr{width:100%;line-height:24px;font-weight:bold;text-align:left;}
+tr:first-child{display:none;} /* hide hover key by default until we know user can hover */
 td{position:relative;width:100%;}
 .hovered,.selected{font-weight:normal;}
 #scrollability{cursor:pointer;z-index:4;}
@@ -144,7 +145,7 @@ img {
   .object.dryfood{display:inline-block;}
   .charts{width:100%;}
   #key{width:100%;position:absolute;top:43px;}
-  tr:first-child{display:none;} /* turn off hover key when screen is small: should eventually make this js based and test for hover capability*/
+  /*tr:first-child{display:none;opacity:0;} /* actually disappear hover key when screen is small unless user can hover*/
   #keytable{width:298px;margin:auto;}
   #photoslider{height:100%;width:100%;margin:0;}
   img{max-width:95%;margin:5px auto 10px auto;}
@@ -153,6 +154,9 @@ img {
   .wetfood{left:-200%;}
   .photos{left:200%;}
 }
+/* let hover table row show if user can hover*/
+.user-is-hovering{display:table-row!important;}
+.user-is-touching{display:none!important;}
 
 @media screen and (max-height:349px) {
 /* Carousel look */  
@@ -178,7 +182,6 @@ img {
   .object.dryfood{display:block;}
   .charts{width:100%;}
   #key{width:100%;position:absolute;top:43px;}
-  tr:first-child{display:none;} /* turn off hover key when screen is small: should eventually make this js based and test for hover capability*/
   #keytable{width:298px;margin:auto;}
   #photoslider{height:100%;width:100%;margin:0;}
   img{max-width:95%;margin:5px auto 10px auto;}

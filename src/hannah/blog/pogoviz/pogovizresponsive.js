@@ -2,8 +2,6 @@
 // Control look and function of photos, slider, table, and charts
 //////////////////////////////////////////////////////////////////
 'use strict';
-// Contain all your functionality in a self calling anonymous function, so that you don't clutter the global namespase.
-//(function() {
 $(document).ready(function() {
 
 ///////// CAROUSEL (for small screens) //////////
@@ -445,7 +443,7 @@ function smallscreen(windowwidth, windowheight, keyheight){
     highlightdots(dtgFormat.parse(getdate(gethandle())));
   }
 
-/*
+/* would be better to do something like this instead of having dry/wet charts separate
 var foodtypes = ['dry','wet'];
 for (var ft in foodtypes) {
   var thischart = dc.lineChart('#'+foodtypes[ft]+'food');
@@ -505,8 +503,30 @@ for (var ft in foodtypes) {
     wetfood.width(width).height(height);
     dc.renderAll();
   };
-  $(window).on('resize load', resize);
+  $(window).on('resize', resize);
   resize(); 
+
+
+// Check if user can hover - will decide if hover area shows up based on results
+  function hovercheck(sign,action){
+    var heightnow=parseFloat($('.maindiv').css('height'))+sign*26;
+    var mgnow=parseFloat($('.maindiv').css('margin-top'))-sign*26;
+    var photosheight=parseFloat($('#photoslider').css('height'))+sign*26;
+    $('tr:first-child').addClass('user-is-'+action);
+    if ($(window).width()<600){$('.maindiv').css('height',heightnow).css('margin-top',mgnow);} 
+    $('.photos').css('height',photosheight);
+    resize();
+  }
+  window.addEventListener('mouseover', function onFirstHover() {
+    hovercheck(-1,'hovering');
+    window.removeEventListener('mouseover', onFirstHover, false);
+  }, false);
+  window.addEventListener('touchstart', function onFirstTouch() {
+    hovercheck(1,'touching');
+    window.removeEventListener('touchstart', onFirstTouch, false);
+  }, false);
+
+
   
 });
 
