@@ -104,7 +104,7 @@ a:link,a:visited,a:hover,a:active{color:black;}
     height:100%;
     padding:0;
 }
-#leftside{width:20%;margin-right:80%;}#rightside{width:80%;margin-left:20%;}
+#leftside{width:30%;margin-right:70%;}#rightside{width:70%;margin-left:30%;}
 .topband,.bottomband{
     position:absolute;
     width:100%;

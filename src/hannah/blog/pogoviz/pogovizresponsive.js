@@ -220,11 +220,11 @@ function smallscreen(windowwidth, windowheight, keyheight){
       if (status=='Play' & auto==1){return;}
       // Otherwise, continue
       else {
-        var url = '../images/slides/'+ index + '.jpg';
       // Add new image behind current image, set opacity appropriately, then remove all but new image
-        $('#photoslider').prepend($('<img/>').attr('src',url));
-        $('#photoslider img:first-child').css('opacity',1);
-        $('#photoslider img:last').css('opacity',0);
+      // these are supposed to fade into each other but don't..
+        $('#photoslider').prepend($('<img/>').attr('src','../images/slides/'+ index + '.jpg'));
+        $('#photoslider img:first-child').addClass('opaque').removeClass('transparent');
+        $('#photoslider img:last').addClass('transparent').removeClass('opaque');
         $('img:first-child ~ img').remove(); //remove extra photos (if handle was dragged)
       // If we are on auto: move handle, change selected info, highlight dots to match photo, wait for photo to load
       // Then initiate showing next picture
@@ -252,7 +252,7 @@ function smallscreen(windowwidth, windowheight, keyheight){
   // Swiping/clicking through photos
     function photo_scroll(step){
       var index = ~~$('img').attr('src').substring(17).replace('.jpg','');
-      if ((index>1 & step==-2) | (index<lastImage & step==0)) { // no modular image scrolling 
+      if ((index>1 & step==-2) | (index<lastImage & step==0)) { // no modular image scrolling except in slideshow
         showpix(index+step+1);
         getvals(getdate((index+step)*dailypixels()));
         highlightdots(dtgFormat.parse(getdate((index+step)*dailypixels())));
@@ -267,11 +267,20 @@ function smallscreen(windowwidth, windowheight, keyheight){
       wipeRight: function() { photo_scroll(-2);},
       min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
     });
-    $('.photosright, .rightscroller').click(function(){photo_scroll(0);})
-    $('.photosleft, .leftscroller').click(function(){photo_scroll(-2);})
+    $('.photosright, .rightscroller').on('click', function(){photo_scroll(0);})
+    $('.photosleft, .leftscroller').on('click', function(){photo_scroll(-2);})
       
-
-
+// highlight left and right scroll arrows when hovering on diff areas of the photoslider
+    function opscroll(event,direction){
+      if (event.type == 'mouseover' && $('tr:first-child').hasClass('user-is-touching')==true) {return;}
+      else{$('.'+direction+'scroller').css('opacity','1');}}
+    function trscroll(direction){$('.'+direction+'scroller').css('opacity','0.3');}
+    $('.photosleft').on('touchstart mouseover', function(){opscroll(event,'left')});
+    $('.photosleft').on('touchend mouseout', function(){trscroll('left')});
+    $('.photosright').on('touchstart mouseover', function(){opscroll(event,'right')});
+    $('.photosright').on('touchend mouseout', function(){trscroll('right')});
+  
+  
 //------------ SLIDER/HANDLE/CHART HIGHLIGHTING -------------//
   // f(date): get both wet and dry values for a given date and announce it in the "selected" area
     function getvals(selected) { // takes a value of date formatted like "11/30/16"

@@ -83,14 +83,12 @@ td{position:relative;width:100%;}
 #photoslider{position:relative;margin-top:0;}
 img {
   z-index:1;
-  opacity:0;
   position:absolute;
   max-width:290px; /* the width of the slider - padding */
   text-align:center;
   margin:auto;
   padding: 5px 0px 5px 0px!important;
   max-height:90%;
-  filter: alpha(opacity=0);
   -webkit-transition:opacity 1s;
   transition:opacity 1s;
   -moz-transition:opacity 1s;
@@ -100,6 +98,9 @@ img {
   transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
 }
+.transparent{opacity:0;filter: alpha(opacity=0);}
+.opaque{opacity:1;filter: alpha(opacity=1);}
+
 #dryfood,#wetfood,#key,#photoslider,.dryfood,.wetfood,.photos{display:inline-block;left:0;}
 .photosleft,.photosright{position:absolute;height:100%;width:50%;z-index:2;}
 .photosright{right:0;}
@@ -116,7 +117,7 @@ img {
     -webkit-text-stroke-color: black;
 }
 .leftscroller{left:11%;}.rightscroller {right:11%;}
-.rightscroller:hover,.leftscroller:hover{opacity:1!important;}
+/*.rightscroller:hover,.leftscroller:hover{opacity:1!important;}*/
 
 
 
@@ -155,7 +156,7 @@ img {
   .photos{left:200%;}
 }
 /* let hover table row show if user can hover*/
-.user-is-hovering{display:table-row!important;}
+/*.user-is-hovering{display:table-row!important;}  this doesn't really do anything*/
 .user-is-touching{display:none!important;}
 
 @media screen and (max-height:349px) {
