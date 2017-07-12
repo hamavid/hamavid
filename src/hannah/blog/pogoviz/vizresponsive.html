@@ -50,8 +50,11 @@
       <tr><td>Selected:<span class="selected"></span><span class='noselect playslides'>Play</span></td></tr>
       <tr class='noselect'><td id="scrollability">
       <!-- &#x25C1, &#x25B7 utf8 arrow version-->
-        <span id="leftscroller"><i class="fa fa-caret-square-o-left fa-lg" aria-hidden="true"></i></span>
-        <span id="rightscroller"><i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></span>
+        <!--<span id="leftscroller"><i class="fa fa-caret-square-o-left fa-lg" aria-hidden="true"></i></span>
+        <span id="rightscroller"><i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></span>-->
+
+        <span id="leftscroller"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i></span>
+        <span id="rightscroller"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></span>
         <span id="handle"></span>
         <span id="datescrollbar"></span>
       </td></tr>
@@ -61,11 +64,11 @@
 <!-- Photos-->
   <div class='object photos noselect' id=photoslider>
       <img src=''>
-      <div class='photosleft'></div>
-      <div class='photosright'></div>
+      <div id='photosleft'></div>
+      <div id='photosright'></div>
       <div class='loading'>Loading...</div>
-      <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
-      <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
+      <i class="photoleftscroller fa fa-angle-left fa-2x"></i>
+      <i class="photorightscroller fa fa-angle-right fa-2x"></i>
   </div>
 
 </div>

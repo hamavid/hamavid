@@ -38,6 +38,9 @@ svg{cursor:pointer;}
 table{display:table;}
 tr{width:100%;line-height:24px;font-weight:bold;text-align:left;}
 tr:first-child{display:none;} /* hide hover key by default until we know user can hover */
+/* let hover table row show if user can hover*/
+.user-is-hovering{display:table-row!important;}
+.user-is-touching{display:none!important;}
 td{position:relative;width:100%;}
 .hovered,.selected{font-weight:normal;}
 #scrollability{cursor:pointer;z-index:4;}
@@ -46,20 +49,28 @@ td{position:relative;width:100%;}
   border:2px solid black;
   border-radius:2px;
   opacity:0.9;
-  height:8px;top:3px;
-  width:257px;
+  height:8px;top:7px;
+  width:257.5px;
   left:17px;
   line-height:17px
 }
-#leftscroller,#rightscroller{line-height:17px;}
-#leftscroller,#rightscroller,#datescrollbar{;z-index:5;}
+#leftscroller,#rightscroller{
+  width:14px;line-height:20px;z-index:5;border:2px solid black;border-radius:3px;
+}
+table i{width:14px;text-align:center;}
+#rightscroller i {padding-left:1px;}
+#datescrollbar{;z-index:4;}
 #leftscroller{float:left;} #rightscroller{float:right;}
+.activearrow{
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size:1.3em;
+}
 #handle{
   opacity:0.7;
   position:absolute;
   height:15px;
   width:4px;
-  top:1px;
+  top:5px;
   border-radius:2px;
   background-color:#333;
   border:1px solid #333;
@@ -102,22 +113,22 @@ img {
 .opaque{opacity:1;filter: alpha(opacity=1);}
 
 #dryfood,#wetfood,#key,#photoslider,.dryfood,.wetfood,.photos{display:inline-block;left:0;}
-.photosleft,.photosright{position:absolute;height:100%;width:50%;z-index:2;}
-.photosright{right:0;}
+#photosleft,#photosright{position:absolute;height:100%;width:50%;z-index:3;cursor:pointer;}
+#photosright{right:0;}
 .loading{position:absolute;width:100%;top:50%;color:#dcdcdc;font-variant: small-caps;}
-.leftscroller,.rightscroller {
+.photoleftscroller,.photorightscroller {
     position:absolute;
     color:#f1f1f1;
     cursor:pointer;
     top: 40%;
-    font-size:2em;
+    font-size:4em;
     opacity:0.3;
     z-index:2;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
-.leftscroller{left:11%;}.rightscroller {right:11%;}
-/*.rightscroller:hover,.leftscroller:hover{opacity:1!important;}*/
+.photoleftscroller{left:11%;}.photorightscroller {right:11%;}
+/*.photorightscroller:hover,.photoleftscroller:hover{opacity:1!important;}*/
 
 
 
@@ -149,15 +160,12 @@ img {
   /*tr:first-child{display:none;opacity:0;} /* actually disappear hover key when screen is small unless user can hover*/
   #keytable{width:298px;margin:auto;}
   #photoslider{height:100%;width:100%;margin:0;}
-  img{max-width:95%;margin:5px auto 10px auto;}
+  img{max-width:95%;margin:auto auto 10px auto;}
   #datescrollbar{width:256px;}
   .dryfood{left:0;}
   .wetfood{left:-200%;}
   .photos{left:200%;}
 }
-/* let hover table row show if user can hover*/
-/*.user-is-hovering{display:table-row!important;}  this doesn't really do anything*/
-.user-is-touching{display:none!important;}
 
 @media screen and (max-height:349px) {
 /* Carousel look */  
@@ -185,7 +193,7 @@ img {
   #key{width:100%;position:absolute;top:43px;}
   #keytable{width:298px;margin:auto;}
   #photoslider{height:100%;width:100%;margin:0;}
-  img{max-width:95%;margin:5px auto 10px auto;}
+  img{max-width:95%;margin:auto auto 10px auto;}
   #datescrollbar{width:256px;}  
   .dryfood{top:0;}
   .wetfood{top:-200%;}
