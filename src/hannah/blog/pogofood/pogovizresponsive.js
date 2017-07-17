@@ -99,7 +99,8 @@ function smallscreen(windowwidth, windowheight, keyheight){
     }
     $('.fa.fa-arrow-right, .fa.fa-arrow-down, .fa.fa-arrow-left, .fa.fa-arrow-up, .next, .last')
       .on('click', clickscroll);
-    
+
+  // SWIPE  
     $('li>i.fa-arrow-right, .next').touchwipe({
       wipeLeft: function() { 
         var which = $('li').filter(function() {return $(this).css('left') == '0px';}).attr('class');
@@ -114,8 +115,6 @@ function smallscreen(windowwidth, windowheight, keyheight){
       },
       min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
     });
-
-  // SWIPE
     $('ul').touchwipe({
       wipeUp: function() {
         if ($(window).height() <350) {
@@ -229,18 +228,26 @@ function smallscreen(windowwidth, windowheight, keyheight){
       else {
       // Add new image behind current image, set opacity appropriately, then remove all but new image
       // these are supposed to fade into each other but don't..
-        $('#photoslider').prepend($('<img/>').attr('src','../images/slides/'+ index + '.jpg'));
+        var ps=$('#photoslider');
+        ps.prepend($('<img/>').attr('src','../images/slides/'+ index + '.jpg'));
         $('#photoslider img:first-child').addClass('opaque').removeClass('transparent');
         $('#photoslider img:last').addClass('transparent').removeClass('opaque');
         $('img:first-child ~ img').remove(); //remove extra photos (if handle was dragged)
-      // If we are on auto: move handle, change selected info, highlight dots to match photo, wait for photo to load
-      // Then initiate showing next picture
+      // If we are on auto: move handle, change selected info, highlight dots to match photo, initiate showing next picture 
         if (status=='Stop' & auto==1) {
-          getvals(getdate((index-1 % lastImage)*dailypixels()));
-          highlightdots(dtgFormat.parse(getdate((index-1 % lastImage)*dailypixels())));
-          $('#handle').css('margin-left',(index-1 % lastImage)*dailypixels());
-          setTimeout(function() {showpix((index % lastImage) + 1,1);}, 1500);
-        } 
+          if (ps.css('display')!='none' & ps.css('top')=='0px' & ps.css('left')=='0px') {
+            var waittime=1500;
+            $('#photoslider img:first-child').on('load', function(){keepplaying(waittime);});
+          } else {
+            var waittime=900;keepplaying(waittime);
+          }
+          function keepplaying(waittime){
+            getvals(getdate((index-1 % lastImage)*dailypixels()));
+            highlightdots(dtgFormat.parse(getdate((index-1 % lastImage)*dailypixels())));
+            $('#handle').css('margin-left',(index-1 % lastImage)*dailypixels());
+            setTimeout(function() {showpix((index % lastImage) + 1,1);}, waittime);
+          } 
+        }
       }
     };  
 
