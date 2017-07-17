@@ -12,30 +12,33 @@ function showthings(which, direction){
   if (which=='wetfood'){var next='photos';var last='dryfood';}
   if (which=='photos'){var next='dryfood';var last='wetfood';}
 // Determine direction of swing and size of offset based on height of screen
-  if ($(window).height() >=350) {var carouseldirection='left';var offset='200%';var unrelated='top';}
+  if ($(window).height() >=350) {var carouseldirection='left';var offset=2*$(window).width()+'px';var unrelated='top';}
   else{var carouseldirection='top';var offset=2*$(window).height()+'px';var unrelated='left';}
 // make sure objects and lists are in appropriate positions
   $('li.'+next+', .object.'+next).css(carouseldirection,offset);
   $('li.'+last+', .object.'+last).css(carouseldirection,'-'+offset);
   $('li.'+which+', .object.'+which).css(carouseldirection,0);
-  $('li, .object').css(unrelated,0);
+  $('li, .object, .dryfood, .wetfood, .photos').css(unrelated,0);
 // set vars for which class of element to show next and which direction to move it
   if (direction=='next'){var amt='-'+offset;var replacer=next;var uninvolved=last;}
-  else{var amt=offset;var replacer=last;var uninvolved=next;}
-// set uninvolved display properties to none so they don't take up space
-  $('li.'+uninvolved+', .object.'+uninvolved).css('display','none');
-// move the current ones in the specified direction off the screen 
-// and move the upcoming ones in from the correct direction onto the screen
-  if (carouseldirection == 'top') {
-    $('li.'+which+', .object'+which).animate({top: amt}), 500;
-    setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({top:0}), 600},200);
-  } else {
-    $('li.'+which+', .object.'+which).animate({left: amt}), 500;
-    setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({left:0}), 600},200);
-  }
+  if (direction=='last'){var amt=offset;var replacer=last;var uninvolved=next;}
+  if (direction=='none'){var amt=0;var replacer;var uninvolved;}
+  if (direction!='none'){
+  // set uninvolved display properties to none so they don't take up space
+    $('li.'+uninvolved+', .object.'+uninvolved).css('display','none');
+  // move the current ones in the specified direction off the screen 
+  // and move the upcoming ones in from the correct direction onto the screen
+    if (carouseldirection == 'top') {
+      $('li.'+which+', .object'+which).animate({top: amt}), 500;
+      setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({top:0}), 600},200);
+    } else {
+      $('li.'+which+', .object.'+which).animate({left: amt}), 500;
+      setTimeout(function(){$('li.'+replacer+', .object.'+replacer).css('display','inline-block').animate({left:0}), 600},200);
+    }
 // squish things when other things should be visible
-  if (replacer=='photos'){$('.charts').css('display','none');}else{$('.charts').css('display','inline-block')}
-  if (replacer!=='dryfood'){$('#dryfood').css('display','none')}else{$('#dryfood').css('display','inline-block')};
+    if (replacer=='photos'){$('.charts').css('display','none');}else{$('.charts').css('display','inline-block')}
+    if (replacer!=='dryfood'){$('#dryfood').css('display','none')}else{$('#dryfood').css('display','inline-block')};
+  }
 }
 
 // Make sure carousel/objects are arranged well depending on screen size/orientation
@@ -71,13 +74,16 @@ function smallscreen(windowwidth, windowheight, keyheight){
   if ($('li.dryfood').css('display')!='none' & $('li.dryfood').css('top')=='0px' & $('li.dryfood').css('left')=='0px') {
     $('.wetfood, .photos').css('display','none');
     $('.charts, .dryfood').css('display','inline-block');
+    showthings('dryfood','none');
   }
   if ($('li.wetfood').css('display')!='none' & $('li.wetfood').css('top')=='0px' & $('li.wetfood').css('left')=='0px') {
     $('.dryfood, .photos').css('display','none');
-    $('.charts').css('display','inline-block');
+    $('.charts, .wetfood').css('display','inline-block');
+    showthings('wetfood','none');
   }
   if ($('li.photos').css('display')!='none' & $('li.photos').css('top')=='0px' & $('li.photos').css('left')=='0px') {
-    $('.charts').css('display','none');$('.dryfood, .wetfood').css('display','none');
+    $('.charts, .dryfood, .wetfood').css('display','none');
+    showthings('photos','none');
   }
 }
 

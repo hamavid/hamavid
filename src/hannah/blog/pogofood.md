@@ -3,7 +3,7 @@ outadir: "../"
 layout: HHblogpost.html
 link: "./pogoviz"
 title: "How much does the cat eat?"
-date: 2017-04-14
+date: 2017-07-18
 pagetype: BLOG
 ---
 
@@ -22,7 +22,7 @@ A few weeks after Pogo moved in, we began writing on the dry erase board on the 
 <figure><img src="images/data.jpg" title="Dry-erase board with data"><figcaption>Cat food data collection in top right</figcaption></figure>
 
 ### Results
-Cat food consumption was tracked for 96 days from Nov 24, 2016 through Feb 27, 2017. Over this observation period, Pogo ate an average of 5.8T dry and 1.4Oz wet food per day. Daily dry food consumption ranged from 2 to 8T, while wet food was between 0 and 1.83Oz. Wet food remained fairly consistent at either 1.38 or 1.83Oz daily (1/4 and 1/3 of a can, respectively), dipping below 1.38 for only 7 of the 96 days. Dry food followed an upward trend until around the new year, increasing a tablespoon every 11 days from 4 to 7T (R<sup>2</sup>=0.48). It then levelled off to just under 6T for the remainder of the observation period.
+Cat food consumption was tracked for 96 days, from Nov 24, 2016 through Feb 27, 2017. Over this observation period, Pogo ate an average of 5.8T dry and 1.4Oz wet food per day. Daily dry food consumption ranged from 2 to 8T, while wet food was between 0 and 1.83Oz. Wet food remained fairly consistent at either 1.38 or 1.83Oz daily (1/4 and 1/3 of a can, respectively), dipping below 1.38 for only 7 of the 96 days. Dry food followed an upward trend until around the new year, increasing a tablespoon every 11 days from 4 to 7T (R<sup>2</sup>=0.48). It then levelled off to just under 6T for the remainder of the observation period.
 
 
 ### Discussion
