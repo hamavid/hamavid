@@ -3,7 +3,7 @@ outadir: "../"
 layout: HHblogpost.html
 link: "./lotion"
 title: "How to make lotion!"
-date: 2017-04-26
+date: 2017-06-06
 pagetype: BLOG
 ---
 <p style="text-align:center;font-size:1.2em;"><a href="./#recipestart">Skip to recipe</a></p>
@@ -12,9 +12,9 @@ pagetype: BLOG
 The recipe below is adapted from a [vanilla body lotion](https://healthylivinghowto.com/healthy-homemade-lotion-recipe/) recipe on Healthy Living How-To. Other helpful resources include a nice list of [5 basic recipes](http://www.thelittlepine.com/easy-homemade-lotion-recipes/) from The Little Pine, as well as a post from Great Cakes Soap Works about [troubleshooting your lotion](http://www.greatcakessoapworks.com/handmade-soap-blog/index.php/making-lotion-troubleshooting-your-recipe/), which talks about how each ingredient affects the end result.
 
 ### Why make lotion?
-You probably already have a reason if you are reading this at all! So, you do you. That said, one of my main motivations was to support the [fragrance-free movement](http://thinkbeforeyoustink.com/whygofragrancefree.html) by using a low- or no-scent lotion, in effort to [not make people around me sick](http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15). (As a caveat, everyone's sensitivities vary and this lotion may or may not be okay for a given person. See the <a href="#variation">variation</a> below for how to make it more scentless.)
+You probably already have a reason if you are reading this at all! So, you do you. That said, one of my motivations was to support the [fragrance-free movement](http://thinkbeforeyoustink.com/whygofragrancefree.html) by using a low- or no-scent lotion, in effort to [not make people around me sick](http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15). (As a caveat, everyone's sensitivities vary and this lotion may or may not be okay for a given person. See the <a href="#variations">variations</a> below for how to make it more scentless.)
 
-Most of the recipes I read also included some version of the idea that commercial lotions (or generally body products, or possibly all products), are full of toxic additives that are bad for your health, and so making your own helps avoid these effects. I seem to be a weirdo for being skeptical about this theme while simultaneously believing the thing about fragrances giving people seizures. I'll try and write more about this in a later post.
+Most of the recipes I read also included some version of the idea that commercial lotions (or generally body products, or possibly all products), are full of toxic additives that are bad for your health, and so making your own version helps avoid these effects. I seem to be a weirdo for being skeptical about this theme while simultaneously believing the thing about fragrances giving people seizures. I'll try and write more about this in a later post.
 
 And if none of that gets you going, you can make lotion because it's fun, cheap, and customizable. Also, it's cool to know how to do things! It makes the world less mysterious, and makes it easier to figure out even more things.
 
@@ -57,12 +57,14 @@ I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's an
 
 <br/>
 <p style="text-align:center;">Photos by the lovely [Molly Smith](http://www.mollymichellesmith.com)</p><br/>
-<br/><span id="variation"></span>
-### Variation
-Substitute <a href="https://www.amazon.com/gp/product/B004YBW5T0">shea butter</a> for the cocoa butter, and one or two drops of tea-tree oil (cheap-ish at Trader Joe's) for the vanilla extract. Shea butter doesn't like to be super hot, so pay more attention during step two and definitely skip the blowtorch option. This variation ends up feeling a little lighter. For even less of a scent, omit the tea-tree oil and coconut oil.
+<br/><span id="variations"></span>
+### Variations
+1. Substitute <a href="https://www.amazon.com/gp/product/B004YBW5T0">shea butter</a> for the cocoa butter, and one or two drops of tea-tree oil (cheap-ish at Trader Joe's) for the vanilla extract. Shea butter doesn't like to be super hot, so pay more attention during step two and definitely skip the blowtorch option. This variation ends up feeling a little less thick. 
+2. For even less of a scent, omit the tea-tree oil and coconut oil.
+3. Rumor has it you can make your own [sunscreen](https://draxe.com/homemade-sunscreen/) by adding [zinc oxide](https://www.amazon.com/dp/B01MY0OCFD/), if you're into that sort of thing.
 
 ### Notes on storage
-This lotion contains water (in the aloe), and no preservatives, which means fungi and bacteria that are not necessarily good for you can grow in it. *Use it up before that happens!* You can also make lotion with only oil-based ingredients, which will stand up to parasitic invasion for a bit longer&mdash;although it can go rancid. Another consideration is that it's so good at moisturizing that after applying it you become the apocryphal frictionless plane and cannot touch anything for *several minutes*. A real time suck.
+This lotion contains water (in the aloe), and no preservatives, which means fungi and bacteria that are not necessarily good for you can grow in it. *Use it up before that happens!* You can make lotion with only oil-based ingredients which will stand up to parasitic invasion for a bit longer, but can go rancid. Oil-only lotion is also so good at moisturizing that after applying it you become the apocryphal frictionless plane and cannot touch anything for *several minutes*. A real time suck.
 
 
 

@@ -1,7 +1,7 @@
 ---
 outadir: "../"
 layout: HHblogpost.html
-link: "./pogoviz"
+link: "./pogofood"
 title: "How much does the cat eat?"
 date: 2017-07-18
 pagetype: BLOG
@@ -14,7 +14,7 @@ If you'd like to visualize the daily breakdown of cat food consumption with the 
 <p style="text-align:center;padding:1.5em;"><a href="viz" class="vizbutton">See the viz</a></p>
 
 ### Motivation
-I wanted to try dabbling in D3 and responsive web design, and I needed some real, but not too complicated data to start me out. Real so I'd have to map my situation to the tutorial examples, simple enough to stick to without reverting to a tool I already knew. I also planned to put the results on this blog, but I'm ambivalent about putting anything meaningful online, so I wanted to err on the side of boring over controversial or highly personal. Cat food seemed like an innocuous topic aside from exposing us as arguable helicopter parents and definite nerds.
+I wanted to try dabbling in D3 and responsive web design, and I wanted some real, but not too complicated data to start me out. I also planned to put the results on this blog, but I'm ambivalent about putting anything too meaningful online. Cat food seemed like an innocuous topic aside from exposing us as arguable helicopter parents and definite nerds.
 
 ### Data collection
 A few weeks after Pogo moved in, we began writing on the dry erase board on the fridge every time we fed him. Kibble was measured in tablespoon (T) scoops and wet food was estimated as a fraction of a 5.5 ounce (Oz) can. I copied the data over to a Google spreadsheet every time space ran out. After two months, we had a respectable-sized dataset detailing Pogo's food consumption as he grew from an 11 week old kitten who loved to attack rubber balls from the safety of an empty 12-pack into a 3 month old pre-teen who enjoyed batting at bouncy spheres from the shelter of slightly larger boxes.
@@ -32,6 +32,6 @@ Nothing particularly surprising was identified by this study. Increasing dry foo
 
 
 ### Areas for further study
-As mentioned above, this "study" is&mdash;by design&mdash;pretty boring. Any actual discoveries about cat food consumption were incidental to the main goal of producing a toy dataset. Future studies could be made more interesting by tracking additional phenomena such as water intake, exercise, excretion, or weight gain, and exploring how these correlate with food consumption. For instance, does increased hydration correspond with less consumption of wet food? How much does water or food intake go up after exercise? To what extent does food consumption increase with weight gain and vice versa? Water was initially tracked but was dropped from the final report due to haphazard record-keeeping. Excretion didn't seem fun to track. Coming up with a metric for exercise was too complex for the scope of this study, and data collection would have involved monitoring Pogo's behavior more consistently than was feasible. Similarly, a few data for weight were obtained during vet visits, but later attempts to gather data were foiled by the impracticality of convincing Pogo to stand still on the scale we have at home, which is nominally for baking. 
+As mentioned above, this "study" is&mdash;by design&mdash;pretty boring. Any actual discoveries about cat food consumption were incidental to the main goal of producing a toy dataset. Future research could be made more interesting by tracking additional phenomena such as water intake, exercise, excretion, or weight gain, and exploring how these correlate with food consumption. For instance, does increased hydration correspond with less consumption of wet food? How much does water or food intake go up after exercise? To what extent does food consumption increase with weight gain and vice versa? Water was initially tracked but was dropped from the final report due to haphazard record-keeeping. Excretion didn't seem fun to track. Coming up with a metric for exercise was too complex for the scope of this study, and data collection would have involved monitoring Pogo's behavior more consistently than was feasible. Similarly, a few data for weight were obtained during vet visits, but later attempts to gather data were foiled by the impracticality of convincing Pogo to stand still on the scale we have at home, which is nominally for baking. 
 
 
