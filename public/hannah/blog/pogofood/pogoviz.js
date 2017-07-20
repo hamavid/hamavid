@@ -66,7 +66,7 @@ function smallscreen(windowwidth, windowheight, keyheight){
   $('li').css('margin-top',limargin);
 // set max image dims
   if (availwidth=='100%'){var imgavailwidth='95%';}else{var imgavailwidth=0.95*availwidth;}
-  $('img').css('max-height',0.95*availheight).css('max-width',imgavailwidth);
+  $('img').css('max-height',0.95*availheight).css('max-width',imgavailwidth+'px!important');
 // toggle class of arrows (pointing left/right vs up/down)
   $('i.fa-arrow-'+oldrew).removeClass('fa-arrow-'+oldrew).addClass('fa-arrow-'+newrew);
   $('i.fa-arrow-'+oldfwd).removeClass('fa-arrow-'+oldfwd).addClass('fa-arrow-'+newfwd);
@@ -547,8 +547,11 @@ for (var ft in foodtypes) {
     var mgnow=parseFloat($('.maindiv').css('margin-top'))+sign*26;
     var photosheight=parseFloat($('#photoslider').css('height'))-sign*26;
     $('tr:first-child').addClass('user-is-'+action);
-    if ($(window).width()<600 || $(window).height()<350){$('.maindiv').css('height',heightnow).css('margin-top',mgnow);} 
-    $('.photos').css('height',photosheight).css('top',mgnow);
+    if ($(window).width()<600 || $(window).height()<350){
+      $('.maindiv').css('height',heightnow).css('margin-top',mgnow);
+      $('.photos').css('top',mgnow);
+    } 
+    $('.photos').css('height',photosheight);
     resize();
   }
   window.addEventListener('mouseover', function onFirstHover() {
