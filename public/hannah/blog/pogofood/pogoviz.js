@@ -285,9 +285,9 @@ function smallscreen(windowwidth, windowheight, keyheight){
     $('#photosleft, .photoleftscroller').on('click', function(){photo_scroll(-2);})
       
   // highlight left and right photo scroll arrows when hovering/clicking on diff areas of the photoslider
-    $('#photosleft, #photosright').on('mouseover mouseleave touchstart touchend', function(event){
-      var whatarea=event.target.id;if (whatarea==''){var whatarea=$(event.target).parent().attr('id')}
-      var whathappened=event.type;
+    $('#photosleft, #photosright').on('mouseover mouseleave touchstart touchend', function(e){
+      var whatarea=e.target.id;if (whatarea==''){var whatarea=$(event.target).parent().attr('id')}
+      var whathappened=e.type;
       if (whathappened == 'mouseover' && $('tr:first-child').hasClass('user-is-touching')==true) {return;}
       else{
         var direction=whatarea.replace('photos','');
@@ -328,8 +328,8 @@ function smallscreen(windowwidth, windowheight, keyheight){
 
   // move handle based on click position on date scrollbar/arrows
     var maxright = $("#datescrollbar").width()-5; // -5 to go to middle of handle - border
-    function whereami() {
-      var location = event.pageX - $("#datescrollbar").offset().left-3; // so it goes to middle of handle
+    function whereami(e) {
+      var location = e.pageX - $("#datescrollbar").offset().left-3; // so it goes to middle of handle
       if (location<0) {var location=0};
       if (location>maxright) {var location=maxright};
       return location;
@@ -345,21 +345,21 @@ function smallscreen(windowwidth, windowheight, keyheight){
     };
 
   // move handle when datescrollbar, left or right scrollers are clicked
-    $('#datescrollbar, #leftscroller, #rightscroller').on('click', function(event){
-      if ($(event.target).parent().is('span#leftscroller')){
+    $('#datescrollbar, #leftscroller, #rightscroller').on('click', function(e){
+      if ($(e.target).parent().is('span#leftscroller')){
         var unit=gethandle() - 2*dailypixels();var ok=gethandle() >=dailypixels();
       }
-      if ($(event.target).parent().is('span#rightscroller')){
+      if ($(e.target).parent().is('span#rightscroller')){
         var unit=gethandle();var ok=gethandle() <= maxright;
       }
-      if ($(event.target).is('span#datescrollbar')){var unit=whereami();var ok=true;}
+      if ($(e.target).is('span#datescrollbar')){var unit=whereami(e);var ok=true;}
       if (ok==true){$('#handle').css('margin-left',getleft(unit));}
     });
 
   // highlight left/right scrollbar arrows on click
-    $('#leftscroller, #rightscroller').on('mouseover mouseleave touchstart touchend', function(event){
-      var whattochange=event.target.id;if (whattochange==''){var whattochange=$(event.target).parent().attr('id')}
-      var whathappened=event.type;
+    $('#leftscroller, #rightscroller').on('mouseover mouseleave touchstart touchend', function(e){
+      var whattochange=e.target.id;if (whattochange==''){var whattochange=$(e.target).parent().attr('id')}
+      var whathappened=e.type;
       if (whathappened == 'mouseover' && $('tr:first-child').hasClass('user-is-touching')==true) {return;}
       else{
         if (whathappened=='mouseover' || whathappened=='touchstart'){$('#'+whattochange).addClass('activearrow');}
@@ -374,18 +374,18 @@ function smallscreen(windowwidth, windowheight, keyheight){
     var clicking = false;
     $('#datescrollbar').mousedown(function(){clicking = true;});
     $(document).mouseup(function(){clicking = false;})
-    $('#datescrollbar').mousemove(function(){
+    $('#datescrollbar').mousemove(function(e){
     // hoverover - show date in hover field
       if (clicking==false) {
-        $('.hovered').text(" "+getdate(getleft(whereami())));
+        $('.hovered').text(" "+getdate(getleft(whereami(e))));
         $('#datescrollbar').mouseout(function() {
           $('.hovered').text("");
         });
     // clicked - move handle with mouse, show date in hover field, date and data in selected filed, appropriate photo for date
       } else {
-        $('#handle').css('margin-left',getleft(whereami())); 
-        $('.hovered').text(" "+getdate(getleft(whereami())));
-        datecascade(getdate(getleft(whereami())));
+        $('#handle').css('margin-left',getleft(whereami(e))); 
+        $('.hovered').text(" "+getdate(getleft(whereami(e))));
+        datecascade(getdate(getleft(whereami(e))));
       }
     });
 
@@ -543,20 +543,20 @@ for (var ft in foodtypes) {
 
 // Check if user can hover - will decide if hover area shows up based on results
   function hovercheck(sign,action){
-    var heightnow=parseFloat($('.maindiv').css('height'))+sign*26;
-    var mgnow=parseFloat($('.maindiv').css('margin-top'))-sign*26;
-    var photosheight=parseFloat($('#photoslider').css('height'))+sign*26;
+    var heightnow=parseFloat($('.maindiv').css('height'))-sign*26;
+    var mgnow=parseFloat($('.maindiv').css('margin-top'))+sign*26;
+    var photosheight=parseFloat($('#photoslider').css('height'))-sign*26;
     $('tr:first-child').addClass('user-is-'+action);
-    if ($(window).width()<600){$('.maindiv').css('height',heightnow).css('margin-top',mgnow);} 
-    $('.photos').css('height',photosheight);
+    if ($(window).width()<600 || $(window).height()<350){$('.maindiv').css('height',heightnow).css('margin-top',mgnow);} 
+    $('.photos').css('height',photosheight).css('top',mgnow);
     resize();
   }
   window.addEventListener('mouseover', function onFirstHover() {
-    hovercheck(-1,'hovering');
+    hovercheck(1,'hovering');
     window.removeEventListener('mouseover', onFirstHover, false);
   }, false);
   window.addEventListener('touchstart', function onFirstTouch() {
-    hovercheck(1,'touching');
+    hovercheck(-1,'touching');
     window.removeEventListener('touchstart', onFirstTouch, false);
   }, false);
 

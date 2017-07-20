@@ -31,10 +31,11 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/drinker.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print mercreature" style="background: url('../../images/portfolio/thumbs/sinker.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/guardingthelight.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/linosunset.jpeg') 50% 25% no-repeat;"></div></span>
-      <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/linobike.jpeg') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/linobike.jpeg') 0% 0% no-repeat;"></div></span>
       <span><div class="vt print cat" style="background: url('../../images/portfolio/thumbs/linopogo.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt acrylic mercreature" style="background: url('../../images/portfolio/thumbs/paintnsip mermaid.jpg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/linobass.jpeg') 50% 50% no-repeat;"></div></span>
@@ -106,6 +107,7 @@ cssjsfile: "art_portfolio"
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
     
 
+<figure class="print"><img src="../../images/portfolio/drinker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Drinker:</b></i> Linoleum block print - Jul, 2017</span></figcaption></figure>
 <figure class="print mercreature"><img src="../../images/portfolio/sinker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Sinker:</b></i> Linoleum block print - Jul, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/guardingthelight.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Guarding the light:</b></i> Reproduction of print by Si Lewen. Linoleum block print - Jun, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/linosunset.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Sunset:</b></i> Linoleum block print with watercolor - May, 2017</span></figcaption></figure>
