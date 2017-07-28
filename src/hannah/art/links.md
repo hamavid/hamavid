@@ -5,7 +5,7 @@ blurb: Hannah Hamavid art links and recommendations
 cssjsfile: "art_links"
 ---
 <a href="../portfolio"><button class="btn white">Portfolio</button></a>
-      <!--<a href="../shows"><button class="btn white"></i>Shows</button></a>-->
+      <a href="../shows"><button class="btn white"></i>Shows</button></a>
       <a href="../links"><button class="btn"></i>Links</button></a>
     </nav>
   </header>
@@ -15,7 +15,7 @@ cssjsfile: "art_links"
     <div id="buyart">
       <h3>Buy my art</h3>
       <ul>
-        <li><span>Watercolor prints are <a href="https://www.etsy.com/shop/vayavaya">for sale on Etsy</a></span></li><br>
+        <li><span>Watercolor and block prints are <a href="https://www.etsy.com/shop/vayavaya">for sale on Etsy</a></span></li><br>
         <li><span>Email me at<span id="email" class="text-teal" style="font-weight:bold;">hamavid (at) gmail (dot) com</span> for custom-prints and commissions</span></li>
       </ul>
       <p style="font-weight:bold;margin-left:0.5em">Thanks for your support! It means a lot!</p>

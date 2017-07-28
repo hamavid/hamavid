@@ -36,7 +36,7 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 <p>
 <nav>
 <a href=".">[Portfolio]</a>
-<!--<a href="../shows">[Shows]</a>-->
+<a href="../shows">[Shows]</a>
 <a href="../links">[Links]</a>
 </p>
 </nav>
@@ -44,6 +44,8 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/kaeleybird.jpeg">Bird and Sun</a> Commissioned track art for 'Interruptor' by KPH music. Watercolor on paper - Jul, 2017.</li>
+<li><a href="../../images/portfolio/colchuck.jpeg">Colchuck lake</a> Watercolor on paper - Jul, 2017.</li>
 <li><a href="../../images/portfolio/drinker.jpeg">The Drinker</a> Linoleum block print - Jul, 2017.</li>
 <li><a href="../../images/portfolio/sinker.jpeg">The Sinker</a> Linoleum block print - Jul, 2017.</li>
 <li><a href="../../images/portfolio/guardingthelight.jpeg">Guarding the light</a> Reproduction of print by Si Lewen. Linoleum block print - Jun, 2017.</li>

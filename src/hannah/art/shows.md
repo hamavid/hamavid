@@ -26,7 +26,7 @@ cssjsfile: "art_shows"
       <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Dec, 2017</li>
       </ul></p><br><br>
 
-      <h3 style="width:100%">Past<span style="float:right;" class="picture-toggle-button" onclick="$('.photos').slideToggle();">Show/hide photos</span></h3>
+      <h3 style="width:100%">Past<!--<span style="float:right;" class="picture-toggle-button" onclick="$('.photos').slideToggle();">Show/hide photos</span>--></h3>
       <p><ul class="shows_list">
       <li>Chocolati <a href="https://www.facebook.com/GreenwoodChocolatiCafe/">Greenwood</a>, Seattle - Feb, 2013</li>
 

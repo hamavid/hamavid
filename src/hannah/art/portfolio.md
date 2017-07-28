@@ -5,7 +5,7 @@ blurb: Hannah Hamavid's art portfolio
 cssjsfile: "art_portfolio"
 ---
 <a href="../portfolio"><button class="btn">Portfolio</button></a>
-<!--<a href="../shows"><button class="btn white"></i>Shows</button></a>-->
+<a href="../shows"><button class="btn white"></i>Shows</button></a>
 <a href="../links"><button class="btn white"></i>Links</button></a>
 <p class="center text-grey"><span class="text-teal" style="font-weight:bold;">Click any thumbnail to open full images and descriptions.</span><br>Watercolor and block prints available for purchase on <a href="https://www.etsy.com/shop/vayavaya">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
 <!-- Filter-->
@@ -31,6 +31,8 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+    	<span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/kaeleybird.jpeg') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/colchuck.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/drinker.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print mercreature" style="background: url('../../images/portfolio/thumbs/sinker.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/guardingthelight.jpeg') 50% 0% no-repeat;"></div></span>
@@ -77,9 +79,9 @@ cssjsfile: "art_portfolio"
       <span><div class="hz drawing" style="background: url('../../images/portfolio/thumbs/hamletp5.jpg') 0% 50% no-repeat;"></div></span>
       <span><div class="vt drawing" style="background: url('../../images/portfolio/thumbs/hamletp10.png') 50% 0% no-repeat;"></div></span>
       <span><div class="vt acrylic" style="background: url('../../images/portfolio/thumbs/sunflowers.jpeg') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt drawing" style="background: url('../../images/portfolio/thumbs/nude.JPG') 50% 50% no-repeat;"></div></span>
       <span><div class="vt drawing mercreature" style="background: url('../../images/portfolio/thumbs/falling.jpg') 50% 25% no-repeat;"></div></span>
       <span><div class="vt drawing mercreature" style="background: url('../../images/portfolio/thumbs/beached.JPG') 50% 100% no-repeat;"></div></span>
-      <span><div class="vt drawing" style="background: url('../../images/portfolio/thumbs/nude.JPG') 50% 50% no-repeat;"></div></span>
       <span><div class="vt drawing" style="background: url('../../images/portfolio/thumbs/reach.jpg') 50% 50% no-repeat;"></div></span>
       <span><div class="vt watercolor" style="background: url('../../images/portfolio/thumbs/donghu.jpeg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/citycold.JPG') 50% 50% no-repeat;"></div></span>
@@ -105,8 +107,9 @@ cssjsfile: "art_portfolio"
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
-    
 
+<figure class="watercolor"><img src="../../images/portfolio/kaeleybird.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bird and sun:</b></i> Commissioned track art for 'Interruptor' by KPH music. Watercolor on paper - Jul, 2017</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/colchuck.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Colchuck lake:</b></i> Watercolor on paper - Jul, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/drinker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Drinker:</b></i> Linoleum block print - Jul, 2017</span></figcaption></figure>
 <figure class="print mercreature"><img src="../../images/portfolio/sinker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Sinker:</b></i> Linoleum block print - Jul, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/guardingthelight.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Guarding the light:</b></i> Reproduction of print by Si Lewen. Linoleum block print - Jun, 2017</span></figcaption></figure>
@@ -153,9 +156,9 @@ cssjsfile: "art_portfolio"
 <figure class="drawing"><img src="../../images/portfolio/hamletp5.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hamlet, page 5:</b></i> Pencil on paper. Part of graphic novel interpretation of Hamlet for English Literature final class project - 2006</span></figcaption></figure>
 <figure class="drawing"><img src="../../images/portfolio/hamletp10.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hamlet, page 10:</b></i> Pencil on paper. Part of graphic novel interpretation of Hamlet for English Literature final class project - 2006</span></figcaption></figure>
 <figure class="acrylic"><img src="../../images/portfolio/sunflowers.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Sunflowers:</b></i> Acrylic on cardboard - 2006</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/nude.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Nude:</b></i> Chalk pastel on paper - 2006</span></figcaption></figure>
 <figure class="drawing mercreature"><img src="../../images/portfolio/falling.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Falling:</b></i> Marker and water on paper. Part of a series of paintings for unnamed surrealist story - 2005</span></figcaption></figure>
 <figure class="drawing mercreature"><img src="../../images/portfolio/beached.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Beached:</b></i> Marker and water on paper. Part of a series of paintings for unnamed surrealist story - 2005</span></figcaption></figure>
-<figure class="drawing"><img src="../../images/portfolio/nude.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Nude:</b></i> Chalk pastel on paper - 2006</span></figcaption></figure>
 <figure class="drawing"><img src="../../images/portfolio/reach.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Reach:</b></i> Chalk pastel on paper - 2005</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/donghu.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Dong hu:</b></i> East lake, Wuhan, China. Watercolor and pencil on paper - 2004</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/citycold.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Cold city:</b></i> Watercolor and pencil on paper - 2004</span></figcaption></figure>

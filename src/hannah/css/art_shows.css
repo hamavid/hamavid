@@ -35,7 +35,7 @@ a,a:visited{color:black;}
 .details img {width:32%;-webkit-transition:opacity 0.3s;transition:opacity 0.3s;}
 @media only screen and (max-width: 450px) {.details img {width:90%;}}
 .details img:hover{opacity:0.6;}
-/*.photos{display:none;}*/
+.photos{display:none;}
 
 .plusminus {cursor:pointer;}
 .shows_list, .shows_list>ul, .shows_list>ul>li {padding:0;margin:0;}
