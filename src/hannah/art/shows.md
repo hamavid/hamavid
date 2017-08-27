@@ -24,6 +24,7 @@ cssjsfile: "art_shows"
       <p><ul class="shows_list">
       <li>Caffe Vita <a href="http://www.caffevita.com/locations/wa/fremont">Fremont</a>, Seattle - Sep, 2017</li>
       <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Dec, 2017</li>
+      <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan/Feb, 2018</li>
       </ul></p><br><br>
 
       <h3 style="width:100%">Past<!--<span style="float:right;" class="picture-toggle-button" onclick="$('.photos').slideToggle();">Show/hide photos</span>--></h3>

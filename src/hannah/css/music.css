@@ -4,3 +4,4 @@ min-height:100%;
 }
 a,a:link,a:hover,a:active {text-decoration:underline;color:#000;}
 a:visited{color:#757575}
+b a:visited{color:#000;}

@@ -15,9 +15,9 @@ cssjsfile: "music"
 <h3>Projects and collaborations</h3>
 <div>
 <ul>
-<li>Brivele (Seattle-based klezmer folk-punk band, site/info TBA)</li>
-<li>Eitim pre-school album project <a href='https://eitimclass.wordpress.com/2017/06/20/ow-eitim-become-song-writers/'>[Blog post]</a> <a href='https://owtunes.bandcamp.com/'>[Music]</a></li>
-<li>Various collaborations with <a href='https://www.patreon.com/kph'>KPH music</a></li>
+<li><b>Brivele</b> (Seattle-based klezmer folk-punk band, site/info TBA)</li>
+<li><b>Eitim</b> pre-school album project <a href='https://eitimclass.wordpress.com/2017/06/20/ow-eitim-become-song-writers/'>[Blog post]</a> <a href='https://owtunes.bandcamp.com/'>[Music]</a></li>
+<li>Playing with <b><a href='https://www.patreon.com/kph'>KPH music</a></b> <a href='https://www.patreon.com/posts/free-post-thorns-9378025'>[Thorns]</a> <a href='https://www.patreon.com/posts/forgot-to-video-7385468'>[Forgot to Mention]</a> <a href='https://www.patreon.com/posts/water-cover-by-6891317'>[The Water]</a></li>
 </ul>
 </div>
 <br>

@@ -12,7 +12,7 @@ pagetype: BLOG
 The recipe below is adapted from a [vanilla body lotion](https://healthylivinghowto.com/healthy-homemade-lotion-recipe/) recipe on Healthy Living How-To. Other helpful resources include a nice list of [5 basic recipes](http://www.thelittlepine.com/easy-homemade-lotion-recipes/) from The Little Pine, as well as a post from Great Cakes Soap Works about [troubleshooting your lotion](http://www.greatcakessoapworks.com/handmade-soap-blog/index.php/making-lotion-troubleshooting-your-recipe/), which talks about how each ingredient affects the end result.
 
 ### Why make lotion?
-You probably already have a reason if you are reading this at all! So, you do you. That said, one of my motivations was to support the [fragrance-free movement](http://thinkbeforeyoustink.com/whygofragrancefree.html) by using a low- or no-scent lotion, in effort to [not make people around me sick](http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15). (As a caveat, everyone's sensitivities vary and this lotion may or may not be okay for a given person. See the <a href="#variations">variations</a> below for how to make it more scentless.)
+You probably already have a reason if you are reading this at all! So, you do you. That said, one of my motivations was to support the [fragrance-free movement](http://thinkbeforeyoustink.com/whygofragrancefree.html) by using a low- or no-scent lotion, in effort to [not make people around me sick](http://www.brownstargirl.org/blog/fragrance-free-femme-of-colour-realness-draft-15). (As a caveat, everyone's sensitivities differ and this lotion may or may not be okay for a given person. See the <a href="#variations">variations</a> below for how to make it more scentless.)
 
 Most of the recipes I read also included some version of the idea that commercial lotions (or generally body products, or possibly all products), are full of toxic additives that are bad for your health, and so making your own version helps avoid these effects. I seem to be a weirdo for being skeptical about this theme while simultaneously believing the thing about fragrances giving people seizures. I'll try and write more about this in a later post.
 
@@ -43,7 +43,7 @@ I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's an
 <br/>
 
 ### Steps
-1. Heat the almond oil, cocoa butter, and coconut oil. I use a double boiler made from a pot with about an inch of water in it, with a pyrex bowl set on top. You could use an actual double boiler, an actual pot, a microwave, a bonfire, a blowtorch, etc.<figure><img src="./images/unmelted.jpg" title="Unmelted oils in double boiler on stove"><figcaption></figcaption></figure>
+1. Heat the almond oil, cocoa butter, and coconut oil. I use a double boiler made from a pot with about an inch of water in it, with a pyrex bowl set on top. You could use an actual double boiler, a microwave, a blowtorch, etc.<figure><img src="./images/unmelted.jpg" title="Unmelted oils in double boiler on stove"><figcaption></figcaption></figure>
 
 2. Stir occasionally until the cocoa butter and coconut oil have melted completely.<figure><img src="./images/melted.jpg" title="Almost melted oils in double boiler on stove"><figcaption>A bit more melted than this</figcaption></figure>
 
@@ -53,18 +53,18 @@ I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's an
 
 5. To put the lotion in [bottles](https://www.amazon.com/gp/product/B01MFG07H4/) without making a huge mess, I make a piping bag by cutting a tiny corner off a sandwich bag. Next, scoop the lotion into the corner without the hole, then squeeze it into the bottles through the hole.<figure><img src="./images/dispensing.jpg" title="Dispensing lotion into squeeze bottle with ziplock piping bag, bowl with some lotion in background"><figcaption></figcaption></figure>
 
-6. That's it! Wipe excess lotion from bowl, blender, etc onto your skin or a paper towel before cleaning with soap and water (otherwise it might clog the drain.) Store in the fridge for a couple months, or at room temperature for a couple weeks.
+6. That's it! Wipe excess lotion from bowl, blender, etc onto your skin or a paper towel before cleaning with soap and water (otherwise it might clog the drain.) Store in the fridge for a couple months, or at room temperature for a couple weeks.<sup>**</sup>
 
 <br/>
 <p style="text-align:center;">Photos by the lovely [Molly Smith](http://www.mollymichellesmith.com)</p><br/>
 <br/><span id="variations"></span>
 ### Variations
-1. Substitute <a href="https://www.amazon.com/gp/product/B004YBW5T0">shea butter</a> for the cocoa butter, and one or two drops of tea-tree oil (cheap-ish at Trader Joe's) for the vanilla extract. Shea butter doesn't like to be super hot, so pay more attention during step two and definitely skip the blowtorch option. This variation ends up feeling a little less thick. 
-2. For even less of a scent, omit the tea-tree oil and coconut oil (or use refined coconut oil which is less smelly).
+1. Substitute <a href="https://www.amazon.com/gp/product/B004YBW5T0">shea butter</a> for the cocoa butter, and one or two drops of tea-tree oil (cheap-ish at Trader Joe's) for the vanilla extract.
+2. For even less of a scent, omit the tea-tree oil and use refined coconut oil which is less smelly.
 3. Rumor has it you can make your own [sunscreen](https://draxe.com/homemade-sunscreen/) by adding [zinc oxide](https://www.amazon.com/dp/B01MY0OCFD/), if you're into that sort of thing.
 
-### Notes on storage
-This lotion contains water (in the aloe), and no preservatives, which means fungi and bacteria that are not necessarily good for you can grow in it. *Use it up before that happens!* You can make lotion with only oil-based ingredients which may stand up to parasitic invasion for a bit longer, but can go rancid. Oil-only lotion is also so good at moisturizing that after applying it you become the apocryphal frictionless plane and cannot touch anything for *several minutes*. A real time suck.
+### <sup>**</sup>Notes on storage
+This lotion contains water (in the aloe), and no preservatives, which [means](https://thenerdyfarmwife.com/natural-preservatives-for-homemade-lotion-and-cream/) [that](http://www.thankyourbody.com/are-your-homemade-beauty-products-safe/) tiny organisims that are not necessarily good for you will enjoy growing in it. *Use it up before that happens!* You can make lotion with only oil-based ingredients to avoid this problem, but it can still go rancid. Also, have clean hands, dishes, etc. while making the lotion.
 
 
 
