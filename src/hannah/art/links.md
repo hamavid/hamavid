@@ -22,6 +22,9 @@ cssjsfile: "art_links"
     </div>
 
 <div id="recommendations">
+      <!--<h3>Projects and Collaborations</h3>
+      <ul><li><a href='demontown.net'>Demontown</a></li>
+      </ul>-->
       <h3>Recommendations ~ Art I like, made by people I like</h3>
       <ul>
         <li><a href="http://www.bedhermin.com/" target="_blank">Deb</a> - Skeleton dancers, darkish doodles, and Open Body//Human Canvas

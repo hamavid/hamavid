@@ -31,6 +31,8 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="vt print mercreature" style="background: url('../../images/portfolio/thumbs/inker.jpeg') 50% 10% no-repeat;"></div></span>
+      <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/stinker.jpeg') 50% 0% no-repeat;"></div></span>
     	<span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/kaeleybird.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/colchuck.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/drinker.jpeg') 50% 0% no-repeat;"></div></span>
@@ -108,6 +110,8 @@ cssjsfile: "art_portfolio"
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
 
+<figure class="print"><img src="../../images/portfolio/inker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Inker:</b></i> Linoleum block print - Aug, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/stinker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Stinker:</b></i> Linoleum block print - Jul, 2017</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/kaeleybird.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bird and sun:</b></i> Commissioned track art for 'Interruptor' by KPH music. Watercolor on paper - Jul, 2017</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/colchuck.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Colchuck lake:</b></i> Watercolor on paper - Jul, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/drinker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Drinker:</b></i> Linoleum block print - Jul, 2017</span></figcaption></figure>

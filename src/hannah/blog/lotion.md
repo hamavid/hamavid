@@ -60,11 +60,11 @@ I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's an
 <br/><span id="variations"></span>
 ### Variations
 1. Substitute <a href="https://www.amazon.com/gp/product/B004YBW5T0">shea butter</a> for the cocoa butter, and one or two drops of tea-tree oil (cheap-ish at Trader Joe's) for the vanilla extract. Shea butter doesn't like to be super hot, so pay more attention during step two and definitely skip the blowtorch option. This variation ends up feeling a little less thick. 
-2. For even less of a scent, omit the tea-tree oil and coconut oil.
+2. For even less of a scent, omit the tea-tree oil and coconut oil (or use refined coconut oil which is less smelly).
 3. Rumor has it you can make your own [sunscreen](https://draxe.com/homemade-sunscreen/) by adding [zinc oxide](https://www.amazon.com/dp/B01MY0OCFD/), if you're into that sort of thing.
 
 ### Notes on storage
-This lotion contains water (in the aloe), and no preservatives, which means fungi and bacteria that are not necessarily good for you can grow in it. *Use it up before that happens!* You can make lotion with only oil-based ingredients which will stand up to parasitic invasion for a bit longer, but can go rancid. Oil-only lotion is also so good at moisturizing that after applying it you become the apocryphal frictionless plane and cannot touch anything for *several minutes*. A real time suck.
+This lotion contains water (in the aloe), and no preservatives, which means fungi and bacteria that are not necessarily good for you can grow in it. *Use it up before that happens!* You can make lotion with only oil-based ingredients which may stand up to parasitic invasion for a bit longer, but can go rancid. Oil-only lotion is also so good at moisturizing that after applying it you become the apocryphal frictionless plane and cannot touch anything for *several minutes*. A real time suck.
 
 
 

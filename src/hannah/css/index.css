@@ -115,6 +115,7 @@ a,a:hover,a:visited,a:active{color:#666;}
 .righthalf {width:50%;float:right;}*/
 #summary,#pictureofme,.minisections>div{display:inline-block;}
 #aboutsection{max-width:800px;margin:auto;position:relative;padding-top:40px;}
+#aboutcontainer{margin-top:80px;}
 #summary{width:60%;float:left;padding:0% 1% 0% 3%} #pictureofme{width:39%;float:right;padding:0% 3% 0% 1%}
 #pictureofme img{width:280px;max-width:100%;}
 .minisections>div{width:300px;padding:3%;vertical-align:top;}
@@ -136,7 +137,8 @@ a,a:hover,a:visited,a:active{color:#666;}
     .name img {height:40px;margin-top:5px;}
     .navlinks {font-size:15px;}
     .navlinks a {line-height:10px;margin-top:5px;border-radius:5px;}
-    #aboutsection{padding-top:10px;}
+    #aboutsection{padding-top:20px;}
+    #aboutcontainer{margin-top:50px;}
     /*.banner{margin-top:50px;}
     .lefthalf {width:100%;}
     .righthalf {width:100%;}*/
