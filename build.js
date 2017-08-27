@@ -50,6 +50,7 @@ metalsmith(__dirname)
       partials: {
         HHblog_aboutheader: 'partials/HHblog_aboutheader',
         HHartheader: 'partials/HHartheader',
+        HHmusicheader: 'partials/HHmusicheader',
         HHfooter: 'partials/HHfooter'
       }
   }))
