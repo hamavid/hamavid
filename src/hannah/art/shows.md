@@ -19,18 +19,21 @@ cssjsfile: "art_shows"
     <p style="font-size:1.1em;text-align:center;">Want to <span style="font-weight:bold;">book a show</span>? Email me at <span class="text-teal" style="font-weight:bold;">hamavid (at) gmail (dot) com</span>!</p>
 
 <div id="mainshows">
-      <br>
-      <h3>Upcoming</h3>
+      <h3>Present</h3>
       <p><ul class="shows_list">
       <li>Caffe Vita <a href="http://www.caffevita.com/locations/wa/fremont">Fremont</a>, Seattle - Sep, 2017</li>
+      </ul></p>
+
+
+      <h3>Future</h3>
+      <p><ul class="shows_list">
       <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Dec, 2017</li>
       <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan/Feb, 2018</li>
-      </ul></p><br><br>
+      </ul></p>
 
       <h3 style="width:100%">Past<!--<span style="float:right;" class="picture-toggle-button" onclick="$('.photos').slideToggle();">Show/hide photos</span>--></h3>
       <p><ul class="shows_list">
       <li>Chocolati <a href="https://www.facebook.com/GreenwoodChocolatiCafe/">Greenwood</a>, Seattle - Feb, 2013</li>
-
       <li> Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Sep, 2012
       <div class="details photos">
       <img src="../../images/shows/choco_wally_1.jpg">
