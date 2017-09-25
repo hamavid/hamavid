@@ -7,7 +7,7 @@ cssjsfile: "art_portfolio"
 <a href="../portfolio"><button class="btn">Portfolio</button></a>
 <a href="../shows"><button class="btn white"></i>Shows</button></a>
 <a href="../links"><button class="btn white"></i>Links</button></a>
-<p class="center text-grey"><span class="text-teal" style="font-weight:bold;">Click any thumbnail to open full images and descriptions.</span><br>Watercolor and block prints available for purchase on <a href="https://hamavid.etsy.com">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
+<p class="center text-grey"><span class="text-teal" style="font-weight:bold;">Click any thumbnail to open full images and descriptions.</span><br>Notecards and prints available for purchase on <a href="https://hamavid.etsy.com">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
 <!-- Filter-->
 <div class="dropdown">
   <div class="clear"><button class="picture-toggle-button dropbtn">Filter by <i class="fa fa-angle-down"></i></button>

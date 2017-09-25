@@ -15,7 +15,7 @@ cssjsfile: "art_links"
     <div id="buyart">
       <h3>Buy my art</h3>
       <ul>
-        <li><span>Watercolor and block prints are <a href="https://hamavid.etsy.com">for sale on Etsy</a></span></li><br>
+        <li><span>Notecards and prints are <a href="https://hamavid.etsy.com">for sale on Etsy</a></span></li><br>
         <li><span>Email me at<span id="email" class="text-teal" style="font-weight:bold;">hamavid (at) gmail (dot) com</span> for custom-prints and commissions</span></li>
       </ul>
       <p style="font-weight:bold;margin-left:0.5em">Thanks for your support! It means a lot!</p>
