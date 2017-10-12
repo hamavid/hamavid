@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+var showopac = 0.8
+
 // test dimensions of page and return img specs accordingly
     function whichpic() {
         var windowwidth=window.innerWidth || 
@@ -68,12 +70,14 @@ $(document).ready(function(){
 
 // Change characteristics of various elements when showabout div is clicked
 	$("#showabout").on('click', function(){
-        $('.about').css('opacity','0.7').css('z-index','2');
+        $('.about').css('opacity',showopac).css('z-index','2');
+        $('.overlay').css('z-index','2');
         $('#showabout').css('display','none');
 	});
 // Change back characteristics of various elements when hideabout x is clicked
-	$(".hideabout").on('click', function(){
+	$(".hideabout,.overlay").on('click', function(){
         $('.about').css('opacity','0').css('z-index','0');
+        $('.overlay').css('z-index','0');
         $('#showabout').css('display','block');
         reset_dims_opac();
 	});

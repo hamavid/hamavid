@@ -75,6 +75,14 @@ the picture pops in front of about while it's transitioning out */
 #hannah_area:hover + #hl_hannah{opacity:1;}
 figure:hover #default{opacity:1;}
 
+
+/*overlay for when about section is showing */
+.overlay{
+	width:100%;height:100%;
+	position:fixed;
+	z-index:0;
+}
+
 /* button to show about section */
 #showabout{
 	display:block;
@@ -107,28 +115,33 @@ figure:hover #default{opacity:1;}
 	z-index:0;
 	height:80%;
 	text-align:center;
-	background-color:#000;
-	color:#fff;
 	font-size:16px;
 	font-family:sans-serif;
 	overflow-y:auto;
 	padding:1em;
 	border-radius:8px;
+	/*background-color:#000;
+	color:#fff;*/
+	background-color:#fff;color:#000;border:2px solid black;
+	-moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 @media screen and (min-width: 600px), and (min-height: 500px){.about{max-width:70%;height:70%;}}
 .about p {padding:0.2em;}
-.about a:link,.about a:hover,.about a:visited,.about a:active{color:#fff;cursor:pointer;z-index:15;}
+.about a:link,.about a:hover,.about a:visited,.about a:active{color:#000;cursor:pointer;z-index:15;}
 .smallabout {height:100%;padding-top:3em;padding-bottom:2em;}
 
 /*button to hide about section*/
 .hideabout {
-	color:#d3d3d3;
+	/*color:#d3d3d3;*/
+	color:#808080;
 	display:block;
 	cursor:pointer;
 	float:right;
 	font-size:20px;
 }
-.hideabout:hover{color:#fff;}
+.hideabout:hover{color:#000;}
 
 /* simple version of page for js disabled */
 #simple{
