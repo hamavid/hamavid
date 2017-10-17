@@ -6,13 +6,14 @@ body{
 	padding: 0;
 	margin: 0;
 	overflow:hidden;
+	top:0;bottom:0;position:fixed;width:100%;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	-webkit-touch-callout: none;
-    -webkit-user-select: none;
+    /*-webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none;*/
 }
 figure {
 	padding:0;
@@ -62,6 +63,9 @@ img {
   	-ms-transition: opacity 0.7s;
   	-o-transition: opacity 0.7s;
 }
+#aviva_area:hover + #hl_aviva{opacity:1;} 
+#hannah_area:hover + #hl_hannah{opacity:1;}
+figure:hover #default{opacity:1;}
 /* hack: no opacity transition when about is bigger than pic, otherwise
 the picture pops in front of about while it's transitioning out */
 .smallabout {
@@ -71,16 +75,13 @@ the picture pops in front of about while it's transitioning out */
   	-ms-transition: opacity 0s;
   	-o-transition: opacity 0s;
 }
-#aviva_area:hover + #hl_aviva{opacity:1;} 
-#hannah_area:hover + #hl_hannah{opacity:1;}
-figure:hover #default{opacity:1;}
-
 
 /*overlay for when about section is showing */
 .overlay{
 	width:100%;height:100%;
-	position:fixed;
+	position:fixed;top:0;bottom:0;right:0;left:0;
 	z-index:0;
+	background-color:rgba(0,0,0,0.5);
 }
 
 /* button to show about section */
@@ -105,7 +106,6 @@ figure:hover #default{opacity:1;}
 /*about section */
 .about {
 	opacity:0;
-	max-width:80%;
 	margin: auto;
 	position: absolute;
 	bottom: 0;
@@ -113,33 +113,46 @@ figure:hover #default{opacity:1;}
 	left:0;
 	top:0;
 	z-index:0;
-	height:80%;
+	max-width:80%;
+	max-height:70%;
+	/*max-width:80%;
+	height:80%;*/
 	text-align:center;
 	font-size:16px;
 	font-family:sans-serif;
 	overflow-y:auto;
 	padding:1em;
 	border-radius:8px;
-	/*background-color:#000;
-	color:#fff;*/
-	background-color:#fff;color:#000;border:2px solid black;
+	background-color:#fff;
+	color:#000;
+	border:2px solid black;
 	-moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	-webkit-box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
-@media screen and (min-width: 600px), and (min-height: 500px){.about{max-width:70%;height:70%;}}
 .about p {padding:0.2em;}
 .about a:link,.about a:hover,.about a:visited,.about a:active{color:#000;cursor:pointer;z-index:15;}
-.smallabout {height:100%;padding-top:3em;padding-bottom:2em;}
-
+.smallabout {display:none;max-height:100%;max-width:100%}
+.largeabout{display:block;}
+.aboutcontent{
+	margin:auto;
+	line-height:1.7em;
+	position:absolute;
+	padding:1em;
+	left:0!important;right:0!important;
+	top:50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+}
 /*button to hide about section*/
 .hideabout {
-	/*color:#d3d3d3;*/
-	color:#808080;
+	color:#808080;max-width:100%;width:100%;
 	display:block;
 	cursor:pointer;
-	float:right;
+	position:relative;text-align:right;
 	font-size:20px;
+	z-index:5;
 }
 .hideabout:hover{color:#000;}
 
