@@ -43,7 +43,7 @@ var showopac = 0.8
         $('#default').attr('src','images/'+picname+'.'+picsuffix);
         $('#hl_hannah').attr('src','images/'+picname+'_hannah_hl.'+picsuffix);
         $('#hl_aviva').attr('src','images/'+picname+'_aviva_hl.'+picsuffix);
-    // show/hide abouts depending on window dims (didn't figure out a CSS version alas)
+    // show/hide abouts depending on window dims (didn't figure out a CSS or simpler version alas)
         if ((picwidth<=300 & picname=='chair') || (picheight<=390 & picname=='hug')){
             if (windowwidth >=650 & picname=='hug') {
                 if (picheight>=260){$('.about').css('max-height','260px').css('max-width','520px').css('margin','auto');}
