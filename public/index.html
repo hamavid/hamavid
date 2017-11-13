@@ -2,13 +2,17 @@
 <head>
 <meta name="keywords" content="Hamavid, Hamavid.com, Aviva Hamavid, Hannah Hamavid, palindrome, sisters"/>
 <meta name="viewport" content="width=device-width" />
+<link rel="icon" href="./images/favicon.png">
 <!--STYLES-->
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css"/>
 <!--SCRIPTS-->
 <script type="text/javascript" src="./js/googleanalytics.js"></script>
 <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui-1.12.1.min.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
+<script type="text/javascript" src="./js/jquery.touchwipe.min.js"></script>
+<!-- don't display simple version of landing page if javascript is enabled-->
 <script type="text/javascript" charset="utf-8">
 	document.write('<style type="text/css" media="screen">#simple { display: none; }</style>');
 </script>
@@ -45,17 +49,22 @@
 				<span class="hideabout"><i class="fa fa-remove"></i></span><br>
 				<div class='aboutcontent'>
 				<h3>ABOUT</h3>
-				<p>Hamavid.com is shared by siblings Hannah and Aviva. As far as we know, we are the only two Hamavids in the world! <!--"Hamavid" is usually pronounced &#x02C8h&#x00E6m&#x0259v&#x026A<span>d</span> by Hannah, and &#x02C8h&#x0252m&#x0259v&#x026A<span>d</span> by Aviva, but we are not too particular.--></p>
+				<p>Hamavid.com is shared by siblings Hannah and Aviva. As far as we know, we are the only two Hamavids in the world!</p>
 				<p>Click on the two sides of the image or these links to go to <a href="./aviva">Aviva</a> (left) and <a href="./hannah">Hannah</a> (right)'s and respective websites.</p>
 				</div>
 		</div>
 
 		<img id="default">
-		<div id="hannah_area"></div>
+		<div id="hannah_area"><div class='labelenv'><span class='hannahlabel'>hannah</span></div></div>
 		<img id="hl_hannah">
-		<div id="aviva_area"></div>
+		<div id="aviva_area"><div class='labelenv'><span class='avivalabel'>aviva</span></div></div>
 		<img id="hl_aviva">
 	</figure>	
 </div>
+
+<!-- Overlaps that can be pulled across on touch screens on swipe -->
+<div id='h-overlay'><span>Click to continue to Hannah's website</span></div>
+<div id='a-overlay'><span>Click to continue to Aviva's website</span></div>
+
 </body>
 </html>

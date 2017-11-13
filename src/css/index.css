@@ -50,13 +50,41 @@ img {
 	right:0;
 }
 
+/*hover-overable names for mouse-screens*/
+.labelenv{
+	font-size:16px;height:100%;width:100%;padding:0;
+	margin: auto;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left:0;
+	top:0;
+	opacity:0;
+}
+.hannahlabel,.avivalabel{
+	font-size:24px;font-family:sans-serif;font-variant:small-caps;background-color:#fff;
+	padding:5px 15px 5px 15px;
+	display:inline-block;margin-top:70%;border-radius: 5px;
+	/*-webkit-animation: rotation 2s infinite linear;	*//*don't really make it rotate though*/
+}
+.hannahlabel:hover,.avivalabel:hover{
+	-webkit-animation: rotation 2s infinite linear; /* I guess make it rotate on hover. For now. */
+}
+/* make it rotate!! super useful!!! */
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+@keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
 
 /* show/hide various images based on mouseover */
 #default {opacity:1;}
-#hl_aviva,#hl_hannah,.about{
-	opacity:0;
-	position:absolute;
-	left:0;
+#hl_aviva,#hl_hannah,.about{position:absolute;left:0;opacity:0;}
+#hl_aviva,#hl_hannah,.about,.labelenv{
 	-webkit-transition:opacity 0.7s;
 	transition:opacity 0.7s;
 	-moz-transition: opacity 0.7s;
@@ -65,7 +93,41 @@ img {
 }
 #aviva_area:hover + #hl_aviva{opacity:1;} 
 #hannah_area:hover + #hl_hannah{opacity:1;}
+#aviva_area>.labelenv:hover{opacity:0.7;} 
+#hannah_area>.labelenv:hover{opacity:0.7;}
 figure:hover #default{opacity:1;}
+
+/* right and left slideable areas for touchscreens*/
+#h-overlay,#a-overlay{
+	background-color:#000;width:100%;height:100%;font-size:24px;color:#fff;
+	font-family:sans-serif;text-align:center;
+	z-index:2;top:0;position:fixed;display:none;
+}
+#h-overlay span,#a-overlay span{
+	display:inline-block;padding:1em;margin:auto;border:2px solid white;
+	position:relative;max-width:70%;cursor:pointer;
+	top:50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+}
+
+/* sliding in animation*/
+.animate-right {position:relative;-webkit-animation:animateright 0.6s;animation:animateright 0.6s;}
+@-webkit-keyframes animateright{from{left:-100%} to{left:0;}}
+@keyframes animateright{from{left:-100%} to{left:0;}}
+.animate-left {position:relative;-webkit-animation:animateleft 0.6s;animation:animateleft 0.6s;}
+@-webkit-keyframes animateleft{from{right:-100%} to{right:0;}}
+@keyframes animateleft{from{right:-100%} to{right:0;}}
+.animate-back-right {position:relative;-webkit-animation:animateright 0.6s;animation:animateright 0.6s;}
+@-webkit-keyframes animateright{from{right:0} to{right:-100%;}}
+@keyframes animateright{from{right:0} to{right:-100%;}}
+.animate-back-left {position:relative;-webkit-animation:animateleft 0.6s;animation:animateleft 0.6s;}
+@-webkit-keyframes animateleft{from{left:0} to{left:-100%;}}
+@keyframes animateleft{from{left:0} to{left:-100%;}}
+
+
+
 /* hack: no opacity transition when about is bigger than pic, otherwise
 the picture pops in front of about while it's transitioning out */
 .smallabout {
