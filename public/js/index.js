@@ -83,8 +83,8 @@ var showopac = 0.8
    
 
 // Bring out overlays on swipe
-   /* // double clicking, for testing on no-touch screen
-       $('body').on('dblclick', function() {
+   // For testing on no-touch screen
+     /*  $('body, figure').on('dblclick', function() {
             if ($('#h-overlay').css('display')=='none' && $('#a-overlay').css('display')=='none') {
                 $('#h-overlay').show('slide', {direction: 'right'}, 500);
             }
@@ -92,26 +92,21 @@ var showopac = 0.8
        $('#h-overlay').on('dblclick', function() {
             $('#h-overlay').hide('slide', {direction: 'right'}, 500);
         });*/
+       
     // SWIPE  
-    $('body figure').touchwipe({
+    $('body, figure').touchwipe({
       wipeLeft: function() { 
         if ($('#h-overlay').css('display')=='none' && $('#a-overlay').css('display')=='none') {
             $('#h-overlay').show('slide', {direction: 'right'}, 500);
         }
+        if ($('#a-overlay').css('display')=='block') {$('#a-overlay').hide('slide', {direction: 'left'}, 500);}
       },
       wipeRight: function() { 
         if ($('#h-overlay').css('display')=='none' && $('#a-overlay').css('display')=='none') {
             $('#a-overlay').show('slide', {direction: 'left'}, 500);
         }
+        if ($('#h-overlay').css('display')=='block') {$('#h-overlay').hide('slide', {direction: 'right'}, 500);}
       },
-      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
-    });
-    $('#h-overlay').touchwipe({
-      wipeRight: function() {$('#h-overlay').hide('slide', {direction: 'right'}, 500);},
-      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
-    });
-    $('#a-overlay').touchwipe({
-      wipeLeft: function() {$('#a-overlay').hide('slide', {direction: 'left'}, 500);},
       min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
     });
 
