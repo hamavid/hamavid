@@ -33,7 +33,7 @@ metalsmith(__dirname)
     }
   })
   .source('./src')
-  .destination('./public')
+  .destination('./docs')
   .use(drafts())
   .use(collections({
       hannahblog: {
