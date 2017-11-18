@@ -63,7 +63,7 @@ cssjsfile: "art_portfolio"
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/swirlies.jpg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/canyondechelly.jpg') 50% 50% no-repeat;"></div></span>
      	<span><div class="hz acrylic" style="background: url('../../images/portfolio/thumbs/seattleskyline.jpg') 90% 50% no-repeat;"></div></span>
-      <span><div class="hz acrylic" style="background: url('../../images/portfolio/thumbs/duck.JPG') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz acrylic" style="background: url('../../images/portfolio/thumbs/duck.jpg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz acrylic" style="background: url('../../images/portfolio/thumbs/davis_longline.jpg') 50% 50% no-repeat;"></div></span>
       <span><div class="hz acrylic" style="background: url('../../images/portfolio/thumbs/izzy_baremtn.jpg') 100% 50% no-repeat;"></div></span>
       <span><div class="hz acrylic mercreature" style="background: url('../../images/portfolio/thumbs/coffee_angels.jpg') 50% 50% no-repeat;"></div></span>
