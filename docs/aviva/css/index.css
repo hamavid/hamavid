@@ -1,0 +1,6 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Trebuchet MS', sans-serif;}
+body,html{height:100%;}
+.content{padding:2em;margin:auto;max-width:900px;}
+.center{text-align:center!important}
+.bottombar{border-bottom:2px solid #000!important}
+footer{width:100%;text-align:center;}
