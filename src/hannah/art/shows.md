@@ -31,18 +31,27 @@ cssjsfile: "art_shows"
 <div id="mainshows">
 
 
-<!-- <h3>Present</h3>
+<h3>Present<span style="float:right;" class="picture-toggle-button" onclick="$('.photos').slideToggle();">Show/hide photos</span></h3>
 <p><ul class="shows_list">
-</ul></p>-->
+<li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Dec, 2017
+<div class="details photos">
+<img src="../../images/shows/2017_12_choco_wally_1.jpg">
+<img src="../../images/shows/2017_12_choco_wally_2.jpg">
+<img src="../../images/shows/2017_12_choco_wally_3.jpg">
+<img src="../../images/shows/2017_12_choco_wally_4.jpg">
+<img src="../../images/shows/2017_12_choco_wally_5.jpg">
+<img src="../../images/shows/2017_12_choco_wally_6.jpg">
+<img src="../../images/shows/2017_12_choco_wally_7.jpg">
+<br>Solo show, both floors of Chocolati Cafe in Wallingford. Block prints and some new watercolors.</div></li>
+</ul></p>
 
 
 <h3>Future</h3>
 <p><ul class="shows_list">
-<li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Dec, 2017</li>
 <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan/Feb, 2018</li>
 </ul></p>
 
-<h3 style="width:100%">Past<span style="float:right;" class="picture-toggle-button" onclick="$('.photos').slideToggle();">Show/hide photos</span></h3>
+<h3 style="width:100%">Past</h3>
 <p><ul class="shows_list">
 <li>Caffe Vita <a href="http://www.caffevita.com/locations/wa/fremont">Fremont</a>, Seattle - Sep, 2017
 <div class="details photos">

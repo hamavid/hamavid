@@ -6,6 +6,7 @@ $(document).ready(function(){
 	var srcList = $('#mainshows img').map(function() {return this.src.slice(this.src.indexOf('/images'));}).get();
 	var showdict = {};
 	showdict['2012_09_choco_wally'] = 'Chocolati Wallingford, Sep 2012';
+	showdict['2017_12_choco_wally'] = 'Chocolati Wallingford, Dec, 2017';
 	showdict['2017_09_vita'] = 'Caffe Vita Fremont, Sep 2017';
 	showdict['bsi'] = 'Black Sheep Inn, Chugchilan (Ecuador), Apr 2007';
 	showdict['enfield'] = 'Enfield Laundry Room, Hampshire College, May 2011';
