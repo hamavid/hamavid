@@ -126,6 +126,7 @@ figure>img {
 .shows_list, .shows_list>ul, .shows_list>ul>li {padding:0;margin:0;}
 .shows_list .text-ligrey {cursor:default;}
 /*.photos{display:none;}*/
+.picture-toggle-button{width:104px;text-align:center;}
 
 
 /* small screens */

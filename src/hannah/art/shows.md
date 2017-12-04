@@ -31,8 +31,8 @@ cssjsfile: "art_shows"
 <div id="mainshows">
 
 
-<h3>Present<span style="float:right;" class="picture-toggle-button" onclick="$('.photos').slideToggle();">Show/hide photos</span></h3>
-<p><ul class="shows_list">
+<h3>Present<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
+<p><ul class='shows_list'>
 <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Dec, 2017
 <div class="details photos">
 <img src="../../images/shows/2017_12_choco_wally_1.jpg">

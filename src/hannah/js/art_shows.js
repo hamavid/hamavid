@@ -11,6 +11,16 @@ $(document).ready(function(){
 	showdict['bsi'] = 'Black Sheep Inn, Chugchilan (Ecuador), Apr 2007';
 	showdict['enfield'] = 'Enfield Laundry Room, Hampshire College, May 2011';
 
+  // show/hide photos on button click
+  	$('.picture-toggle-button').click(function(){
+		$('.photos').slideToggle();
+		var button=$('.picture-toggle-button');
+		if (button.html() == 'Hide photos') {button.html('Show photos')}
+		else {button.html('Hide photos')};
+  	});
+  	
+
+
   // look up which show an image is from, using the show dictionary (via string in the img src)
   	function whichshow(thisimg) {for (var key in showdict) {if (thisimg.includes(key)) {return showdict[key];}};};
   // toggle which-show caption up and down on click
@@ -60,30 +70,4 @@ $(document).ready(function(){
 	$('.larr, #leftside').click(function() {iterate(-1);});
 	$('.rarr, #rightside').click(function() {iterate(+1);});
 
-	// Add new image behind current image, set opacity appropriately, then remove all but new image
-      // these are supposed to fade into each other but don't..
-        
-        /*
-        $('#photoslider img:first-child').addClass('opaque').removeClass('transparent');
-        $('#photoslider img:last').addClass('transparent').removeClass('opaque');
-        $('img:first-child ~ img').remove(); //remove extra photos (if handle was dragged)
-		/*var subwho = who.slice(who.indexOf('/images'));
-  		var index = $('#mainshows [src="'+ who +'"]').index();
-		var index = $('.details img').find(who).index();
-		var index = $('#shows [src="'+who+'"]').index($('#mainshows'));
-		var index = $(srcList).find(who).index();
-		// if an image is clicked within the slideshow images, toggle to the next/previous image	
-  	$('.rarr').click(function() {iterate(+1);});
-  	$('.larr').click(function() {iterate(-1);});
-*/
-
-/* DEPRECATED IN FAVOR OF A SINGLE SLIDE TOGGLE BUTTON */
-/*
-// Toggle +/- when icon is clicked, and slide sibling div up or down accordingly
-	$('.plusminus').click(function() {
-		var toggler = $(this);
-		if ( toggler.text() == "[+]") { toggler.text("[-]")}
-		else {toggler.text("[+]")}
-		toggler.siblings('div').slideToggle();
-	});*/
 });

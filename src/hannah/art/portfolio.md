@@ -34,7 +34,7 @@ cssjsfile: "art_portfolio"
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/diner.jpg') 40% 0% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/rosetta.jpeg') 30% 0% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/logo print.jpeg') 30% 0% no-repeat;"></div></span>
-      <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/no words no cutouts.jpeg') 0% 40% no-repeat;"></div></span>
+      <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/SD painted.jpeg') 0% 40% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/reader-zhiyin.jpeg') 45% 0% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/reader-orig.jpeg') 45% 0% no-repeat;"></div></span>
       <span><div class="vt print mercreature" style="background: url('../../images/portfolio/thumbs/inker.jpeg') 50% 10% no-repeat;"></div></span>
@@ -119,7 +119,7 @@ cssjsfile: "art_portfolio"
 <figure class="watercolor"><img src="../../images/portfolio/diner.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>North Bend in the morning:</b></i> Watercolor and pencil on paper - Nov, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/rosetta.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Rosetta:</b></i> Linoleum block print - Nov, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/logo print.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Brivele palindrome logo:</b></i> Linoleum block print - Nov, 2017</span></figcaption></figure>
-<figure class="print"><img src="../../images/portfolio/no words no cutouts.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Background for C&J's Save the Date:</b></i> Commissioned linoleum block print - Oct, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/SD painted.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>C&J's Save the Date:</b></i> Commissioned linoleum block print with ink lettering - Oct, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/reader-zhiyin.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Reader [customized]:</b></i> Commissioned version of linoleum block print, with watercolor and pen - Sep, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/reader-orig.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Reader:</b></i> Linoleum block print - Sep, 2017</span></figcaption></figure>
 <figure class="print mercreature"><img src="../../images/portfolio/inker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Inker:</b></i> Linoleum block print - Aug, 2017</span></figcaption></figure>
