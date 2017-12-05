@@ -85,10 +85,20 @@ $(document).ready(function(){
   $('.leftscroller, #leftside').click(function() {plusDivs(-1);});
   $('.rightscroller, #rightside').click(function() {plusDivs(+1);});
 
+// SWIPE  
+    $('.overlay-content').touchwipe({
+      wipeLeft: function() {plusDivs(+1);;},
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    });
+    $('.overlay-content').touchwipe({
+      wipeRight: function() {plusDivs(-1);},
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    });
+
 // Make the figcaption dis/appear on click and toggle the up/down arrow accordingly
   $('figcaption').click(function() {
 // hides all captions unless the .each() wrapper is commented out, then hides only clicked-on caption
-    $( "figure" ).each(function() {
+    $( 'figure' ).each(function() {
       $(this).find('i:first').toggleClass("fa-angle-double-down fa-angle-double-up");
       //if ( $(this).find('div:first').text() == "") { $(this).find('div:first').text(" (Show caption)")}
       //else {$(this).find('div:first').text("")}

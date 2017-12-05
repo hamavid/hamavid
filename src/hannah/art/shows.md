@@ -12,10 +12,6 @@ cssjsfile: "art_shows"
 
 <!-- Main content -->
 <div class="container" id="shows">
-    <!--<div id="bookshow">
-      <h3 style="text-align:center;">Book a show</h3>
-      <p style="text-align:center;">Want to decorate your caf&#xE9;, school, or basement with my art? Please <a href="../../about" style="text-decoration:underline;">contact me</a> for details.</p><br>
-    </div>-->
     <p style="font-size:1.1em;text-align:center;">Want to <span style="font-weight:bold;">book a show</span>? Email me at <span class="text-teal" style="font-weight:bold;">hamavid (at) gmail (dot) com</span>!</p>
 
 <div id='photo-overlay'><span class='showid'>[Show caption]<!--<i class='fa fa-angle-double-up fa-lg'></i>--></span>

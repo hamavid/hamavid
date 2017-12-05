@@ -70,4 +70,15 @@ $(document).ready(function(){
 	$('.larr, #leftside').click(function() {iterate(-1);});
 	$('.rarr, #rightside').click(function() {iterate(+1);});
 
+  // SWIPE  
+    $('.thisphoto').touchwipe({
+      wipeLeft: function() {iterate(+1);},
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    });
+    $('.thisphoto').touchwipe({
+      wipeRight: function() {iterate(-1);},
+      min_move_x: 20,min_move_y: 20,preventDefaultEvents: true
+    });
+
+
 });
