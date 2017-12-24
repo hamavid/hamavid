@@ -16,6 +16,9 @@ cssjsfile: "art_links"
       <h3>Buy my art</h3>
       <ul>
         <li><span>Notecards and prints are <a href="https://hamavid.etsy.com">for sale on Etsy</a></span></li><br>
+        <li><span>If I'm having a show, you can buy art there! Check the <a href='../shows'>shows</a> page to see.</span></li><br>
+        <!--<li><span>Buy notecards in retail locations around Seattle</span></li><br>-->
+        <!--<li><span>You can request a custom order on Etsy</span></li><br>-->
         <li><span>Email me at<span id="email" class="text-teal" style="font-weight:bold;">hamavid (at) gmail (dot) com</span> for custom-prints and commissions</span></li>
       </ul>
       <p style="font-weight:bold;margin-left:0.5em">Thanks for your support! It means a lot!</p>

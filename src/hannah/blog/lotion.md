@@ -3,6 +3,7 @@ outadir: "../"
 layout: HHblogpost.html
 link: "./lotion"
 title: "How to make lotion!"
+subtitle: "On a lake of emotion"
 date: 2017-06-06
 pagetype: BLOG
 ---

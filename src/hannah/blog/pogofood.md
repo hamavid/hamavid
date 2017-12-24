@@ -3,6 +3,7 @@ outadir: "../"
 layout: HHblogpost.html
 link: "./pogofood"
 title: "How much does the cat eat?"
+subtitle: "An interactive visualization"
 date: 2017-07-18
 pagetype: BLOG
 ---

@@ -38,6 +38,7 @@ cssjsfile: "art_shows"
 <img src="../../images/shows/2017_12_choco_wally_5.jpg">
 <img src="../../images/shows/2017_12_choco_wally_6.jpg">
 <img src="../../images/shows/2017_12_choco_wally_7.jpg">
+<img src="../../images/shows/2017_12_choco_wally_8.jpg">
 <br>Solo show, both floors of Chocolati Cafe in Wallingford. Block prints and some new watercolors.</div></li>
 </ul></p>
 

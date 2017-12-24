@@ -4,10 +4,8 @@
 <div class="center bottombar padding-16" id="bottombar"></div>
 </header>
 <article>
-  <h1>{{ title }}</h1>
-  <div class="meta">
-      {{#if date}}Published: {{ moment date lang="en" format="DD MMM[,] YYYY" }}{{/if}}
-  </div>
+  <h1>{{ title }} {{#if subtitle}} <span class='subtitle-in-article'> ({{ subtitle }}{{/if}})</span></h1>
+  <div class="meta">{{#if date}}Posted on {{ moment date lang="en" format="DD MMM[,] YYYY" }}{{/if}}</div>
   <br>
   {{{ contents }}}
 </article>

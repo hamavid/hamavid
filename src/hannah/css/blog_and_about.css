@@ -42,8 +42,10 @@ p{margin-top:0.5em;margin-bottom:1.2em;}
   position:absolute;
 }
 a,a:link,a:visited,a:hover,a:active {text-decoration:underline;color:#000;}
-div.date,div.meta,article a:visited{color:#757575}
+div.title{font-size:1.2em;}
+div.date,div.meta,div.subtitle-in-index,article a:visited{color:#757575}
 div.meta{font-size:0.8em;margin-left:-6px;}
+.subtitle-in-article{color:#000;font-size:0.8em;}
 .back-to-index a, #aboutblog a{font-size:0.9em;font-weight:bold;text-decoration: none}
 #index {font-family: 'Work Sans', sans-serif;}
 #index a {text-decoration:none;color:black;font-weight:bold;}
