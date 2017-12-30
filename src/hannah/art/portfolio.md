@@ -31,6 +31,8 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/thinker series color.jpeg') 0% 50% no-repeat;"></div></span>
+      <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/shiracats.jpeg') 5% 50% no-repeat;"></div></span>
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/diner.jpg') 40% 0% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/rosetta.jpeg') 30% 0% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/logo print.jpeg') 30% 0% no-repeat;"></div></span>
@@ -116,6 +118,8 @@ cssjsfile: "art_portfolio"
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
 
+<figure class="print"><img src="../../images/portfolio/thinker series color.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Thinker Series, major arcana-style:</b></i> Linoleum block print, handcarved rubber stamp, and watercolor on paper - Dec, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/shiracats.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hamilton and Stringer Bell on the grass:</b></i> Commissionsed linoleum block print with watercolor - Dec, 2017</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/diner.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>North Bend in the morning:</b></i> Watercolor and pencil on paper - Nov, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/rosetta.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Rosetta:</b></i> Linoleum block print - Nov, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/logo print.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Brivele palindrome logo:</b></i> Linoleum block print - Nov, 2017</span></figcaption></figure>
