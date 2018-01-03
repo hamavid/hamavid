@@ -27,15 +27,15 @@ cssjsfile: "art_shows"
 <div id="mainshows">
 
 
-<!--<h3>Present</h3>
+<h3>Present<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
 <p><ul class='shows_list'>
-</ul></p>-->
-
-
-<h3>Future<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
-<p><ul class="shows_list">
 <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan/Feb, 2018</li>
 </ul></p>
+
+
+<!--<h3>Future</h3>
+<p><ul class="shows_list">
+</ul></p>-->
 
 
 <h3 style="width:100%">Past</h3>
