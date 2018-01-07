@@ -5,6 +5,7 @@ $(document).ready(function(){
 	/*var images = document.getElementById('mainshows').getElementsByTagName('img');*/
 	var srcList = $('#mainshows img').map(function() {return this.src.slice(this.src.indexOf('/images'));}).get();
 	var showdict = {};
+	showdict['2018_01_01_freshflours'] = 'Fresh Flours Phinney Ridge, Jan/Feb 2018';
 	showdict['2012_09_choco_wally'] = 'Chocolati Wallingford, Sep 2012';
 	showdict['2017_12_choco_wally'] = 'Chocolati Wallingford, Dec, 2017';
 	showdict['2017_09_vita'] = 'Caffe Vita Fremont, Sep 2017';

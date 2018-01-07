@@ -30,6 +30,16 @@ cssjsfile: "art_shows"
 <h3>Present<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
 <p><ul class='shows_list'>
 <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan/Feb, 2018</li>
+<div class="details photos">
+<img src="../../images/shows/2018_01_01_freshflours_1.jpg">
+<img src="../../images/shows/2018_01_01_freshflours_2.jpg">
+<img src="../../images/shows/2018_01_01_freshflours_3.jpg">
+<img src="../../images/shows/2018_01_01_freshflours_4.jpg">
+<img src="../../images/shows/2018_01_01_freshflours_5.jpg">
+<img src="../../images/shows/2018_01_01_freshflours_6.jpg">
+<img src="../../images/shows/2018_01_01_freshflours_7.jpg">
+<img src="../../images/shows/2018_01_01_freshflours_8.jpg">
+</div>
 </ul></p>
 
 
