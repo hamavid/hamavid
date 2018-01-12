@@ -28,7 +28,7 @@ And if none of that gets you going, you can make lotion because it's fun, cheap,
 Makes about 6 ounces of lotion
 
 ### Ingredients
-- 1/4 cup [Almond oil](https://www.amazon.com/gp/product/B0019LVFSU/)
+- 1/4 cup [Sweet almond oil](https://www.amazon.com/gp/product/B0019LVFSU/)
 - 1 Tbsp [Cocoa butter](https://www.amazon.com/gp/product/B008KPO2MY/), chopped into flakes
 - 1 tsp Coconut oil
 - 1/4 tsp Vanilla extract
@@ -46,13 +46,13 @@ I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's an
 ### Steps
 1. Heat the almond oil, cocoa butter, and coconut oil. I use a double boiler made from a pot with about an inch of water in it, with a pyrex bowl set on top. You could use an actual double boiler, a microwave, a blowtorch, etc.<figure><img src="./images/unmelted.jpg" title="Unmelted oils in double boiler on stove"><figcaption></figcaption></figure>
 
-2. Stir occasionally until the cocoa butter and coconut oil have melted completely.<figure><img src="./images/melted.jpg" title="Almost melted oils in double boiler on stove"><figcaption>A bit more melted than this</figcaption></figure>
+2. Stir occasionally until the cocoa butter and coconut oil have dissolved completely.<figure><img src="./images/melted.jpg" title="Almost dissolved oils in double boiler on stove"><figcaption>A bit more melted than this</figcaption></figure>
 
-3. Remove from heat and stir in the vanilla extract.<figure><img src="./images/vanilla.jpg" title="Melted oils in bowl removed from burner, with vanilla extract added"><figcaption></figcaption></figure>
+3. Remove from heat and stir in the vanilla extract.<figure><img src="./images/vanilla.jpg" title="Dissolved oils in bowl removed from burner, with vanilla extract added"><figcaption></figcaption></figure>
 
 4. With a blender, immersion blender, or really strong whisking hand, whisk in the aloe vera, adding gradually until it looks like lotion.<figure><img src="./images/aloe1.jpg" title="Oils in bowl on counter with some aloe blended in, and an immersion blender"><figcaption>Looks soupy and weird</figcaption></figure><figure><img src="./images/aloe2.jpg" title="Bowl with all the aloe blended in, and an immersion blender - finished lotion!"><figcaption>Looks like lotion!</figcaption></figure>
 
-5. To put the lotion in [bottles](https://www.amazon.com/gp/product/B01MFG07H4/) without making a huge mess, I make a piping bag by cutting a tiny corner off a sandwich bag. Next, scoop the lotion into the corner without the hole, then squeeze it into the bottles through the hole.<figure><img src="./images/dispensing.jpg" title="Dispensing lotion into squeeze bottle with ziplock piping bag, bowl with some lotion in background"><figcaption></figcaption></figure>
+5. To put the lotion in [bottles](https://www.amazon.com/gp/product/B01MFG07H4/) without making a huge mess, I scoop the lotion into one corner of a sandwich back. Next, make it a piping bag by cutting a tiny corner off, then squeeze it into the bottles through the hole.<figure><img src="./images/dispensing.jpg" title="Dispensing lotion into squeeze bottle with ziplock piping bag, bowl with some lotion in background"><figcaption></figcaption></figure>
 
 6. That's it! Wipe excess lotion from bowl, blender, etc onto your skin or a paper towel before cleaning with soap and water (otherwise it might clog the drain.) Store in the fridge for a couple months, or at room temperature for a couple weeks.<sup>**</sup>
 
@@ -65,7 +65,7 @@ I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's an
 3. Rumor has it you can make your own [sunscreen](https://draxe.com/homemade-sunscreen/) by adding [zinc oxide](https://www.amazon.com/dp/B01MY0OCFD/), if you're into that sort of thing.
 
 ### <sup>**</sup>Notes on storage
-This lotion contains water (in the aloe), and no preservatives, which [means](https://thenerdyfarmwife.com/natural-preservatives-for-homemade-lotion-and-cream/) [that](http://www.thankyourbody.com/are-your-homemade-beauty-products-safe/) tiny organisims that are not necessarily good for you will enjoy growing in it. *Use it up before that happens!* You can make lotion with only oil-based ingredients to avoid this problem, but it can still go rancid. Also, have clean hands, dishes, etc. while making the lotion.
+This lotion contains water (in the aloe), and no preservatives, which [means](https://thenerdyfarmwife.com/natural-preservatives-for-homemade-lotion-and-cream/) [that](http://www.thankyourbody.com/are-your-homemade-beauty-products-safe/) tiny organisims that are not necessarily good for you will enjoy growing in it. *Use it up before that happens!* You can make lotion with only oil-based ingredients to avoid this problem, but it can still go rancid. It helps to keep the ingredients in a cool, dry place. Also, use clean hands, dishes, and utensils while making the lotion.
 
 
 

@@ -43,9 +43,10 @@ cssjsfile: "art_shows"
 </ul></p>
 
 
-<!--<h3>Future</h3>
+<h3>Future</h3>
 <p><ul class="shows_list">
-</ul></p>-->
+<li>Fresh Flours <a href="http://www.freshfloursseattle.com/">West Seattle</a>, Seattle - Jul, 2018</li>
+</ul></p>
 
 
 <h3 style="width:100%">Past</h3>
