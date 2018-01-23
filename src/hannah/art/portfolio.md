@@ -33,7 +33,7 @@ cssjsfile: "art_portfolio"
     <div id="grid">
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/waterfall.jpg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/thinker series color.jpeg') 0% 50% no-repeat;"></div></span>
-      <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/shiracats.jpeg') 5% 50% no-repeat;"></div></span>
+      <span><div class="hz print cat" style="background: url('../../images/portfolio/thumbs/shiracats.jpeg') 5% 50% no-repeat;"></div></span>
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/diner.jpg') 40% 0% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/rosetta.jpeg') 30% 0% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/logo print.jpeg') 30% 0% no-repeat;"></div></span>
