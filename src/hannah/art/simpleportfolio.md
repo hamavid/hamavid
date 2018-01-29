@@ -44,7 +44,9 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
-<li><a href="../../images/portfolio/waterfall.jpg">Waterfall on a tributary to the middle middle:</a>a> Watercolor on paper - Jan, 2018</li>
+<!--<li><a href="../../images/portfolio/jc wedding front.jpeg">C&J's wedding, front:</a>< Watercolor on paper - Jan, 2018</li>
+<li><a href="../../images/portfolio/jc wedding back.jpeg">C&J's wedding, back:</a>< Watercolor on paper - Jan, 2018</li>-->
+<li><a href="../../images/portfolio/waterfall.jpg">Waterfall on a tributary to the middle middle:</a> Watercolor on paper - Jan, 2018</li>
 <li><a href="../../images/portfolio/thinker series color.jpeg">The Thinker Series, major arcana-style</a> Linoleum block print, handcarved rubber stamp, and watercolor on paper - Dec, 2017</li>
 <li><a href="../../images/portfolio/shiracats.jpeg">Hamilton and Stringer Bell on the grass:</a> Commissioned linoleum block print with watercolor - Dec, 2017</li>
 <li><a href="../../images/portfolio/diner.jpg">North Bend in the morning</a> Watercolor and pencil on paper - Nov, 2017</li>

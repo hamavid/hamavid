@@ -31,6 +31,8 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <!--<span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/jc wedding front.jpeg') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/jc wedding back.jpeg') 50% 0% no-repeat;"></div></span>-->
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/waterfall.jpg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/thinker series color.jpeg') 0% 50% no-repeat;"></div></span>
       <span><div class="hz print cat" style="background: url('../../images/portfolio/thumbs/shiracats.jpeg') 5% 50% no-repeat;"></div></span>
@@ -119,6 +121,8 @@ cssjsfile: "art_portfolio"
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
 
+<!--<figure class="watercolor"><img src="../../images/portfolio/jc wedding front.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>C&J's wedding, front:</b></i> Watercolor on paper - Jan, 2018</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/jc wedding back.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>C&J's wedding, back:</b></i> Watercolor on paper - Jan, 2018</span></figcaption></figure>-->
 <figure class="watercolor"><img src="../../images/portfolio/waterfall.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Waterfall on a tributary to the middle middle:</b></i> Watercolor on paper - Jan, 2018</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/thinker series color.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Thinker Series, major arcana-style:</b></i> Linoleum block print, handcarved rubber stamp, and watercolor on paper - Dec, 2017</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/shiracats.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hamilton and Stringer Bell on the grass:</b></i> Commissioned linoleum block print with watercolor - Dec, 2017</span></figcaption></figure>
