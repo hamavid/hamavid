@@ -142,6 +142,7 @@ a:link,a:visited,a:hover,a:active{color:black;}
 .closebtn:hover {color:#ffffff;}
 #slidefilter{color:#ffffff;font-weight:bold;padding:0.5em 1em 0.5em 1em;position:absolute;background-color:rgba(0,0,0,0.6);z-index:1;}
 #slidefilter:hover{opacity:0;}
+/*.pinterest-button{position:absolute;right:1em;bottom:0;z-index:5;}  Not in use */
 @media screen and (max-width: 450px), screen and (max-height: 450px) {
     .overlay-content{height:100%;top:0;}
     .closebtn {font-size:4em;top:-3%;}
@@ -191,6 +192,7 @@ figcaption {
     rgba(0,0,0,0.6);
     padding:8px;
     padding-bottom:8px;
+    /*padding-right:43px; FOR PINTEREST BUTTON IF USING */
     opacity:1;
     z-index:4;
 }
@@ -198,6 +200,7 @@ figcaption>span {margin-left:1.1em;}
 figcaption {cursor:pointer;}
 @media only screen and (max-width: 450px) {figcaption{max-height:100%;}}
 @media only screen and (max-height: 450px) {figcaption{max-width:100%;}}
+
 
 
 
