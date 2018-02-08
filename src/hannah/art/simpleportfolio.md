@@ -72,6 +72,7 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 <li><a href="../../images/portfolio/linoukulele.jpeg">Ukulele</a> Linoleum block print - Feb, 2017.</li>
 <li><a href="../../images/portfolio/linogotyourback.jpeg">Got your back</a> Linoleum block print - Feb, 2017.</li>
 <li><a href="../../images/portfolio/linoface.jpeg">Shadowy face</a> Linoleum block print - Feb, 2017.</li>
+<li><a href="../../images/portfolio/pogo in box sketch.jpeg">Cat in a box</a> Pencil on paper - Feb, 2017.</li>
 <li><a href="../../images/portfolio/floodthestreets.jpg">Second wind third wave</a> Watercolor and gel pen on paper - Jan, 2017.</li>
 <li><a href="../../images/portfolio/benandpogo.jpg">Ben and Pogo</a> Watercolor and pencil on paper - Dec, 2016.</li>
 <li><a href="../../images/portfolio/pokemongo.jpg">Po-kemon-go</a> Watercolor and pencil on paper - Nov, 2016.</li>
