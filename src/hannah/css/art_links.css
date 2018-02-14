@@ -7,7 +7,7 @@ a,a:visited{color:black;}
 #links {
 	padding:3%;
 }
-#recommendations {
+#recommendations,#retail-cards {
 	width:64%;
 	float:left;
 	display:inline-block;
@@ -37,7 +37,7 @@ a,a:visited{color:black;}
 	#buyart {max-width:284px;}
 } */
 /* for narrow screens, place sections in column instead of side by side */
-@media screen and (max-width:600px){
+@media screen and (max-width:680px){
 	#recommendations {min-width:100%;float:none;margin-top:2%;}
 	#buyart {min-width:100%;float:none;margin-bottom:2%;}
 }

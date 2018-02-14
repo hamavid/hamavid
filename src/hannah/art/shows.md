@@ -29,7 +29,7 @@ cssjsfile: "art_shows"
 
 <h3>Present<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
 <p><ul class='shows_list'>
-<li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan/Feb, 2018</li>
+<li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan/Feb, 2018
 <div class="details photos">
 <img src="../../images/shows/2018_01_01_freshflours_1.jpg">
 <img src="../../images/shows/2018_01_01_freshflours_2.jpg">
@@ -39,12 +39,13 @@ cssjsfile: "art_shows"
 <img src="../../images/shows/2018_01_01_freshflours_6.jpg">
 <img src="../../images/shows/2018_01_01_freshflours_7.jpg">
 <img src="../../images/shows/2018_01_01_freshflours_8.jpg">
-</div>
+<br>Solo show of block prints and watercolors.</div></li>
 </ul></p>
 
 
 <h3>Future</h3>
 <p><ul class="shows_list">
+<li><a href="http://www.gsblaw.com/contact-seattle">Garvey Schubert Barer</a>, Seattle - March, 2018 through Feb, 2019</li>
 <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">West Seattle</a>, Seattle - Jul, 2018</li>
 </ul></p>
 
