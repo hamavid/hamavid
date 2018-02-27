@@ -27,8 +27,20 @@ cssjsfile: "art_shows"
 <div id="mainshows">
 
 
-<h3>Present<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
+<!--<h3>Present</h3>
 <p><ul class='shows_list'>
+</ul></p>-->
+
+
+<h3>Future<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
+<p><ul class="shows_list">
+<li><a href="http://www.gsblaw.com/contact-seattle">Garvey Schubert Barer</a>, Seattle - March, 2018 through Feb, 2019</li>
+<li>Fresh Flours <a href="http://www.freshfloursseattle.com/">West Seattle</a>, Seattle - Jul, 2018</li>
+</ul></p>
+
+
+<h3 style="width:100%">Past</h3>
+<p><ul class="shows_list">
 <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan/Feb, 2018
 <div class="details photos">
 <img src="../../images/shows/2018_01_01_freshflours_1.jpg">
@@ -40,18 +52,6 @@ cssjsfile: "art_shows"
 <img src="../../images/shows/2018_01_01_freshflours_7.jpg">
 <img src="../../images/shows/2018_01_01_freshflours_8.jpg">
 <br>Solo show of block prints and watercolors.</div></li>
-</ul></p>
-
-
-<h3>Future</h3>
-<p><ul class="shows_list">
-<li><a href="http://www.gsblaw.com/contact-seattle">Garvey Schubert Barer</a>, Seattle - March, 2018 through Feb, 2019</li>
-<li>Fresh Flours <a href="http://www.freshfloursseattle.com/">West Seattle</a>, Seattle - Jul, 2018</li>
-</ul></p>
-
-
-<h3 style="width:100%">Past</h3>
-<p><ul class="shows_list">
 
 <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Dec, 2017
 <div class="details photos">
