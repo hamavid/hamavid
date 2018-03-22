@@ -31,6 +31,8 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="hz acrylic mercreature" style="background: url('../../images/portfolio/thumbs/mailbox.jpg') 20% 0% no-repeat;"></div></span>
+      <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/french horn.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/double drop knee.jpeg') 0% 40% no-repeat;"></div></span>
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/jc wedding front.jpeg') 50% 0% no-repeat;"></div></span>
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/jc wedding back.jpeg') 50% 0% no-repeat;"></div></span>
@@ -124,6 +126,8 @@ cssjsfile: "art_portfolio"
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
 
+<figure class="acrylic mercreature"><img src="../../images/portfolio/mailbox.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Angler fish mailbox:</b></i> Acrylic on aluminum - Mar, 2018</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/french horn.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>French horn:</b></i> Linoleum block print - Feb, 2018</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/double drop knee.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Double drop knee:</b></i> Linoleum block print - Feb, 2018</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/jc wedding front.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>C&J's wedding, front:</b></i> Watercolor on paper - Jan, 2018</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/jc wedding back.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>C&J's wedding, back:</b></i> Watercolor on paper - Jan, 2018</span></figcaption></figure>
