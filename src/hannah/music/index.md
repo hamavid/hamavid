@@ -11,6 +11,10 @@ cssjsfile: "music"
 
 <!-- Main content -->
 <div class='container' id='sections'>
+<h3>Lessons</h3>
+<div>
+I teach beginner violin and ukulele lessons in Seattle, usually in-home (I come to you). All ages, all styles welcome. Email me at <span id="email" class="text-teal" style="font-weight:bold;">hamavid (at) gmail (dot) com</span> for rates and availability. 
+</div>
 <br>
 <h3>Projects and collaborations</h3>
 <div>

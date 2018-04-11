@@ -3,7 +3,9 @@ $(document).ready(function(){
 // Show/hide back-to-top button
   $(window).bind('resize scroll', showhide_backtotop);
   function showhide_backtotop() {
-    if (document.body.scrollTop > 200) {
+    var howfar = $(window).scrollTop();
+    /*if (document.body.scrollTop > 200) {*/
+    if (howfar>200) {
         $('.backtotop').css('display','block');
     } else {
         $('.backtotop').css('display','none');
