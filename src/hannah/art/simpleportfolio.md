@@ -44,6 +44,9 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/flowers color.jpeg">Flowers, in color:</a> Linoleum block print with watercolor - Apr, 2018</li>
+<li><a href="../../images/portfolio/flowers bnw.jpeg">Flowers:</a> Linoleum block print - Mar, 2018</li>
+<li><a href="../../images/portfolio/mailbox.jpg">Mailbox:</a> Acrylic on aluminum - Mar, 2018</li>
 <li><a href="../../images/portfolio/double drop knee.jpeg">Double drop knee:</a> Linoleum block print - Feb, 2018</li>
 <li><a href="../../images/portfolio/jc wedding front.jpeg">C&J's wedding, front:</a> Watercolor on paper - Jan, 2018</li>
 <li><a href="../../images/portfolio/jc wedding back.jpeg">C&J's wedding, back:</a> Watercolor on paper - Jan, 2018</li>
