@@ -140,5 +140,6 @@ figure>img {
 	.thisphoto{height:100%;top:0;}
 	.showidcontainer,.showid{position:fixed;bottom:0;}
 	.downup{display:inline-block;padding-right:0.5em;}
+	.xit{font-size:5.5em;line-height:0;right:0;opacity:1;display:inline-block;padding:0.3em;}
 }
 

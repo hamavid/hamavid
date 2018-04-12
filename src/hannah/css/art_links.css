@@ -38,6 +38,6 @@ a,a:visited{color:black;}
 } */
 /* for narrow screens, place sections in column instead of side by side */
 @media screen and (max-width:680px){
-	#recommendations {min-width:100%;float:none;margin-top:2%;}
+	#recommendations,#retail-cards {min-width:100%;float:none;margin-top:2%;}
 	#buyart {min-width:100%;float:none;margin-bottom:2%;}
 }
