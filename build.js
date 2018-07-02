@@ -51,7 +51,9 @@ metalsmith(__dirname)
         HHblog_aboutheader: 'partials/HHblog_aboutheader',
         HHartheader: 'partials/HHartheader',
         HHmusicheader: 'partials/HHmusicheader',
-        HHfooter: 'partials/HHfooter'
+        HHfooter: 'partials/HHfooter',
+        AHheader: 'partials/AHheader',
+        AHfooter: 'partials/AHfooter'
       }
   }))
   .use(rewrite([{

@@ -29,14 +29,18 @@ cssjsfile: "art_shows"
 
 <h3>Present<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
 <p><ul class='shows_list'>
+<li>Fresh Flours <a href="http://www.freshfloursseattle.com/">West Seattle</a>, Seattle - Jul, 2018
+<div class="details photos">
+<img src="../../images/shows/2018_07_freshflours_1.jpg">
+<img src="../../images/shows/2018_07_freshflours_2.jpg">
+<br>Even more prints! Even fresher Flours!</div></li></li>
 <li><a href="http://www.gsblaw.com/contact-seattle">Garvey Schubert Barer</a>, Seattle - March, 2018 through Feb, 2019</li>
 </ul></p>
 
-
+<!--
 <h3>Future</h3>
 <p><ul class="shows_list">
-<li>Fresh Flours <a href="http://www.freshfloursseattle.com/">West Seattle</a>, Seattle - Jul, 2018</li>
-</ul></p>
+</ul></p>-->
 
 
 <h3 style="width:100%">Past</h3>
