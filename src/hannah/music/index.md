@@ -13,13 +13,13 @@ cssjsfile: "music"
 <div class='container' id='sections'>
 <h3>Lessons</h3>
 <div>
-I teach beginner violin and ukulele lessons in Seattle, usually in-home (I come to you). All ages, all styles welcome. Email me at <span id="email" class="text-teal" style="font-weight:bold;">hamavid (at) gmail (dot) com</span> for rates and availability. 
+I teach violin and ukulele lessons in Seattle for beginner to intermediate students, usually in-home (I come to you). All ages, all styles welcome. Lessons start at a half hour for $25-40, sliding scale. Email me at <span id="email" class="text-teal" style="font-weight:bold;">hamavid (at) gmail (dot) com</span> for availability. 
 </div>
 <br>
 <h3>Projects and collaborations</h3>
 <div>
 <ul>
-<li><b>Brivele</b> Seattle-based klezmer folk-punk band <a href='https://www.brivele.com/'>[Website]</a> <a href='https://www.facebook.com/brivele'>[Facebook]</a> <a href='https://www.soundcloud.com/brivele'>[Soundcloud]</a></li>
+<li><b>Brivele</b> Seattle-based klezmer folk-punk band <a href='https://www.brivele.com/'>[Website]</a> <a href='https://www.facebook.com/brivele'>[Facebook]</a> <a href='https://www.soundcloud.com/brivele'>[Soundcloud]</a> <a href='https://brivele.bandcamp.com'>[Bandcamp]</a></li>
 <li><b>Eitim</b> pre-school album project <a href='https://eitimclass.wordpress.com/2017/06/20/ow-eitim-become-song-writers/'>[Blog post]</a> <a href='https://owtunes.bandcamp.com/'>[Music]</a></li>
 <li>Playing with <b><a href='https://www.patreon.com/kph'>KPH music</a></b> <a href='https://www.patreon.com/posts/free-post-thorns-9378025'>[Thorns]</a> <a href='https://www.patreon.com/posts/forgot-to-video-7385468'>[Forgot to Mention]</a> <a href='https://www.patreon.com/posts/water-cover-by-6891317'>[The Water]</a></li>
 </ul>
