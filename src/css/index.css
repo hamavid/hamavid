@@ -64,8 +64,8 @@ img {
 }
 .hannahlabel,.avivalabel{
 	font-size:24px;font-family:sans-serif;font-variant:small-caps;background-color:#fff;
-	padding:5px 15px 5px 15px;
-	display:inline-block;margin-top:70%;border-radius: 5px;
+	padding:5px 15px 5px 15px;border:0px!important;
+	display:inline-block;margin-top:70%;/*border-radius: 5px;*/
 	/*-webkit-animation: rotation 2s infinite linear;	*//*don't really make it rotate though*/
 }
 .hannahlabel:hover,.avivalabel:hover{
@@ -187,7 +187,7 @@ the picture pops in front of about while it's transitioning out */
 	border-radius:8px;
 	background-color:#fff;
 	color:#000;
-	border:2px solid black;
+	/*border:2px solid black;*/
 	-moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	-webkit-box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);

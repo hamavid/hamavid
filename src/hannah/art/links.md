@@ -31,6 +31,7 @@ cssjsfile: "art_links"
         <li><b>Ballard ~ </b> <a href='https://www.monsterartandclothing.com/'>Monster: Art, Clothing &amp; Gifts</a></li>
         <li><b>Capitol Hill ~ </b> <a href='https://www.elliottbaybook.com/'>Elliott Bay Book Company</a></li>
       </ul>
+      <div class="center cardpix"><img src="../../images/links/cards1.jpg" width="50%" alt-text="Cards EBBC"><img src="../../images/links/cards2.jpg" width="50%" alt-text="Cards FCAF"></div>
     </div>
 
 <div id="recommendations">

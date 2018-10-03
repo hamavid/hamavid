@@ -44,6 +44,9 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/selfieincar.jpg">Selfie in the Car:</a> Linoleum block print - Oct, 2018</li>
+<li><a href="../../images/portfolio/countercurrent-exchange copy.jpg">Countercurrent - Exchange:</a> Commissioned drawing for album cover - Sep, 2018</li>
+<li><a href="../../images/portfolio/shiraamuka.jpg">The House in Amuka:</a> Commissioned watercolor on paper - Aug, 2018</li>
 <li><a href="../../images/portfolio/dogs-manybest.jpeg">Four dogs:</a> Linoleum block print - Jun, 2018</li>
 <li><a href="../../images/portfolio/flowers color.jpeg">Flowers, in color:</a> Linoleum block print with watercolor - Apr, 2018</li>
 <li><a href="../../images/portfolio/flowers bnw.jpeg">Flowers:</a> Linoleum block print - Mar, 2018</li>

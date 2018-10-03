@@ -31,6 +31,9 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/selfieincar.jpg') 40% 0% no-repeat;"></div></span>
+      <span><div class="hz drawing" style="background: url('../../images/portfolio/thumbs/countercurrent-exchange copy.jpg') 58% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/shiraamuka.jpg') 40% 0% no-repeat;"></div></span>
       <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/dogs-manybest.jpeg') 60% 0% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/flowers color.jpeg') 0% 50% no-repeat;"></div></span>
       <span><div class="vt print" style="background: url('../../images/portfolio/thumbs/flowers bnw.jpeg') 0% 50% no-repeat;"></div></span>
@@ -128,7 +131,9 @@ cssjsfile: "art_portfolio"
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
-
+<figure class="print"><img src="../../images/portfolio/selfieincar.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Selfie in the Car:</b></i> Linoleum block print - Oct, 2018</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/countercurrent-exchange copy.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Countercurrent - Exchange:</b></i> Commissioned drawing for album cover - Sep, 2018</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/shiraamuka.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The House in Amuka:</b></i> Commissioned watercolor on paper - Aug, 2018</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/dogs-manybest.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Four dogs:</b></i> Linoleum block print - Jun, 2018</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/flowers color.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Flowers, in color:</b></i> Linoleum block print with watercolor - Apr, 2018</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/flowers bnw.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Flowers:</b></i> Linoleum block print - Mar, 2018</span></figcaption></figure>

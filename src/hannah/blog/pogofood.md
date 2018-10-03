@@ -6,6 +6,7 @@ title: "How much does the cat eat?"
 subtitle: "An interactive visualization"
 date: 2017-07-18
 pagetype: BLOG
+draft: false
 ---
 
 The quick answer to this fascinating question is that the cat ate a daily average of **5.8 tablespoons of dry food** ([Science Diet Indoor Kitten](http://www.hillspet.com/en/us/products/sd-feline-kitten-indoor-dry)) and **1.4 ounces of wet food** (brand and flavor varied) over the winter of 2016-17.

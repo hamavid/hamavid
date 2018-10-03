@@ -6,6 +6,7 @@ title: "How to make lotion!"
 subtitle: "On a lake of emotion"
 date: 2017-06-06
 pagetype: BLOG
+draft: false
 ---
 <p style="text-align:center;font-size:1.2em;"><a href="./#recipestart">Skip to recipe</a></p>
 
