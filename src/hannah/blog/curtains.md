@@ -99,7 +99,7 @@ This section is a convoluted algebra problem that describes how the pieces shoul
 2. Figure out how many *M* pieces you need and how far apart they will be spaced. They should be 3" wide, and spaced around 2-4" apart. And you want an odd number so they are aligned with the edges of the curtain. I used 1 + (*x* - 3)/6, rounded whichever way gives you an odd number.
 3. See Figure C for illustration: Measure and cut your *M* pieces, fold them in half along the 7" edge, and sew down the outer edge. Turn them right side out so you have a series of tubes that are 3" wide. Iron flat such that the seam is in the middle (not along a fold). Fold in half perpendicularly to the seam, so that the seam is on the inside.
 
-<figure><a href='./m-instructions.png'><img src='./m-instructions.png'></a><figcaption>Figure C: Click to see full-sized image</figcaption></figure>
+<figure><a href='./M-instructions.png'><img src='./M-instructions.png'></a><figcaption>Figure C: Click to see full-sized image</figcaption></figure>
 
 
 #### *SEW THE HANGERS TO THE CURTAIN*
@@ -109,7 +109,7 @@ This section is a convoluted algebra problem that describes how the pieces shoul
 4. Insert the next *M* piece at the point you stopped sewing and continue sewing until you have used up your *M* pieces and gotten to the end of the curtain top!
 5. If you have pins you could also place all your *M* pieces beforehand and pin them down, then just sew one long seam.
 
-<figure><a href='./more-m-instructions.png'><img src='./more-m-instructions.png'></a><figcaption>Figure D: Click to see full-sized image</figcaption></figure>
+<figure><a href='./more-M-instructions.png'><img src='./more-M-instructions.png'></a><figcaption>Figure D: Click to see full-sized image</figcaption></figure>
 
 
 Et voila! Congratulations on your new curtains! May no birds fly into them.
