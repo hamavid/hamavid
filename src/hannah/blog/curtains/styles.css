@@ -1,0 +1,8 @@
+li strong{
+	display:table;margin:auto;padding:1em;
+	letter-spacing: 0.3em}
+ul{padding-bottom:1em;}
+figure{height:100%;}
+#twomasks img{padding:0.2em;}
+@media only screen and (min-width: 650px) {#twomasks img{height:332px;}}
+@media only screen and (max-width: 649px) {#twomasks{width:90%;height:auto;}
