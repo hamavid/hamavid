@@ -64,6 +64,7 @@ article figure{text-align:center;}*/
 article ul li{padding:0.3em;}
 .vizbutton{background-color:#009688;border:2px solid black;padding:0.5em;font-size:1.1em;}
 a.vizbutton,a:hover.vizbutton,a:visited.vizbutton,a:link.vizbutton {color:white;text-decoration:none;}
+a:hover.vizbutton{background: rgba(0, 150, 136, 0.6)}
 a:active.vizbutton{color:black;}
 article a{text-decoration:underline;}
 article td{padding:0 1em 0 1em;}
