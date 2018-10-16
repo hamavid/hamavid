@@ -148,3 +148,7 @@ a,a:hover,a:visited,a:active{color:#666;}
     #summary{width:100%;padding:4%;}
     #pictureofme{width:100%;text-align:center;padding:2%;}
 }
+/* for short height but wide screens, keep the tab navs but shorten the height of the picture */
+@media (max-height:500px) and (min-width:751px) {
+
+}

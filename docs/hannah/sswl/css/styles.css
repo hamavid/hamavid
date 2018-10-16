@@ -1,0 +1,217 @@
+body.page {
+  background-color: #ffe6cc;
+}
+table, tr {
+    border:1px solid black;
+    width:100%;
+    border-collapse: collapse;
+}
+table tr td {
+  padding:0.1em 0.3em;
+}
+table.venues {
+    /* width:450px;*/
+    max-width: 450px;
+    border-width: 1px;
+    border-color: #000000;
+    border-collapse: collapse;
+    margin:auto; /* hh added */
+}
+table.venues tr:nth-child(odd) {
+    background-color: rgb(135,245,160);
+}
+table.venues tr:nth-child(even) {
+    background-color: rgb(185,249,200);
+}
+table.recurring {
+   /*width:900px;*/
+    border-width: 1px;
+    border-color: #000000;
+    border-collapse: collapse
+}
+table.recurring tr:nth-child(odd) {
+    background-color: rgb(135,245,160);
+}
+table.recurring tr:nth-child(even) {
+    background-color: rgb(185,249,200);
+}
+div#text {
+  float: right ;
+  width: 50% ;
+}
+div#image {
+  float: right ;
+  width: 50%;
+}
+table#legend {
+    border:1px solid black;
+    /* hh changed below*/
+    width: 100%;
+    max-width:570px; 
+}
+tr#lightgrey {
+    background-color: rgb(198,202,204);
+}
+tr#lightgreen {
+    background-color: rgb(135,245,160);
+}
+tr#lightblue {
+    background-color: rgb(144,195,212);
+}
+tr#lightred {
+    background-color: rgb(240,190,210);
+}
+tr#hotred {
+    background-color: rgb(235,61,104);
+}
+div#specialMissedArtist {
+  background-color: rgb(144,195,212);
+}
+td#leftpaddingd {
+    padding-left: 5mm;
+}
+th#leftpaddingh {
+    padding-left: 5mm;
+}
+h5#dictionaryEntry {
+    /*align: left;
+    padding-left: 20mm;*/
+    padding:0 1em;
+}
+hr#special {
+  border-color: rgb(0,0,0);
+}
+h6#dictionaryCitation {
+    /*align: left;
+    padding-left: 40mm;*/
+    padding-left:3em;
+}
+img#interviews {
+  display: inline-block;
+  margin: 10px 10px;
+  float: right;
+}
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: " \25B4\25BE"
+}
+table.sortable tr:nth-child(odd) {
+    background-color: rgb(135,245,160);
+}
+table.sortable tr:nth-child(even) {
+    background-color: rgb(185,249,200);
+}
+
+/* -----------------------HH additions----------------------- */
+
+/* look of the main container */
+.container{
+  width:100%;
+  max-width:1000px;
+  margin:auto;
+  padding:1.5em;padding-top:0.3em;
+}
+
+/* look of cover image and site title (on big screens) */
+.dictionary{margin-bottom:2.5em;} 
+.title-over-picture{
+  color:#db0024;
+  font-size:3.3em;margin-left:10%;
+  text-shadow:
+   -1px -1px 0 #eee,  
+    1px -1px 0 #eee,
+    -1px 1px 0 #eee,
+     1px 1px 0 #eee;
+}
+
+/* look of navigation bar (big screens) */
+u{text-decoration:none;}
+.nav-tabs{width:792px;padding:0;margin:auto;}
+.nav-tabs li {font-size:1.1em;cursor:pointer;}
+.nav-tabs li.current a {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+
+}
+
+/* look of navigation bar (small screens) */
+.navbar-menu{
+  display:none;height:2em;margin:10px 0 10px 10px;
+  float:left;cursor:pointer!important;
+  font-size:1.4em;color:black;padding:0.3em;
+  border:1px solid black;border-radius:5px;
+}
+.navbar-menu:hover,.navbar-menu:focus{background-color: #eee;}
+.navbar-menu span{display:table-cell;vertical-align:middle;padding:10px 0 7px 7px;}
+.name img {display:none;position:relative;float:right;padding:0.2em;margin:0.7em;width:70%;max-width:450px;}
+
+/* look of the drop-down nav menu */
+.smallnavlinks{
+  display:none;
+  line-height:2.4em;
+  position:fixed;
+  width:100%;
+  text-align:center;
+  background-color:#ffe6cc;
+  border-bottom:1px solid black;
+  margin-bottom:2px;
+  margin-top:57px!important;
+}
+.smallnavlinks ul {list-style:none;margin:0px;padding:0px;}
+.smallnavlinks li {border-bottom:1px solid black;text-align: center!important;}
+.smallnavlinks li:hover{background-color:#eee;}
+.smallnavlinks a:hover{text-decoration: none;color:black;}
+.smallnavlinks a li.current{font-size:1.1em;color:black;font-weight:bold;}
+.overlay{
+  position:fixed;display:none;
+  cursor:pointer;z-index:1;
+  width:100%;height:100%;
+  top:0;left:0;right:0;bottom:0;
+  background-color:rgba(0,0,0,0.5);
+}
+/**/
+
+
+/* ---------for varying sizes of small screens---------- */
+/* for intermediate screen width just make nav tabs a little tighter  */
+@media only screen and (max-width:860px){
+  .nav-tabs{width:690px;}
+  .nav-tabs li a{padding:8px;font-size:1em;}
+}
+/* for small screens, show bar for drop down menu, hide tabs, rearrange coverimage and title */
+@media only screen and (max-width:750px){
+  header{
+    height:57px;
+    position:fixed;
+    width:100%;
+    z-index:3;
+    background-color:#ffe6cc;
+    top:0;
+    border-bottom:1px solid black;
+    -webkit-box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
+    box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
+  }
+  .navbar-menu{display:table!important;}
+  .name img {display:block;}
+  .title-over-picture{display:none;}
+  .coverimagetable{height:230px;margin-top:57px;}
+  h5#dictionaryEntry{text-align:center;}
+  .nav-tabs{display:none;}
+}
+/* make sure small nav and overlay disappear if screen gets widened again */
+@media only screen and (min-width:751px){
+  .smallnavlinks{display:none!important;}
+  #overlaybkgrnd{display:none!important;}
+}
+/* for very small screens, hide site title - to do: figure out alternate solution for this */
+@media only screen and (max-width:350px){
+  .name{display: none;}
+}
+/* for short (height) but wide screens, keep the tab navigation but shorten the height of the picture */
+@media (max-height:500px) and (min-width:751px) {
+  .coverimagetable{height:200px;}
+}
+
