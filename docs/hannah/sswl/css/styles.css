@@ -9,6 +9,9 @@ table, tr {
 table tr td {
   padding:0.1em 0.3em;
 }
+table.sortable{
+  table-layout: fixed;
+}
 table.venues {
     /* width:450px;*/
     max-width: 450px;
@@ -200,6 +203,7 @@ u{text-decoration:none;}
   .coverimagetable{height:230px;margin-top:57px;}
   h5#dictionaryEntry{text-align:center;}
   .nav-tabs{display:none;}
+  img#interviews{float:none;display:block;margin:auto;max-width:100%;}
 }
 /* make sure small nav and overlay disappear if screen gets widened again */
 @media only screen and (min-width:751px){

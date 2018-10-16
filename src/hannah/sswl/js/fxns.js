@@ -10,7 +10,14 @@ $(document).ready(function() {
 	$('.smallnavlinks li, .nav-tabs li a').click(function(){matchingmenus(event)});
 	function matchingmenus(event){
 		// get the name of the active tab
-		activetab = event.target.parentNode.getAttribute('href');
+		var e = event.target;
+		console.log(e);
+		// if it's small nav links li item or big nav links, just one parent,
+		// if small navlinks and not li, 2 parents
+		if (e.parentNode.className == 'smallnavlinks' && e.tagName != ('LI')) {
+			var activetab = e.parentNode.parentNode.getAttribute('href');
+		} else {var activetab = e.parentNode.getAttribute('href');}
+		console.log(activetab);
 		// remove active/current class from all li elements in all nav menus
 		$('.smallnavlinks li, .nav-tabs li').removeClass('current').removeClass('active');
 		// add active/current class to appropriate li elements in all nav menus
