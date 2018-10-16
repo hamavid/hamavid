@@ -1,16 +1,19 @@
 body.page {
   background-color: #ffe6cc;
+  width:100%; /* HH added */
+}
+/* HH added */
+header{
+  width:100%;
 }
 table, tr {
     border:1px solid black;
     width:100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 table tr td {
   padding:0.1em 0.3em;
-}
-table.sortable{
-  table-layout: fixed;
 }
 table.venues {
     /* width:450px;*/
@@ -49,8 +52,8 @@ div#image {
 table#legend {
     border:1px solid black;
     /* hh changed below*/
-    width: 100%;
     max-width:570px; 
+    table-layout: auto;
 }
 tr#lightgrey {
     background-color: rgb(198,202,204);
