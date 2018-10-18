@@ -1,10 +1,8 @@
+html,body{ /* HH added */
+  margin:0;top:0;left:0;padding:0;
+}
 body.page {
   background-color: #ffe6cc;
-  width:100%; /* HH added */
-}
-/* HH added */
-header{
-  width:100%;
 }
 table, tr {
     border:1px solid black;
@@ -21,7 +19,7 @@ table.venues {
     border-width: 1px;
     border-color: #000000;
     border-collapse: collapse;
-    margin:auto; /* hh added */
+    margin:auto; /* HH added */
 }
 table.venues tr:nth-child(odd) {
     background-color: rgb(135,245,160);
@@ -49,19 +47,19 @@ div#image {
   float: right ;
   width: 50%;
 }
-table#legend {
+table.legend {
     border:1px solid black;
-    /* hh changed below*/
+    /* HH changed below*/
     max-width:570px; 
     table-layout: auto;
 }
-tr#lightgrey {
+tr.lightgrey {
     background-color: rgb(198,202,204);
 }
 tr#lightgreen {
     background-color: rgb(135,245,160);
 }
-tr#lightblue {
+tr.lightblue {
     background-color: rgb(144,195,212);
 }
 tr#lightred {
@@ -70,29 +68,29 @@ tr#lightred {
 tr#hotred {
     background-color: rgb(235,61,104);
 }
-div#specialMissedArtist {
+div.specialMissedArtist {
   background-color: rgb(144,195,212);
 }
-td#leftpaddingd {
+td.leftpaddingd {
     padding-left: 5mm;
 }
-th#leftpaddingh {
+th.leftpaddingh {
     padding-left: 5mm;
 }
 h5#dictionaryEntry {
     /*align: left;
     padding-left: 20mm;*/
-    padding:0 1em;
+    padding:0 1em; /* HH changed */
 }
-hr#special {
+hr.special {
   border-color: rgb(0,0,0);
 }
 h6#dictionaryCitation {
     /*align: left;
     padding-left: 40mm;*/
-    padding-left:3em;
+    padding-left:3em; /* HH changed */
 }
-img#interviews {
+img.interviews {
   display: inline-block;
   margin: 10px 10px;
   float: right;
@@ -108,11 +106,19 @@ table.sortable tr:nth-child(even) {
 }
 
 /* -----------------------HH additions----------------------- */
+/* look of cover image */
+table.coverimagetable {
+  width:100%;height:450px;
+  padding:5px;border-spacing:0;
+  border:0!important;
+}
+table.coverimagetable tr{border:0!important;}
+table.coverimagetable tr td{vertical-align: top;}
 
 /* look of the main container */
 .container{
-  width:100%;
-  max-width:1000px;
+  width:1000px;
+  max-width:100%;
   margin:auto;
   padding:1.5em;padding-top:0.3em;
 }
@@ -153,12 +159,12 @@ u{text-decoration:none;}
 .navbar-menu span{display:table-cell;vertical-align:middle;padding:10px 0 7px 7px;}
 .name img {display:none;position:relative;float:right;padding:0.2em;margin:0.7em;width:70%;max-width:450px;}
 
-/* look of the drop-down nav menu */
+/* look of the drop-down nav menu (small screens) */
 .smallnavlinks{
   display:none;
   line-height:2.4em;
   position:fixed;
-  width:100%;
+  width:100%;width:100vw;
   text-align:center;
   background-color:#ffe6cc;
   border-bottom:1px solid black;
@@ -173,7 +179,8 @@ u{text-decoration:none;}
 .overlay{
   position:fixed;display:none;
   cursor:pointer;z-index:1;
-  width:100%;height:100%;
+  width:100%;width:100vw;
+  height:100%;
   top:0;left:0;right:0;bottom:0;
   background-color:rgba(0,0,0,0.5);
 }
@@ -192,6 +199,7 @@ u{text-decoration:none;}
     height:57px;
     position:fixed;
     width:100%;
+    width:100vw;
     z-index:3;
     background-color:#ffe6cc;
     top:0;
@@ -201,14 +209,14 @@ u{text-decoration:none;}
     box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
   }
   .navbar-menu{display:table!important;}
-  .name img {display:block;}
+  .name img {display:block;padding-right:15px;}
   .title-over-picture{display:none;}
-  .coverimagetable{height:230px;margin-top:57px;}
+  table.coverimagetable{height:230px;margin-top:57px;}
   h5#dictionaryEntry{text-align:center;}
   .nav-tabs{display:none;}
-  img#interviews{float:none;display:block;margin:auto;max-width:100%;}
+  img.interviews{float:none;display:block;margin:auto;max-width:100%;}
 }
-/* make sure small nav and overlay disappear if screen gets widened again */
+/* make sure small nav and overlay disappear if screen gets widened while menu is dropped down */
 @media only screen and (min-width:751px){
   .smallnavlinks{display:none!important;}
   #overlaybkgrnd{display:none!important;}
@@ -219,6 +227,6 @@ u{text-decoration:none;}
 }
 /* for short (height) but wide screens, keep the tab navigation but shorten the height of the picture */
 @media (max-height:500px) and (min-width:751px) {
-  .coverimagetable{height:200px;}
+  table.coverimagetable{height:200px;}
 }
 
