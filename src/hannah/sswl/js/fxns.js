@@ -9,8 +9,6 @@ $(document).ready(function() {
 // make sure menus match active tab on menu click
 	$('.smallnavlinks li, .nav-tabs li a').click(function(){matchingmenus(event)});
 	function matchingmenus(event){
-		// Fix header width (I don't know why this is happening; only on past shows tab)
-		//$('header').css('width',innerWidth + 'px');
 		// get the name of the active tab
 		var activetab = $(event.target).closest('a').attr('href');
 		// remove active/current class from all li elements in all nav menus
@@ -22,15 +20,5 @@ $(document).ready(function() {
 		$('.smallnavlinks a[href="'+activetab+'"] li').addClass('current').addClass('active');
 		$('.nav-tabs a[href="'+activetab+'"]').closest('li').addClass('current');
 	}
-
-// make sure elements stay within window size
-  //$(window).on('resize',stay_contained); 
- // stay_contained();
-	function stay_contained() {
-		w = $(window).width();
-		console.log(w);
-		$('body').css('width',w+'px');
-	}
-
 });
 
