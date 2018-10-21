@@ -32,10 +32,11 @@ cssjsfile: "art_shows"
 <li><a href="http://www.gsblaw.com/contact-seattle">Garvey Schubert Barer</a>, Seattle - March, 2018 through Feb, 2019</li>
 </ul></p>
 
-<!--
+
 <h3>Future</h3>
 <p><ul class="shows_list">
-</ul></p>-->
+<li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Feb, 2019</li>
+</ul></p>
 
 
 <h3 style="width:100%">Past</h3>

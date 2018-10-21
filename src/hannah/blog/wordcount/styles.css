@@ -19,6 +19,7 @@ h3{text-align:center;margin:1em;}
 #ignores div span {padding:5px 12px;background-color:#ffffff;}
 .xout{border:1px solid #c0c0c0; border-radius:5px 0px 0px 5px;}
 .ignorchar{border:1px solid #c0c0c0; border-left:0px;border-radius:0px 5px 5px 0px;}
+.dim{opacity:0.6;z-index:-6!important;}
 /*#analyze button{
 	font-size:1.2em;padding:0.4em;
 	background-color:#ffffff;

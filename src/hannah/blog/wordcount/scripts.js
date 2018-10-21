@@ -2,6 +2,9 @@
 window.onload = function () {
 
 // to add: make analyze button opaque if nothing has been changed since last analysis
+
+
+//element.className = element.className.replace(/\bmystyle\b/g, "");
 // functions to add and remove characters from the spans that show ignored chars
 // remove
 var xes = document.querySelectorAll('span.xout');
@@ -48,6 +51,8 @@ function case_sense(){
 document.getElementById('analyze').onclick = analyze;
 function analyze() {
 	console.log(ignores());
+	// dim the analyze button
+	document.getElementById('analyze').classList.add('dim');
 
 	// check the input variable
 	var input = document.getElementById('input').value;

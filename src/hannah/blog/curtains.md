@@ -72,7 +72,7 @@ This section is a convoluted algebra problem that describes how the pieces shoul
 3. An example where your windows are 63" high (*y*) and you want the curtain-window to only look a little bit open, let's say 4":
 	- *V* = 4
 	- *R* = 4, since *R* = *V*
-	- *T* = 21, aka *y*/2 - 1.5" - 4 -5
+	- *T* = 21, aka 63/2 - 1.5" - 4 - 5
 	- *P* = 22, aka *T* + 1
 	- (Add 1" to all heights for the 1/2" seams on either side.)
 4. Fill in your chosen heights for the missing measurements in Figure B and cut your pieces, except L, M, and N.
@@ -103,8 +103,8 @@ This section is a convoluted algebra problem that describes how the pieces shoul
 
 
 #### *SEW THE HANGERS TO THE CURTAIN*
-1. Change to a thread color that you don't mind showing.
-2. See Figure D for following steps: Along the open top edge of your giant bag/curtain, fold down the 1/2" seam allowance on either side in toward the middle and iron down the fold.
+1. Change to a thread color that you don't mind showing. Figure D illustrates steps 2 through 5.
+2. Along the open top edge of your giant bag/curtain, fold down the 1/2" seam allowance on either side in toward the middle and iron down the fold.
 3. Insert both raw ends of the first folded-in-half hanger *M* piece into one corner, and sew down along the outside edge of the fold. Continue sewing the top curtain edge together for the amount of space you decided should be between *M* pieces.
 4. Insert the next *M* piece at the point you stopped sewing and continue sewing until you have used up your *M* pieces and gotten to the end of the curtain top!
 5. If you have pins you could also place all your *M* pieces beforehand and pin them down, then just sew one long seam.

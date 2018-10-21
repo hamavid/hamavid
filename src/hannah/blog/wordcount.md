@@ -39,3 +39,9 @@ draft: true
 	</div>
 </div>	
 </div>
+
+<!--
+http://www.writewords.org.uk/word_count.asp
+https://wordcounter.net/
+https://wordcounttools.com/
+-->
