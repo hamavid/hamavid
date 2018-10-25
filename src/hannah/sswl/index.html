@@ -30,19 +30,9 @@
 <body class="page">
 <!-- HH added: navigation as dropdown menu instead of tabs; for small screens/mobile -->
 <header>
-  <div class='navbar-menu' style='display:none;'>MENU</div>
+  <div class='navbar-menu'>MENU</div>
   <div class='name'><img src='./images/sitetitle-red-bold-ss.png' title='Singer-Songwriters, Live!' alt='Singer-Songwriters, Live!'></div>
-  <!-- NAVIGATION --> 
-	<ul class="nav nav-tabs">
-		<li class="active"><a data-toggle="tab" href="#home"><u>Upcoming Shows</u></a></li>
-		<li><a data-toggle="tab" href="#recurring"><u>Recurring Events</u></a></li>
-		<li><a data-toggle="tab" href="#past"><u>Past Shows</u></a></li>
-		<li><a data-toggle="tab" href="#features"><u>Features</u></a></li>
-		<li><a data-toggle="tab" href="#venues"><u>Venues</u></a></li>
-		<li><a data-toggle="tab" href="#comments"><u>Comments</u></a></li>
-		<li><a data-toggle="tab" href="#about"><u>About</u></a></li>
-	</ul>
-  <nav class='smallnavlinks' style='display:none;'>
+  <nav class='smallnavlinks'>
     <ul>
       <a data-toggle="tab" href="#home"><li class="active current"><u>Upcoming Shows</u></li></a>
       <a data-toggle="tab" href="#recurring"><li><u>Recurring Events</u></li></a>
@@ -57,9 +47,6 @@
 
 <!-- Header image and site title for large screens -->
 <table class='coverimagetable' style="background: url('images/coverImage.jpg') 30% 0% no-repeat;"><!-- HH changed pic to background in inline style to shift its center slightly and put styling in css instead of inline -->
-	<tr><td>
-	<h1 class='title-over-picture'><b>Singer-Songwriters, Live!</b></h1> <!-- HH gave this element a class to control its style in css file -->
-	</td></tr>
 </table>
 
 <!-- /////////////////Start Main container///////////////// -->
@@ -2752,7 +2739,7 @@
 
 <!-- FEATURES -->
 <div id="features" class="tab-pane face">
-  <h3>Features</h3>
+  <h4>Features</h4> <!-- HH changed to h4 instead of h3 for consistency with other tab headers -->
   <p>This section is intended to present some featured items that seem relevant to SSWL: interviews with artists, maybe reviews of albums or reviews of shows. We'll see...
   <br>
   If any of you have requests for such features, you're welcome to suggest them in the comments section of this site, or send your suggestions by email to me at <b>singersongwriterslive@gmail.com</b>&nbsp;&nbsp;Thanks!</p>
