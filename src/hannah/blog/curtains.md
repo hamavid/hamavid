@@ -56,7 +56,7 @@ Blue (sky) fabric: Pieces P, Q, R, S, T, U, V.
 
 <a name="dimensions"></a>
 #### *DIMENSIONS*
-This section is a convoluted algebra problem that describes how the pieces should be proportioned to each other, based on the size of the real window you want to cover, and on how open/closed you want the curtain-window to look. Rule of thumb: make everything a little wide, since a ripply closed curtain is better than a closed curtain without full window coverage (as the saying goes). Seams are 1/2".
+This section is a convoluted algebra problem that describes how the pieces should be proportioned to each other, based on the size of the real window you want to cover, and on how open/closed you want the curtain-window to look. Rule of thumb: make everything a little wide, since a ripply closed curtain is better than a closed curtain without full window coverage (as the saying goes). <strong><em>Units are inches, seams are 1/2".</em></strong>
 
 1. Measure your window. 
 	- *x* = The width between outer edges of the outer frame (ie just before the wall).
@@ -72,7 +72,7 @@ This section is a convoluted algebra problem that describes how the pieces shoul
 3. An example where your windows are 63" high (*y*) and you want the curtain-window to only look a little bit open, let's say 4":
 	- *V* = 4
 	- *R* = 4, since *R* = *V*
-	- *T* = 21, aka 63/2 - 1.5" - 4 - 5
+	- *T* = 21, aka 63/2 - 1.5 - 4 - 5
 	- *P* = 22, aka *T* + 1
 	- (Add 1" to all heights for the 1/2" seams on either side.)
 4. Fill in your chosen heights for the missing measurements in Figure B and cut your pieces, except L, M, and N.
@@ -95,7 +95,7 @@ This section is a convoluted algebra problem that describes how the pieces shoul
 3. Sew *N* to the front down the long edges (good sides in) so you have a giant bag shape. Turn right side out.
 
 #### *MAKE THE HANGERS*
-1. Measure the height for your *M* pieces: The distance from the bottom of the top window frame to the top of the rod. Probably this will be about 1.5-2". Since these pieces get folded in half to go around the rod, double your desired height before adding the 1" for seams.
+1. Measure the height for your *M* pieces: The distance from the bottom of the top window frame to the top of the rod. Probably this will be about 1.5-2". Since these pieces get folded in half to go around the rod, double your desired height before adding the 1" (total) for seams.
 2. Figure out how many *M* pieces you need and how far apart they will be spaced. They should be 3" wide, and spaced around 2-4" apart. And you want an odd number so they are aligned with the edges of the curtain. I used 1 + (*x* - 3)/6, rounded whichever way gives you an odd number.
 3. See Figure C for illustration: Measure and cut your *M* pieces, fold them in half along the 7" edge, and sew down the outer edge. Turn them right side out so you have a series of tubes that are 3" wide. Iron flat such that the seam is in the middle (not along a fold). Fold in half perpendicularly to the seam, so that the seam is on the inside.
 
@@ -103,10 +103,11 @@ This section is a convoluted algebra problem that describes how the pieces shoul
 
 
 #### *SEW THE HANGERS TO THE CURTAIN*
-1. Change to a thread color that you don't mind showing. Figure D illustrates steps 2 through 5.
-2. Along the open top edge of your giant bag/curtain, fold down the 1/2" seam allowance on either side in toward the middle and iron down the fold.
-3. Insert both raw ends of the first folded-in-half hanger *M* piece into one corner, and sew down along the outside edge of the fold. Continue sewing the top curtain edge together for the amount of space you decided should be between *M* pieces.
-4. Insert the next *M* piece at the point you stopped sewing and continue sewing until you have used up your *M* pieces and gotten to the end of the curtain top!
+0. Change to a thread color that you don't mind showing. Figure D illustrates steps 1 through 4.
+1. Along the open top edge of your giant bag/curtain, fold down the 1/2" seam allowance on either side in toward the middle and iron down the fold.
+2. Insert both raw ends of the first folded-in-half hanger *M* piece into one corner
+3. Sew down along the outside edge of the fold. Continue sewing the top curtain edge together for the amount of space you decided should be between *M* pieces.
+3. Insert the next *M* piece at the point you stopped sewing and continue sewing until you have used up your *M* pieces and gotten to the end of the curtain top!
 5. If you have pins you could also place all your *M* pieces beforehand and pin them down, then just sew one long seam.
 
 <figure><a href='./more-M-instructions.png'><img src='./more-M-instructions.png'></a><figcaption>Figure D: Click to see full-sized image</figcaption></figure>

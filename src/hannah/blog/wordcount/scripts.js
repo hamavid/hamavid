@@ -2,7 +2,8 @@
 window.onload = function () {
 
 // to add: make analyze button opaque if nothing has been changed since last analysis
-
+// UNdim the analyze button
+function undim() {document.getElementById('analyze').classList.remove('dim');}
 
 //element.className = element.className.replace(/\bmystyle\b/g, "");
 // functions to add and remove characters from the spans that show ignored chars
@@ -10,6 +11,7 @@ window.onload = function () {
 var xes = document.querySelectorAll('span.xout');
 for(var i = 0; i < xes.length; i++) {xes[i].onclick=remove_ignore;}
 function remove_ignore(){
+	undim();
 	this.parentNode.parentNode.removeChild(this.parentNode);
 }
 
@@ -18,6 +20,8 @@ var iglist = document.querySelectorAll('#ignores')[0];
 document.getElementById('addchar').onclick=add_ignore;
 function add_ignore() {
 	var added = document.getElementById('ignore-input').value;
+	// If anything has been added, UNdim the analyze button
+	if (added.length > 0) {undim();}
 	var div = document.createElement('div');
 	var span1 = document.createElement('span');
 	span1.className = 'xout';span1.innerHTML = 'x';div.append(span1);
@@ -41,16 +45,14 @@ function ignores(){
 	return list;
 }
 
-// function to check on case sensitivity
-function case_sense(){
-	var checked = document.getElementById('casesense').checked;
-	console.log(checked);
-}
+//function case_sense(){var checked = document.getElementById('casesense').checked;}
+
+// UNdim analyze button if case check status changes or text in input box changes
+document.getElementById('casesense').onclick = undim;
 
 // function to analyze word count
 document.getElementById('analyze').onclick = analyze;
 function analyze() {
-	console.log(ignores());
 	// dim the analyze button
 	document.getElementById('analyze').classList.add('dim');
 
@@ -63,7 +65,7 @@ function analyze() {
 	if (document.getElementById('casesense').checked == false){edited = edited.toLowerCase();}
 	
 	edited = edited.replace(/ {1,}/g,' '); // get rid of double spaces
-	// loop through characters to ignore, taking them out of the input string
+	// loop through characters/words to ignore, taking them out of the input string
 	for (var i=0; i<ignores().length; i++) {
 		var re = new RegExp(ignores()[i],'g');
 		edited = edited.replace(re,'');

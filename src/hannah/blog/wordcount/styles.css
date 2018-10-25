@@ -19,13 +19,21 @@ h3{text-align:center;margin:1em;}
 #ignores div span {padding:5px 12px;background-color:#ffffff;}
 .xout{border:1px solid #c0c0c0; border-radius:5px 0px 0px 5px;}
 .ignorchar{border:1px solid #c0c0c0; border-left:0px;border-radius:0px 5px 5px 0px;}
-.dim{opacity:0.6;z-index:-6!important;}
+.dim{background: rgba(0, 150, 136, 0.6);border-color: rgba(0,0,0,0.6);pointer-events:none;}
+
+/*.dim:hover,a.dim:active{
+	background: rgba(0, 150, 136, 0.6);
+	color: white;border-color: rgba(0,0,0,0.6);
+	cursor:default;
+}*/
+
 /*#analyze button{
 	font-size:1.2em;padding:0.4em;
 	background-color:#ffffff;
 	border:2px solid black;border-radius:5px;
 	cursor:pointer;
 }*/
+
 
 /* results */
 #resultsdiv{display:none;}

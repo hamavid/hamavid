@@ -126,7 +126,6 @@ table.coverimagetable tr td{vertical-align: top;}
 /* look of cover image and site title (on big screens) */
 .dictionary{margin-bottom:2.5em;} 
 .title-over-picture{
-  display:none;
   color:#db0024;
   font-size:3.3em;margin-left:10%;
   text-shadow:
@@ -137,29 +136,16 @@ table.coverimagetable tr td{vertical-align: top;}
 }
 
 /* look of navigation bar (big screens) */
- header{
-    height:107px;
-    position:fixed;
-    width:100%;
-    width:100vw;
-    z-index:3;
-    background-color:#ffe6cc;
-    top:0;
-    border-bottom:1px solid black;
-    -webkit-box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
-    box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
-  }
 u{text-decoration:none;}
-.nav-tabs{width:792px;padding:0;margin:auto;border-color:transparent!important;}
+.nav-tabs{width:792px;padding:0;margin:auto;}
 .nav-tabs li {font-size:1.1em;cursor:pointer;}
-.nav-tabs li a{border-color:transparent!important;padding:0.7em 1em;border-radius:4px!important;}
 .nav-tabs li.current a {
   color: #555;
   cursor: default;
   background-color: #fff;
-  /*border: 1px solid #ddd;
-  border-bottom-color: transparent;*/
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+
 }
 
 /* look of navigation bar (small screens) */
@@ -171,20 +157,7 @@ u{text-decoration:none;}
 }
 .navbar-menu:hover,.navbar-menu:focus{background-color: #eee;}
 .navbar-menu span{display:table-cell;vertical-align:middle;padding:10px 0 7px 7px;}
-.name{width:100%;position:relative;}
-.name img {display:block;padding:0.5em;margin:auto;width:450px;}
-table.coverimagetable{height:370px;margin-top:107px;}
-
-/* classes for when scrolled down the window */
-.scroll-tabs{
-  display:inline-block;float:left;max-width:600px;margin-left:0.5em;
-}
-.scroll-tabs a{padding:0.4em 0.5em!important;font-size:1em;margin:0.5em 0.1em;}
-.scroll-name, .scroll-name img{
-  float:right;width:70%;max-width:220px;display:inline-block;margin:0.7em 0.8em 0 0!important;
-}
-
-
+.name img {display:none;position:relative;float:right;padding:0.2em;margin:0.7em;width:70%;max-width:450px;}
 
 /* look of the drop-down nav menu (small screens) */
 .smallnavlinks{
@@ -211,39 +184,32 @@ table.coverimagetable{height:370px;margin-top:107px;}
   top:0;left:0;right:0;bottom:0;
   background-color:rgba(0,0,0,0.5);
 }
-
-/* make smooth transition in size for navbar and its contents on window resize */
-header,.nav-tabs,.name img {
-    -webkit-transition: height 0.5s;
-    transition: height 0.5s;
-}
-
-.nav-tabs li a {-webkit-transition: font-size 0.5s;transition: font-size 0.5s;}
-table.coverimagetable {
-   -webkit-transition: margin 0.5s;
-    transition: margin 0.5s;
-}
-
-
 /**/
 
 
 /* ---------for varying sizes of small screens---------- */
 /* for intermediate screen width just make nav tabs a little tighter  */
-@media only screen and (max-width:960px){
-  .nav-tabs{width:620px;}
-  .nav-tabs li {margin:0.1em;font-size:0.9em;}
-  .nav-tabs li a{padding:0.3em;}
-
+@media only screen and (max-width:860px){
+  .nav-tabs{width:690px;}
+  .nav-tabs li a{padding:8px;font-size:1em;}
 }
 /* for small screens, show bar for drop down menu, hide tabs, rearrange coverimage and title */
 @media only screen and (max-width:750px){
   header{
     height:57px;
+    position:fixed;
+    width:100%;
+    width:100vw;
+    z-index:3;
+    background-color:#ffe6cc;
+    top:0;
+    border-bottom:1px solid black;
+    -webkit-box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
+    box-shadow: 0px 13px 20px -13px rgba(0,0,0,0.75);
   }
-  table.coverimagetable {margin-top:57px;}
   .navbar-menu{display:table!important;}
-  .name img {display:block;padding-right:15px;float:right;margin-right:1em;width:70%;max-width:450px;}
+  .name img {display:block;padding-right:15px;}
   .title-over-picture{display:none;}
   table.coverimagetable{height:230px;margin-top:57px;}
   h5#dictionaryEntry{text-align:center;}

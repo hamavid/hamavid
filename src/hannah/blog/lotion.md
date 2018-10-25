@@ -53,7 +53,7 @@ I got the almond oil and cocoa butter on Amazon, and the rest at Trader Joe's an
 
 4. With a blender, immersion blender, or really strong whisking hand, whisk in the aloe vera, adding gradually until it looks like lotion.<figure><img src="./images/aloe1.jpg" title="Oils in bowl on counter with some aloe blended in, and an immersion blender"><figcaption>Looks soupy and weird</figcaption></figure><figure><img src="./images/aloe2.jpg" title="Bowl with all the aloe blended in, and an immersion blender - finished lotion!"><figcaption>Looks like lotion!</figcaption></figure>
 
-5. To put the lotion in [bottles](https://www.amazon.com/gp/product/B01MFG07H4/) without making a huge mess, I scoop the lotion into one corner of a sandwich back. Next, make it a piping bag by cutting a tiny corner off, then squeeze it into the bottles through the hole.<figure><img src="./images/dispensing.jpg" title="Dispensing lotion into squeeze bottle with ziplock piping bag, bowl with some lotion in background"><figcaption></figcaption></figure>
+5. To put the lotion in [bottles](https://www.amazon.com/gp/product/B01MFG07H4/) without making a huge mess, I scoop the lotion into one corner of a sandwich bag. Next, make it a piping bag by cutting a tiny corner off, then squeeze it into the bottles through the hole.<figure><img src="./images/dispensing.jpg" title="Dispensing lotion into squeeze bottle with ziplock piping bag, bowl with some lotion in background"><figcaption></figcaption></figure>
 
 6. That's it! Wipe excess lotion from bowl, blender, etc onto your skin or a paper towel before cleaning with soap and water (otherwise it might clog the drain.) Store in the fridge for a couple months, or at room temperature for a couple weeks.<sup>**</sup>
 

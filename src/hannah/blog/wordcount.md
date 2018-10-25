@@ -3,7 +3,7 @@ outadir: "../"
 layout: HHblogpost.html
 link: "./wordcount"
 title: "Word count"
-subtitle: "("
+subtitle: ""
 date: 2018-10-11
 pagetype: BLOG
 draft: true
