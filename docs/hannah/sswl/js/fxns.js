@@ -15,11 +15,10 @@ $(document).ready(function() {
 	}	
 
 // make sure menu matches active tab on menu click
-	$('.smallnavlinks li').click(function(){matchingmenu(event)});
-	function matchingmenu(event){
+	$('.smallnavlinks li, .smallnavlinks li a').click(function(){matchingmenu($(this))});
+	function matchingmenu(e){
 		// get the name of the active tab
-		activetab = event.target.parentNode.getAttribute('href');
-		console.log(activetab);
+		activetab = e.parent().attr('href');
 		// remove active/current class from all li elements in nav menu
 		$('.smallnavlinks li').removeClass('current').removeClass('active');
 		// add active/current class to appropriate li element in nav menu
@@ -28,7 +27,6 @@ $(document).ready(function() {
 		// because that messes up whatever bootstrap does with them
 		$('.smallnavlinks a[href="'+activetab+'"] li').addClass('current').addClass('active');
 	}
-
 
 });
 
