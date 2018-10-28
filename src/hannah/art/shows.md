@@ -35,6 +35,7 @@ cssjsfile: "art_shows"
 
 <h3>Future</h3>
 <p><ul class="shows_list">
+<li><a href="http://www.kadima.org/">Kadima</a> Craft Fair, Seattle - Nov 17th 10-3, 2018</li>
 <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Feb, 2019</li>
 </ul></p>
 
