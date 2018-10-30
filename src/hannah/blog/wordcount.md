@@ -12,9 +12,8 @@ draft: true
 <div id='inputdiv'>
 	<h3>Input</h3>
 	<p><em><strong>Words to analyze</strong></em><br>
-	<textarea id='input'>
-	But all that seems distant and all  that seems far, From those wonderful nights at the palace of the Czar, hey hey hey I was shootin' with Rasputin, ate farina with Czarina, Blintzes with the princes of the Czar. Hey hey hey We were sharing tea and herring, dipped banana in Smetana, Borscht  and vorscht around the samovar, hey hey
-	</textarea></p>
+	<textarea id='input'>But all that seems distant and all  that seems far, From those wonderful nights at the palace of the Czar, hey hey hey I was shootin' with Rasputin, ate farina with Czarina, Blintzes with the princes of the Czar. Hey hey hey We were sharing tea and herring, dipped banana in Smetana, Borscht  and vorscht around the samovar, hey hey</textarea>
+	</p>
 	<p><input type='checkbox' id='casesense'> <label for='casesense'>Case-sensitive</label></p>
 	<p><em><strong>Characters or words to ignore</strong></em><br>
 	<input id='ignore-input'></input><span id='addchar'>Add</span><br>
@@ -31,6 +30,15 @@ draft: true
 		<tr><td>Unique word count:</td><td id='unique'></td></tr>
 		</tbody></table>
 	</div><br>
+	<div id='sortby-outer'><span><strong>Sort:</strong> </span>
+	<select id='sortby'>
+	<option value='appear'>By order of appearance</option>
+	<option value='alpha'>Alphabetically</option>
+	<option value='backalpha'>Reverse alphabetically</option>
+	<option value='freq-asc'>Frequency (ascending)</option>
+	<option value='freq-desc'>Frequency (descending)</option>
+	</select>
+	</div>
 	<div class='wordtable-outer'>
 		<table>
 		<thead><th>Word</th><th>Occurrences</th></thead>

@@ -37,6 +37,7 @@ h3{text-align:center;margin:1em;}
 
 /* results */
 #resultsdiv{display:none;}
+#sortby-outer{text-align: center;padding-bottom: 1em;}
 .wordtable-outer table,.summarytable table{margin:auto;}
 /*.wordtable-outer table thead,.summarytable table{font-size:1.1em;}*/
 .wordtable-outer table thead tr th:nth-child(1),.wordtable-outer table tr td:nth-child(1){text-align:left;}
