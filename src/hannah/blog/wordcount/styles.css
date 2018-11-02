@@ -4,7 +4,7 @@
 }
 h3{text-align:center;margin:1em;}
 
-/* input area */
+/* -------------- INPUT ------------- */
 #input{width:700px;max-width:100%;height:150px;overflow-y:scroll;text-align:top;}
 #casesense{cursor:pointer;}
 #ignoreinput{width:30px;max-width:100%;}
@@ -20,29 +20,65 @@ h3{text-align:center;margin:1em;}
 .xout{border:1px solid #c0c0c0; border-radius:5px 0px 0px 5px;}
 .ignorchar{border:1px solid #c0c0c0; border-left:0px;border-radius:0px 5px 5px 0px;}
 .dim{background: rgba(0, 150, 136, 0.6);border-color: rgba(0,0,0,0.6);pointer-events:none;}
+.expl-toggle{text-align:center;font-size:1.2em;}
+.vizbutton{color:white;font-weight:bold;cursor:pointer;}
 
-/*.dim:hover,a.dim:active{
-	background: rgba(0, 150, 136, 0.6);
-	color: white;border-color: rgba(0,0,0,0.6);
-	cursor:default;
-}*/
-
-/*#analyze button{
-	font-size:1.2em;padding:0.4em;
-	background-color:#ffffff;
-	border:2px solid black;border-radius:5px;
+/* -------------- HELP IGNORE SECTION ------------- */
+.ignoreoverlay{
+	width:100%;height:100%;
+	position:fixed;top:0;bottom:0;right:0;left:0;
+	z-index:-2;opacity:0;
+	background-color:rgba(0,0,0,0.2);
+}
+#helpignoreicon{cursor:pointer;z-index:6;}
+#helpignoreicon:hover{color:#009688;}
+#helpignore {
+	z-index:-2;opacity:0;
+	display:block;margin: auto;position: fixed;
+	bottom: 0;right: 0;left:0;top:0;
+	width:350px;height:390px;
+	text-align:center;
+	font-size:13px;
+	overflow-y:auto;
+	padding:1.2em 1em;
+	border-radius:8px;
+	background-color:#f8f8f8;
+	-moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+@media screen and (min-width:992px){#helpignore {left:180px;}}
+#helpignorecontent{
+	display:block;
+	margin:auto;
+	line-height:1.7em;
+	position:absolute;
+	padding:1.6em;
+	left:0!important;right:0!important;top:50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+}
+@media screen and (max-width:400px), (max-height:400px){#helpignore{height:100%;width:100%;left:0px;}}
+#hideignore{
+	color:#808080;max-width:100%;width:100%;
+	display:block;top:0;
 	cursor:pointer;
-}*/
+	position:relative;float:top;text-align:right;
+	font-size:20px;
+	z-index:3;
+}
+#hideignore:hover{color:#000;}
 
-
-/* results */
-#resultsdiv{display:none;}
+/* -------------- RESULTS ------------- */
+/*#resultsdiv{display:none;}*/
 #sortby-outer{text-align: center;padding-bottom: 1em;}
 .wordtable-outer table,.summarytable table{margin:auto;}
-/*.wordtable-outer table thead,.summarytable table{font-size:1.1em;}*/
 .wordtable-outer table thead tr th:nth-child(1),.wordtable-outer table tr td:nth-child(1){text-align:left;}
 .wordtable-outer table tr th:nth-child(2),.wordtable-outer table tr td:nth-child(2){text-align:center;}
 .wordtable-outer table tr td{padding:0.4em 0.6em;}
 .wordtable-outer table tr:nth-child(odd){background-color:#e4e4e4;}
 .wordtable-outer table tr:nth-child(even){background-color:#d8d8d8;}
 .wordtable-outer table tr th{background-color:#f1f1f1;padding:0.4em;}
+
+
