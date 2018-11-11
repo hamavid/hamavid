@@ -57,7 +57,7 @@ metalsmith(__dirname)
       }
   }))
   .use(rewrite([{
-      pattern: ['**/*.html', '!**/index.html'],
+      pattern: ['**/*.html', '!**/index.html', '!**/googlea5808133fbcd1660.html'],
       filename: '{path.dir}/{path.name}/index.html'
     }]))
   .use(serve({

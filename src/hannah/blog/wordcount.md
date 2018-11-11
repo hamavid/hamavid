@@ -4,7 +4,7 @@ layout: HHblogpost.html
 link: "./wordcount"
 title: "Word count"
 subtitle: "How many of each word is there in this text?"
-date: 2018-11-02
+date: 2018-11-03
 pagetype: BLOG
 draft: false
 ---
@@ -14,7 +14,7 @@ draft: false
 <div id='helpignorecontent'>A string of characters added to the ignore-list is ignored anywhere it is found, even within a word. For example, ignoring "by" would get rid of the word "by", but also turn "bye" into "e", and "abyss" into "ass". To ignore an entire word, surround it with spaces, for example " by ". If the word is sometimes followed by punctuation, add the word with its punctuation, for example " by, ". If it is the first or last word of your entire input text, add a space before and/or after the input text before clicking Analyze.
 </div>
 </div>
-<!-- overlay so background picture functionality is covered when help section is showing -->
+<!-- overlay so background is covered when help section is showing -->
 <div class="ignoreoverlay"></div>	
 
 <div id='inputdiv'>
@@ -26,7 +26,7 @@ draft: false
 	<p><em><strong>Character strings to ignore</strong></em> <span id='helpignoreicon'><i class="fa fa-question-circle" aria-hidden="true"></i></span><br>
 	<input id='ignore-input'></input><span id='addchar'>Add</span><br>
 	<div id='ignores'>
-		<div><span class='xout'>x</span><span class='ignorchar'>hey</span></div>
+		<div><span class='xout'>x</span><span class='ignorchar'>that</span></div>
 	</div></p><br>
 	<p style='text-align:center;'><span class='vizbutton' id='analyze'>Analyze</span></p>
 </div>
