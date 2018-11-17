@@ -44,6 +44,8 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/glacier.jpg">Glacier:</a> Watercolor and micron parker on paper - Nov, 2018</li>
+<li><a href="../../images/portfolio/fish.jpg">Fish:</a> Linoleum block print - Nov, 2018</li>
 <li><a href="../../images/portfolio/tagalong.jpg">Tagalong:</a> Watercolor and micron parker on paper - Oct, 2018</li>
 <li><a href="../../images/portfolio/papaya.jpg">Papaya:</a> Watercolor and micron parker on paper - Oct, 2018</li>
 <li><a href="../../images/portfolio/heart.jpg">Heart:</a> Watercolor and micron parker on paper - Oct, 2018</li>
