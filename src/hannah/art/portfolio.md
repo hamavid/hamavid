@@ -32,7 +32,8 @@ cssjsfile: "art_portfolio"
   <div id="gridpocket">
     <div id="grid">
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/glacier.jpg') 50% 0% no-repeat;"></div></span>
-      <span><div class="hz print" style="background: url('../../images/portfolio/thumbs/fish.jpg') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print watercolor mercreature" style="background: url('../../images/portfolio/thumbs/twofish.jpg') 0% 50% no-repeat;"></div></span>
+      <span><div class="hz print mercreature" style="background: url('../../images/portfolio/thumbs/fish.jpg') 50% 0% no-repeat;"></div></span>
       <span><div class="vt watercolor" style="background: url('../../images/portfolio/thumbs/tagalong.jpg') 50% 0% no-repeat;"></div></span>
       <span><div class="hz watercolor" style="background: url('../../images/portfolio/thumbs/papaya.jpg') 30% 0% no-repeat;"></div></span>
       <span><div class="vt watercolor" style="background: url('../../images/portfolio/thumbs/heart.jpg') 0% 20% no-repeat;"></div></span>
@@ -137,7 +138,8 @@ cssjsfile: "art_portfolio"
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
 <figure class="watercolor"><img src="../../images/portfolio/glacier.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Glacier:</b></i> Watercolor and micron marker on paper - Nov, 2018</span></figcaption></figure>
-<figure class="print"><img src="../../images/portfolio/fish.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fish:</b></i> Linoleum block print - Nov, 2018</span></figcaption></figure>
+<figure class="print watercolor mercreature"><img src="../../images/portfolio/twofish.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fish:</b></i> Linoleum block prints with watercolor - Nov, 2018</span></figcaption></figure>
+<figure class="print mercreature"><img src="../../images/portfolio/fish.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fish:</b></i> Linoleum block print - Nov, 2018</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/tagalong.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Tagalong:</b></i> Watercolor and micron marker on paper - Oct, 2018</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/papaya.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Papaya:</b></i> Watercolor and micron marker on paper - Oct, 2018</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/heart.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Heart:</b></i> Watercolor and micron marker on paper - Oct, 2018</span></figcaption></figure>

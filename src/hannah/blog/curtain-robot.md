@@ -4,7 +4,7 @@ layout: HHblogpost.html
 link: "./curtain-robot"
 title: "The Saga of the Curtain Robot"
 subtitle: "Wake the folk up"
-date: 2018-05-15
+date: 2018-11-30
 pagetype: BLOG
 draft: true
 ---
@@ -22,6 +22,26 @@ Not all went as planned. I should backtrack. This post will be structured like s
 1. **[Next steps](#nextsteps)**
 
 <h3 id="codeandparts">Code and parts</h3>
+Disclaimer: As detailed in the later sections: I'm a noob, this is all very experimental, I don't have a way to solder anything, etc. etc. So everything could probably be optimized better. But this is what I did.
+
+#### Parts
+1. [Arduino Uno](https://store.arduino.cc/usa/arduino-uno-rev3)
+1. Continuous-rotation servo
+1. Little breadboard
+1. Lots of little wires
+1. [RTC clock](https://learn.adafruit.com/adafruit-pcf8523-real-time-clock)
+1. [Lithium Cell CR1220 3V button battery](https://www.adafruit.com/product/380) for the RTC clock
+1. Bike chain
+1. Gear
+1. Metal thing with holes
+1. Screws
+1. Pulley thing
+1. L-bracket for pulley to live on
+1. String
+1. Hair-tie
+1. Needle and thread
+
+#### Code
 
 ```c++
 	// Date and time functions using a DS3231 RTC connected via I2C and Wire lib
@@ -142,7 +162,7 @@ Not all went as planned. I should backtrack. This post will be structured like s
 
 <h3 id="sleep">Sleep (Backstory and motivation)</h3>
 
-I really like sleeping, even though it's super weird and mysterious, as Q will tell you.
+I really like sleeping, even though it's super weird and mysterious, as Q will agree.
 
 
 <figure><iframe width="560" height="315" src="https://www.youtube.com/embed/kkvtmYRPQ_Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><figcaption style="text-align: left;">Q: I've been entirely preoccupied by a most frightening experience of my own. A couple of hours ago, I realized that my body was no longer functioning properly. I felt weak, I could no longer stand. The life was oozing out of me, I lost consciousness.<br>

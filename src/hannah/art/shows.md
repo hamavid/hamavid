@@ -35,13 +35,21 @@ cssjsfile: "art_shows"
 
 <h3>Future</h3>
 <p><ul class="shows_list">
-<li><a href="http://www.kadima.org/">Kadima</a> Craft Fair, Seattle - Nov 17th 10-3, 2018</li>
+<li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan, 2019</li>
 <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Feb, 2019</li>
 </ul></p>
 
 
 <h3 style="width:100%">Past</h3>
 <p><ul class="shows_list">
+<li><a href="http://www.kadima.org/">Kadima</a> Winter Art Sale, Seattle - Nov 17th 10-3, 2018
+<div class="details photos">
+<img src="../../images/shows/2018_11_kadima_1.jpg">
+<img src="../../images/shows/2018_11_kadima_2.jpg">
+<img src="../../images/shows/2018_11_kadima_3.jpg">
+<img src="../../images/shows/2018_11_kadima_4.jpg">
+<br>One-day art fair at Kadima.</div></li>
+
 <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">West Seattle</a>, Seattle - Jul, 2018
 <div class="details photos">
 <img src="../../images/shows/2018_07_freshflours_1.jpg">
