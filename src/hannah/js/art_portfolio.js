@@ -13,10 +13,11 @@ $(document).ready(function(){
   }
 
 // Enable filtering - dropdown select and show only selected imgs in grid
-  $('.dropbtn').click(function() {$('#filter').slideToggle()});
+  $('.dropbtn').click(function() {$('#filter').slideToggle();});
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn, #filter, i') && $('#filter').css('display') == 'block') {
       $('#filter').slideToggle();
+      pagination();
     }
   }
   $('#filter>li').click(function() {
@@ -46,6 +47,40 @@ $(document).ready(function(){
       }
       return [thumbs,slides,filteredon];
   }
+
+
+//Pagination
+  // num pix to show per page, find out num pix in this filter, calc num pages
+  //pagination();
+  function pagination() {
+    totalpix = checkfilter()[0].length;
+    console.log(totalpix);
+  }
+ /* pageSize = ;
+
+  var pageCount =  $(".line-content").length / pageSize;
+    
+     for(var i = 0 ; i<pageCount;i++){
+        
+       $("#pagin").append('<li><a href="#">'+(i+1)+'</a></li> ');
+     }
+        $("#pagin li").first().find("a").addClass("current")
+    showPage = function(page) {
+      $(".line-content").hide();
+      $(".line-content").each(function(n) {
+          if (n >= pageSize * (page - 1) && n < pageSize * page)
+              $(this).show();
+      });        
+  }
+    
+  showPage(1);
+
+  $("#pagin li a").click(function() {
+      $("#pagin li a").removeClass("current");
+      $(this).addClass("current");
+      showPage(parseInt($(this).text())) 
+  });
+*/
 
 // Open and close slideshow at the correct image when various elements are clicked
   $('#grid div').click(function() {

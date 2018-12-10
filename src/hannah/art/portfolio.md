@@ -234,13 +234,11 @@ cssjsfile: "art_portfolio"
 
 
 <!-- Pagination -->
-  <!-- commenting out pagination for now as I don't have that many ../../images
-  <div class="container center padding-32">
-    <ul class="pagination">
-      <li><a class="black" href="#">1</a></li>
-      <li><a class="hover-black" href="#">2</a></li>
-      <li><a class="hover-black" href="#">3</a></li>
-      <li><a class="hover-black" href="#">4</a></li>
-    </ul>
-  </div>
-  -->
+<!--
+  <div class="container center">
+    <p class='pagination'>
+    <span id='pagemin'></span> - <span id='pagemax'></span> of <span id='filtertotal'></span>
+    <span class='pagetoggle'><i class="fa fa-angle-left"></i><i class="fa fa-angle-right"></i></span>
+    </p>
+  </div>-->
+  

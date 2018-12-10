@@ -42,7 +42,7 @@ cssjsfile: "art_shows"
 
 <h3 style="width:100%">Past</h3>
 <p><ul class="shows_list">
-<li><a href="http://www.kadima.org/">Kadima</a> Winter Art Sale, Seattle - Nov 17th 10-3, 2018
+<li><a href="http://www.kadima.org/">Kadima</a> Winter Art Sale, Seattle - Nov 17th, 2018
 <div class="details photos">
 <img src="../../images/shows/2018_11_kadima_1.jpg">
 <img src="../../images/shows/2018_11_kadima_2.jpg">

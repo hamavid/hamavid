@@ -43,8 +43,8 @@ draft: false
 	<option value='appear'>By order of appearance</option>
 	<option value='alpha'>Alphabetically</option>
 	<option value='backalpha'>Reverse alphabetically</option>
-	<option value='freq-asc'>Frequency (ascending)</option>
-	<option value='freq-desc'>Frequency (descending)</option>
+	<option value='freq-asc'>By frequency (ascending)</option>
+	<option value='freq-desc'>By frequency (descending)</option>
 	</select>
 	</div>
 	<div class='wordtable-outer'>
