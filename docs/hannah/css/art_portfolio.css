@@ -1,9 +1,9 @@
 a:link,a:visited,a:hover,a:active{color:black;}
 /* --------- FILTER MENU ----------- */
-.dropbtn{font-size:1.1em;text-align:center;width:96px;float:left;}
+.dropbtn{font-size:1.1em;text-align:center;width:102px;float:left;}
 /*.dropbtn:focus{outline:none;} to remove blue square if i decide to */
 .dropdown {
-    width:240px;height:34px;
+    width:250px;height:34px;max-width:100%;
     position: relative;
     display: inline-block;
 }
@@ -34,10 +34,14 @@ a:link,a:visited,a:hover,a:active{color:black;}
 #selected-filter{padding:0.3em;font-size:1.1em;font-weight:bold;font-variant:small-caps;float:right;}
 
 /* -----------PAGINATION---------- */
-.pagination p{font-weight:bold;font-size:1.1em;width:300px;margin:auto;text-align:left;padding:1em;}
+.pagination p{
+    font-weight:bold;font-size:1.1em;width:300px;max-width:100%;
+    margin:auto;text-align:left;padding:1em;
+}
 .pagetoggle{float:right;}
 .pagetoggle>i{padding:0 0.5em;cursor:pointer;color:black;}
 .pagetoggle .fa-angle-right{padding-right:0;}
+#pagesize {width:50px;}
 .pagesizereset{
     background: rgba(0, 150, 136, 1);
     border:1px solid black;
@@ -214,7 +218,7 @@ figcaption {
 }
 figcaption>span {margin-left:1.1em;}
 figcaption {cursor:pointer;}
-@media only screen and (max-width: 450px) {figcaption{max-height:100%;}}
+@media only screen and (max-width: 450px) {figcaption{max-height:100%;}.pagination p {padding:1em 0.2em;}}
 @media only screen and (max-height: 450px) {figcaption{max-width:100%;}}
 
 
