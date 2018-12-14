@@ -33,6 +33,22 @@ a:link,a:visited,a:hover,a:active{color:black;}
 .show {display:block;}
 #selected-filter{padding:0.3em;font-size:1.1em;font-weight:bold;font-variant:small-caps;float:right;}
 
+/* -----------PAGINATION---------- */
+.pagination p{font-weight:bold;font-size:1.1em;width:300px;margin:auto;text-align:left;padding:1em;}
+.pagetoggle{float:right;}
+.pagetoggle>i{padding:0 0.5em;cursor:pointer;color:black;}
+.pagetoggle .fa-angle-right{padding-right:0;}
+.pagesizereset{
+    background: rgba(0, 150, 136, 1);
+    border:1px solid black;
+    color:white;font-weight:bold;cursor:pointer;
+    padding:0.1em 0.5em;
+    font-variant: small-caps;
+    margin-left:0.5em;
+}
+.buttondim{background: rgba(0, 150, 136, 0.6);border-color: rgba(0,0,0,0.6);pointer-events:none;}
+.arrowdim{color:gray!important;pointer-events: none;}
+
 
 /* ------------ GRID ------------  */
 #gridpocket {
@@ -55,7 +71,7 @@ a:link,a:visited,a:hover,a:active{color:black;}
 .vt {background-size: 200px!important;} /* for vertically oriented images, width is limiting factor */
 .hz {background-size: auto 200px!important;} /* vice versa for horizontal images */
 #grid div {-webkit-transition:opacity 0.3s;transition:opacity 0.3s;} /*for hover opacity*/
-#grid div:hover{opacity:0.6;}
+#grid div:hover{opacity:0.6;} /* it would be cool if this only engaged once img had loaded */
 
 /* back-to-top button */
 .backtotop {

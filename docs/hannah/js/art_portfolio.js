@@ -12,12 +12,27 @@ $(document).ready(function(){
     }
   }
 
-// Enable filtering - dropdown select and show only selected imgs in grid
+// Default to fewer thumbs on mobile, more on desktop
+/*  // commenting out for now in favor of NON responsive one
+  // so it doesn't throw people off if they've picked a non default page size
+  //$(window).bind('resize', chng_default_pagesize); 
+  function chng_default_pagesize() {
+    if ($(window).width() < 433) {$('#pagesize').val('8');}
+    else {$('#pagesize').val('16');}
+    showpage(1);
+  }*/
+  if ($(window).width() < 433) {$('#pagesize').val('8');}
+
+
+/* ------------ FILTERING ---------------*/
+// dropdown select to specify which imgs should show in grid
+// to add: only load full images src for selected filter
   $('.dropbtn').click(function() {$('#filter').slideToggle();});
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn, #filter, i') && $('#filter').css('display') == 'block') {
       $('#filter').slideToggle();
-      pagination();
+      showpage(1); // start on the first page of this filter
+      $('.pagetoggle>.fa-angle-left').addClass('arrowdim'); // make sure left arrow is dim
     }
   }
   $('#filter>li').click(function() {
@@ -33,8 +48,8 @@ $(document).ready(function(){
     }
   });
 
-// determine which filter has been selected and return the subset of grid and slide images that fit the selection
-// for use in showing/scrolling through divs for slideshow
+// fxn to determine which filter has been selected and return the subset of grid and slide images that fit the selection
+// for use in showing/scrolling through divs for slideshow and to inform pagination
   function checkfilter() {
       var filteredon = $('#selected-filter').html();
       var filter_ID = $('#filter').find('li:contains('+filteredon+')').attr('id');
@@ -49,38 +64,90 @@ $(document).ready(function(){
   }
 
 
-//Pagination
-  // num pix to show per page, find out num pix in this filter, calc num pages
-  //pagination();
-  function pagination() {
-    totalpix = checkfilter()[0].length;
-    console.log(totalpix);
+/* ------------ PAGINATION ---------------*/
+// function to lazy load thumbs based on what's showing on the page
+  lazythumbs = function() {
+    var visthumbs = $('#grid').find("div:visible");
+    visthumbs.each(function() {
+      if (!$(this).data("shown")) {
+          var tdataSrc = $(this).data("src");
+          $(this).css('background-image', 'url(' + tdataSrc + ')');
+          $(this).data("shown", true);
+      }
+    });    
   }
- /* pageSize = ;
 
-  var pageCount =  $(".line-content").length / pageSize;
-    
-     for(var i = 0 ; i<pageCount;i++){
-        
-       $("#pagin").append('<li><a href="#">'+(i+1)+'</a></li> ');
-     }
-        $("#pagin li").first().find("a").addClass("current")
-    showPage = function(page) {
-      $(".line-content").hide();
-      $(".line-content").each(function(n) {
-          if (n >= pageSize * (page - 1) && n < pageSize * page)
-              $(this).show();
-      });        
-  }
-    
-  showPage(1);
+// pagesizereset button dimming/undimming fxns
+  function buttonundim() {if ($('#pagesize').val().length > 0) {$('.pagesizereset').removeClass('buttondim');}}
+  function buttondim() {$('.pagesizereset').addClass('buttondim');}
 
-  $("#pagin li a").click(function() {
-      $("#pagin li a").removeClass("current");
-      $(this).addClass("current");
-      showPage(parseInt($(this).text())) 
+// UNdim pagesizereset button if number in input box changes (and has usable content)
+    $('#pagesize').on('change keyup', function() {
+    // Get last typed character so we can check that it's not a  space
+      var lastChar = String.fromCharCode(this.value.charCodeAt(this.selectionStart - 1));
+    // only undim if value is a number AND if (not a space OR if the last thing that happened was to delete text)
+      if (!isNaN(this.value) && (lastChar != " " || this.value.length < lastlength)){buttonundim();}
+    // dim if there is no input text
+      if (this.value.length == 0) {buttondim();}
   });
-*/
+
+
+  // show first thumbs page on page load
+  showpage(1);
+
+  // go up or down a page when arrows are clicked
+  $('.pagetoggle>.fa-angle-left').on('click', function() {pluspage(-1);})
+  $('.pagetoggle>.fa-angle-right').on('click', function() {pluspage(+1);})
+
+  // reset number of pix per page when button is clicked and go to first page
+  $('.pagesizereset').on('click', function() {buttondim();showpage(1);});
+
+  // Increment up or down a page
+  var pagenum;
+  var thumbs;
+  function pluspage(n) {
+    showpage(pagenum +=n);
+  }
+
+  // only show thumbs for the selected filter AND selected page. 
+  // report what's going on in the pagination element
+  function showpage(n) {
+    // set vars
+    pagenum = n;
+    var thumbs = checkfilter()[0];
+    var pixperpage = parseInt($('#pagesize').val());
+    var startnum = ((pagenum - 1) * pixperpage);
+
+    // make sure all thumbs are hidden, then show only relevant ones
+    $('#grid').find('div').css('display','none');
+    $('.pagination>div').css('display','block'); // but show pagination at the bottom
+    thumbs.slice(startnum,startnum+pixperpage).css('display','inline-block');
+    lazythumbs();
+
+    // Report relevant numbers in the pagination elements and dim/undim arrows as needed
+    $('.pagetoggle>.fa-angle-left, .pagetoggle>.fa-angle-right').removeClass('arrowdim'); // undim both arrows
+    $('.pagemin').html(startnum+1);
+    // dim left arrow if this is the first page
+    if (startnum==0) {$('.pagetoggle>.fa-angle-left').addClass('arrowdim');}
+    // check if there are any more pages, fill in pagemax and dim right arrow if needed
+    if (thumbs.length > startnum+pixperpage){$('.pagemax').html(startnum+pixperpage);} 
+    else {
+      $('.pagemax').html(thumbs.length);
+      $('.pagetoggle>.fa-angle-right').addClass('arrowdim');
+    }
+    $('.filtertotal').html(thumbs.length);
+  }
+
+/* ----------- SLIDESHOW ----------- */
+// Function to load images only as they are called in the slideshow
+  lazyslides = function() {
+      var img = $('#slideshow').find("img:visible");
+      if (!img.data("shown")) {
+          var dataSrc = img.data("src");
+          img.attr("src", dataSrc);
+          img.data("shown", true);
+      }
+  }
 
 // Open and close slideshow at the correct image when various elements are clicked
   $('#grid div').click(function() {
@@ -89,6 +156,7 @@ $(document).ready(function(){
     var index = allselected.index(this);
     showDivs(index+1);
     document.getElementById("slideshow").style.display = "block";
+    lazyslides();
   });
   $('.topband, .bottomband, .closebtn').click(function() {
     document.getElementById("slideshow").style.display = "none";
@@ -137,8 +205,6 @@ $(document).ready(function(){
 // hides all captions unless the .each() wrapper is commented out, then hides only clicked-on caption
     $( 'figure' ).each(function() {
       $(this).find('i:first').toggleClass("fa-angle-double-down fa-angle-double-up");
-      //if ( $(this).find('div:first').text() == "") { $(this).find('div:first').text(" (Show caption)")}
-      //else {$(this).find('div:first').text("")}
       $(this).find('span:first').slideToggle();
     });
   });
@@ -155,15 +221,12 @@ $(document).ready(function(){
   function showDivs(n) {
     var i;
     slideIndex = n;
-    //x = document.getElementsByTagName("figure");
     var x = checkfilter()[1];
     if (n > x.length) {slideIndex = n % x.length}
     if (n < 1) {slideIndex = x.length};
-    /*for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }*/
     $('figure').css('display','none');
     x[slideIndex-1].style.display = "block";
+    lazyslides();
     if (checkfilter()[2] != "All") {$('#slidefilter').html('Filtered by: '+checkfilter()[2]);} else {$('#slidefilter').html("");}
   }
 

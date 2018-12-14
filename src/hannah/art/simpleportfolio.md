@@ -44,6 +44,7 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/garlic.jpg">Garlic:</a> Linoleum block print - Dec, 2018</li>
 <li><a href="../../images/portfolio/glacier.jpg">Glacier:</a> Watercolor and micron parker on paper - Nov, 2018</li>
 <li><a href="../../images/portfolio/twofish.jpg">Two fish:</a> Linoleum block print with watercolor - Nov, 2018</li>
 <li><a href="../../images/portfolio/fish.jpg">Fish:</a> Linoleum block print - Nov, 2018</li>
