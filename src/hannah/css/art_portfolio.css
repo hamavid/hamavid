@@ -33,7 +33,7 @@ a:link,a:visited,a:hover,a:active{color:black;}
 .show {display:block;}
 #selected-filter{padding:0.3em;font-size:1.1em;font-weight:bold;font-variant:small-caps;float:right;}
 
-/* -----------PAGINATION---------- */
+/* -----------PAGINATION etc---------- */
 .pagination p{
     font-weight:bold;font-size:1.1em;width:300px;max-width:100%;
     margin:auto;text-align:left;padding:1em;
@@ -49,10 +49,17 @@ a:link,a:visited,a:hover,a:active{color:black;}
     padding:0.1em 0.5em;
     font-variant: small-caps;
     margin-left:0.5em;
+    font-size:1em;
 }
 .buttondim{background: rgba(0, 150, 136, 0.6);border-color: rgba(0,0,0,0.6);pointer-events:none;}
 .arrowdim{color:gray!important;pointer-events: none;}
-
+#preload {font-size:0.9em;margin-top:1em;}
+.preloading, .cancel{
+    font-variant: small-caps; padding-right:0.3em;
+    font-size:1.2em;font-weight:bold;
+    cursor:pointer;
+}
+.preloading:hover{font-style: italic;}
 
 /* ------------ GRID ------------  */
 #gridpocket {

@@ -149,6 +149,48 @@ $(document).ready(function(){
       }
   }
 
+// In progress: button to preload images that replaces src w datasrc for all images
+// so you can wait once and then flip through slides quickly
+// dynamically say 'preloading' and have 'cancel' option while loading?
+// say 'images preloaded' once done?
+// Issue: sometimes loading more or less than total. why?
+  /*preload = function() {
+    // make preloading button unclickable and cancel button visible while loading is in process
+    $('.preloading').html('preloaded').css('pointer-events', 'none');
+    //$('.cancel').html('-cancel-');
+    var imgs= $('#slideshow').find('img');
+    var thumbs = $('#grid').find("div");
+    console.log(thumbs.length);
+    var count = 0;
+    var total = imgs.length + thumbs.length;
+    // thumbs
+    $.each(thumbs, function() {
+      var tdataSrc = $(this).data("src");
+      console.log(tdataSrc);
+      $(this).css('background-image', 'url(' + tdataSrc + ')');
+      i = new Image;
+      i.src = tdataSrc;
+      if (i.complete) {
+        i.onload = function() {
+          count +=1;
+          $('.explanation').html(count + '/' + total + ' images');
+          //console.log(tdataSrc);
+        }
+      }
+    });
+    // slides
+    $.each(imgs, function() {
+      var dataSrc = $(this).data('src');
+      $(this).attr('src', dataSrc);
+      $(this).on('load', function() {
+        count +=1;
+        $('.explanation').html(count + '/' + total + ' images');
+        //console.log(dataSrc);
+      })
+    });
+  }
+  $('.preloading').click(function() {preload();})*/
+
 // Open and close slideshow at the correct image when various elements are clicked
   $('#grid div').click(function() {
     var allselected = checkfilter()[0];
