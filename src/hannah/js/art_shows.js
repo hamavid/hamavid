@@ -3,8 +3,9 @@ $(document).ready(function(){
   // file paths etc
 	var imgdir = '../../images/shows/';
 	/*var images = document.getElementById('mainshows').getElementsByTagName('img');*/
-	var srcList = $('#mainshows img').map(function() {return this.src.slice(this.src.indexOf('/images'));}).get();
+	var srcList = $('#mainshows img').map(function() {return $(this).data('src').slice($(this).data('src').indexOf('/images'));}).get();
 	var showdict = {};
+	showdict['2018_gsb'] = 'Garvey Schubert Barer 10 month loan, 2018';
 	showdict['2018_11_kadima'] = 'Kadima Winter Art Sale, Nov 2018';
 	showdict['2018_07_freshflours'] = 'Fresh Flours West Seattle, Jul 2018';
 	showdict['2018_01_01_freshflours'] = 'Fresh Flours Phinney Ridge, Jan/Feb 2018';
@@ -22,6 +23,20 @@ $(document).ready(function(){
 		else {button.html('Hide photos')};
   	});
   	
+  // lazy load images as user scrolls down
+  // not sure if this is a good idea or working
+  	$(window).scroll(function() {
+        //check if your div is visible to user
+        // CODE ONLY CHECKS VISIBILITY FROM TOP OF THE PAGE
+		var imglist = $('#mainshows img');
+		$.each(imglist, function(){
+			if ($(window).scrollTop() + $(window).height() >= $(this).offset().top) {
+				var imgsrc = $(this).data('src');
+				if ($(this).attr('src') != imgsrc) {$(this).attr('src', imgsrc);}
+				$(this).addClass('visible-image');
+        	}	
+		});
+    });	
 
 
   // look up which show an image is from, using the show dictionary (via string in the img src)
@@ -58,7 +73,8 @@ $(document).ready(function(){
   // open photo overlay showing current img if image is clicked from the list
 	$('.details img').click(function() {
 		$('#photo-overlay').fadeToggle();
-		var whichimg= this.src.slice(this.src.indexOf('/images'));
+		var whichimg = $(this).data('src').slice($(this).data('src').indexOf('/images'));
+		//var whichimg= this.src.slice(this.data-src.indexOf('/images'));
 		showslideimg(whichimg);
 	});
 
