@@ -185,7 +185,7 @@ $(document).ready(function(){
       $(this).on('load', function() {
         count +=1;
         $('.explanation').html(count + '/' + total + ' images');
-        //console.log(dataSrc);
+        console.log(dataSrc);
       })
     });
   }
