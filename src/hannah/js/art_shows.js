@@ -25,7 +25,8 @@ $(document).ready(function(){
   	
   // lazy load images as user scrolls down
   // not sure if this is a good idea or working
-  	$(window).scroll(function() {
+  	$(window).on('load scroll', function() {lazy();});
+  	function lazy() {
         //check if your div is visible to user
         // CODE ONLY CHECKS VISIBILITY FROM TOP OF THE PAGE
 		var imglist = $('#mainshows img');
@@ -36,7 +37,7 @@ $(document).ready(function(){
 				$(this).addClass('visible-image');
         	}	
 		});
-    });	
+    };	
 
 
   // look up which show an image is from, using the show dictionary (via string in the img src)
