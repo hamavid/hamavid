@@ -30,10 +30,10 @@ cssjsfile: "art_portfolio"
     <div><input type="number" value="16" id="pagesize" min="2" max="100"> images per page
     <span class='pagesizereset buttondim'>set</span>
     </div>
-   <!-- <div id='preload'>
+    <div id='preload'>
     <span class='preloading'>-preload-</span> 
     <span class='explanation'>images for smoother slideshow experience.</span>
-    <span class='cancel'></span></div>-->
+    <span class='cancel'></span></div>
   </div>
 
 </header>
