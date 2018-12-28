@@ -60,6 +60,7 @@ a:link,a:visited,a:hover,a:active{color:black;}
     cursor:pointer;
 }
 .preloading:hover{font-style: italic;}
+#alreadyclicked{display:none;}
 
 /* ------------ GRID ------------  */
 #gridpocket {

@@ -147,49 +147,32 @@ $(document).ready(function(){
           img.attr("src", dataSrc);
           img.data("shown", true);
       }
+      if (!img.hasClass('shown')) {img.addClass('shown');}
   }
 
-// In progress: button to preload images that replaces src w datasrc for all images
-// so you can wait once and then flip through slides quickly
-// maybe just slideshow images not thumbs?
-// dynamically say 'preloading' and have 'cancel' option while loading?
-// say 'images preloaded' once done?
-// Issue: sometimes loading more or less than total. why?
+// Button to preload images so slideshow goes more smoothly
+  checkcount = function() {return $('#slideshow img.shown').length;}
+  var imgs= $('#slideshow img');
   preload = function() {
-    // make preloading button unclickable and cancel button visible while loading is in process
+    // make preloading button unclickable
     $('.preloading').html('preloaded').css('pointer-events', 'none');
-    //$('.cancel').html('-cancel-');
-    var imgs= $('#slideshow').find('img');
-    //var thumbs = $('#grid').find("div");
-    var count = 0;
+    // find denominator
     var total = imgs.length;
-    // thumbs
-    /*$.each(thumbs, function() {
-      var tdataSrc = $(this).data("src");
-      console.log(tdataSrc);
-      $(this).css('background-image', 'url(' + tdataSrc + ')');
-      i = new Image;
-      i.src = tdataSrc;
-      if (i.complete) {
-        i.onload = function() {
-          count +=1;
-          $('.explanation').html(count + '/' + total + ' images');
-          //console.log(tdataSrc);
-        }
-      }
-    });*/
-    // slides
+    // loop over images, replacing dummy img w real img and adding shown class
+    // then updating preloaded tally
     $.each(imgs, function() {
-      var dataSrc = $(this).data('src');
-      $(this).attr('src', dataSrc);
-      $(this).on('load', function() {
-        count +=1;
-        $('.explanation').html(count + '/' + total + ' images');
-        console.log(dataSrc);
-      })
+        if (!$(this).hasClass('shown')) {
+          var dataSrc = $(this).data('src');
+          $(this).attr('src', dataSrc);
+          $(this).on('load', function() {
+            $(this).addClass('shown');
+            $('.explanation').html(checkcount() + '/' + total + ' images');
+          });
+        }
     });
   }
   $('.preloading').click(function() {preload();})
+
 
 // Open and close slideshow at the correct image when various elements are clicked
   $('#grid div').click(function() {
