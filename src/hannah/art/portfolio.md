@@ -11,34 +11,17 @@ cssjsfile: "art_portfolio"
 <div class='center bottombar'>
 <p class="center text-grey"><span class="text-teal" style="font-weight:bold;">Click any thumbnail to open full images and descriptions.</span><br>Notecards and prints available for purchase on <a href="https://hamavid.etsy.com">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
 <!-- Filter-->
-<div class="dropdown">
-  <div class="clear"><button class="picture-toggle-button dropbtn">Filter by <i class="fa fa-angle-down"></i></button>
-  <span id="selected-filter">All</span></div>
-  <ul id="filter" class="dropdown-content">
-    <li id="all">All</li>
-    <li id="print">Block prints</li>
-    <li id="watercolor">Watercolors</li>
-    <li id="acrylic">Acrylics</li>
-    <li id="drawing">Drawings</li>
-    <li id="cat">Cats</li>
-    <li id="mercreature">Mer-creatures</li>
-  </ul>
-</div>
-
-<!-- Commenting out actual pagination for now cause there are too many options, replacing w lazy load -->
-<!-- Pagination 
-  <div class="pagination">
-  <p>Showing <span class='pagemin'></span> - <span class='pagemax'></span> of <span class='filtertotal'></span>
-  <span class='pagetoggle'><i class="fa fa-angle-left fa-lg arrowdim"></i><i class="fa fa-angle-right fa-lg"></i></span></p>
-  <div>
-  <input type="number" value="16" id="pagesize" min="2" max="100"> images per page
-  <span class='pagesizereset buttondim'>set</span>
-  </div>
-  <div id='preload'>
-  <span class='preloading'>-preload-</span> 
-  <span class='explanation'>images for smoother slideshow experience.</span>
-  <span class='cancel'></span></div>
-  </div>-->
+<div id='filterby-outer'><span>Filter by: </span>
+  <select id='filterby'>
+  <option value='all'>All</option>
+  <option value='print'>Block prints</option>
+  <option value='watercolor'>Watercolors</option>
+  <option value='acrylic'>Acrylics</option>
+  <option value='drawing'>Drawings</option>
+  <option value='cat'>Cats</option>
+  <option value='mercreature'>Mer-creatures</option>
+  </select>
+</div><br>
 </header>
 
 <!-- shortcut button back to top -->
@@ -142,11 +125,6 @@ cssjsfile: "art_portfolio"
 </div> 
 <!-- Clear floats (to keep grid to itself)-->
 <div class="clear"></div><br><br>
-<!-- Pagination 
-  <div class="pagination"><p>Showing <span class='pagemin'></span> - <span class='pagemax'></span> of <span class='filtertotal'></span>
-  <span class='pagetoggle'><i class="fa fa-angle-left fa-lg arrowdim"></i><i class="fa fa-angle-right fa-lg"></i></span></p>
-  </div>-->
-
 </div>
 
 
@@ -158,7 +136,6 @@ cssjsfile: "art_portfolio"
   <div id=top-info>
     <span id="slidefilter" class='clear'><i class="fa fa-angle-double-up fa-lg"></i><span id='tellme'></span></span>
   </div>
-    <!--<span class='pinterest-button'><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a></span> Pinterest button, must uncomment script in header and line in css to work properly-->
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
