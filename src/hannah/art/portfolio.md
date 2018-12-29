@@ -157,11 +157,6 @@ cssjsfile: "art_portfolio"
   <div class="overlay-content">
   <div id=top-info>
     <span id="slidefilter" class='clear'><i class="fa fa-angle-double-up fa-lg"></i><span id='tellme'></span></span>
-    <span id='preload' class='clear'>
-      <i class="fa fa-angle-double-up fa-lg"></i>
-      <span class='preloading'>-preload-</span> 
-      <span class='explanation'>images for smoother slideshow experience.</span>
-    </span>
   </div>
     <!--<span class='pinterest-button'><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a></span> Pinterest button, must uncomment script in header and line in css to work properly-->
     <a href="javascript:void(0)" class="closebtn">&times;</a>
