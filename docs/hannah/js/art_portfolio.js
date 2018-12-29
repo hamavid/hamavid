@@ -34,7 +34,7 @@ $(document).ready(function(){
 /* ---------- THUMBNAILS -------------- */
  // function to show all thumbs that fit the selected filter (w dummy image)
   showthumbs(); // do this on page load
-  $('#filterby').change(function() {showthumbs();}); // and when the filter changes
+  $('#filterby').change(function() {showthumbs();lazythumbs();}); // and when the filter changes
   function showthumbs() {
     var thumbs = checkfilter()[0];
     $('#grid>span>div').hide();
