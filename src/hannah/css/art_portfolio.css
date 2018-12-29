@@ -53,14 +53,7 @@ a:link,a:visited,a:hover,a:active{color:black;}
 }
 .buttondim{background: rgba(0, 150, 136, 0.6);border-color: rgba(0,0,0,0.6);pointer-events:none;}
 .arrowdim{color:gray!important;pointer-events: none;}
-#preload {font-size:0.9em;margin-top:1em;}
-.preloading, .cancel{
-    font-variant: small-caps; padding-right:0.3em;
-    font-size:1.2em;font-weight:bold;
-    cursor:pointer;
-}
-.preloading:hover{font-style: italic;}
-#alreadyclicked{display:none;}
+
 
 /* ------------ GRID ------------  */
 #gridpocket {
@@ -168,8 +161,22 @@ a:link,a:visited,a:hover,a:active{color:black;}
     -webkit-text-stroke-color: black;
 }
 .closebtn:hover {color:#ffffff;}
-#slidefilter{color:#ffffff;font-weight:bold;padding:0.5em 1em 0.5em 1em;position:absolute;background-color:rgba(0,0,0,0.6);z-index:1;}
-#slidefilter:hover{opacity:0;}
+#slidefilter, #preload{
+    color:#ffffff;font-weight:bold;padding:0.5em;
+    position:absolute;background-color:rgba(0,0,0,0.6);z-index:1;
+}
+#tellme{margin-left:1.1em;}
+#preload i, #slidefilter{cursor:pointer;}
+.preloading{
+    border:1px solid #757575;border-radius:5px;padding:0em 0.3em 0.1em 0.3em;margin:0em 0.4em;
+    font-variant: small-caps;;
+    font-size:1.1em;font-weight:bold;color:#757575;
+    cursor:pointer;background-color:#f1f1f1;
+}
+.preloading:hover{background-color:rgba(0,0,0,0);color:#ffffff;border-color:#ffffff;}
+.explanation{font-size:0.9em;}
+.done{border:none;background-color:rgba(0,0,0,0);color:#ffffff;margin-right:0em;}
+
 /*.pinterest-button{position:absolute;right:1em;bottom:0;z-index:5;}  Not in use */
 @media screen and (max-width: 450px), screen and (max-height: 450px) {
     .overlay-content{height:100%;top:0;}

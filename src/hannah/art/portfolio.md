@@ -24,18 +24,21 @@ cssjsfile: "art_portfolio"
     <li id="mercreature">Mer-creatures</li>
   </ul>
 </div>
-<!-- Pagination -->
-  <div class="pagination"><p>Showing <span class='pagemin'></span> - <span class='pagemax'></span> of <span class='filtertotal'></span>
-  <span class='pagetoggle'><i class="fa fa-angle-left fa-lg arrowdim"></i><i class="fa fa-angle-right fa-lg"></i></span></p>
-    <div><input type="number" value="16" id="pagesize" min="2" max="100"> images per page
-    <span class='pagesizereset buttondim'>set</span>
-    </div>
-    <div id='preload'>
-    <span class='preloading'>-preload-</span> 
-    <span class='explanation'>images for smoother slideshow experience.</span>
-    <span class='cancel'></span></div>
-  </div>
 
+<!-- Commenting out actual pagination for now cause there are too many options, replacing w lazy load -->
+<!-- Pagination 
+  <div class="pagination">
+  <p>Showing <span class='pagemin'></span> - <span class='pagemax'></span> of <span class='filtertotal'></span>
+  <span class='pagetoggle'><i class="fa fa-angle-left fa-lg arrowdim"></i><i class="fa fa-angle-right fa-lg"></i></span></p>
+  <div>
+  <input type="number" value="16" id="pagesize" min="2" max="100"> images per page
+  <span class='pagesizereset buttondim'>set</span>
+  </div>
+  <div id='preload'>
+  <span class='preloading'>-preload-</span> 
+  <span class='explanation'>images for smoother slideshow experience.</span>
+  <span class='cancel'></span></div>
+  </div>-->
 </header>
 
 <!-- shortcut button back to top -->
@@ -137,12 +140,12 @@ cssjsfile: "art_portfolio"
    
 </div>
 </div> 
-<!-- Clear floats (to keep the pagination out of the grid)-->
+<!-- Clear floats (to keep grid to itself)-->
 <div class="clear"></div><br><br>
-<!-- Pagination -->
+<!-- Pagination 
   <div class="pagination"><p>Showing <span class='pagemin'></span> - <span class='pagemax'></span> of <span class='filtertotal'></span>
   <span class='pagetoggle'><i class="fa fa-angle-left fa-lg arrowdim"></i><i class="fa fa-angle-right fa-lg"></i></span></p>
-  </div>
+  </div>-->
 
 </div>
 
@@ -152,7 +155,14 @@ cssjsfile: "art_portfolio"
   <div class="topband"></div>
   <div class="bottomband"></div>
   <div class="overlay-content">
-    <span id="slidefilter"></span>
+  <div id=top-info>
+    <span id="slidefilter" class='clear'><i class="fa fa-angle-double-up fa-lg"></i><span id='tellme'></span></span>
+    <span id='preload' class='clear'>
+      <i class="fa fa-angle-double-up fa-lg"></i>
+      <span class='preloading'>-preload-</span> 
+      <span class='explanation'>images for smoother slideshow experience.</span>
+    </span>
+  </div>
     <!--<span class='pinterest-button'><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a></span> Pinterest button, must uncomment script in header and line in css to work properly-->
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
@@ -246,7 +256,6 @@ cssjsfile: "art_portfolio"
 <figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/arboretum.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Boston arboretum:</b></i> Watercolor and pencil on paper - 2003</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/stormy beach.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Stormy beach:</b></i> Watercolor and pencil on paper - 2003</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/thorndike pond.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Thorndike pond:</b></i> New Hampshire. Watercolor and pencil on paper - 2002</span></figcaption></figure>
-
 
 
 <div id="leftside"></div>
