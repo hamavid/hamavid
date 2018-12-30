@@ -55,9 +55,9 @@ $(document).ready(function(){
 
 
 /* ----------- SLIDESHOW ----------- */
-// Function to load images lazily ie only as they are called in the slideshow: this is the default
-  lazyslides = function() {
-      var img = $('#slideshow').find("img:visible");
+// Load a given slide image (as opposed to the blank dummy image)
+  lazyslides = function(index) {
+      var img = checkfilter()[1].eq(index).find('img');
       if (!img.data("shown")) {
           var dataSrc = img.data("src");
           img.attr("src", dataSrc);
@@ -66,42 +66,56 @@ $(document).ready(function(){
       if (!img.hasClass('shown')) {img.addClass('shown');}
   }
 
-/*// With option of using button to PRELOAD images so slideshow goes more smoothly, if one wants
-  checkcount = function() {return $('#slideshow img.shown').length;}
-  var imgs= $('#slideshow img');
-  preload = function() {
-    // make preloading button unclickable once clicked
-    $('.preloading').html('preloaded').css('pointer-events', 'none').addClass('done');
-    // find denominator
-    var total = imgs.length;
-    // loop over images, replacing dummy img w real img and adding shown class
-    // then updating preloaded tally
-    $.each(imgs, function() {
-        if (!$(this).hasClass('shown')) {
-          var dataSrc = $(this).data('src');
-          $(this).attr('src', dataSrc);
-          $(this).on('load', function() {
-            $(this).addClass('shown');
-            $('.explanation').html(checkcount() + '/' + total + ' images');
-          });
-        }
-    });
+// Function to start loading images to left and right of the current slide and continue outwards
+  symmetry = function(index) {
+    for (i=1; i<(checkfilter()[1].length+1)/2; i++) {
+        var up = (index+i) % checkfilter()[1].length;
+        var down = (index-i+checkfilter()[1].length) % checkfilter()[1].length;
+        lazyslides(up);lazyslides(down);
+    }
   }
-  $('.preloading').click(function() {preload();})
-*/
 
 // Open and close slideshow at the correct image when various elements are clicked
   $('#grid div').click(function() {
-    var allselected = checkfilter()[0];
-    //var index = $( "#grid div" ).index(this);
-    var index = allselected.index(this);
-    showDivs(index+1);
-    document.getElementById("slideshow").style.display = "block";
-    lazyslides();
+    showDivs(checkfilter()[0].index(this)+1);
   });
   $('.topband, .bottomband, .closebtn').click(function() {
     document.getElementById("slideshow").style.display = "none";
   });
+
+
+// Increment up or down slides
+  var slideIndex;
+  var x;
+  function plusDivs(n) {
+    showDivs(slideIndex +=n);
+  }
+
+// Show the slide we're on, hide all others
+  function showDivs(n) {
+  // determine which slide toshow
+    var i;
+    slideIndex = n;
+    var x = checkfilter()[1];
+    if (n > x.length) {slideIndex = n % x.length}
+    if (n < 1) {slideIndex = x.length};
+  // show/hide relevant elements
+    $('#slideshow').css('display','block'); //show slideshow
+    $('figure').css('display','none'); // hide all figures
+    x[slideIndex-1].style.display = "block"; // just show the one we want to show
+    lazyslides(slideIndex-1); // load the actual image for this slide if needed
+  // fill in filter information
+    if (checkfilter()[2] != "All") {
+      $('#slidefilter').css('display','inline-block');
+      $('#tellme').html('Filtered by: '+checkfilter()[2]);
+    }
+    else {
+      $('#slidefilter').css('display','none');
+      $('#tellme').html("");
+    }
+  // set off function to load actual images to left and right of this slide
+    symmetry(slideIndex-1);
+  }
 
 
 // extract window width and set overlay width accordingly depending on sidebar visibility
@@ -157,35 +171,6 @@ $(document).ready(function(){
       $('#slidefilter i').toggleClass("fa-angle-double-down fa-angle-double-up");
       $('#tellme').slideToggle();
     });
-
-
-
-// Increment up or down slides
-  var slideIndex;
-  var x;
-  function plusDivs(n) {
-    showDivs(slideIndex +=n);
-  }
-
-// Show the slide we're on, hide all others
-  function showDivs(n) {
-    var i;
-    slideIndex = n;
-    var x = checkfilter()[1];
-    if (n > x.length) {slideIndex = n % x.length}
-    if (n < 1) {slideIndex = x.length};
-    $('figure').css('display','none');
-    x[slideIndex-1].style.display = "block";
-    lazyslides();
-    if (checkfilter()[2] != "All") {
-      $('#slidefilter').css('display','inline-block');
-      $('#tellme').html('Filtered by: '+checkfilter()[2]);
-    }
-    else {
-      $('#slidefilter').css('display','none');
-      $('#tellme').html("");
-    }
-  }
 
 });
 
