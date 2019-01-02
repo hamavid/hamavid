@@ -69,15 +69,29 @@ $(document).ready(function(){
 // Function to start loading images to left and right of the current slide and continue outwards
   symmetry = function(index) {
     for (i=1; i<(checkfilter()[1].length+1)/2; i++) {
-        var up = (index+i) % checkfilter()[1].length;
-        var down = (index-i+checkfilter()[1].length) % checkfilter()[1].length;
-        lazyslides(up);lazyslides(down);
+      if (i==1) {var down = index;} else{var down = (index-i+checkfilter()[1].length) % checkfilter()[1].length;}
+      var up = (index+i) % checkfilter()[1].length;
+      checkfilter()[1].eq(down).find('img').one('load', function() {
+        lazyslides(down);
+      })
+      .each(function () {
+        if(this.complete) $(this).trigger('load');
+      });
+      checkfilter()[1].eq(up).find('img').one('load', function() {
+        lazyslides(up);
+      })
+      .each(function () {
+        if(this.complete) $(this).trigger('load');
+      });
     }
   }
+
 
 // Open and close slideshow at the correct image when various elements are clicked
   $('#grid div').click(function() {
     showDivs(checkfilter()[0].index(this)+1);
+    // set off function to load actual images to left and right of this slide
+    symmetry(checkfilter()[0].index(this));
   });
   $('.topband, .bottomband, .closebtn').click(function() {
     document.getElementById("slideshow").style.display = "none";
@@ -113,8 +127,6 @@ $(document).ready(function(){
       $('#slidefilter').css('display','none');
       $('#tellme').html("");
     }
-  // set off function to load actual images to left and right of this slide
-    symmetry(slideIndex-1);
   }
 
 

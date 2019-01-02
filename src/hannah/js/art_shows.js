@@ -59,9 +59,7 @@ $(document).ready(function(){
   	function showslideimg(url){
   		$('figure img').remove(); //remove extra photos
   		$('figure').prepend($('<img/>').attr('src','../..'+url));
-		//$('.theidoftheshow').html('<i class="downup fa fa-angle-double-down fa-lg"></i>'+whichshow(url)); // banner at the top saying which show the photo is from
 		$('.theidoftheshow').html(whichshow(url)); // banner at the top saying which show the photo is from
-
   	}
 
 
