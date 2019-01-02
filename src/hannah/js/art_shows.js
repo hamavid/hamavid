@@ -5,6 +5,7 @@ $(document).ready(function(){
 	/*var images = document.getElementById('mainshows').getElementsByTagName('img');*/
 	var srcList = $('#mainshows img').map(function() {return $(this).data('src').slice($(this).data('src').indexOf('/images'));}).get();
 	var showdict = {};
+	showdict['2019_01_freshflours'] = 'Fresh Flours Phinney Ridge, Jan 2019';
 	showdict['2018_gsb'] = 'Garvey Schubert Barer 10 month loan, 2018';
 	showdict['2018_11_kadima'] = 'Kadima Winter Art Sale, Nov 2018';
 	showdict['2018_07_freshflours'] = 'Fresh Flours West Seattle, Jul 2018';
