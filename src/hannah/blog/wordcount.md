@@ -64,5 +64,9 @@ draft: false
 <p>And actually I made this because I wanted to know how many different words were in the chorus of a certain song &mdash; the default input text on this post &mdash; and didn't immediately find an existing tool when I searched for one. Specifically, I thought 40 unique words would sound less intimidating than 60 overall words when trying to teach the song. Even better, once you've learned "hey" you're 13% of the way there! Also, a friend had been talking to me about compression algorithms, so ways to make information compact were on the mind. I realized a couple minutes after thinking all this that it was silly on a number of levels, and in no way simplifying things for humans. But by then the wondering was too great and I had to make the app anyway.</p>
 
 <p>If you find a bug or think of a cool thing to add, and you are <a href='https://www.theguardian.com/science/brain-flapping/2017/may/30/why-do-pedants-pedant'>nice and collaborative about it</a>, feel free to email me!</p>
+<!-- TO ADD:
+package exclusions like prepostions
+dont separate words by apostrophe
+-->
 </div>
 </div>
