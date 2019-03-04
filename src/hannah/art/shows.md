@@ -27,8 +27,18 @@ cssjsfile: "art_shows"
 <div id="mainshows">
 
 
-<h3>Present<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
+<!--<h3>Present</h3>
 <p><ul class='shows_list'>
+</ul></p>-->
+
+
+<!--<h3>Future</h3>
+<p><ul class="shows_list">
+</ul></p>-->
+
+
+<h3 style="width:100%">Past<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
+<p><ul class="shows_list">
 <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Feb, 2019
 <div class="details photos">
 <img src="../../images/shows/blank.png" data-src="../../images/shows/2019_02_choco_wally_1.jpg">
@@ -38,17 +48,7 @@ cssjsfile: "art_shows"
 <img src="../../images/shows/blank.png" data-src="../../images/shows/2019_02_choco_wally_5.jpg">
 <img src="../../images/shows/blank.png" data-src="../../images/shows/2019_02_choco_wally_6.jpg">
 </div></li>
-</ul></p>
 
-
-<!--<h3>Future</h3>
-<p><ul class="shows_list">
-<li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Feb, 2019</li>
-</ul></p>-->
-
-
-<h3 style="width:100%">Past</h3>
-<p><ul class="shows_list">
 <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan, 2019
 <div class="details photos">
 <img src="../../images/shows/blank.png" data-src="../../images/shows/2019_01_freshflours_1.jpg">
