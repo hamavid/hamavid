@@ -51,6 +51,7 @@ body{
 	-webkit-transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
 	transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
 }
+.sidenav a i {font-weight:normal;}
 .hover-white,.hover-orange,.hover-text-indigo,.hover-text-orange,.hover-text-red-orange,.hover-text-red,.hover-text-light-blue,
 .hover-text-grey,.hover-dark-grey,.hover-black,.hover-text-light-grey.opennav,.btn,.navbar,.navbar a{
 	-webkit-transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
