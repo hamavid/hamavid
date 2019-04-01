@@ -4,7 +4,7 @@ layout: HHblogpost.html
 link: "./curtain-robot"
 title: "The Saga of the Curtain Robot"
 subtitle: "Wake the folk up"
-date: 2018-11-30
+date: 2019-04-03
 pagetype: BLOG
 draft: true
 ---
@@ -15,14 +15,19 @@ draft: true
 
 About a million years ago, we decided to make a curtain robot. It would open the curtains in the morning, we would awaken in a gentle, gradual manner ensconsed in natural light and peer-reviewed merits, I would learn some Arduino. Everything would be great.
 
-Not all went as planned. I should backtrack. This post will be structured like so:
-1. **[Code and parts](#codeandparts)** (The basic How-to)
-1. **[Sleep](#sleep)** (Backstory and motivation)
-1. **[Messing around](#messingaround)** (Experimentation)
+The road was a little bumpy, but this post will start with the happy ending, aka an effective creation. People who enjoy mild shadenfreude and rambliness might also like the rest of the article.
+1. **[The basic How-to](#codeandparts)**
+1. **[Motivation](#sleep)**
+1. **[Process](#messingaround)**
 1. **[Next steps](#nextsteps)**
 
-<h3 id="codeandparts">Code and parts</h3>
-Disclaimer: As detailed in the later sections: I'm a noob, this is all very experimental, I don't have a way to solder anything, etc. etc. So everything could probably be optimized better. But this is what I did.
+<figure id='demo'><div id='playpause'><i class="fas fa-5x fa-play-circle"></i></div><img src='./start.png'><figcaption></figcaption></figure>
+
+_______________________
+
+<span id='codeandparts'></span>
+### 1. The basic How-to
+Disclaimer: As detailed in the later sections, I'm a noob, this is all experimental and ad-hoc, you could probably find the parts for cheaper if you know where to look, I didn't have a way to solder anything, etc. etc.
 
 #### Parts
 1. [Arduino Uno](https://store.arduino.cc/usa/arduino-uno-rev3)
@@ -41,14 +46,17 @@ Disclaimer: As detailed in the later sections: I'm a noob, this is all very expe
 1. Hair-tie
 1. Needle and thread
 
-#### Code
 
+#### Code
+Get some libraries for talking to the clock
 ```c++
 	// Date and time functions using a DS3231 RTC connected via I2C and Wire lib
 	#include <Wire.h>
 	#include "RTClib.h"
-	
-	// servo set up
+```
+Set up the servo, including getting the servo library, telling it what pin the servo is attached to, and setting variables for whether the curtains are open or closed, and rotations speeds for opening and closing the curtains. The speeds were established by trial and error
+```c++
+	// Servo set up
 	#include <Servo.h>
 	Servo myservo;
 	#define servopin 9
@@ -56,7 +64,9 @@ Disclaimer: As detailed in the later sections: I'm a noob, this is all very expe
 	// servo speeds, >90=clockwise, <90=counterclockwise, 90=stop
 	#define closespeed 50 // counterclockwise
 	#define openspeed 130 // clockwise
-
+```
+Set up the clock. Days of the week aren't really necessary but nice I guess. Establish variables for tracking time and for how long to run the servo for to open and close the curtains (established by trial and error).
+```c++
 	// Clock set up
 	RTC_DS3231 rtc;
 	char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
@@ -89,7 +99,7 @@ Disclaimer: As detailed in the later sections: I'm a noob, this is all very expe
 	  }
 	}
 
-	// Do the thing: check time, open/close curtain if appropriate, wait an interval, loop
+	// The meat: check time, open/close curtain if appropriate, wait an interval, rinse and repeat
 	void loop () {
 	    DateTime now = rtc.now();
 	    
@@ -159,19 +169,21 @@ Disclaimer: As detailed in the later sections: I'm a noob, this is all very expe
 	}
 ```
 
-
-<h3 id="sleep">Sleep (Backstory and motivation)</h3>
+<span id='sleep'></span>
+### 2. Motivation
 
 I really like sleeping, even though it's super weird and mysterious, as Q will agree.
 
 
-<figure><iframe width="560" height="315" src="https://www.youtube.com/embed/kkvtmYRPQ_Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><figcaption style="text-align: left;">Q: I've been entirely preoccupied by a most frightening experience of my own. A couple of hours ago, I realized that my body was no longer functioning properly. I felt weak, I could no longer stand. The life was oozing out of me, I lost consciousness.<br>
+<figure><!--<iframe width="560" height="315" src="https://www.youtube.com/embed/kkvtmYRPQ_Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<a href="./qandpicard.jpg"><img src="./qandpicard.jpg" alt="Q and Picard in Deja Q" title="Click to see full-size image"></a>
+<figcaption style="text-align: left;">Source: [IMDB](https://www.imdb.com/title/tt0708699/mediaindex).<br>Q: I've been entirely preoccupied by a most frightening experience of my own. A couple of hours ago, I realized that my body was no longer functioning properly. I felt weak, I could no longer stand. The life was oozing out of me, I lost consciousness.<br>
 Picard: You fell asleep.</figcaption></figure>
 
 
-And I sleep well and easily, as long as it's from about 1am to 10am. That turns out to be bad for being part of mainstream society, which I guess I wanted to keep open as an option. 
+And I sleep well and easily, as long as it's from about 1am to 10am. That turns out to be bad for being part of mainstream society, holding down a job, and some other things which I guess I wanted to keep open as an option. 
 
-There is a really extensive body of scientific and spiritual exploration on sleep, and many ideas for fixing this issue. One suggestion was that by having it be dark at night and then suddenly light at the time normal people wake up, (via closing and opening thick curtains), we might be able to trick my body into thinking that waking up earlier was a good idea.
+There is a really extensive body of scientific and spiritual exploration on sleep, and many ideas for addressing this issue. One suggestion was that by having it be dark at night and then suddenly light at the time normal *[sic]* people wake up, (via closing and opening thick curtains), I might be able to trick my body into thinking that waking up earlier was a good idea.
 
 [Products](https://bestlifeonline.com/best-sleep-products/) to [facilitate](https://www.housebeautiful.com/shopping/home-accessories/g22104882/bedroom-upgrades-better-sleep/) [sleeping](https://bestlifeonline.com/doctor-approved-full-nights-sleep/) are already abundant and available on the free market. These include apps, sleep monitors, automatic lights, spa treatments, meditation schemes, and medications. There are even existing products which specifically automatically open curtains. But I thought it would be cheaper and more fun to make my own.
 
@@ -188,8 +200,8 @@ Apps
 Spas/meditations
 Drugs
 
-
-<h3 id="messingaround">Messing around (Experimentation)</h3>
+<span id='messingaround'></span>
+### 3. Process
 We already have some heavy curtains, as described in a <a href='../curtains'>previous post</a>. We want to make the curtains open in the morning, without us having to be awake and out of bed to open them. While we're at it let's make them close at night, also without our help. But how?
 
 The original plan is to start with a loop of string that goes along the curtain rod. On one end of the curtain rod is a pulley wheel, on the other a continuous-rotation servo that makes the loop of string go around and around. We connected the two ends of the string into a loop with a hair-tie so it would have some tension in it. The inner edge of the curtains are attached to the string &mdash; one curtain to the top part of the loop and one to the bottom part. That way, when the string loop goes around, the curtains are dragged open (i.e. in opposite directions). And when the string loop goes around the other way, they're dragged closed.
