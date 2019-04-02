@@ -10,12 +10,12 @@
 }
 hr {background-color:black;border:none;height:2px;margin-top:2em;}
 #demo{position:relative;cursor:pointer;}
-#playpause{
+#playstop{
 	position:absolute;
 	left: 50%;top:50%;
 	transform:translate(-50%, -50%);
 	cursor:pointer;
 }
-#playpause .fa-play-circle{color:white;opacity:0.8;}
-#playpause .fa-pause-circle{color:white;opacity:0;}
+#playstop .fa-play-circle{color:white;opacity:0.8;}
+#playstop .fa-stop-circle{color:white;opacity:0;}
 #demo:hover .fas{opacity:0.9;}

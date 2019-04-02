@@ -21,7 +21,7 @@ The road was a little bumpy, but this post will start with the happy ending, aka
 1. **[Process](#messingaround)**
 1. **[Next steps](#nextsteps)**
 
-<figure id='demo'><div id='playpause'><i class="fas fa-5x fa-play-circle"></i></div><img src='./start.png'><figcaption></figcaption></figure>
+<figure id='demo'><div id='playstop'><i class="fas fa-5x fa-play-circle"></i></div><img src='./start.png'><figcaption></figcaption></figure>
 
 _______________________
 
