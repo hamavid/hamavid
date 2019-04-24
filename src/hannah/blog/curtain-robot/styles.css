@@ -8,14 +8,9 @@
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+li,li>ul>li{padding:0.1em;}
+video{margin-top:1em;max-width:100%;}
+video:focus {outline: none;} 
 hr {background-color:black;border:none;height:2px;margin-top:2em;}
-#demo{position:relative;cursor:pointer;}
-#playstop{
-	position:absolute;
-	left: 50%;top:50%;
-	transform:translate(-50%, -50%);
-	cursor:pointer;
-}
-#playstop .fa-play-circle{color:white;opacity:0.8;}
-#playstop .fa-stop-circle{color:white;opacity:0;}
-#demo:hover .fas{opacity:0.9;}
+code{margin-top:-1em;margin-bottom:2em;}

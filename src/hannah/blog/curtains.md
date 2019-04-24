@@ -103,7 +103,7 @@ This section is a convoluted algebra problem that describes how the pieces shoul
 
 
 #### *SEW THE HANGERS TO THE CURTAIN*
-0. Change to a thread color that you don't mind showing. Figure D illustrates steps 1 through 4.
+0. Change to a thread color that you don't mind showing. Figure D illustrates steps 2 through 5.
 1. Along the open top edge of your giant bag/curtain, fold down the 1/2" seam allowance on either side in toward the middle and iron down the fold.
 2. Insert both raw ends of the first folded-in-half hanger *M* piece into one corner
 3. Sew down along the outside edge of the fold. Continue sewing the top curtain edge together for the amount of space you decided should be between *M* pieces.

@@ -1,7 +1,7 @@
 
 
 window.onload = function () {
-
+/*
 // functions for playing demo gif
   // set variables
 	var playstop = document.getElementById('playstop');
@@ -25,6 +25,6 @@ window.onload = function () {
 			playstopicon.classList.remove('fa-stop-circle');
 			playstopicon.classList.add('fa-play-circle');
 		}
-	}
+	}*/
 
 }

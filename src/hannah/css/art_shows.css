@@ -122,11 +122,18 @@ figure>img {
     font-style:italic;
     text-align:center;
 }
-.visible-image {width:32%;-webkit-transition:opacity 0.3s;transition:opacity 0.3s;cursor:pointer;}
+.visible-image {/*width:32%*/
+	background-position: center;margin:0.2em;
+	width:200px;-webkit-transition:opacity 0.3s;
+	transition:opacity 0.3s;cursor:pointer;
+}
 .details img:hover{opacity:0.6;}
 .shows_list, .shows_list>ul, .shows_list>ul>li {padding:0;margin:0;}
 .shows_list .text-ligrey {cursor:default;}
 .picture-toggle-button{width:104px;text-align:center;}
+
+.hz{background-size:auto 200px;}
+.vt{background-size:200px auto;}
 
 
 /* small screens */
@@ -134,7 +141,7 @@ figure>img {
     .larr,.thisphoto img,.theidoftheshow,.showid{margin-left:180px;}
 }
 @media only screen and (max-width: 450px) {
-	.visible-image {width:90%;}
+	/*.visible-image {width:90%;}*/
 	.details.photos{padding-left:0;}
 	.details.photos img{padding-left:0;margin-right:1em;}
 }

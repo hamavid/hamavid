@@ -35,7 +35,8 @@ $(document).ready(function(){
 		$.each(imglist, function(){
 			if ($(window).scrollTop() + $(window).height() >= $(this).offset().top) {
 				var imgsrc = $(this).data('src');
-				if ($(this).attr('src') != imgsrc) {$(this).attr('src', imgsrc);}
+				$(this).css('background-image', 'url(' + imgsrc + ')');
+				//if ($(this).attr('src') != imgsrc) {$(this).attr('src', imgsrc);}
 				$(this).addClass('visible-image');
         	}	
 		});
