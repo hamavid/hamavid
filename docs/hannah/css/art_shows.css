@@ -122,6 +122,7 @@ figure>img {
     font-style:italic;
     text-align:center;
 }
+.details.photos{padding-left:0;}
 .visible-image {/*width:32%*/
 	background-position: center;margin:0.2em;
 	width:200px;-webkit-transition:opacity 0.3s;
