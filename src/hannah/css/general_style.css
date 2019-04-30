@@ -142,7 +142,8 @@ body{
 /*@media only screen and (max-width:450px){.btn {padding:4px 4px;font-size: 1em;})*/
 .picture-toggle-button{cursor:pointer;font-size:0.8em;padding:0.3em;background-color:#e8e8e8;border:1px solid black;border-radius:5px;}
 iframe{width: 560px;max-width:100%;}
-
-
+/* for sidenav x out icon */
+.sidenav a.hide-large:hover{background-color:#fff;}
+.sidenav i.fas:hover{color:#009688;}
 
 

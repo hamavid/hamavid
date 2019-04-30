@@ -12,7 +12,7 @@ draft: false
 This is a recipe for granola that I enjoy.
 It's a mash-up of [The Very Best Granola](https://cookieandkate.com/2015/healthy-granola-recipe/) by Kathryne Taylor (Cookie and Kate) and [Tahini and Cardamom-Spiced Granola](https://www.thekitchn.com/recipe-tahini-and-cardamom-spiced-granola-211762) by Karen Biton-Cohen (Kitchn). Those posts are way more thorough and have much more beautiful pictures than this one; I highly recommend them. (But I also recommend the derivative recipe below.)
 
-This is incidentally a good way to use a 46oz jar that used to be full of pickles.
+Incidentally this is a great way to use a 46oz jar that used to be full of pickles, and that tahini you opened in 2005.
 
 ### Instructions
 <div style='height:1em;'><span style='float:right;' class='picture-toggle-button'>Hide photos</span></div>
@@ -30,13 +30,13 @@ Mix in bowl:
 
 <div class='photobook'>
 	<div><img class='vt' src='./blank.png' data-src='./oatsandspices.jpg'>
-		<div class='ov'>Oats and spices lookin' Instagrammy</div></div>
+		<div class='overlaid'>Oats and spices lookin' Instagrammy</div></div>
 	<div><img class='vt' src='./blank.png' data-src='./choppedpecans.jpg'>
-		<div class='ov'>Size guide: an example of chopped pecans</div></div>
+		<div class='overlaid'>Size guide: an example of chopped pecans</div></div>
 	<div><img class='vt' src='./blank.png' data-src='./nutsinpyrex.jpg'>
-		<div class='ov'>Eras of nuts and seeds</div></div>
+		<div class='overlaid'>Eras of nuts and seeds</div></div>
 	<div><img class='vt' src='./blank.png' data-src='./dryingreds.jpg'>
-		<div class='ov'>All the dry ingredients mixed</div></div>
+		<div class='overlaid'>All the dry ingredients mixed</div></div>
 </div>
 
 Mix in pyrex 2c measurer:
@@ -47,13 +47,13 @@ Mix in pyrex 2c measurer:
 
 <div class='photobook'>
 	<div><img class='hz' src='./blank.png' data-src='./saucefamilyphoto.jpg'>
-		<div class='ov'>Family photo with sauce components</div></div>
+		<div class='overlaid'>Family photo with sauce components</div></div>
 	<div><img class='hz' src='./blank.png' data-src='./sauceside.jpg'>
-		<div class='ov'>Eras of polar variety</div></div>
+		<div class='overlaid'>Eras of polar variety</div></div>
 	<div><img class='hz' src='./blank.png' data-src='./saucetop.jpg'>
-		<div class='ov'>Fun with pareidolia</div></div>
+		<div class='overlaid'>Fun with pareidolia</div></div>
 	<div><img class='vt' src='./blank.png' data-src='./saucestirred.jpg'>
-		<div class='ov'>All the wet ingredients mixed and looking appetizing</div></div>
+		<div class='overlaid'>All the wet ingredients mixed and looking appetizing</div></div>
 </div>
 
 
@@ -67,13 +67,13 @@ Let cool before breaking up and putting in jar.
 
 <div class='photobook'>
 	<div><img class='vt' src='./blank.png' data-src='./mixed.jpg'>
-		<div class='ov'>Sauce all mixed in to the dry ingredients</div></div>
+		<div class='overlaid'>Sauce all mixed in to the dry ingredients</div></div>
 	<div><img class='hz' src='./blank.png' data-src='./uncooked.jpg'>
-		<div class='ov'>Spread out on a tray ready to bake</div></div>
+		<div class='overlaid'>Spread out evenly on a tray to bake</div></div>
 	<div><img class='vt' src='./blank.png' data-src='./cooked.jpg'>
-		<div class='ov'>All baked! At this point your kitchen smells really good</div></div>
+		<div class='overlaid'>All baked! At this point your kitchen smells really good</div></div>
 	<div><img class='vt' src='./blank.png' data-src='./jarred.jpg'>
-		<div class='ov'>In a jar and ready for breakfast</div></div>
+		<div class='overlaid'>In a jar and ready for breakfast</div></div>
 </div>
 
 Eat with yogurt or whatever sounds good to you!

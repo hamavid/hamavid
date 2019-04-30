@@ -13,22 +13,34 @@ article ul li{padding:0.2em;}
 	-webkit-transition:opacity 0.3s;
 	transition:opacity 0.3s;cursor:pointer;
 }
-.photobook img:hover{opacity:0.3;}
+/*.photobook img:hover{opacity:0.3;}*/
 .hz{background-size:auto 270px;}
 .vt{background-size:270px auto;}
-.photobook div div{margin:0;position:absolute;display:inline-block;opacity:0;pointer-events:none;}
-.ov{
+.photobook div div{
+	margin:0;position:absolute;
+	display:inline-block;
+	pointer-events:none;
 	position:absolute;
+}
+.overlaid{
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	color:black;
+	transform: translate(-50%, -50%);
 	font-size:1.2em;font-weight:bold;
+	opacity:0;
+}
+.bottom{
+	bottom:0.5em;left:50%;max-width:100%!important;
+	transform: translate(-50%, 0);
+	padding:0.3em;
+	color:white;
+	text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	font-size:1em;font-weight:normal;
+	opacity:1;
 }
 
-.showcaption{
-
-}
-.hidecaption{
-
-}

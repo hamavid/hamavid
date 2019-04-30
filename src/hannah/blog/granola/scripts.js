@@ -7,20 +7,39 @@ $(document).ready(function(){
 		$(this).css('background-image', 'url(' + imgsrc + ')');
 	});
 
-	// show image captions on img hover
-	$('.photobook img').on('mouseenter',function(){
-		$(this).next().css('opacity','1');
-	});
-	$('.photobook img').on('mouseleave',function(){
-		$(this).next().css('opacity','0');
-	});
+	// Check if user can hover and format image captions accordingly
+	function hovercheck(action) {
+		if (action === 'hovering') {
+			$('.photobook img').on('mouseenter',function(){
+				$(this).css('opacity','0.3');
+				$(this).next().css('opacity','1');
+			});
+			$('.photobook img').on('mouseleave',function(){
+				$(this).css('opacity','1');
+				$(this).next().css('opacity','0');
+			});
+		}
+		if (action === 'touching') {
+			$('.photobook div div').removeClass('overlaid');
+			$('.photobook div div').addClass('bottom');
+		}
+	}
+	window.addEventListener('mouseover', function onFirstHover() {
+    	hovercheck('hovering');
+    	window.removeEventListener('mouseover', onFirstHover, false);
+	}, false);
+	window.addEventListener('touchstart', function onFirstTouch() {
+	    hovercheck('touching');
+	    window.removeEventListener('touchstart', onFirstTouch, false);
+	}, false);
+
 
 	// show full size images on img click
 	$('img').click(function() {
 		var imgsrc = $(this).data('src');
 		location.href=imgsrc;
 	});
-
+  
 
 	 // show/hide photos on button click
   	$('.picture-toggle-button').click(function(){

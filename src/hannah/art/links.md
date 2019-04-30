@@ -11,7 +11,7 @@ cssjsfile: "art_links"
   </header>
 
 <!-- Main content -->
-  <div class="container" id="links">
+<div class="container" id="links">
     <div id="buyart">
       <h3>Buy my art</h3>
       <ul>
@@ -32,8 +32,9 @@ cssjsfile: "art_links"
       </ul>
       <div class="center cardpix"><img src="../../images/links/cards1.jpg" width="50%" alt-text="Cards EBBC"><img src="../../images/links/cards2.jpg" width="50%" alt-text="Cards FCAF"></div>
     </div>
-
-<div id="recommendations">
+</div>
+<div class='container'>
+  <div id="recommendations">
       <!--<h3>Projects and Collaborations</h3>
       <ul><li><a href='demontown.net'>Demontown</a></li>
       </ul>-->
@@ -46,7 +47,8 @@ cssjsfile: "art_links"
         <li><a href="https://www.facebook.com/Izzy-Art-365136987030244/" target="_none">Izzy</a> - Rad and whimsical drawings, characters, notebooks
         <div class="center"><a href="https://www.facebook.com/Izzy-Art-365136987030244/" target="_none"><img src="../../images/links/izzy1.jpg" width="33%" alt-text="Izzy art 1"><img src="../../images/links/izzy2.jpg" width="33%" alt-text="Izzy art 2"><img src="../../images/links/izzy3.jpg" width="33%" alt-text="Izzy art 3"></a></div></li>
       </ul>
-    </div>
-
+  </div>
 </div>
+
+
 <!-- End page content -->
