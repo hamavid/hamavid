@@ -10,9 +10,10 @@ draft: false
 ---
 
 This is a recipe for granola that I enjoy.
-It's a mash-up of [The Very Best Granola](https://cookieandkate.com/2015/healthy-granola-recipe/) by Kathryne Taylor (Cookie and Kate) and [Tahini and Cardamom-Spiced Granola](https://www.thekitchn.com/recipe-tahini-and-cardamom-spiced-granola-211762) by Karen Biton-Cohen (Kitchn). Those posts are way more thorough and have much more beautiful pictures than this one; I highly recommend them. (But I also recommend the derivative recipe below.)
 
-Incidentally this is a great way to use a 46oz jar that used to be full of pickles, and that tahini you opened in 2005.
+It's a mash-up of [The Very Best Granola](https://cookieandkate.com/2015/healthy-granola-recipe/) by Kathryne Taylor (Cookie and Kate) and [Tahini and Cardamom-Spiced Granola](https://www.thekitchn.com/recipe-tahini-and-cardamom-spiced-granola-211762) by Karen Biton-Cohen (Kitchn). Check out those posts for thorough explanations and beautiful pictures.
+
+Making this granola is also a great way to use a 46oz jar that used to be full of pickles, and that tahini you opened in 2005.
 
 ### Instructions
 <div style='height:1em;'><span style='float:right;' class='picture-toggle-button'>Hide photos</span></div>
