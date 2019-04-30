@@ -43,7 +43,7 @@ $(document).ready(function(){
 
 	 // show/hide photos on button click
   	$('.picture-toggle-button').click(function(){
-		$('.photobook img, figure').slideToggle();
+		$('.photobook img, figure, .photobook div div').slideToggle();
 		var button=$('.picture-toggle-button');
 		if (button.html() == 'Hide photos') {button.html('Show photos')}
 		else {button.html('Hide photos')};
