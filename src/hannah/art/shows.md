@@ -31,8 +31,8 @@ cssjsfile: "art_shows"
 <p><ul class='shows_list'>
 <li><a href="https://www.facebook.com/cortonacafe/">Cortona Caf&eacute;</a>, Seattle - May/Jun, 2019
 <div class="details photos">
-<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_1.jpg">
-<img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_2.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_1a.jpg">
+<img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_2a.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_3.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_4.jpg">
 <img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_5.jpg">
