@@ -26,7 +26,7 @@ cssjsfile: "art_links"
       <h3>Notecards at Seattle retail locations</h3>
       <ul>
         <li><b>Udistrict ~ </b> <a href='https://www.facebook.com/4cornersframe/'>Four Corners Art and Frame</a></li>
-        <li><b>Ballard ~ </b> <a href='https://www.monsterartandclothing.com/'>Monster: Art, Clothing &amp; Gifts</a></li>
+        <!--<li><b>Ballard ~ </b> <a href='https://www.monsterartandclothing.com/'>Monster: Art, Clothing &amp; Gifts</a></li>-->
         <li><b>Capitol Hill ~ </b> <a href='https://www.elliottbaybook.com/'>Elliott Bay Book Company</a></li>
         <li><b>Downtown ~ </b> <a href='https://www.leftbankbooks.com/'>Left Bank Books</a></li>
       </ul>

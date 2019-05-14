@@ -27,9 +27,21 @@ cssjsfile: "art_shows"
 <div id="mainshows">
 
 
-<!--<h3>Present</h3>
+<h3>Present<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
 <p><ul class='shows_list'>
-</ul></p>-->
+<li><a href="https://www.facebook.com/cortonacafe/">Cortona Caf&eacute;</a>, Seattle - May/Jun, 2019
+<div class="details photos">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_1.jpg">
+<img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_2.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_3.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_4.jpg">
+<img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_5.jpg">
+<img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_6.jpg">
+<img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_7.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_8.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_9.jpg">
+</div></li>
+</ul></p>
 
 
 <!--<h3>Future</h3>
@@ -37,7 +49,7 @@ cssjsfile: "art_shows"
 </ul></p>-->
 
 
-<h3 style="width:100%">Past<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
+<h3 style="width:100%">Past</h3>
 <p><ul class="shows_list">
 <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Feb, 2019
 <div class="details photos">
