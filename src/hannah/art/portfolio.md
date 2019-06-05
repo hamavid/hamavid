@@ -30,6 +30,7 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="hz watercolor drawing" data-src='../../images/portfolio/thumbs/timhstained.png' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
       <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/partingthesea.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
       <span><div class="hz print" data-src='../../images/portfolio/thumbs/returnaddystamp.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
       <span><div class="hz drawing" data-src='../../images/portfolio/thumbs/savethedate4panels.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
@@ -142,6 +143,7 @@ cssjsfile: "art_portfolio"
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
+<figure class="watercolor drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/timh stained.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Talmud is my home:</b></i> Commissioned watercolor with gold paint and micron marker on paper - Jun, 2019</span></figcaption></figure>
 <figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/partingthesea.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Parting the Sea:</b></i> Commissioned watercolor on paper - Mar, 2019</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/returnaddystamp.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Return address:</b></i> Handcarved rubber stamp - Mar, 2019</span></figcaption></figure>
 <figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/savethedate4panels.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Save the Date:</b></i> Micron marker on paper - Feb, 2019</span></figcaption></figure>
