@@ -44,9 +44,10 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/violin.jpeg">Violin:</a> Linoleum block print - Nov, 2019</li>
 <li><a href="../../images/portfolio/puzzletree.jpg">Puzzle tree:</a> Linoleum block print - Oct, 2019</li>
 <li><a href="../../images/portfolio/birdincage.jpg">Bird in Cage:</a> Two layer reduction block print - Aug, 2019</li>
-<li><a href="../../images/portfolio/monarchs.jpg">Monarchs:</a> Three layer reduction block print - Aug, 2019</li>
+<li><a href="../../images/portfolio/monarch.jpeg">Monarch:</a> Three layer reduction block print - Aug, 2019</li>
 <li><a href="../../images/portfolio/thislandissacred.jpg">This Land is Sacred:</a> Commissioned drawing on canvas banner for Sierra Club, to be interactively painted in by participants on campaign to protect the Arctic refuge - Jun, 2019</li>
 <li><a href="../../images/portfolio/timh stained.png">Talmud is my home:</a> Commissioned watercolor with gold paint and micron marker on paper - Jun, 2019</li>
 <li><a href="../../images/portfolio/canarycover.jpeg">Canaries escaping the coal mine:</a> Commissioned three layer reduction block print for KPH Canary Collective album cover - Apr, 2019</li>

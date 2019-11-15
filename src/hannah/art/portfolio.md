@@ -30,9 +30,10 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/violin.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
       <span><div class="vt print" data-src='../../images/portfolio/thumbs/puzzletree.jpg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
       <span><div class="vt print" data-src='../../images/portfolio/thumbs/birdincage.jpg' style="background: url('../../images/portfolio/blank.png') 0% 20% no-repeat;"></div></span>
-      <span><div class="vt print" data-src='../../images/portfolio/thumbs/monarchs.jpg' style="background: url('../../images/portfolio/blank.png') 0% 30% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/monarch.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 30% no-repeat;"></div></span>
       <span><div class="hz drawing" data-src='../../images/portfolio/thumbs/thislandissacred.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
       <span><div class="hz watercolor drawing" data-src='../../images/portfolio/thumbs/timhstained.png' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
       <span><div class="hz print" data-src='../../images/portfolio/thumbs/canarycover.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
@@ -148,9 +149,10 @@ cssjsfile: "art_portfolio"
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/violin.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Violin:</b></i> Linoleum block print - Nov, 2019</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/puzzletree.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Puzzle tree:</b></i> Linoleum block print - Oct, 2019</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/birdincage.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bird in Cage:</b></i> Two layer reduction block print - Aug, 2019</span></figcaption></figure>
-<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/monarchs.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Monarchs:</b></i> Three layer reduction block print - Aug, 2019</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/monarch.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Monarch:</b></i> Three layer reduction block print - Aug, 2019</span></figcaption></figure>
 <figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/thislandissacred.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>This Land is Sacred:</b></i> Commissioned drawing on canvas banner for Sierra Club, to be interactively painted in by participants on campaign to protect the Arctic refuge - Jun, 2019</span></figcaption></figure>
 <figure class="watercolor drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/timh stained.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Talmud is my home:</b></i> Commissioned watercolor with gold paint and micron marker on paper - Jun, 2019</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/canarycover.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Canaries escaping the coal mine:</b></i> Commissioned three layer reduction block print for KPH Canary Collective album cover - Apr, 2019</span></figcaption></figure>
