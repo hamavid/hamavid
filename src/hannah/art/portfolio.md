@@ -30,10 +30,10 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
-      <span><div class="hz print" data-src='../../images/portfolio/thumbs/violin.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/violin.jpeg' style="background: url('../../images/portfolio/blank.png') 30% 0% no-repeat;"></div></span>
       <span><div class="vt print" data-src='../../images/portfolio/thumbs/puzzletree.jpg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
       <span><div class="vt print" data-src='../../images/portfolio/thumbs/birdincage.jpg' style="background: url('../../images/portfolio/blank.png') 0% 20% no-repeat;"></div></span>
-      <span><div class="vt print" data-src='../../images/portfolio/thumbs/monarch.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 30% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/monarch.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 70% no-repeat;"></div></span>
       <span><div class="hz drawing" data-src='../../images/portfolio/thumbs/thislandissacred.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
       <span><div class="hz watercolor drawing" data-src='../../images/portfolio/thumbs/timhstained.png' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
       <span><div class="hz print" data-src='../../images/portfolio/thumbs/canarycover.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
