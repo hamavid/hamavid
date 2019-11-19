@@ -98,7 +98,8 @@ window.onload = function () {
 		var igs = document.querySelectorAll('span.ignorchar');
 		for(var i = 0; i < igs.length; i++){
 			var thisone = String.raw`${igs[i].innerHTML}`;
-			//list.push('\\'+thisone);
+			// make everything lowercase if we are NOT being case sensitive - added 11/19
+			if (document.getElementById('casesense').checked == false){thisone = thisone.toLowerCase();}
 			list.push(thisone);
 		}
 		return list;

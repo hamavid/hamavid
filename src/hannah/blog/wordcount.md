@@ -11,7 +11,7 @@ draft: false
 <div>
 <div id='helpignore'>
 <span id="hideignore"><i class="fa fa-lg fa-remove"></i></span><br>
-<div id='helpignorecontent'>A string of characters added to the ignore-list is ignored anywhere it is found, even within a word. For example, ignoring "by" would get rid of the word "by", but also turn "bye" into "e", and "abyss" into "ass". To ignore an entire word, surround it with spaces, for example " by ". If the word is sometimes followed by punctuation, add the word with its punctuation, for example " by, ". If it is the first or last word of your entire input text, add a space before and/or after the input text before clicking Analyze.
+<div id='helpignorecontent'>A string of characters added to the ignore-list is ignored anywhere it is found, even within a word. For example, ignoring "by" would get rid of the word "by", but also turn "bye" into "e", and "abyss" into "ass". The app counts new words any time there is a non-alphanumeric character, so to keep conjunctions ("you're") or possessives ("Hannah's") as one word, ignore apostrophes. To ignore an entire word, surround it with spaces, for example " by ". If the word is sometimes followed by punctuation, add the word with its punctuation, for example " by, ". If it is the first or last word of your entire input text, add a space before and/or after the input text before clicking Analyze.
 </div>
 </div>
 <!-- overlay so background is covered when help section is showing -->
