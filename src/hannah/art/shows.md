@@ -32,12 +32,13 @@ cssjsfile: "art_shows"
 </ul></p>-->
 
 
-<!--<h3>Future</h3>
+<h3 style="width:100%">Future<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
 <p><ul class="shows_list">
-</ul></p>-->
+<li><a href="https://www.kensmarkets.com/">Ken's Market</a>, <a href="https://artupphinneywood.com/">PhinneyWood Artwalk</a>, Seattle - Sep, 2020</li>
+</ul></p>
 
 
-<h3 style="width:100%">Past<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
+<h3>Past</h3>
 <p><ul class="shows_list">
 <li><a href="https://www.facebook.com/cortonacafe/">Cortona Caf&eacute;</a>, Seattle - May/Jun, 2019
 <div class="details photos">
