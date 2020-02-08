@@ -44,6 +44,8 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/zippy2.png">Brivele at Cafe Zippy:</a> Show poster - Dec, 2019</li>
+<li><a href="../../images/portfolio/canary-collage.jpg">The Canary Collective, Vol 1:</a> Commissioned album and disc design - Dec, 2019</li>
 <li><a href="../../images/portfolio/tulip.jpg">Tulip:</a> Commissioned linoleum block print with watercolor - Dec, 2019</li>
 <li><a href="../../images/portfolio/violin.jpeg">Violin:</a> Linoleum block print - Nov, 2019</li>
 <li><a href="../../images/portfolio/puzzletree.jpg">Puzzle tree:</a> Linoleum block print - Oct, 2019</li>
