@@ -33,7 +33,7 @@ cssjsfile: "art_portfolio"
   <div id="gridpocket">
     <div id="grid">
       <span><div class="vt design" data-src='../../images/portfolio/thumbs/zippy2.png' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
-      <span><div class="vt design commissions" data-src='../../images/portfolio/thumbs/canary-collage.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt print design commissions" data-src='../../images/portfolio/thumbs/canary-collage.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
       <span><div class="vt print watercolor commissions" data-src='../../images/portfolio/thumbs/tulip.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
       <span><div class="hz print" data-src='../../images/portfolio/thumbs/violin.jpeg' style="background: url('../../images/portfolio/blank.png') 30% 0% no-repeat;"></div></span>
       <span><div class="vt print" data-src='../../images/portfolio/thumbs/puzzletree.jpg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
