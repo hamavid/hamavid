@@ -5,7 +5,9 @@ $(document).ready(function(){
 	/*var images = document.getElementById('mainshows').getElementsByTagName('img');*/
 	var srcList = $('#mainshows img').map(function() {return $(this).data('src').slice($(this).data('src').indexOf('/images'));}).get();
 	var showdict = {};
-	showdict['2019_05_cortona'] = 'Cortona Cafe, May/Jun 2019';
+	showdict['2020_09_kens'] = 'Ken&#39;s Market, Sep 2020';
+	showdict['2020_04_space'] = 'SPACE at Magnuson, Apr/May 2020';
+	showdict['2019_05_cortona'] = 'Cortona Caf&eacute;, May/Jun 2019';
 	showdict['2019_02_choco_wally'] = 'Chocolati Wallingford, Feb 2019';
 	showdict['2019_01_freshflours'] = 'Fresh Flours Phinney Ridge, Jan 2019';
 	showdict['2018_gsb'] = 'Garvey Schubert Barer 10 month loan, 2018';

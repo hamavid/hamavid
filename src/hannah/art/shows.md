@@ -27,19 +27,35 @@ cssjsfile: "art_shows"
 <div id="mainshows">
 
 
-<!--<h3>Present</h3>
+<h3>Present<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
 <p><ul class='shows_list'>
-</ul></p>-->
-
-
-<h3 style="width:100%">Future<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
-<p><ul class="shows_list">
-<li><a href="https://www.kensmarkets.com/">Ken's Market</a>, <a href="https://artupphinneywood.com/">PhinneyWood Artwalk</a>, Seattle - Sep, 2020</li>
+<li><a href="https://www.kensmarkets.com/">Ken's Market</a>, <a href="https://artupphinneywood.com/">PhinneyWood Artwalk</a>, Seattle - Sep, 2020
+<div class="details photos">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_09_kens_1.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_09_kens_2.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_09_kens_3.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_09_kens_4.jpg">
+</div></li>
 </ul></p>
 
 
+<!--<h3 style="width:100%">Future</h3>
+<p><ul class="shows_list">
+</ul></p>-->
+
 <h3>Past</h3>
 <p><ul class="shows_list">
+<li><a href="https://www.spaceatmagnuson.org/virtual-show">SPACE at Magnuson</a>, Virtual show - Apr/May, 2020
+<div class="details photos">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_1.png">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_2.png">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_3.png">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_4.png">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_5.png">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_6.png">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_7.png">
+</div></li>
+
 <li><a href="https://www.facebook.com/cortonacafe/">Cortona Caf&eacute;</a>, Seattle - May/Jun, 2019
 <div class="details photos">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_1a.jpg">
