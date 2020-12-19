@@ -32,6 +32,12 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="vt design" data-src='../../images/portfolio/thumbs/goingthesocialdistance.jpg' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/hotstuff.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/hotienar.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/duckling.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt drawing" data-src='../../images/portfolio/thumbs/houseshowsoup.png' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt design" data-src='../../images/portfolio/thumbs/give6feet.png' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
       <span><div class="vt design" data-src='../../images/portfolio/thumbs/zippy2.png' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
       <span><div class="vt print design commissions" data-src='../../images/portfolio/thumbs/canary-collage.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
       <span><div class="vt print watercolor commissions" data-src='../../images/portfolio/thumbs/tulip.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
@@ -159,6 +165,12 @@ cssjsfile: "art_portfolio"
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
+<figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/goingthesocialdistance.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Going the Social Distance:</b></i> T-Shirt Design for 5k/10k/half marathon - Oct, 2020</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hotstuff.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fire Cider:</b></i> Linoleum block print on paper - Oct, 2020</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hotienar.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hot Ienar:</b></i> Linoleum block print on paper - Oct, 2020</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/duckling.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Duckling:</b></i> Rubber block print on paper - Sep, 2020</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/houseshowsoup.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>House Show Soup:</b></i> Drawing on paper - Sep, 2020</span></figcaption></figure>
+<figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/give6feet.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Give 6 feet:</b></i> Joke design in Mac Preview - Apr, 2020</span></figcaption></figure>
 <figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/zippy2.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Brivele at Cafe Zippy:</b></i> Show poster - Dec, 2019</span></figcaption></figure>
 <figure class="print design commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/canary-collage.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Canary Collective, Vol I:</b></i> Commisssioned album and disc design - Dec, 2019</span></figcaption></figure>
 <figure class="print watercolor commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/tulip.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Portrait of Tulip:</b></i> Commisssioned linoleum block print with watercolor - Dec, 2019</span></figcaption></figure>

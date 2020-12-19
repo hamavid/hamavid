@@ -3,8 +3,7 @@ html,body{height:100%;}
 body{
 	background-color:#000;
 	font-size:0px; /* added to get rid of mysterious upper and left margins */
-	padding: 0;
-	margin: 0;
+	padding: 0;margin: 0;
 	overflow:hidden;
 	top:0;bottom:0;position:fixed;width:100%;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -17,28 +16,20 @@ body{
 }
 figure {
 	padding:0;
-	position:relative;
-	display:block;
-	/*margin:0;
-   	left:50%;
-   	-webkit-transform: translate(-50%);
-   	transform: translate(-50%);*/
+	position:relative;display:block;height:100%;width:100%;
    	margin:auto;
-   	vertical-align: middle;
 }
-img {
+img, svg{
     position: absolute;
-    top: 0; bottom:0; left: 0; right:0;
-    margin: auto;
+	top: 50%;left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
+svg{z-index:2;}
 
 /* the location of sisters*/
-#aviva_area,#hannah_area,#showabout  {
-	cursor:pointer;
-	position:absolute;
-	z-index:1;
-}
-#aviva_area{
+#aviva_area,#hannah_area,#showabout  {cursor:pointer;position:absolute;}
+/*#aviva_area{
 	width:47%;
 	height:85%;
 	top:15%;
@@ -48,7 +39,7 @@ img {
 	height:77%;
 	top:11%;
 	right:0;
-}
+}*/
 
 /*hover-overable names for mouse-screens*/
 .labelenv{
@@ -82,20 +73,16 @@ img {
 }
 
 /* show/hide various images based on mouseover */
-#default {opacity:1;}
-#hl_aviva,#hl_hannah,.about{position:absolute;left:0;opacity:0;}
-#hl_aviva,#hl_hannah,.about,.labelenv{
+#default {opacity:0.8;}
+#default,#aviva_area,#hannah_area,.about,.labelenv{
 	-webkit-transition:opacity 0.7s;
 	transition:opacity 0.7s;
 	-moz-transition: opacity 0.7s;
   	-ms-transition: opacity 0.7s;
   	-o-transition: opacity 0.7s;
 }
-#aviva_area:hover + #hl_aviva{opacity:1;} 
-#hannah_area:hover + #hl_hannah{opacity:1;}
-#aviva_area>.labelenv:hover{opacity:0.7;} 
-#hannah_area>.labelenv:hover{opacity:0.7;}
-figure:hover #default{opacity:1;}
+#aviva_area,#hannah_area{opacity:0.2;}
+#aviva_area:hover,#hannah_area:hover{opacity:0;}
 
 /* right and left slideable areas for touchscreens*/
 #h-overlay,#a-overlay{
