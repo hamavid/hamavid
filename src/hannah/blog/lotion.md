@@ -2,8 +2,8 @@
 outadir: "../"
 layout: HHblogpost.html
 link: "./lotion"
-title: "How to make lotion!"
-subtitle: "On a lake of emotion"
+title: "How to make lotion"
+subtitle: "A Recipe"
 date: 2017-06-06
 pagetype: BLOG
 draft: false

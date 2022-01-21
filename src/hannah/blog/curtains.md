@@ -7,7 +7,7 @@ subtitle: "A fenestral masker aid"
 date: 2018-10-11
 pagetype: BLOG
 extracss: yes
-draft: false
+draft: true
 ---
 
 This post contains a pattern and spottily-documented instructions for how to sew some window curtains that I designed to look like windows.
