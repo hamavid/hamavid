@@ -44,6 +44,12 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/whatjoyisyours.jpeg">What Joy is Yours:</a> Linoleum block print on paper for Brivele EP - May, 2022</li>
+<li><a href="../../images/portfolio/staircasetable.jpg">Staircase table:</a> Walnut and recycled pine, beeswax - Apr, 2022</li>
+<li><a href="../../images/portfolio/disintegratingcheckerboard.jpg">Disintegrating checkerboard quilt:</a> Polar fleece - Feb, 2022</li>
+<li><a href="../../images/portfolio/turtlequilt.jpg">Turtles All the Way Down quilt:</a> Turtle batik, scrap cotton, batting - Jan, 2022</li>
+<li><a href="../../images/portfolio/judith.png">From the Judith Archives:</a> Commissioned stamp design - Jan, 2022</li>
+<li><a href="../../images/portfolio/puzzletable.jpg">Puzzle table:</a> Recycled Ikea bed slats, polyurethane - Apr, 2021</li>
 <li><a href="../../images/portfolio/goingthesocialdistance.jpg">Going the Social Distance:</a> T-Shirt Design for 5k/10k/half marathon - Oct, 2020</li>
 <li><a href="../../images/portfolio/hotstuff.jpeg">Fire Cider:</a> Linoleum block print on paper - Oct, 2020</li>
 <li><a href="../../images/portfolio/hotienar.jpeg">Hot Ienar:</a> Linoleum block print on paper - Oct, 2020</li>
