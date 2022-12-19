@@ -58,6 +58,8 @@ body{
 	transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
 }
 .sidenav a:hover {background-color:#ccc;}
+.social-links{margin:auto;text-align:center;padding:0;}
+.social-links a{font-size:0.5em;padding:4px 4px!important;}
 @media screen and (max-width:992px) {
 	.sidenav.collapse {display:none}
 	.main {margin-left:0!important;margin-right:0!important}

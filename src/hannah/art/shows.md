@@ -27,12 +27,24 @@ cssjsfile: "art_shows"
 <div id="mainshows">
 
 
-<!--<h3>Present</h3>
+<h3>Present</h3>
 <p><ul class='shows_list'>
+<li><a href="https://www.zokacoffee.com/pages/greenlake-zok">Zoka Coffee Greenlake</a>, Seattle - Nov/Dec, 2022
+<div class="details photos">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_1.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_2.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_3.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_4.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_5.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_6.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_7.jpg">
+<img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_8.jpg">
+<img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_9.jpg">
+</div></li>
 </ul></p>
 
 
-<h3 style="width:100%">Future</h3>
+<!--<h3 style="width:100%">Future</h3>
 <p><ul class="shows_list">
 </ul></p>-->
 
