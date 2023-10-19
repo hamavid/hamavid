@@ -27,8 +27,17 @@ cssjsfile: "art_shows"
 <div id="mainshows">
 
 
-<h3>Present</h3>
+<!--<h3>Present</h3>
 <p><ul class='shows_list'>
+</ul></p>
+
+
+<h3 style="width:100%">Future</h3>
+<p><ul class="shows_list">
+</ul></p>-->
+
+<h3>Past<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
+<p><ul class="shows_list">
 <li><a href="https://www.zokacoffee.com/pages/greenlake-zok">Zoka Coffee Greenlake</a>, Seattle - Nov/Dec, 2022
 <div class="details photos">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_1.jpg">
@@ -40,23 +49,15 @@ cssjsfile: "art_shows"
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_7.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_8.jpg">
 <img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2022_11_zoka_9.jpg">
-</div></li>
-</ul></p>
+<br>Solo show of block prints and watercolors at coffeeshop.</div></li>
 
-
-<!--<h3 style="width:100%">Future</h3>
-<p><ul class="shows_list">
-</ul></p>-->
-
-<h3>Past<span style="float:right;" class='picture-toggle-button'>Hide photos</span></h3>
-<p><ul class="shows_list">
 <li><a href="https://www.kensmarkets.com/">Ken's Market</a>, <a href="https://artupphinneywood.com/">PhinneyWood Artwalk</a>, Seattle - Sep, 2020
 <div class="details photos">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_09_kens_1.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_09_kens_2.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_09_kens_3.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_09_kens_4.jpg">
-</div></li>
+<br>Solo show of block prints in grocery store entryway.</div></li>
 
 <li><a href="https://www.spaceatmagnuson.org/virtual-show">SPACE at Magnuson</a>, Virtual show - Apr/May, 2020
 <div class="details photos">
@@ -68,7 +69,7 @@ cssjsfile: "art_shows"
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_6.png">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_7.png">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2020_04_space_8.png">
-</div></li>
+<br>Online show of block prints.</div></li>
 
 <li><a href="https://www.facebook.com/cortonacafe/">Cortona Caf&eacute;</a>, Seattle - May/Jun, 2019
 <div class="details photos">
@@ -81,7 +82,7 @@ cssjsfile: "art_shows"
 <img class='vt' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_7.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_8.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_05_cortona_9.jpg">
-</div></li>
+<br>Solo show of block prints and watercolors at coffeeshop.</div></li>
 
 <li>Chocolati <a href="https://www.facebook.com/ChocolatiWallingford/">Wallingford</a>, Seattle - Feb, 2019
 <div class="details photos">
@@ -91,7 +92,7 @@ cssjsfile: "art_shows"
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_02_choco_wally_4.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_02_choco_wally_5.jpg">
 <img class='hz' src="../../images/shows/blank.png" data-src="../../images/shows/2019_02_choco_wally_6.jpg">
-</div></li>
+<br>Solo show of block prints and watercolors at coffeeshop/chocolatier.</div></li>
 
 <li>Fresh Flours <a href="http://www.freshfloursseattle.com/">Phinney Ridge</a>, Seattle - Jan, 2019
 <div class="details photos">

@@ -25,12 +25,15 @@ cssjsfile: "art_links"
 <div id="retail-cards">
       <h3>Notecards at Seattle retail locations</h3>
       <ul>
-        <li><b>Udistrict ~ </b> <a href='https://www.facebook.com/4cornersframe/'>Four Corners Art and Frame</a></li>
-        <!--<li><b>Ballard ~ </b> <a href='https://www.monsterartandclothing.com/'>Monster: Art, Clothing &amp; Gifts</a></li>-->
+        <li><b>Southeast Green Lake ~ </b><a href='https://www.zokacoffee.com/pages/greenlake-zok'>Zoka Coffee</a></li>
+        <li><b>Upper Fremont ~ </b><a href='https://lighthouseroasters.com/'>Lighthouse Roasters</a></li>
+        <!--<li><b>Udistrict ~ </b> <a href='https://www.facebook.com/4cornersframe/'>Four Corners Art and Frame</a></li>
+        <li><b>Ballard ~ </b> <a href='https://www.monsterartandclothing.com/'>Monster: Art, Clothing &amp; Gifts</a></li>
         <li><b>Capitol Hill ~ </b> <a href='https://www.elliottbaybook.com/'>Elliott Bay Book Company</a></li>
-        <li><b>Downtown ~ </b> <a href='https://www.leftbankbooks.com/'>Left Bank Books</a></li>
+        <li><b>Downtown ~ </b> <a href='https://www.leftbankbooks.com/'>Left Bank Books</a></li>-->
       </ul>
-      <div class="center cardpix"><img src="../../images/links/cards2.jpg" width="33%" alt-text="Cards FCAF"><img src="../../images/links/cards1.jpg" width="33%" alt-text="Cards EBBC"><img src="../../images/links/cards3.jpg" width="33%" alt-text="Cards LBB"></div>
+      <!--<div class="center cardpix"><img src="../../images/links/cards2.jpg" width="33%" alt-text="Cards FCAF"><img src="../../images/links/cards1.jpg" width="33%" alt-text="Cards EBBC"><img src="../../images/links/cards3.jpg" width="33%" alt-text="Cards LBB"></div>-->
+      <div class="center cardpix"><img src="../../images/links/cards4.jpg" width="33%" alt-text="Cards LHR"><img src="../../images/links/cards6.jpg" width="33%" alt-text="Cards fan LHR 1"><img src="../../images/links/cards5.jpg" width="33%" alt-text="Cards ZKC"></div>
     </div>
 </div>
 <div class='container'>

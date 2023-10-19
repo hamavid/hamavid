@@ -9,7 +9,7 @@ cssjsfile: "art_portfolio"
 <a href="../links"><button class="btn white"></i>Links</button></a>
 </nav>
 <div class='center bottombar'>
-<p class="center text-grey"><span class="text-teal" style="font-weight:bold;">Click any thumbnail to open full images and descriptions.</span><br>Notecards and prints available for purchase on <a href="https://hamavid.etsy.com">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
+<p class="center text-grey"><span class="text-teal" style="font-size:1.5em;">Click any thumbnail to open full images and descriptions.</span><br>Notecards and prints available for purchase on <a href="https://hamavid.etsy.com">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
 <!-- Filter-->
 <div id='filterby-outer'><span>Filter by: </span>
   <select id='filterby'>
@@ -34,6 +34,9 @@ cssjsfile: "art_portfolio"
 <!-- Photo Grid -->
   <div id="gridpocket">
     <div id="grid">
+      <span><div class="vt drawing" data-src='../../images/portfolio/thumbs/thankyou-ambi.png' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="vt drawing" data-src='../../images/portfolio/thumbs/hbd-ambi.png' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="vt print commissions" data-src='../../images/portfolio/thumbs/owlrockfarm.png' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
       <span><div class="vt print" data-src='../../images/portfolio/thumbs/6or7.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
       <span><div class="vt print" data-src='../../images/portfolio/thumbs/whatjoyisyours.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
       <span><div class="vt wood" data-src='../../images/portfolio/thumbs/staircasetable.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
@@ -174,6 +177,9 @@ cssjsfile: "art_portfolio"
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
     <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/thankyou-ambi.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Thank you ambigram:</b></i> Micron marker on paper - Oct, 2023</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hbd-ambi.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Happy birthday ambigram:</b></i> Micron marker on paper - Oct, 2023</span></figcaption></figure>
+<figure class="print commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/owlrockfarm.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Owl Rock Farm:</b></i> Commissioned linoleum block print logo - Aug, 2023</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/6or7.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>6 or 7:</b></i> Linoleum block print - Jan, 2023</span></figcaption></figure>
 <figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/whatjoyisyours.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>What Joy is Yours:</b></i> Linoleum block print on paper for Brivele EP - May, 2022</span></figcaption></figure>
 <figure class="wood"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/staircasetable.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Staircase table:</b></i> Walnut and recycled pine, beeswax - Apr, 2022</span></figcaption></figure>

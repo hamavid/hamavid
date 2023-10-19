@@ -12,3 +12,4 @@ b a, b a:link,b a:visited,b a:hover,b a:active{
 .fa-bandcamp:hover{color:#629aa9;}
 .fa-facebook:hover{color:#3b5998;}
 .fa-instagram:hover{color:#e1306c;}
+.musiclinks a{font-style:italic;font-size:0.9em;text-decoration: underline;}
