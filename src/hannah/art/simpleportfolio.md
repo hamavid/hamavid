@@ -44,6 +44,7 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/hbd-2.png">Happy/Birth Day ambigram:</a> Micron marker on paper - Oct, 2023</li>
 <li><a href="../../images/portfolio/thankyou-ambi.png">Thank You ambigram:</a> Micron marker on paper - Oct, 2023</li>
 <li><a href="../../images/portfolio/hbd-ambi.png">Happy Birthday ambigram:</a> Micron marker on paper - Oct, 2023</li>
 <li><a href="../../images/portfolio/owlrockfarm.png">Owl Rock Farm:</a> Commissioned linoleum block print on paper - Aug, 2023</li>
@@ -159,7 +160,7 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 <li><a href="../../images/portfolio/reach.jpg">Reach</a> Chalk pastel on paper - 2005.</li>
 <li><a href="../../images/portfolio/donghu.jpeg">Dong hu</a> East lake, Wuhan, China. Watercolor and pencil on paper - 2004.</li>
 <li><a href="../../images/portfolio/citycold.jpg">Cold city</a> Watercolor on paper - 2004.</li>
-<li><a href="../../images/portfolio/winter sunset.jpg">Winter sunset</a> Watercolor on paper - 2004.</li>
+<li><a href="../../images/portfolio/wintersunset.JPG">Winter sunset</a> Watercolor on paper - 2004.</li>
 <li><a href="../../images/portfolio/arboretum.jpeg">Boston arboretum</a> Watercolor and pencil on paper - 2003.</li>
 <li><a href="../../images/portfolio/stormy beach.jpeg">Stormy beach</a> Watercolor and pencil on paper - 2003.</li>
 <li><a href="../../images/portfolio/thorndike pond.jpeg">Thorndike pond</a>  New Hampshire. Watercolor and pencil on paper - 2002.</li>
