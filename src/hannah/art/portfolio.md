@@ -7,6 +7,7 @@ cssjsfile: "art_portfolio"
 <a href="../portfolio"><button class="btn">Portfolio</button></a>
 <a href="../shows"><button class="btn white"></i>Shows</button></a>
 <a href="../links"><button class="btn white"></i>Links</button></a>
+<a href="http://hamavid.etsy.com/"><button class="btn white"></i>Shop</button></a>
 </nav>
 <div class='center bottombar'>
 <p class="center text-grey"><span class="text-teal" style="font-size:1.5em;">Click any thumbnail to open full images and descriptions.</span><br>Notecards and prints available for purchase on <a href="https://hamavid.etsy.com">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
