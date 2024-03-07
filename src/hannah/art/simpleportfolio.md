@@ -44,6 +44,11 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 
 <!-- Portfolio list with image links -->
 <ul>
+<li><a href="../../images/portfolio/nude3.jpg">Nude speed study 3:</a> Watercolor on paper - Jan, 2024</li>
+<li><a href="../../images/portfolio/nude2.jpg">Nude speed study 2:</a> Watercolor on paper - Jan, 2024</li>
+<li><a href="../../images/portfolio/nude1.jpg">Nude speed study 1:</a> Watercolor on paper - Jan, 2024</li>
+<li><a href="../../images/portfolio/pineapple.jpg">Ta-da, pineapple!:</a> Commissioned watercolor, glue, and micron marker on paper - Jan, 2024</li>
+<li><a href="../../images/portfolio/merryxmas4.png">Merry Xmas ambigram:</a> Micron marker on paper - Dec, 2023</li>
 <li><a href="../../images/portfolio/hbd-2.png">Happy/Birth Day ambigram:</a> Micron marker on paper - Oct, 2023</li>
 <li><a href="../../images/portfolio/thankyou-ambi.png">Thank You ambigram:</a> Micron marker on paper - Oct, 2023</li>
 <li><a href="../../images/portfolio/hbd-ambi.png">Happy Birthday ambigram:</a> Micron marker on paper - Oct, 2023</li>
@@ -92,6 +97,7 @@ ul a, span a{text-decoration:underline;font-weight:bold;}
 <li><a href="../../images/portfolio/flowers color.jpeg">Flowers, in color:</a> Linoleum block print with watercolor - Apr, 2018</li>
 <li><a href="../../images/portfolio/flowers bnw.jpeg">Flowers:</a> Linoleum block print - Mar, 2018</li>
 <li><a href="../../images/portfolio/mailbox.jpg">Mailbox:</a> Acrylic on aluminum - Mar, 2018</li>
+<li><a href="../../images/portfolio/masher.jpg">Masher:</a> Pencil on paper - Feb, 2018</li>
 <li><a href="../../images/portfolio/double drop knee.jpeg">Double drop knee:</a> Linoleum block print - Feb, 2018</li>
 <li><a href="../../images/portfolio/jc wedding front.jpeg">C&J's wedding, front:</a> Watercolor on paper - Jan, 2018</li>
 <li><a href="../../images/portfolio/jc wedding back.jpeg">C&J's wedding, back:</a> Watercolor on paper - Jan, 2018</li>
