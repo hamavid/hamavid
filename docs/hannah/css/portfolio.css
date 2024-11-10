@@ -33,9 +33,9 @@ this is unintuitive I THINK because of the centering transforms already on the e
 it looks a little off from being quite the center
 so i'm not sure if something else is more elegant but here we are  */
    	-webkit-transform-origin: 50% 0%;
-	-moz-transform-origin: 50% 0%;
-	-o-transform-origin: 50% 0%;
-	transform-origin: 50% 0%;
+  	-moz-transform-origin: 50% 0%;
+  	-o-transform-origin: 50% 0%;
+  	transform-origin: 50% 0%;
 }
 figcaption {
 	width:100%;max-width:600px;
@@ -51,6 +51,8 @@ figcaption {
     opacity:1;
     z-index:4;
 }
+/* compensating for weird offset on rotation that I can't quite figure out */
+#bigimg img.rotated {left:0.5em!important;}
 
 /* x for closing the zoomin div, although clicking outside of image also works */
 #figclose {

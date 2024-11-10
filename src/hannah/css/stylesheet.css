@@ -34,7 +34,7 @@ textarea{overflow:auto}
 /* End extract from normalize.css */
 
 /* General styles */
-html{font-family:Lora, Ubuntu, sans-serif;}
+html{font-family:Lora, serif;}
 footer{text-align:center;}
 .content {margin:auto;padding:1em;max-width:830px;line-height: 1.5em;padding-top:80px;}
 a:link,a:visited,a:hover,a:active{}
@@ -45,7 +45,7 @@ h2{text-align:center;}
 .lefter,.righter,.middler{margin:2.5em 1em;padding:2em;}
 .lefter{margin-left:-3em!important;border-radius:0 3em 3em 0;}
 .righter{margin-right:-3em!important;border-radius:3em 0 0 3em;}
-.middler{border-radius:3em;}
+.middler{border-radius:1em;}
 /* make media query for padding only on small screens */
 @media screen and (max-width:1030px) {
 	.lefter{padding-left:3.5em;}
@@ -57,7 +57,6 @@ h2{text-align:center;}
 .nest a div{
 	margin-top:3em;margin-bottom:3em;
 	line-height: 1em!important;
-	font-family:Ubuntu, sans-serif;
 	padding:1.5em;width:400px;max-width:100%;
 }
 .nest a{text-decoration:none;width:400px;max-width:100%;display:block;margin:auto;} 
@@ -68,13 +67,19 @@ a.lefty, .lefty{margin-left:0;margin-right:auto;}
 
 /* color schemes */
 .grey-blue, .grey-blue a {color:#e1eaf7;background-color:#51647e;}
+.pale a{color:#384a63;background-color:rgba(225,234,247,0);}
+.pale, .pale .nest a {color:#384a63;background-color: rgba(225,234,247,0.7)}
+.pale .nest div:hover {
+	box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important
+}
+/* not using as of 11/10/24 
 .light-green, .light-green a {color:#2f5443;background-color:#bee5d3}
 .yellowish, .yellowish a {color:#a86807;background-color:#fedfb0;}
 .orangeish, .orangeish a{color:#af3604;background-color:#fba17b;}
 .light-green .nest div, .light-green .nest div a{background-color:#abd0be;}
 .yellowish .nest div, .yellowish .nest div a{background-color:#efc98e;}
 .orangeish .nest div, .orangeish .nest div a{background-color:#ef8d63;}
-/*.yellowish .nest div {background-image: radial-gradient(ellipse at center, #efc98e, #fedfb0);}*/
+.yellowish .nest div {background-image: radial-gradient(ellipse at center, #efc98e, #fedfb0);}*/
 
 /* control look and behavior of top navbar and its contents for diff window sizes */
 #topnav{position:fixed;width:100%;z-index:2;}
