@@ -37,7 +37,7 @@ metalsmith(__dirname)
   .use(drafts())
   .use(collections({
       hannahblog: {
-        pattern: ['hannah/blog/**/*.md', '!hannah/blog/**/index.md'],
+        pattern: ['hannah/archive/2016_2024/blog/**/*.md', '!hannah/archive/2016_2024/blog/**/index.md'],
         sortBy: 'date',
         reverse: true
       },
@@ -46,7 +46,7 @@ metalsmith(__dirname)
   .use(layouts({
       engine: 'handlebars',
       directory: './layouts',
-      pattern: ["*/*/*html","*/*html","*html"],
+      pattern: ["*/*/*/*/*html","*/*/*/*html","*/*/*html","*/*html","*html"],
       partials: {
         HHblog_aboutheader: 'partials/HHblog_aboutheader',
         HHartheader: 'partials/HHartheader',

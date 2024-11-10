@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<head>
+<title>Portfolio - ART | Hannah Hamavid</title>
+<meta name="keywords" content="Hamavid, Hamavid.com, Hannah Hamavid, art, watercolor"/>
+<link rel="icon" href="../images/favicon-32x32.png">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--Thematic address bar color on mobile-->
+<meta name="theme-color" content="#7fcac3" />
+<meta name="msapplication-navbutton-color" content="#7fcac3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#7fcac3">
+<!-- STYLES -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
+<link rel="stylesheet" type="text/css" href="../../../../../css/fa-all.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/general_style.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/art_portfolio.css"/>
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.sidenav a,.sidenav h4 {font-weight:bold}
+</style>
+<!-- SCRIPTS -->
+<!--<script type="text/javascript" src="../../../js/googleanalytics.js"></script>-->
+<script type="text/javascript" src="../../../../../js/jquery-3.1.1.min.js"></script>
+<script type='text/javascript' src='../../../../../js/jquery.touchwipe.min.js'></script>
+<script type="text/javascript" src="../../../../js/general_fxns.js"></script>
+<script type="text/javascript" src="../../js/art_portfolio.js"></script>
+<!--<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script> Enables Pinterest button-->
+</head>
+
+<!--////////////////////////////////////////////////////////////////// -->
+
+<body class="light-grey content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="sidenav collapse white animate-left" style="z-index:3;width:180px;" id="sidenav"><br>
+  <div class="container">
+    <a href="#" onclick="close_sidenav()" class="hide-large" aria-label="Close menu"><i style="float:right;" class="fas fa-times-circle fa-2x"></i></a>
+    <!--<h1 class="padding-0"><b>ART</b></h1>-->
+    <div class="padding-16"><img src="../../images/ART-bold-bgwhite.png" width="70px" alt-text="ART" title="Art"></div>
+  </div>
+  <a class='navbutt text-teal' href="../../">HOME</a>
+  <a class='navbutt' href="../portfolio">&#x1f648 ART</a>
+  <a class='navbutt' href="../../music">&#x1f649 MUSIC</a>
+  <a class='navbutt' href="../../blog">&#x1f64a BLOG</a>
+  <!--<a href="../../about" class="padding">ABOUT</a>-->
+   
+   
+  <div class="social-links section">
+    <!--<a href="https://soundcloud.com/hamavid" class="hover-white hover-text-red-orange show-inline-block" aria-label="Soundcloud"><i class="fab fa-soundcloud"></i></a>-->
+    <!--<a href="#" class="hover-white hover-text-indigo show-inline-block"><i class="fa fa-linkedin"></i></a>-->
+    <!--<a href="https://www.pinterest.com/hannahhamavid/" class="hover-white hover-text-red show-inline-block"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+    <a href="https://hamavid.etsy.com" style="font-size:0.8em" class="hover-white hover-text-orange show-inline-block" aria-label="Etsy"><i class="fab fa-etsy" aria-hidden="true"></i></a>-->
+    <a href="https://soundcloud.com/hamavid" class="hover-white hover-text-red-orange show-inline-block">Soundcloud</a>
+    <a href="https://hamavid.etsy.com" class="hover-white hover-text-orange show-inline-block">Etsy</a>
+    <a href="https://www.instagram.com/hahahamavid/" class="hover-white hover-text-orange show-inline-block">Instagram</a>
+  </div> 
+
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="overlay hide-large animate-opacity" onclick="close_sidenav()" style="cursor:pointer" title="close side menu" id="overlaySidenav"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:180px">
+
+  <!-- Header -->
+  <header class="container">
+    <span class="opennav hide-large xxlarge hover-text-grey" onclick="open_sidenav()"><i class="fa fa-bars" style="margin-top:9px"></i></span>
+    <div class="center"><a href="/hannah"><img src="../../images/HannahHamavid-normal.png" width="90%" style="margin-top:24px;max-width:450px;" alt-text="Hannah Hamavid" title="Hannah Hamavid"></a></div>
+    <nav class="center bottombar" style="padding-bottom:16px;">
+  <p><a href="../portfolio"><button class="btn">Portfolio</button></a>
+<a href="../shows"><button class="btn white"></i>Shows</button></a>
+<a href="../links"><button class="btn white"></i>Links</button></a>
+<a href="http://hamavid.etsy.com/"><button class="btn white"></i>Shop</button></a>
+</nav></p>
+<div class='center bottombar'>
+<p class="center text-grey"><span class="text-teal" style="font-size:1.5em;">Click any thumbnail to open full images and descriptions.</span><br>Notecards and prints available for purchase on <a href="https://hamavid.etsy.com">Etsy</a>.<!--<br>Contact me for commissions or additional prints.--><br>Click <a style="cursor:pointer" href="../simpleportfolio">here</a> for a simple version of this page.</p>
+<!-- Filter-->
+<div id='filterby-outer'><span>Filter by: </span>
+  <select id='filterby'>
+  <option value='all'>All</option>
+  <option value='print'>Block prints</option>
+  <option value='watercolor'>Watercolors</option>
+  <option value='acrylic'>Acrylics</option>
+  <option value='drawing'>Drawings</option>
+  <option value='design'>Graphic design</option>
+  <option value='wood'>Wood</option>
+  <option value='sewing'>Textile</option>
+  <option value='cat'>Cats</option>
+  <option value='mercreature'>Mer-creatures</option>
+  <option value='commissions'>Commissions</option>
+  </select>
+</div><br>
+</header>
+
+<!-- shortcut button back to top -->
+<span class="backtotop btn black"><a href="#"><i class="fa fa-angle-double-up"></i> Back to top</a></span>
+
+<!-- Photo Grid -->
+  <div id="gridpocket">
+    <div id="grid">
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/nude3.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/nude2.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/nude1.jpg' style="background: url('../../images/portfolio/blank.png') 100% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor drawing" data-src='../../images/portfolio/thumbs/pineapple.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt drawing design" data-src='../../images/portfolio/thumbs/merryxmas4.png' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt drawing design" data-src='../../images/portfolio/thumbs/hbd-2.png' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt drawing design" data-src='../../images/portfolio/thumbs/thankyou-ambi.png' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="vt drawing design" data-src='../../images/portfolio/thumbs/hbd-ambi.png' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="vt print commissions" data-src='../../images/portfolio/thumbs/owlrockfarm.png' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/6or7.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/whatjoyisyours.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <span><div class="vt wood" data-src='../../images/portfolio/thumbs/staircasetable.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt sewing" data-src='../../images/portfolio/thumbs/disintegratingcheckerboard.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz sewing" data-src='../../images/portfolio/thumbs/turtlequilt.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt design commissions" data-src='../../images/portfolio/thumbs/judith.png' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt wood" data-src='../../images/portfolio/thumbs/puzzletable.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt design" data-src='../../images/portfolio/thumbs/goingthesocialdistance.jpg' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/hotstuff.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/hotienar.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/duckling.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt drawing" data-src='../../images/portfolio/thumbs/houseshowsoup.png' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt design" data-src='../../images/portfolio/thumbs/give6feet.png' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt design" data-src='../../images/portfolio/thumbs/zippy2.png' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <span><div class="vt print design commissions" data-src='../../images/portfolio/thumbs/canary-collage.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt print watercolor commissions" data-src='../../images/portfolio/thumbs/tulip.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/violin.jpeg' style="background: url('../../images/portfolio/blank.png') 30% 0% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/puzzletree.jpg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/birdincage.jpg' style="background: url('../../images/portfolio/blank.png') 0% 20% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/monarch.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 70% no-repeat;"></div></span>
+      <span><div class="vt design" data-src='../../images/portfolio/thumbs/instrumentsvertical.png' style="background: url('../../images/portfolio/blank.png') 0% 80% no-repeat;"></div></span>
+      <span><div class="hz design" data-src='../../images/portfolio/thumbs/homesteadflyer.png' style="background: url('../../images/portfolio/blank.png') 80% 0% no-repeat;"></div></span>
+      <span><div class="hz drawing commissions" data-src='../../images/portfolio/thumbs/thislandissacred.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor drawing commissions" data-src='../../images/portfolio/thumbs/timhstained.png' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz print commissions" data-src='../../images/portfolio/thumbs/canarycover.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor commissions" data-src='../../images/portfolio/thumbs/partingthesea.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/returnaddystamp.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz drawing" data-src='../../images/portfolio/thumbs/savethedate4panels.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt design" data-src='../../images/portfolio/thumbs/altlib.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt drawing commissions" data-src='../../images/portfolio/thumbs/fenderbender.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 50% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/garlic.jpg' style="background: url('../../images/portfolio/blank.png') 0% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/glacier.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print watercolor mercreature" data-src='../../images/portfolio/thumbs/twofish.jpg' style="background: url('../../images/portfolio/blank.png') 0% 50% no-repeat;"></div></span>
+      <span><div class="hz print mercreature" data-src='../../images/portfolio/thumbs/fish.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/tagalong.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/papaya.jpg' style="background: url('../../images/portfolio/blank.png') 30% 0% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/heart.jpg' style="background: url('../../images/portfolio/blank.png') 0% 20% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/selfieincar.jpg' style="background: url('../../images/portfolio/blank.png') 40% 0% no-repeat;"></div></span>
+      <span><div class="hz drawing commissions" data-src='../../images/portfolio/thumbs/countercurrent-exchange.jpg' style="background: url('../../images/portfolio/blank.png') 58% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor commissions" data-src='../../images/portfolio/thumbs/shiraamuka.jpg' style="background: url('../../images/portfolio/blank.png') 40% 0% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/dogs-manybest.jpeg' style="background: url('../../images/portfolio/blank.png') 60% 0% no-repeat;"></div></span>
+      <span><div class="vt print commissions" data-src='../../images/portfolio/thumbs/flowerscolor.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 50% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/flowersbnw.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 50% no-repeat;"></div></span>
+      <span><div class="hz design" data-src='../../images/portfolio/thumbs/alittlelettercollage.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/briveletriptych.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz acrylic mercreature commissions" data-src='../../images/portfolio/thumbs/mailbox.jpg' style="background: url('../../images/portfolio/blank.png') 20% 0% no-repeat;"></div></span>
+      <span><div class="vt drawing" data-src='../../images/portfolio/thumbs/masher.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/frenchhorn.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/doubledropknee.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 40% no-repeat;"></div></span>
+      <span><div class="hz watercolor commissions" data-src='../../images/portfolio/thumbs/jcweddingfront.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor commissions" data-src='../../images/portfolio/thumbs/jcweddingback.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/waterfall.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/thinkerseriescolor.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 50% no-repeat;"></div></span>
+      <span><div class="hz print cat commissions watercolor" data-src='../../images/portfolio/thumbs/shiracats.jpeg' style="background: url('../../images/portfolio/blank.png') 5% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/diner.jpg' style="background: url('../../images/portfolio/blank.png') 40% 0% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/rosetta.jpeg' style="background: url('../../images/portfolio/blank.png') 30% 0% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/logoprint.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print commissions" data-src='../../images/portfolio/thumbs/SDpainted.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 40% no-repeat;"></div></span>
+      <span><div class="hz print commissions" data-src='../../images/portfolio/thumbs/reader-zhiyin.jpeg' style="background: url('../../images/portfolio/blank.png') 45% 0% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/reader-orig.jpeg' style="background: url('../../images/portfolio/blank.png') 45% 0% no-repeat;"></div></span>
+      <span><div class="vt print mercreature" data-src='../../images/portfolio/thumbs/inker.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 10% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/stinker.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+        <span><div class="hz watercolor commissions" data-src='../../images/portfolio/thumbs/kaeleybird.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/colchuck.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/drinker.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print mercreature" data-src='../../images/portfolio/thumbs/sinker.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/guardingthelight.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <!--<span><div class="vt print" style="background: url('../../images/portfolio/thumbs/linosunset.jpeg') 50% 25% no-repeat;"></div></span>-->
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/linobike.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="vt print cat" data-src='../../images/portfolio/thumbs/linopogo.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt acrylic mercreature" data-src='../../images/portfolio/thumbs/paintnsipmermaid.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/linobass.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/linopiano.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor commissions" data-src='../../images/portfolio/thumbs/foxandbirches.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/linoukulele.jpeg' style="background: url('../../images/portfolio/blank.png') 15% 50% no-repeat;"></div></span>
+      <span><div class="vt print" data-src='../../images/portfolio/thumbs/linogotyourback.jpeg' style="background: url('../../images/portfolio/blank.png') 15% 50% no-repeat;"></div></span>
+      <span><div class="hz print" data-src='../../images/portfolio/thumbs/linoface.jpeg' style="background: url('../../images/portfolio/blank.png') 15% 50% no-repeat;"></div></span>
+      <span><div class="vt drawing cat" data-src='../../images/portfolio/thumbs/pogoinboxsketch.jpeg' style="background: url('../../images/portfolio/blank.png') 15% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/floodthestreets.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor cat" data-src='../../images/portfolio/thumbs/benandpogo.jpg' style="background: url('../../images/portfolio/blank.png') 0% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor cat" data-src='../../images/portfolio/thumbs/pokemongo.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor cat" data-src='../../images/portfolio/thumbs/pogo_bliss.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/parachute.jpg' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/two_lilies.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/green_sky.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/twisty_tree.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/swirlies.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/canyondechelly.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+         <span><div class="hz acrylic" data-src='../../images/portfolio/thumbs/seattleskyline.jpg' style="background: url('../../images/portfolio/blank.png') 90% 50% no-repeat;"></div></span>
+      <span><div class="hz acrylic" data-src='../../images/portfolio/thumbs/duck.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz acrylic" data-src='../../images/portfolio/thumbs/davis_longline.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz acrylic" data-src='../../images/portfolio/thumbs/izzy_baremtn.jpg' style="background: url('../../images/portfolio/blank.png') 100% 50% no-repeat;"></div></span>
+      <span><div class="hz acrylic mercreature" data-src='../../images/portfolio/thumbs/coffee_angels.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt acrylic mercreature" data-src='../../images/portfolio/thumbs/mermaid.jpg' style="background: url('../../images/portfolio/blank.png') 0% 0% no-repeat;"></div></span>
+      <span><div class="hz drawing" data-src='../../images/portfolio/thumbs/bensketch.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/orchidrose.JPG' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/eyeonthepry.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/huanggua.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/bund.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/aubrey.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/nanjinglu.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/moped.jpg' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <!--<span><div class="vt" style="background: url('../../images/portfolio/thumbs/lineface.jpg') 50% 25% no-repeat;"></div></span>-->
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/tigerlily.jpeg' style="background: url('../../images/portfolio/blank.png') 0% 25% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/moroccanman.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/rainbow.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/hula.jpg' style="background: url('../../images/portfolio/blank.png') 50% 25% no-repeat;"></div></span>
+      <span><div class="hz acrylic" data-src='../../images/portfolio/thumbs/LHandR.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz drawing" data-src='../../images/portfolio/thumbs/hamletp5.jpg' style="background: url('../../images/portfolio/blank.png') 0% 50% no-repeat;"></div></span>
+      <span><div class="vt drawing" data-src='../../images/portfolio/thumbs/hamletp10.png' style="background: url('../../images/portfolio/blank.png') 50% 0% no-repeat;"></div></span>
+      <span><div class="vt acrylic" data-src='../../images/portfolio/thumbs/sunflowers.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt drawing" data-src='../../images/portfolio/thumbs/nude.JPG' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt drawing mercreature" data-src='../../images/portfolio/thumbs/falling.jpg' style="background: url('../../images/portfolio/blank.png') 50% 25% no-repeat;"></div></span>
+      <span><div class="vt drawing mercreature" data-src='../../images/portfolio/thumbs/beached.JPG' style="background: url('../../images/portfolio/blank.png') 50% 100% no-repeat;"></div></span>
+      <span><div class="vt drawing" data-src='../../images/portfolio/thumbs/reach.jpg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/donghu.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/citycold.JPG' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="vt watercolor" data-src='../../images/portfolio/thumbs/wintersunset.JPG' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/arboretum.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/stormybeach.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+      <span><div class="hz watercolor" data-src='../../images/portfolio/thumbs/thorndikepond.jpeg' style="background: url('../../images/portfolio/blank.png') 50% 50% no-repeat;"></div></span>
+
+
+</div>
+</div> 
+<!-- Clear floats (to keep grid to itself)-->
+<div class="clear"></div><br><br>
+</div>
+
+
+<!-- Photos as slideshow overlay -->
+<div id="slideshow" class="overlay animate-left" style="margin-left:180px">
+  <div class="topband"></div>
+  <div class="bottomband"></div>
+  <div class="overlay-content">
+  <div id=top-info>
+    <span id="slidefilter" class='clear'><i class="fa fa-angle-double-up fa-lg"></i><span id='tellme'></span></span>
+  </div>
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a class="leftscroller"><i class="fa fa-angle-left fa-2x"></i></a>
+    <a class="rightscroller"><i class="fa fa-angle-right fa-2x"></i></a>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/nude3.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Nude speed study 3:</b></i> Watercolor on paper - Jan, 2024</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/nude2.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Nude speed study 2:</b></i> Watercolor on paper - Jan, 2024</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/nude1.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Nude speed study 1:</b></i> Watercolor on paper - Jan, 2024</span></figcaption></figure>
+<figure class="drawing watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/pineapple.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Ta-da, pineapple!:</b></i> Commissioned watercolor, glue, and micron marker on paper - Jan, 2024</span></figcaption></figure>
+<figure class="drawing design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/merryxmas4.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Merry Xmas ambigram:</b></i> Micron marker on paper - Dec, 2023</span></figcaption></figure>
+<figure class="drawing design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hbd-2.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Happy/Birth Day ambigram:</b></i> Micron marker on paper - Oct, 2023</span></figcaption></figure>
+<figure class="drawing design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/thankyou-ambi.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Thank you ambigram:</b></i> Micron marker on paper - Oct, 2023</span></figcaption></figure>
+<figure class="drawing design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hbd-ambi.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Happy birthday ambigram:</b></i> Micron marker on paper - Oct, 2023</span></figcaption></figure>
+<figure class="print commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/owlrockfarm.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Owl Rock Farm:</b></i> Commissioned linoleum block print logo - Aug, 2023</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/6or7.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>6 or 7:</b></i> Linoleum block print - Jan, 2023</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/whatjoyisyours.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>What Joy is Yours:</b></i> Linoleum block print on paper for Brivele EP - May, 2022</span></figcaption></figure>
+<figure class="wood"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/staircasetable.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Staircase table:</b></i> Walnut and recycled pine, beeswax - Apr, 2022</span></figcaption></figure>
+<figure class="sewing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/disintegratingcheckerboard.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Disintegrating checkerboard quilt:</b></i> Polar fleece - Feb, 2022</span></figcaption></figure>
+<figure class="sewing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/turtlequilt.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Turtles All the Way Down quilt:</b></i> Turtle batik, scrap cotton, batting - Jan, 2022</span></figcaption></figure>
+<figure class="design commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/judith.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>From the Judith Archives:</b></i> Commissioned stamp design - Jan, 2022</span></figcaption></figure>
+<figure class="wood"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/puzzletable.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Puzzle table:</b></i> Recycled Ikea bed slats, polyurethane - Apr, 2021</span></figcaption></figure>
+<figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/goingthesocialdistance.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Going the Social Distance:</b></i> T-Shirt Design for 5k/10k/half marathon - Oct, 2020</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hotstuff.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fire Cider:</b></i> Linoleum block print on paper - Oct, 2020</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hotienar.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hot Ienar:</b></i> Linoleum block print on paper - Oct, 2020</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/duckling.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Duckling:</b></i> Rubber block print on paper - Sep, 2020</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/houseshowsoup.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>House Show Soup:</b></i> Drawing on paper - Sep, 2020</span></figcaption></figure>
+<figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/give6feet.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Give 6 feet:</b></i> Joke design in Mac Preview - Apr, 2020</span></figcaption></figure>
+<figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/zippy2.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Brivele at Cafe Zippy:</b></i> Show poster - Dec, 2019</span></figcaption></figure>
+<figure class="print design commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/canary-collage.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Canary Collective, Vol I:</b></i> Commisssioned album and disc design - Dec, 2019</span></figcaption></figure>
+<figure class="print watercolor commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/tulip.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Portrait of Tulip:</b></i> Commisssioned linoleum block print with watercolor - Dec, 2019</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/violin.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Violin:</b></i> Linoleum block print - Nov, 2019</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/puzzletree.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Puzzle tree:</b></i> Linoleum block print - Oct, 2019</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/birdincage.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bird in Cage:</b></i> Two layer reduction block print - Aug, 2019</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/monarch.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Monarch:</b></i> Three layer reduction block print - Aug, 2019</span></figcaption></figure>
+<figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/instrumentsvertical.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>East coast tour poster:</b></i> Inkscape - Aug, 2019</span></figcaption></figure>
+<figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/homesteadflyer.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Homestead show poster:</b></i> Preview and Inkscape - Jul, 2019</span></figcaption></figure>
+<figure class="drawing commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/thislandissacred.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>This Land is Sacred:</b></i> Commissioned drawing on canvas banner for Sierra Club, to be interactively painted in by participants on campaign to protect the Arctic refuge - Jun, 2019</span></figcaption></figure>
+<figure class="watercolor drawing commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/timh stained.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Talmud is my home:</b></i> Commissioned watercolor with gold paint and micron marker on paper - Jun, 2019</span></figcaption></figure>
+<figure class="print commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/canarycover.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Canaries escaping the coal mine:</b></i> Commissioned three layer reduction block print for KPH Canary Collective album cover - Apr, 2019</span></figcaption></figure>
+<figure class="watercolor commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/partingthesea.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Parting the Sea:</b></i> Commissioned watercolor on paper - Mar, 2019</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/returnaddystamp.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Return address:</b></i> Handcarved rubber stamp - Mar, 2019</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/savethedate4panels.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Save the Date:</b></i> Micron marker on paper - Feb, 2019</span></figcaption></figure>
+<figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/altlib.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bellingham show poster:</b></i> Inkscape - Feb, 2019</span></figcaption></figure>
+<figure class="drawing commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/fenderbender.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fender bender, thick and thin:</b></i> Commissioned logo, micron marker on paper - Dec, 2018</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/garlic.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Garlic:</b></i> Linoleum block print - Dec, 2018</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/glacier.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Glacier:</b></i> Watercolor and micron marker on paper - Nov, 2018</span></figcaption></figure>
+<figure class="print watercolor mercreature"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/twofish.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fish:</b></i> Linoleum block prints with watercolor - Nov, 2018</span></figcaption></figure>
+<figure class="print mercreature"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/fish.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fish:</b></i> Linoleum block print - Nov, 2018</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/tagalong.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Tagalong:</b></i> Watercolor and micron marker on paper - Oct, 2018</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/papaya.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Papaya:</b></i> Watercolor and micron marker on paper - Oct, 2018</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/heart.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Heart:</b></i> Watercolor and micron marker on paper - Oct, 2018</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/selfieincar.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Selfie in the Car:</b></i> Linoleum block print - Oct, 2018</span></figcaption></figure>
+<figure class="drawing commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/countercurrent-exchange copy.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Countercurrent - Exchange:</b></i> Commissioned drawing for album cover - Sep, 2018</span></figcaption></figure>
+<figure class="watercolor commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/shiraamuka.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The House in Amuka:</b></i> Commissioned watercolor on paper - Aug, 2018</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/dogs-manybest.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Four dogs:</b></i> Linoleum block print - Jun, 2018</span></figcaption></figure>
+<figure class="print commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/flowers color.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Flowers, in color:</b></i> Linoleum block print with watercolor - Apr, 2018</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/flowers bnw.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Flowers:</b></i> Linoleum block print - Mar, 2018</span></figcaption></figure>
+<figure class="design"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/alittlelettercollage.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>A Little Letter:</b></i> Album design - Mar, 2018</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/briveletriptych.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Brivele triptych:</b></i> Handcarved rubber stamp - Mar, 2018</span></figcaption></figure>
+<figure class="acrylic mercreature commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/mailbox.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Angler fish mailbox:</b></i> Acrylic on aluminum - Mar, 2018</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/masher.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Masher:</b></i> Pencil on paper - Feb, 2018</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/french horn.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>French horn:</b></i> Linoleum block print - Feb, 2018</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/double drop knee.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Double drop knee:</b></i> Linoleum block print - Feb, 2018</span></figcaption></figure>
+<figure class="watercolor commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/jc wedding front.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>C&amp;J&#39;s wedding, front:</b></i> Watercolor on paper - Jan, 2018</span></figcaption></figure>
+<figure class="watercolor commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/jc wedding back.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>C&amp;J&#39;s wedding, back:</b></i> Watercolor on paper - Jan, 2018</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/waterfall.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Waterfall on a tributary to the middle middle:</b></i> Watercolor on paper - Jan, 2018</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/thinker series color.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Thinker Series, major arcana-style:</b></i> Linoleum block print, handcarved rubber stamp, and watercolor on paper - Dec, 2017</span></figcaption></figure>
+<figure class="print cat commissions watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/shiracats.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hamilton and Stringer Bell on the grass:</b></i> Commissioned linoleum block print with watercolor - Dec, 2017</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/diner.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>North Bend in the morning:</b></i> Watercolor and pencil on paper - Nov, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/rosetta.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Rosetta:</b></i> Linoleum block print - Nov, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/logo print.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Brivele palindrome logo:</b></i> Linoleum block print - Nov, 2017</span></figcaption></figure>
+<figure class="print commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/SD painted.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>C&amp;J&#39;s Save the Date:</b></i> Commissioned linoleum block print with ink lettering - Oct, 2017</span></figcaption></figure>
+<figure class="print commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/reader-zhiyin.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Reader [customized]:</b></i> Commissioned version of linoleum block print, with watercolor and pen - Sep, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/reader-orig.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Reader:</b></i> Linoleum block print - Sep, 2017</span></figcaption></figure>
+<figure class="print mercreature"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/inker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Inker:</b></i> Linoleum block print - Aug, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/stinker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Stinker:</b></i> Linoleum block print - Jul, 2017</span></figcaption></figure>
+<figure class="watercolor commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/kaeleybird.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bird and sun:</b></i> Commissioned track art for &#39;Interruptor&#39; by KPH music. Watercolor on paper - Jul, 2017</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/colchuck.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Colchuck lake:</b></i> Watercolor on paper - Jul, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/drinker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Drinker:</b></i> Linoleum block print - Jul, 2017</span></figcaption></figure>
+<figure class="print mercreature"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/sinker.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>The Sinker:</b></i> Linoleum block print - Jul, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/guardingthelight.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Guarding the light:</b></i> Reproduction of print by Si Lewen. Linoleum block print - Jun, 2017</span></figcaption></figure>
+<!--<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/linosunset.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Sunset:</b></i> Linoleum block print with watercolor - May, 2017</span></figcaption></figure>-->
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/linobike.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bicycle:</b></i> Linoleum block print - May, 2017</span></figcaption></figure>
+<figure class="print cat"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/linopogo.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Linocat:</b></i> Linoleum block print with watercolor - Apr, 2017</span></figcaption></figure>
+<figure class="acrylic mercreature"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/paintnsip mermaid.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Pink-haired mermaid:</b></i> Acrylic on canvas. Painted at CANVAS! Paint and sip studio, Fremont - Mar, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/linobass.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Bass:</b></i> Linoleum block print - Mar, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/linopiano.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Piano:</b></i> Linoleum block print - Mar, 2017</span></figcaption></figure>
+<figure class="watercolor commissions"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/fox and birches.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Fox and Birches:</b></i> Commission, watercolor on paper - Mar, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/linoukulele.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Ukulele:</b></i> Linoleum block print - Feb, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/linogotyourback.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Got your back:</b></i> Linoleum block print - Feb, 2017</span></figcaption></figure>
+<figure class="print"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/linoface.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Shadowy face:</b></i> Linoleum block print - Feb, 2017</span></figcaption></figure>
+<figure class="drawing cat"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/pogo in box sketch.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Cat in a box:</b></i> Pencil on paper - Feb, 2017</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/floodthestreets.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Second wind third wave:</b></i> Watercolor and gel pen on paper - Jan, 2017</span></figcaption></figure>
+<figure class="watercolor cat"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/benandpogo.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Ben and Pogo:</b></i> Watercolor and pencil on paper - Dec, 2016</span></figcaption></figure>
+<figure class="watercolor cat"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/pokemongo.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Po-kemon-go:</b></i> Watercolor and pencil on paper - Nov, 2016</span></figcaption></figure>
+<figure class="watercolor cat"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/pogo_bliss.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Pogo blissed-out:</b></i> Watercolor on paper - Nov, 2016</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/parachute.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Parachute:</b></i> Watercolor on paper - Aug, 2016</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/two_lilies.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Two lilies:</b></i> Watercolor on paper. Painted at the John C. Campbell Folk School with Billie Shelburn&#39;s plein air watercolor class - Jul, 2016</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/green_sky.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>House with green sky:</b></i> Watercolor on paper. Painted at the John C. Campbell Folk School with Billie Shelburn&#39;s plein air watercolor class - Jul, 2016</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/twisty_tree.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Twisty tree:</b></i> Watercolor on paper. Painted at the John C. Campbell Folk School with Billie Shelburn&#39;s plein air watercolor class - Jul, 2016</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/swirlies.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Tornado dreams:</b></i> Watercolor on paper - 2013</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/canyondechelly.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Canyon de Chelly:</b></i> Watercolor on paper - Aug, 2012</span></figcaption></figure>
+<figure class="acrylic"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/seattleskyline.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Seattle skyline:</b></i> Acrylic on scrap wood - Jul, 2012</span></figcaption></figure>
+<figure class="acrylic"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/duck.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Duck on Greenlake at sunset:</b></i> Acrylic on scrap wood - Jul, 2012</span></figcaption></figure>
+<figure class="acrylic"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/davis_longline.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Ben longlining:</b></i> Acrylic on scrap wood. Davis, CA - Jun, 2012</span></figcaption></figure>
+<figure class="acrylic"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/izzy_baremtn.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Izzy on Bare mountain:</b></i> Acrylic on scrap wood. Amherst, MA - Mar, 2012</span></figcaption></figure>
+<figure class="acrylic mercreature"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/coffee_angels.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Portrait of Seattle//Coffee Rain:</b></i> Acrylic on scrap wood - 2012</span></figcaption></figure>
+<figure class="acrylic mercreature"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/mermaid.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Yes Ma I did the dishes:</b></i> Acrylic on scrap wood - 2012</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/ben sketch.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Ben sketch:</b></i> Pencil on paper - 2011</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/orchidrose.JPG"><figcaption><i  class="fa fa-angle-double-down fa-lg"></i><span><i><b>Orchid, rose:</b></i> Watercolor on paper - Apr, 2011</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/eyeonthepry.jpg"><figcaption><i  class="fa fa-angle-double-down fa-lg"></i><span><i><b>Eyes on the prize:</b></i> Watercolor on paper - Apr, 2011</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/huanggua.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Feeding huanggua:</b></i> Watercolor on paper. Hefei, China - 2011. Div 3 portrait series 1 of 5</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/bund.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Night time on The Bund:</b></i> Watercolor on paper. Shanghai, China - 2011. Div 3 portrait series 2 of 5</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/aubrey.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span id="6"><i><b>Closing time at the expo:</b></i> Watercolor on paper. Shanghai, China - 2011. Div 3 portrait series 3 of 5</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/nanjinglu.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Woman with stroller and crowds on Nanjing Lu:</b></i> Watercolor on paper. Shanghai, China - 2011. Div 3 portrait series 4 of 5</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/moped.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Phonecall from a moped by the ATM:</b></i> Watercolor on paper. Nanjing, China - 2011. Div 3 portrait series 5 of 5</span></figcaption></figure>
+<!--<figure><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/lineface.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Doodle portrait:</b></i> Watercolor on paper - 2010.</span></figcaption></figure>-->
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/tigerlily.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Tiger lily:</b></i> Watercolor on paper - 2010</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/moroccanman.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Moroccan man:</b></i> Watercolor on paper. From photo in econ textbook - project for portraiture class - 2009</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/rainbow.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Rainbow:</b></i> Watercolor on paper. Chugchilan, Ecuador - 2007</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hula.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hula teacher on the beach:</b></i> Watercolor on paper. Kauai, Hawaii - 2006</span></figcaption></figure>
+<figure class="acrylic"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/LH and R.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Lambert, Hendricks, and Ross:</b></i> Unfinished. Acrylic on canvas board - 2006</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hamletp5.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hamlet, page 5:</b></i> Pencil on paper. Part of graphic novel interpretation of Hamlet for English Literature final class project - 2006</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/hamletp10.png"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Hamlet, page 10:</b></i> Pencil on paper. Part of graphic novel interpretation of Hamlet for English Literature final class project - 2006</span></figcaption></figure>
+<figure class="acrylic"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/sunflowers.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Sunflowers:</b></i> Acrylic on cardboard - 2006</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/nude.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Nude:</b></i> Chalk pastel on paper - 2006</span></figcaption></figure>
+<figure class="drawing mercreature"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/falling.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Falling:</b></i> Marker and water on paper. Part of a series of paintings for unnamed surrealist story - 2005</span></figcaption></figure>
+<figure class="drawing mercreature"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/beached.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Beached:</b></i> Marker and water on paper. Part of a series of paintings for unnamed surrealist story - 2005</span></figcaption></figure>
+<figure class="drawing"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/reach.jpg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Reach:</b></i> Chalk pastel on paper - 2005</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/donghu.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Dong hu:</b></i> East lake, Wuhan, China. Watercolor and pencil on paper - 2004</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/citycold.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Cold city:</b></i> Watercolor and pencil on paper - 2004</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/wintersunset.JPG"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Winter sunset:</b></i> Watercolor and pencil on paper - 2003</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/arboretum.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Boston arboretum:</b></i> Watercolor and pencil on paper - 2003</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/stormy beach.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Stormy beach:</b></i> Watercolor and pencil on paper - 2003</span></figcaption></figure>
+<figure class="watercolor"><img src="../../images/portfolio/blank.png" data-src="../../images/portfolio/thorndike pond.jpeg"><figcaption><i class="fa fa-angle-double-down fa-lg"></i><span><i><b>Thorndike pond:</b></i> New Hampshire. Watercolor and pencil on paper - 2002</span></figcaption></figure>
+
+
+<div id="leftside"></div>
+<div id="rightside"></div>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+<!-- Footer -->
+  <footer class="container padding-16 white">
+  <p>
+  <div class="center" style="font-size:14px;font-weight:bold;">Hannah Hamavid 2024</div>
+  <div class="center" style="font-size:14px;font-weight:bold;">Contact: hamavid (at) gmail (dot) com</div>
+  </p>
+  </footer>
+</body>  
+</html>

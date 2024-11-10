@@ -1,0 +1,146 @@
+/* W3.CSS 2.77 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:100%;}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}
+img{border-style:none}svg:not(:root){overflow:hidden}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+/*figure{margin:1em 40px}*/
+hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea{font:inherit;margin:0}
+optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner
+{border-style:none;padding:0}
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring
+{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}
+textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-input-placeholder{color:inherit;opacity:0.54}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract from normalize.css */
+
+/* General styles */
+html{font-family:Lora, Ubuntu, sans-serif;}
+footer{text-align:center;}
+.content {margin:auto;padding:1em;max-width:830px;line-height: 1.5em;padding-top:80px;}
+a:link,a:visited,a:hover,a:active{}
+ul{list-style-type:none;}
+h2{text-align:center;}
+
+/*shifted box styles*/
+.lefter,.righter,.middler{margin:2.5em 1em;padding:2em;}
+.lefter{margin-left:-3em!important;border-radius:0 3em 3em 0;}
+.righter{margin-right:-3em!important;border-radius:3em 0 0 3em;}
+.middler{border-radius:3em;}
+/* make media query for padding only on small screens */
+@media screen and (max-width:1030px) {
+	.lefter{padding-left:3.5em;}
+	.righter{padding-right:3.5em;}
+}	
+
+/* nested boxes */
+.nest{text-align:center;margin:auto;width:80%;}
+.nest a div{
+	margin-top:3em;margin-bottom:3em;
+	line-height: 1em!important;
+	font-family:Ubuntu, sans-serif;
+	padding:1.5em;width:400px;max-width:100%;
+}
+.nest a{text-decoration:none;width:400px;max-width:100%;display:block;margin:auto;} 
+.right,.lefty{display:block;}
+a.righty, .righty{;margin-left:auto;margin-right:0;}
+a.lefty, .lefty{margin-left:0;margin-right:auto;}
+/*border-radius:1em 0 1em 0, border-radius:0 1em 0 1em*/
+
+/* color schemes */
+.grey-blue, .grey-blue a {color:#e1eaf7;background-color:#51647e;}
+.light-green, .light-green a {color:#2f5443;background-color:#bee5d3}
+.yellowish, .yellowish a {color:#a86807;background-color:#fedfb0;}
+.orangeish, .orangeish a{color:#af3604;background-color:#fba17b;}
+.light-green .nest div, .light-green .nest div a{background-color:#abd0be;}
+.yellowish .nest div, .yellowish .nest div a{background-color:#efc98e;}
+.orangeish .nest div, .orangeish .nest div a{background-color:#ef8d63;}
+/*.yellowish .nest div {background-image: radial-gradient(ellipse at center, #efc98e, #fedfb0);}*/
+
+/* control look and behavior of top navbar and its contents for diff window sizes */
+#topnav{position:fixed;width:100%;z-index:2;}
+.topnavbar {height:80px;color:#e1eaf7;z-index:2;}
+.topnavbar-contents {z-index:3;width:800px;max-width:100%;margin-left:auto;margin-right:auto;}
+.topnavbar-contents a {text-decoration: none;}
+.navbar-menu {float:left!important;margin-left:0.5em;margin-top:8px;padding:0.5em;z-index:3;cursor:pointer;font-size:1em;}
+.navlinks-pocket {
+    position:fixed;
+    text-align:center;
+    z-index:-1;
+    width:300px;max-width:100%;
+}
+.navlinks {display:none;}
+.navlinks ul {
+	list-style:none;padding:0px;
+    width:300px;max-width:100%;
+	z-index:2;
+}
+.navlinks a {
+    text-decoration:none;
+    line-height:40px;
+}
+.navlinks li{background-color:#e1eaf7;color:#51647e;}
+.navlinks li:hover{
+    background-color:#cbdcf3;color:#384a63;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+.name {float:right!important;}
+.name {
+    font-size:2em;
+    margin-right:1em;
+    margin-top:10px;
+}
+.overlay{position:fixed;
+	display:none;
+	width:100%;height:100%;
+	top:0;left:0;right:0;bottom:0;
+	background-color:rgba(0,0,0,0.5);
+	z-index:1;cursor:pointer;
+}
+.card-2{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.thispage{font-style:italic;}
+/* navbar specs for smaller screens */
+@media (max-width:750px){
+	.name{font-size:1.5em;}
+	.navlinks{margin-top:55px;}
+	.navbar-menu{font-size:0.9em;}
+}
+@media (max-width:450px){.navlinks-pocket,.navlinks-pocket ul{width:100%;}}
+
+/* make smooth transition in size for navbar and its contents on window resize */
+.topnavbar,.topnavbar a{
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+.navbar-menu,.topnavbar a,.navlinks a {-webkit-transition: font-size 0.5s;transition: font-size 0.5s;}
+.navlinks{-webkit-transition: margin-top 0.5s;transition: margin-top 0.5s;}
+.animate-opacity{-webkit-animation:opac 1.5s;animation:opac 1.5s}
+.animate-left {
+	position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s;
+}
+@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+
+
+
