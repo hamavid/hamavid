@@ -88,6 +88,13 @@ var ambigrams = ['merryxmas4.png','hbd-2.png','thankyou-ambi.png','hbd-ambi.png'
         if (isambi == -1) {
         	$('#bigarrow').css('display','none');
         } else {
+        	// exception for one of the hbd ambigrams which should start rotated so it says "happy"
+        	if (imgsrc == 'hbd-2.png') {
+        		$('#bigarrow').removeClass('orig');
+				$('#bigarrow').html('&#10226;');
+				$('#bigimg img').removeClass('reset');
+				$('#bigimg img').addClass('rotated');
+        	}
         	$('#bigarrow').css('display','block');
         }
         // depopulate big caption if relevant 
@@ -142,7 +149,6 @@ var ambigrams = ['merryxmas4.png','hbd-2.png','thankyou-ambi.png','hbd-ambi.png'
 		var icon = $(this);
 		var img = icon.next();
 		var imgsrc = img.attr('src').substring(9);
-		console.log(imgsrc);
 		if ( icon.hasClass('orig')) {
 			/* toggle icon */
 			icon.removeClass('orig');
@@ -166,7 +172,6 @@ var ambigrams = ['merryxmas4.png','hbd-2.png','thankyou-ambi.png','hbd-ambi.png'
 		var icon = $(this);
 		var img = icon.next();
 		var imgsrc = img.attr('src').substring(9);
-		console.log(imgsrc);
 		if ( icon.hasClass('orig')) {
 			/* toggle icon */
 			icon.removeClass('orig');

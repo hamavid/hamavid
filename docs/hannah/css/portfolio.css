@@ -1,6 +1,13 @@
 .content{max-width:1200px!important;}
 h3{text-align:center;}
 
+/* instructions and filter */
+/* ************************************************** */
+#instructions, #filter{
+  text-align:center;
+}
+#instructions {font-style:italic;}
+
 /* figure and caption appearance for zoomedin images */
 /* ************************************************** */
 #closeup{
@@ -154,9 +161,9 @@ figcaption {
 .rotated {
 	rotate:90deg;
 	transition: 1s;
-  	padding-bottom:0!important;right:0.8em;
-  	margin:auto;
-  	display:table;
+  padding-bottom:0!important;right:0.8em;
+	margin:auto;
+  display:table;
 }
 .reset {
 	rotate:0deg;
