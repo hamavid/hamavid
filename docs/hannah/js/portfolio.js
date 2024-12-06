@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 /* dictionary of image captions and tags*/
 var imgdict = {};
+imgdict['loveyou.jpg'] = ['Love You ambigram, pen on paper 2024',['ambigram','drawing']];
 imgdict['sommer.jpg'] = ['Sommer, watercolor on paper 2024',['watercolor','portrait']];
 imgdict['happybday.png'] = ['Hap py bday teddy bear balloons, linoleum block print 2024',['linocut']];
 imgdict['nude1.jpg'] = ['Nude study 1, watercolor on paper 2024',['watercolor']];
