@@ -68,7 +68,7 @@ imgdict['stormybeach.jpeg'] = ['Stormy Beach, watercolor on paper 2003'];
 imgdict['wintersunset.JPG'] = ['Winter Sunset, watercolor on paper 2003'];
 
 /* list of amibgrams for checking for rotation icon in figure */
-var ambigrams = ['merryxmas4.png','hbd-2.png','thankyou-ambi.png','hbd-ambi.png'];
+var ambigrams = ['loveyou.jpg','merryxmas4.png','hbd-2.png','thankyou-ambi.png','hbd-ambi.png'];
 
 // function to get img captions and other info
 /*function getVals(element) {
