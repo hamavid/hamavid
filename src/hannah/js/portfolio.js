@@ -12,6 +12,7 @@ imgdict['hbd-2.png'] = ['Happy/Birth Day ambigram, pen on paper 2023',['ambigram
 imgdict['thankyou-ambi.png'] = ['Thank You ambigram, pen on paper 2023',['ambigram','drawing']];
 imgdict['hbd-ambi.png'] = ['Happy Birthday ambigram, pen on paper 2023',['ambigram','drawing']];
 imgdict['owlrockfarm.png'] = ['Owl Rock Farm logo, commissioned linoleum block print 2023',['linocut']];
+imgdict['what joy is yours print edited.jpeg'] = ['What Joy is Yours, linoleum block print album cover 2023',['linocut']];
 imgdict['hotstuff.jpeg'] = ['Fire Cider, linoleum block print 2020',['linocut']];
 imgdict['hotienar.jpeg'] = ['Hot Ienar, linoleum block print 2020',['linocut']];
 imgdict['duckling.jpeg'] = ['Duckling, linoleum block print 2020',['linocut']];
