@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: Trebuchet MS, sans-serif;
+    background: #9C82BA;
     min-height: 100vh;
     padding: 20px;
     line-height: 1.6;
@@ -16,13 +16,13 @@ body {
     max-width: 900px;
     margin: 0 auto;
     background: white;
-    border-radius: 20px;
+    
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     overflow: hidden;
 }
 
 .header {
-    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    background: #533A70;
     color: white;
     padding: 30px;
     text-align: center;
@@ -35,7 +35,7 @@ body {
 }
 
 .current-caregiver {
-    background: #2ecc71;
+    background: #3A7050;
     color: white;
     padding: 20px;
     text-align: center;
@@ -96,7 +96,7 @@ body {
     border-radius: 15px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    border-left: 5px solid #e74c3c;
+    border-left: 5px solid #807C7C;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -106,12 +106,12 @@ body {
 }
 
 .day-card.today {
-    border-left-color: #2ecc71;
+    border-left-color: #51B078;
     box-shadow: 0 5px 20px rgba(46, 204, 113, 0.2);
 }
 
 .day-card.tomorrow {
-    border-left-color: #f39c12;
+    border-left-color: #807C7C;
 }
 
 .day-header {
@@ -132,7 +132,7 @@ body {
 
 .day-indicator {
     font-size: 0.7em;
-    background: #3498db;
+    background: #3A88BD;
     color: white;
     padding: 3px 8px;
     border-radius: 12px;
@@ -140,21 +140,21 @@ body {
 }
 
 .day-indicator.today {
-    background: #2ecc71;
+    background: #51B078;
 }
 
 .day-indicator.tomorrow {
-    background: #f39c12;
+    background: #807C7C;
 }
 
 .shift {
-    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    background: linear-gradient(135deg, #719ED9, #517AB0);
     color: white;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(116, 185, 255, 0.3);
-    transition: transform 0.2s;
+    /*box-shadow: 0 3px 10px rgba(116, 185, 255, 0.3);
+    transition: transform 0.2s;*/
 }
 
 .shift:hover {
@@ -162,9 +162,9 @@ body {
 }
 
 .shift.current {
-    background: linear-gradient(135deg, #2ecc71, #27ae60);
-    box-shadow: 0 3px 15px rgba(46, 204, 113, 0.4);
-    animation: pulse 2s infinite;
+    background: #51B078;
+    /*box-shadow: 0 3px 15px rgba(46, 204, 113, 0.4);
+    animation: pulse 2s infinite;*/
 }
 
 @keyframes pulse {
