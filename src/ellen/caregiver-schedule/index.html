@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caregiver Schedule</title>
+    <link rel="stylesheet" href="schedule-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Caregiver Schedule</h1>
+            <p>Current and upcoming care schedules</p>
+        </div>
+        
+        <div class="current-caregiver" id="currentCaregiver">
+            <div class="spinner"></div>
+            Loading current caregiver...
+        </div>
+        
+        <div class="main-content">
+            <div class="refresh-info" id="refreshInfo">
+                💡 This page updates automatically every 5 minutes. Last check: <span id="lastCheck">--</span>
+            </div>
+            
+            <div class="calendar" id="calendar">
+                <div class="loading-message">
+                    <div class="spinner"></div>
+                    Loading schedule data...
+                </div>
+            </div>
+            
+            <div class="last-updated" id="lastUpdated"></div>
+        </div>
+        
+        <div class="error-section" id="errorSection" style="display: none;">
+            <div class="error-message">
+                <h3>⚠️ Could not load schedule</h3>
+                <p id="errorDetails">Checking for cached data...</p>
+                <button class="btn retry-btn" onclick="loadSchedule()">🔄 Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="schedule-script.js"></script>
+</body>
+</html>
