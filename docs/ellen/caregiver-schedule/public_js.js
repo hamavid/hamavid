@@ -104,7 +104,7 @@ function parseGoogleSheetsData(csvText) {
         const colA = columns[0] ? columns[0].trim() : '';
         const colB = columns[1] ? columns[1].trim() : '';
         
-        //console.log(`Row ${i + 1}: ColA="${colA}", ColB="${colB}"`);
+        console.log(`Row ${i + 1}: ColA="${colA}", ColB="${colB}"`);
         
         // Skip header row
         if (colB.toLowerCase().includes('schedule') && colA.toLowerCase().includes('startdate')) {
@@ -114,7 +114,7 @@ function parseGoogleSheetsData(csvText) {
         // Check for week start date in column A
         if (colA && isDateString(colA)) {
             currentWeekStartDate = parseDate(colA);
-            //console.log('Found week start date:', currentWeekStartDate);
+            console.log('Found week start date:', currentWeekStartDate);
             
             // If Column B also has a day on this same row, process it
             if (colB) {
@@ -122,7 +122,7 @@ function parseGoogleSheetsData(csvText) {
                 if (dayMatch) {
                     const dayName = dayMatch[1];
                     currentDate = getDateForDay(currentWeekStartDate, dayName);
-                    //console.log('Found date+day on same row:', dayName, '→', currentDate);
+                    console.log('Found date+day on same row:', dayName, '→', currentDate);
                 }
             }
             continue;
@@ -136,7 +136,7 @@ function parseGoogleSheetsData(csvText) {
                 currentWeekStartDate = parseDate(dateDay[1]);
                 const dayName = dateDay[2];
                 currentDate = getDateForDay(currentWeekStartDate, dayName);
-                //console.log('Found date+day:', currentWeekStartDate, dayName, '→', currentDate);
+                console.log('Found date+day:', currentWeekStartDate, dayName, '→', currentDate);
                 continue;
             }
             
@@ -146,7 +146,7 @@ function parseGoogleSheetsData(csvText) {
                 const dayName = dayMatch[1];
                 if (currentWeekStartDate) {
                     currentDate = getDateForDay(currentWeekStartDate, dayName);
-                    //console.log('Found day header:', dayName, '→', currentDate);
+                    console.log('Found day header:', dayName, '→', currentDate);
                 } else {
                     parseWarnings.push(`Day "${dayName}" found but no week start date set`);
                 }
@@ -169,7 +169,7 @@ function parseGoogleSheetsData(csvText) {
                 };
                 
                 data.push(entry);
-                //console.log('Added shift:', entry);
+                console.log('Added shift:', entry);
             } else if (shiftMatch && !currentDate) {
                 parseWarnings.push(`Shift "${colB}" found but no current date set`);
             }
@@ -326,16 +326,16 @@ function getCurrentCaregiver() {
         const shiftStart = new Date(entry.startDateTime);
         const shiftEnd = new Date(entry.endDateTime);
         
-        //console.log(`Checking shift: ${entry.caregiver} ${entry.startTime}-${entry.endTime}`);
-        //console.log(`Shift times: ${shiftStart.toLocaleString()} to ${shiftEnd.toLocaleString()}`);
-        //console.log(`Is ${easternTime.getTime()} >= ${shiftStart.getTime()} && < ${shiftEnd.getTime()}?`);
+        console.log(`Checking shift: ${entry.caregiver} ${entry.startTime}-${entry.endTime}`);
+        console.log(`Shift times: ${shiftStart.toLocaleString()} to ${shiftEnd.toLocaleString()}`);
+        console.log(`Is ${easternTime.getTime()} >= ${shiftStart.getTime()} && < ${shiftEnd.getTime()}?`);
         
         // Compare times directly (both should be in same timezone context)
         if (easternTime >= shiftStart && easternTime < shiftEnd) {
             console.log('✅ Found current caregiver:', entry.caregiver);
             return entry.caregiver;
         } else {
-            //console.log('❌ Not in this shift window');
+            console.log('❌ Not in this shift window');
         }
     }
     
