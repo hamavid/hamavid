@@ -176,16 +176,16 @@ function parseGoogleSheetsData(csvText) {
         }
     }
     
-    // Filter to show only current and future dates
+    // Filter to show only current and future dates (Eastern time)
     const now = new Date();
-    const today = new Date(now.toDateString());
-    const twoWeeksFromNow = new Date(today);
-    twoWeeksFromNow.setDate(today.getDate() + 14);
-    
+    const easternNow = new Date(now.toLocaleString("en-US", {timeZone: "America/New_York"}));
+    const todayEastern = new Date(easternNow.toDateString());
+    const twoWeeksFromNow = new Date(todayEastern);
+    twoWeeksFromNow.setDate(todayEastern.getDate() + 14);
     const filteredData = data.filter(entry => {
-        return entry.date >= today && entry.date <= twoWeeksFromNow;
+        return entry.date >= todayEastern && entry.date <= twoWeeksFromNow;
     }).sort((a, b) => a.startDateTime - b.startDateTime);
-    
+
     console.log(`Filtered to ${filteredData.length} future entries (from ${data.length} total)`);
     return filteredData;
 }
@@ -326,16 +326,16 @@ function getCurrentCaregiver() {
         const shiftStart = new Date(entry.startDateTime);
         const shiftEnd = new Date(entry.endDateTime);
         
-        //console.log(`Checking shift: ${entry.caregiver} ${entry.startTime}-${entry.endTime}`);
-        //console.log(`Shift times: ${shiftStart.toLocaleString()} to ${shiftEnd.toLocaleString()}`);
-        //console.log(`Is ${easternTime.getTime()} >= ${shiftStart.getTime()} && < ${shiftEnd.getTime()}?`);
+        console.log(`Checking shift: ${entry.caregiver} ${entry.startTime}-${entry.endTime}`);
+        console.log(`Shift times: ${shiftStart.toLocaleString()} to ${shiftEnd.toLocaleString()}`);
+        console.log(`Is ${easternTime.getTime()} >= ${shiftStart.getTime()} && < ${shiftEnd.getTime()}?`);
         
         // Compare times directly (both should be in same timezone context)
         if (easternTime >= shiftStart && easternTime < shiftEnd) {
             console.log('✅ Found current caregiver:', entry.caregiver);
             return entry.caregiver;
         } else {
-            //console.log('❌ Not in this shift window');
+            console.log('❌ Not in this shift window');
         }
     }
     
@@ -378,9 +378,10 @@ function displaySchedule() {
     
     calendar.innerHTML = '';
     const now = new Date();
-    const today = new Date(now.toDateString());
-    const tomorrow = new Date(today);
-    tomorrow.setDate(today.getDate() + 1);
+    const easternNow = new Date(now.toLocaleString("en-US", {timeZone: "America/New_York"}));
+    const todayEastern = new Date(easternNow.toDateString());
+    const tomorrowEastern = new Date(todayEastern);
+    tomorrowEastern.setDate(todayEastern.getDate() + 1);
     
     Object.keys(groupedData).sort().forEach(dateKey => {
         const entries = groupedData[dateKey];
@@ -389,9 +390,9 @@ function displaySchedule() {
         const dayCard = document.createElement('div');
         dayCard.className = 'day-card';
         
-        if (date.getTime() === today.getTime()) {
+        if (date.getTime() === todayEastern.getTime()) {
             dayCard.classList.add('today');
-        } else if (date.getTime() === tomorrow.getTime()) {
+        } else if (date.getTime() === tomorrowEastern.getTime()) {
             dayCard.classList.add('tomorrow');
         }
         
@@ -406,9 +407,9 @@ function displaySchedule() {
         });
         
         let indicator = '';
-        if (date.getTime() === today.getTime()) {
+        if (date.getTime() === todayEastern.getTime()) {
             indicator = '<span class="day-indicator today">TODAY</span>';
-        } else if (date.getTime() === tomorrow.getTime()) {
+        } else if (date.getTime() === tomorrowEastern.getTime()) {
             indicator = '<span class="day-indicator tomorrow">TOMORROW</span>';
         }
         
@@ -420,7 +421,6 @@ function displaySchedule() {
             shiftDiv.className = 'shift';
             
             // Highlight current shift (use same logic as getCurrentCaregiver)
-            const now = new Date();
             const easternTime = new Date(now.toLocaleString("en-US", {timeZone: "America/New_York"}));
             const shiftStart = new Date(entry.startDateTime);
             const shiftEnd = new Date(entry.endDateTime);

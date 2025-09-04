@@ -406,9 +406,9 @@ function displaySchedule() {
         });
         
         let indicator = '';
-        if (date.getTime() === today.getTime()) {
+        if (date.getTime() === todayEastern.getTime()) {
             indicator = '<span class="day-indicator today">TODAY</span>';
-        } else if (date.getTime() === tomorrow.getTime()) {
+        } else if (date.getTime() === tomorrowEastern.getTime()) {
             indicator = '<span class="day-indicator tomorrow">TOMORROW</span>';
         }
         
