@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Trebuchet MS, sans-serif;
+    background: #9C82BA;
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.main-content {
+    padding: 30px;
+}
+
+.linkslist {
+    display: grid;
+    gap: 20px;
+    min-height: 200px;
+}
+.item {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(46, 204, 113, 0.2);
+    border-left: 5px solid #51B078;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.item-header a {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration:none;
+}
+.item-header a::before {
+    content: " →";
+    font-size: 1.2em;
+    margin-left: 10px;
+    color: #51B078;
+}
+/*
+.clickhere {
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background: white;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.clickhere:hover {
+    background: #2c3e50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}*/
+.footer {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 20px;
+    border-top: 1px solid #ecf0f1;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+.details:hover {
+    transform: translateY(-1px);
+}
+.details {
+    background: linear-gradient(135deg, #719ED9, #517AB0);
+    color: white;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 10px;
+}
+.header {
+    background: #533A70;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+}
