@@ -41,23 +41,26 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-.item-header a {
+.item-header{
     font-size: 1.4em;
     font-weight: 600;
-    color: #2c3e50;
+    color: black;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 10px;
-    text-decoration:none;
 }
+.item-header a{text-decoration:underline; color:black;}
+.item-header a:visited{color:#533A70}.item-header a:hover, .item-header a:active{color: grey;}
+
+/*
 .item-header a::before {
     content: " →";
     font-size: 1.2em;
     margin-left: 10px;
     color: #51B078;
 }
-/*
+
 .clickhere {
     border: 2px solid #2c3e50;
     border-radius: 8px;
