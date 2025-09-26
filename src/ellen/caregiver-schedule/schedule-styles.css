@@ -20,7 +20,9 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     overflow: hidden;
 }
-
+.back a{text-decoration:none;font-size:1.1em;}
+.back a:link, .back a:visited{color:white;}
+.back a:hover, .back a:active{color:#9C82BA;}
 .header {
     background: #533A70;
     color: white;
