@@ -22,7 +22,7 @@ body {
 .main-content {
     padding: 30px;
 }
-
+p{margin-bottom:1.5em;}
 .linkslist {
     display: grid;
     gap: 20px;
@@ -32,27 +32,47 @@ body {
     background: white;
     border-radius: 15px;
     padding: 25px;
-    box-shadow: 0 5px 20px rgba(46, 204, 113, 0.2);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    /*box-shadow: 0 5px 20px rgba(46, 204, 113, 0.2);
     border-left: 5px solid #51B078;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;*/
 }
-
-.item:hover {
+.item-image {
+       width: 150px; /* or whatever size works */
+       height: 150px;
+       object-fit: cover;
+       border-radius: 8px;
+       flex-shrink: 0; /* prevents image from shrinking */
+   }
+/*.item:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
+}*/
+.item-content {
+       flex: 1;
+   }
 .item-header{
     font-size: 1.4em;
     font-weight: 600;
     color: black;
     margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
+
 .item-header a{text-decoration:underline; color:black;}
 .item-header a:visited{color:#533A70}.item-header a:hover, .item-header a:active{color: grey;}
+.footnote {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
 
+.footnote sup {
+    margin-right: 5px;
+}
 /*
 .item-header a::before {
     content: " →";
@@ -90,16 +110,18 @@ body {
     font-size: 0.9em;
 }
 
-.details:hover {
+/*.details:hover {
     transform: translateY(-1px);
-}
+}*/
 .details {
-    background: linear-gradient(135deg, #719ED9, #517AB0);
-    color: white;
+   /* background: linear-gradient(135deg, #719ED9, #517AB0);
+    color: white;*/
     padding: 1em;
     margin: 1em 0;
     border-radius: 10px;
 }
+.details ul{margin-left:1.2em;}
+.details a{color:black;}
 .header {
     background: #533A70;
     color: white;
@@ -125,6 +147,17 @@ body {
     
     .main-content {
         padding: 20px;
+    }
+    .item {
+       flex-direction: column;
+    }
+       
+    .item-image {
+        width: 100%;
+        max-height: 250px;  /* or whatever max you want */
+        height: auto;  /* Change from fixed height to auto */
+        object-fit: contain;  /* Also contain here */
+        margin-bottom: 15px;
     }
     
 }
